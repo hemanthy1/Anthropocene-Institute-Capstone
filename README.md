@@ -5,9 +5,13 @@ Optimized Carbon Dioxide Removal - Anthropocene Institute
 
 ## Contributors
 Jack Holscher - holsche2@msu.edu
+
 Hemanth Yalamanchili - hemanthy@gmail.com
+
 Edie Haase - haaseede@msu.edu
+
 Ishita Kokil - kokilish@msu.edu
+
 Nick Wang - wangnich@msu.edu
 
 ## Description
@@ -17,6 +21,7 @@ As apart of our senior capstone project at Michigan State University, we teamed 
 Special thanks to our wonderful project sponsors from Anthropocene:
 
 Melinda Chow Alankar - Director of Investment and Funding Opportunities
+
 Frank Hiroshi Ling, PhD - Chief Scientist
 
 ## License
