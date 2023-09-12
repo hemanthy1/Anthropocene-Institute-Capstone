@@ -1,13 +1,19 @@
 body {
   margin: 0;
+  background-color: var(--primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary);
+}
+
+#site-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
 }
 
 :root {
-  --primary: #FAF1E4;
-  --secondary: #CEDEBD;
+  --primary: #CEDEBD;
+  --secondary: #FAF1E4;
   --accent: #9EB384;
   --text: #435334;
 }
@@ -20,6 +26,7 @@ body {
 
 .navbar {
   height: 10vh;
+  width: 100vw;
   background-color: var(--secondary);
   padding: 0 1rem;
 }
@@ -27,8 +34,7 @@ body {
 .footer {
   height: 20vh;
   width: 100vw;
+  margin-top: auto;
   background-color: var(--secondary);
   padding: 0 1rem;
-  position: fixed;
-  bottom: 0;
 }

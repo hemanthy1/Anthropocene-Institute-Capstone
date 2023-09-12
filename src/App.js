@@ -2,19 +2,35 @@ import React from 'react';
 
 function App() {
   return (
-    <body>
+    <div id="site-content">
       <Navbar></Navbar>
       <h1 className="hello">Hello, World!</h1>
       <Footer></Footer>
-    </body>
+    </div>
   );
 }
 
+/**
+ * Components relating to the navigation bar
+ * 
+ * Navbar - the parent element containing the links
+ * NavLink - an individual link element on the navigation bar
+ */
 function Navbar() {
   return (
     <nav className="navbar">
-
+      <ul className="navbar-nav"></ul>
     </nav>
+  );
+}
+
+function NavLink() {
+  return (
+    <li>
+      <a className="navbar-link">
+
+      </a>
+    </li>
   );
 }
 
