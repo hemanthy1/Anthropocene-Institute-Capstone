@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: var(--primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #site-content {
@@ -12,10 +17,10 @@ body {
 }
 
 :root {
-  --primary: #CEDEBD;
-  --secondary: #FAF1E4;
-  --accent: #9EB384;
-  --text: #435334;
+  --primary: #9EB384;
+  --secondary: #435334;
+  --accent: #CEDEBD;
+  --text: #FAF1E4;
 }
 
 .hello {
@@ -25,16 +30,68 @@ body {
 }
 
 .navbar {
-  height: 10vh;
   width: 100vw;
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-dropdown {
+  list-style-type: none;
+  display: none;
+  gap: 2rem;
+}
+
+.dropdown-wrap {
+  display: none;
+}
+
+#menubar {
+  max-width: 100%;
+  height: 40px;
+}
+
+#anth-logo {
+  max-width: 100%;
+  height: 50px;
+}
+
+.navbar-link {
+  color: var(--text);
+  transition: all .4s ease-in-out;
+}
+
+.navbar-item:hover {
+  transform: scale(1.1);
+}
+
+.navbar-link:visited, .navbar-link:active, .navbar-link:link {
+  text-decoration: none;
+}
+
+.footer {
+  height: 15vh;
+  max-width: 100vw;
+  margin-top: auto;
   background-color: var(--secondary);
   padding: 0 1rem;
 }
 
-.footer {
-  height: 20vh;
-  width: 100vw;
-  margin-top: auto;
-  background-color: var(--secondary);
-  padding: 0 1rem;
+/* media query for making the dropdown menu function */
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .dropdown-wrap {
+    display: block;
+  }
 }
