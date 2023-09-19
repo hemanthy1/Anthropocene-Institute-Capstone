@@ -23,12 +23,6 @@ body {
   --text: #FAF1E4;
 }
 
-.hello {
-  color: var(--text);
-  text-align: center;
-  text-justify: center;
-}
-
 .navbar {
   width: 100vw;
   background-color: var(--secondary);
