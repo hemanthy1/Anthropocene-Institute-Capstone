@@ -87,6 +87,10 @@ body {
   padding: 0 1rem;
 }
 
+.homebodyintro {
+  text-align: center;
+}
+
 /* media query for making the dropdown menu function */
 @media screen and (max-width: 768px) {
   .navbar-nav {
