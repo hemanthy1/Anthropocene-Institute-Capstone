@@ -75,10 +75,11 @@ body {
 
 .footer {
   height: 15vh;
-  max-width: 100vw;
-  margin-top: auto;
+  width: 100vw;
   background-color: var(--secondary);
   padding: 0 1rem;
+  position: absolute;
+  bottom: 0;
 }
 
 /* media query for making the dropdown menu function */
