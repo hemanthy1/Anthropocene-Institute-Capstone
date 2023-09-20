@@ -135,10 +135,11 @@ body {
 .homebodyintro>h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 2vw; font-style: normal; font-variant: normal; font-weight: 50; line-height: 3.5vw; } 
 
 #environmental-bg {
-  top:15vh;
+  top:10vh;
   left:8vw;
   width: 100vw;
   position: absolute;
   opacity: .25;
   max-width: 80vw;
+  padding-bottom: 56.25%;
 }
