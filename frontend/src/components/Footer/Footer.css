@@ -1,0 +1,50 @@
+
+
+footer {
+  background-color: var(--secondary);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right:0;
+  padding-left: 3vw;
+  padding-right: 3vw;
+
+}
+
+.col{
+  display: inline-block;
+  padding-right: 10vw;
+  vertical-align: top;
+
+}
+
+.names {
+  list-style:none;
+  padding:0 0;
+
+}
+li{
+  padding-left:0;
+  font-size: 1rem;
+  color: #FAF1E4;
+  margin-bottom: 1vh;
+}
+li.title {
+  color:#9EB384 ;
+}
+li.address {
+  padding-top: 1vh;
+}
+p {
+  color: #FAF1E4;
+  text-align: center;
+  padding-top: 4rem;
+}
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color for links */
+}
+li.link:hover {
+    opacity: 0.7;
+}
+
