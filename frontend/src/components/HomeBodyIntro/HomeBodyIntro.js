@@ -1,4 +1,5 @@
-import environmentalBackground from "./../assets/EnvironmentalBackground.png"
+import environmentalBackground from "../../assets/EnvironmentalBackground.png"
+import "./HomeBodyIntro.css"
 
 function HomeBodyIntro() {
     return (

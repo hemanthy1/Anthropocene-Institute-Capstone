@@ -1,6 +1,7 @@
 import { useState } from "react";
-import logoImage from "./../assets/logo.png"
-import menuBar from "./../assets/menu-bar.png"
+import logoImage from "../../assets/logo.png"
+import menuBar from "../../assets/menu-bar.png"
+import "./Navbar.css"
 
 function Navbar() {
 
