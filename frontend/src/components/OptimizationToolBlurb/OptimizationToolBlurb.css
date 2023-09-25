@@ -1,0 +1,25 @@
+.container{
+  height: 60vh;
+}
+h2{
+  text-align: right;
+  padding-bottom: 0;
+  margin-right:0;
+}
+.homepagetext{
+  color:black;
+}
+.colLeft{
+  display: inline-block;
+  padding-left: 10vw;
+  width: 40vw;
+
+}
+.colRight {
+  display: inline-block;
+  padding-right: 5vw;
+}
+
+hr{
+  width: 90vw;
+}

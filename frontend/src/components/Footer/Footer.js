@@ -7,7 +7,6 @@ import "./Footer.css"
 /**
  * The footer
  *
- * @returns AI logo as a clickable link to the homepage
  */
 
 function Footer() {

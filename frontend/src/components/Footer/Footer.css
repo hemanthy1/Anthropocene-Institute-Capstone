@@ -1,13 +1,26 @@
+/* Ensure the main content area takes up the available space */
+#site-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the container takes at least the full viewport height */
+}
+
+/* Add some margin to the content-wrap to create space for the footer */
+.content-wrap {
+  flex-grow: 1; /* Allow the content to grow and take up available space */
+  margin-bottom: 100px; /* Adjust the value as needed */
+}
 
 
 footer {
   background-color: var(--secondary);
-  position: absolute;
   bottom: 0;
   left: 0;
   right:0;
   padding-left: 3vw;
   padding-right: 3vw;
+  height: 40vh;
+
 
 }
 
