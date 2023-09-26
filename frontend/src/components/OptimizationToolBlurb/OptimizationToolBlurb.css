@@ -1,25 +1,33 @@
-.container{
-  height: 60vh;
+.blurb-container{
+  width: 100vw;
+  padding-top: 20vh;
 }
-h2{
+.toolTitle{
   text-align: right;
-  padding-bottom: 0;
-  margin-right:0;
+  font-size: 2vw;
 }
-.homepagetext{
-  color:black;
+.homePageText{
+  color: #000000;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.25vw;
+}
+.blurb-row {
+  display:flex;
+  flex-direction: row;
+  padding-left: 20vw;
+  width: 80vw;
 }
 .colLeft{
-  display: inline-block;
-  padding-left: 10vw;
-  width: 40vw;
+  padding-top: 20vh;
+  width: 50vw;
 
 }
 .colRight {
-  display: inline-block;
-  padding-right: 5vw;
+  width: 40vw;
 }
 
 hr{
-  width: 90vw;
+  margin-left: 10vw;
+  width: 80vw;
 }

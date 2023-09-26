@@ -1,34 +1,18 @@
-/* Ensure the main content area takes up the available space */
-#site-content {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Make sure the container takes at least the full viewport height */
-}
 
-/* Add some margin to the content-wrap to create space for the footer */
-.content-wrap {
-  flex-grow: 1; /* Allow the content to grow and take up available space */
-  margin-bottom: 100px; /* Adjust the value as needed */
-}
-
-
-footer {
+.container {
   background-color: var(--secondary);
-  bottom: 0;
   left: 0;
   right:0;
+  bottom:0;
   padding-left: 3vw;
   padding-right: 3vw;
-  height: 40vh;
-
-
+  height: 24vh;
 }
 
 .col{
   display: inline-block;
   padding-right: 10vw;
   vertical-align: top;
-
 }
 
 .names {
@@ -38,7 +22,7 @@ footer {
 }
 li{
   padding-left:0;
-  font-size: 1rem;
+  font-size: 1vw;
   color: #FAF1E4;
   margin-bottom: 1vh;
 }
@@ -48,10 +32,11 @@ li.title {
 li.address {
   padding-top: 1vh;
 }
-p {
+.footerText {
   color: #FAF1E4;
   text-align: center;
   padding-top: 4rem;
+  font-size: 1vw;
 }
 a {
     text-decoration: none; /* Remove underline from links */

@@ -11,7 +11,6 @@ import "./Footer.css"
 
 function Footer() {
   return (
-    <footer className="footer">
       <div className="container">
         <div className="row">
           <div className="col">
@@ -42,11 +41,11 @@ function Footer() {
               </ul>
           </div>
             <div className="col">
-                <p>@ Anthropocene Institute, All Rights Reserved</p>
+                <p className="footerText">@ Anthropocene Institute, All Rights Reserved</p>
           </div>
         </div>
       </div>
-    </footer>
+
   )
 }
 
