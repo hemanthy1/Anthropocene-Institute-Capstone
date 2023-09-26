@@ -31,3 +31,11 @@ hr{
   margin-left: 10vw;
   width: 80vw;
 }
+
+#algaebloom-mapimg {
+  top: 50vh;
+  left: 2vw;
+  width: 50vw;
+  position: fixed;
+  max-width: 80vw;
+}

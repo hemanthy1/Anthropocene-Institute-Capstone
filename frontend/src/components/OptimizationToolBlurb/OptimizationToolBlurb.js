@@ -1,7 +1,7 @@
 
 import React from "react";
 import "./OptimizationToolBlurb.css"
-import environmentalBackground from "../../assets/EnvironmentalBackground.png";
+import algaeBloomMapImage from "../../assets/map-image.png";
 
 
 
@@ -15,7 +15,7 @@ function OptimizationToolBlurb() {
         <hr />
         <div className="blurb-row">
             <div className= "colLeft">
-                <img   src="../../assets/map-image.png" alt="Map Image"/>
+                <AlgaeBloomMapImage/>
             </div>
             <div className="colRight">
                 <h2 className="toolTitle">Algae Blooms</h2>
@@ -37,6 +37,22 @@ function OptimizationToolBlurb() {
   )
 }
 
-
+  /**
+ * The Anthropocene Institute logo
+ * 
+ * @returns AI logo as a clickable link to the homepage
+ */
+  function AlgaeBloomMapImage() {
+    return (
+      <a href="/">
+        <img 
+          src={algaeBloomMapImage}
+          alt="Algae Bloom Map Image"
+          loading="lazy"
+          id="algaebloom-mapimg"
+        />
+      </a>
+    )
+  }
 
 export default OptimizationToolBlurb
