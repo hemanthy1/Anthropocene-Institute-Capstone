@@ -8,9 +8,10 @@ import dacMapImage from "../../assets/dacmapimg.png";
 
 
 /**
- * Image on the left words on the right
+ * Entire "Optimization Tools" section of the homepage
  *
- */
+ * @returns HTML for this section
+ */ 
 function OptimizationToolBlurb() {
   return (
     <div className="blurb-container">
@@ -38,9 +39,8 @@ function OptimizationToolBlurb() {
             </div>
         </div>
 
-
-
         <hr />
+
         <div className="blurb-row">
             <div className= "colLeft">
                 <DACMapImage/>
@@ -51,17 +51,13 @@ function OptimizationToolBlurb() {
             </div>
         </div>
     </div>
-
-
-
-
   )
 }
 
-  /**
- * The Anthropocene Institute logo
+/**
+ * The image next to the algae bloom section on this page
  * 
- * @returns AI logo as a clickable link to the homepage
+ * @returns This image as an html object
  */
   function AlgaeBloomMapImage() {
     return (
@@ -77,10 +73,10 @@ function OptimizationToolBlurb() {
   }
 
 
-    /**
- * The Anthropocene Institute logo
+/**
+ * The text for the algae bloom section of this page
  * 
- * @returns AI logo as a clickable link to the homepage
+ * @returns An HTML object of this text
  */
     function AlgaeBloomText() {
       return (
@@ -98,10 +94,10 @@ function OptimizationToolBlurb() {
       )
     }
 
- /**
- * The Anthropocene Institute logo
+/**
+ * The image next to the reforestation section on this page
  * 
- * @returns AI logo as a clickable link to the homepage
+ * @returns This image as an html object
  */
   function ReforestationMapImage() {
     return (
@@ -116,10 +112,10 @@ function OptimizationToolBlurb() {
     )
   }
 
-      /**
- * The Anthropocene Institute logo
+/**
+ * The text for the algae bloom section of this page
  * 
- * @returns AI logo as a clickable link to the homepage
+ * @returns An HTML object of this text
  */
       function ReforestationText() {
         return (
@@ -135,10 +131,10 @@ function OptimizationToolBlurb() {
         )
       }
 
-  /**
- * The Anthropocene Institute logo
+/**
+ * The image next to the dac section on this page
  * 
- * @returns AI logo as a clickable link to the homepage
+ * @returns This image as an html object
  */
   function DACMapImage() {
     return (
@@ -154,10 +150,10 @@ function OptimizationToolBlurb() {
   }
 
 
-      /**
- * The Anthropocene Institute logo
+/**
+ * The text for the algae bloom section of this page
  * 
- * @returns AI logo as a clickable link to the homepage
+ * @returns An HTML object of this text
  */
       function DACText() {
         return (
