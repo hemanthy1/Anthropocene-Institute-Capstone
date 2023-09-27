@@ -1,21 +1,24 @@
-.homebodyintro {
+.homebody-intro {
+    padding-bottom: 10vh;
+}
+
+
+.homebody-intro>h1 {
+    margin-top: 20vh;
     text-align: center;
 }
   
-.homebodyintro>h1 {
-    margin-top: 20vh;
-}
-  
-.homebodyintro>h3 {
+.homebody-intro>h3 {
     margin-left: 20vw;
     margin-right: 20vw;
+    text-align: center;
 }
   
-.homebodyintro>h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 5vw; font-style: normal; font-variant: normal; font-weight: 100; line-height: 26.4px; } 
-.homebodyintro>h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 2vw; font-style: normal; font-variant: normal; font-weight: 50; line-height: 3.5vw; } 
+.homebody-intro>h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 5vw; font-style: normal; font-variant: normal; font-weight: 100; line-height: 26.4px; } 
+.homebody-intro>h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 2vw; font-style: normal; font-variant: normal; font-weight: 50; line-height: 3.5vw; } 
 
 #environmental-bg {
-    top:10vh;
+    top:15vh;
     left:8vw;
     width: 100vw;
     position: absolute;
