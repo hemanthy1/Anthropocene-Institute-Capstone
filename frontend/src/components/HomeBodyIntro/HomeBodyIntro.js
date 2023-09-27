@@ -1,6 +1,12 @@
 import environmentalBackground from "../../assets/EnvironmentalBackground.png"
 import "./HomeBodyIntro.css"
 
+
+/**
+ * The first portion of the home page
+ * 
+ * @returns HTML that lays out the page
+ */
 function HomeBodyIntro() {
     return (
       <div className="homebody-intro">
@@ -12,15 +18,14 @@ function HomeBodyIntro() {
               necessary for completing their sustainability projects in the most efficient 
               and optimal way possible.
           </h3>
-
       </div>
     )
   }
   
-  /**
- * The Anthropocene Institute logo
+/**
+ * The background image of the top of the home page
  * 
- * @returns AI logo as a clickable link to the homepage
+ * @returns The image as an HTML element
  */
 function EnvironmentalBackground() {
   return (
