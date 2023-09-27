@@ -1,5 +1,5 @@
-
 import React from "react";
+import { Link } from "react-router-dom";
 import "./OptimizationToolBlurb.css"
 import algaeBloomMapImage from "../../assets/algaebloomsmapimg.png";
 import reforestationMapImage from "../../assets/reforestationmapimg.png";
@@ -22,8 +22,10 @@ function OptimizationToolBlurb() {
                 <AlgaeBloomMapImage/>
             </div>
             <div className="colRight">
+              <Link to="algaeblooms">
                 <h2 className="toolTitle">Algae Blooms</h2>
-                <AlgaeBloomText/>
+              </Link>
+              <AlgaeBloomText/>
             </div>
         </div>
 
@@ -34,8 +36,10 @@ function OptimizationToolBlurb() {
                 <ReforestationMapImage/>
             </div>
             <div className="colRight">
+              <Link to="reforestation">
                 <h2 className="toolTitle">Reforestation</h2>
-                <ReforestationText/>
+              </Link>
+              <ReforestationText/>
             </div>
         </div>
 
@@ -46,8 +50,10 @@ function OptimizationToolBlurb() {
                 <DACMapImage/>
             </div>
             <div className="colRight">
+              <Link to="dac">
                 <h2 className="toolTitle">Direct Air Capture</h2>
-                <DACText/>
+              </Link>
+              <DACText/>
             </div>
         </div>
     </div>

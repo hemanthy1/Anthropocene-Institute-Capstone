@@ -6,8 +6,9 @@
 .toolTitle{
   text-align: right;
   font-size: 2vw;
-  font-weight: 400;
+  font-weight: normal;
   letter-spacing: .05em;
+  color: #000000
 }
 
 .homePageText{

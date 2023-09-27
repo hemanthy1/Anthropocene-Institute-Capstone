@@ -8,6 +8,10 @@ import Faq from "./pages/Faq/Faq";
 import Data from "./pages/Data/Data";
 import Articles from "./pages/Articles/Articles";
 import NoPage from "./pages/NoPage/NoPage";
+import DirectAirCapture from './pages/DirectAirCapture/DirectAirCapture';
+import AlgaeBlooms from './pages/AlgaeBlooms/AlgaeBlooms';
+import Reforestation from './pages/Reforestation/Reforestation';
+
 
 function App() {
   return (
@@ -21,6 +25,9 @@ function App() {
             <Route path="faq" element={<Faq />} />
             <Route path="data" element={<Data />} />
             <Route path="articles" element={<Articles />} />
+            <Route path="dac" element={<DirectAirCapture />} />
+            <Route path="algaeblooms" element={<AlgaeBlooms />} />
+            <Route path="reforestation" element={<Reforestation />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
