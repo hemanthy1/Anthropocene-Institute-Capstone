@@ -3,7 +3,7 @@ import "./HomeBodyIntro.css"
 
 function HomeBodyIntro() {
     return (
-      <div class="homebody-intro">
+      <div className="homebody-intro">
           <EnvironmentalBackground/>
 
           <h1>Climate Solutions - Optimized</h1>
