@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import logoImage from "../../assets/logo.png"
 import menuBar from "../../assets/menu-bar.png"
@@ -63,9 +64,9 @@ function Navbar() {
 function Navlink(props) {
   return (
     <li className="navbar-item">
-      <a href={props.path} className="navbar-link">
+      <Link to={props.path} className="navbar-link">
         {props.children}
-      </a>
+      </Link>
     </li>
   );
 }
@@ -77,14 +78,14 @@ function Navlink(props) {
  */
 function LogoImage() {
   return (
-    <a href="/">
+    <Link to="/">
       <img 
         src={logoImage}
         alt="Anthropocene Institute Logo"
         loading="lazy"
         id="anth-logo"
       />
-    </a>
+    </Link>
   )
 }
 
