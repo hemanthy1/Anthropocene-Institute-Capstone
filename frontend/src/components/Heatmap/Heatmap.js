@@ -11,11 +11,11 @@ function Heatmap() {
   const map = useRef(null);
   const [lng, setLng] = useState(0);
   const [lat, setLat] = useState(0);
-  const [zoom, setZoom] = useState(3.57);
+  const [zoom, setZoom] = useState(3.4);
 
 
-  const sw = new mapboxgl.LngLat(-40, -30);
-  const ne = new mapboxgl.LngLat(40, 30);
+  const sw = new mapboxgl.LngLat(-45, -35);
+  const ne = new mapboxgl.LngLat(45, 35);
   const llb = new mapboxgl.LngLatBounds(sw, ne);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ function Heatmap() {
       style: 'mapbox://styles/jholsch29/cln2e89yr06mc01qb2p5jegml',
       center: [lng, lat],
       zoom: zoom,
-      minZoom: 3.57,
+      minZoom: 3.4,
       maxZoom: 10,
       maxBounds: llb
     });
@@ -40,10 +40,6 @@ function Heatmap() {
 
   return (
     <div>
-      <div className="sidebar">
-        Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
-      </div>
-
       <div ref={mapContainer} className="map-container" />
     </div>
   );

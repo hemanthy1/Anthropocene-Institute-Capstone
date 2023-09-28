@@ -1,0 +1,17 @@
+.article-wrap {
+  justify-content: center;
+  flex: 1 0 350px;
+}
+
+.article-image {
+  width: 100%;
+  height: 5%;
+}
+
+.article-link-wrap {
+  text-align: center;
+}
+
+.article-title {
+  text-align: center;
+}
