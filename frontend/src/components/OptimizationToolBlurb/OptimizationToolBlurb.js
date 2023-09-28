@@ -49,7 +49,7 @@ function OptimizationToolBlurb() {
             <div className= "colLeft">
                 <DACMapImage/>
             </div>
-            <div className="colRight">
+            <div className="bottomColRight">
               <Link to="dac">
                 <h2 className="toolTitle">Direct Air Capture</h2>
               </Link>
@@ -67,14 +67,14 @@ function OptimizationToolBlurb() {
  */
   function AlgaeBloomMapImage() {
     return (
-      <a href="/">
+      <Link to="/algaeblooms">
         <img 
           src={algaeBloomMapImage}
           alt="Algae Bloom Map Image"
           loading="lazy"
           id="mapimg"
         />
-      </a>
+      </Link>
     )
   }
 
@@ -107,14 +107,14 @@ function OptimizationToolBlurb() {
  */
   function ReforestationMapImage() {
     return (
-      <a href="/">
+      <Link to="/reforestation">
         <img 
           src={reforestationMapImage}
           alt="Reforestation Map Image"
           loading="lazy"
           id="mapimg"
         />
-      </a>
+      </Link>
     )
   }
 
@@ -144,14 +144,14 @@ function OptimizationToolBlurb() {
  */
   function DACMapImage() {
     return (
-      <a href="/">
+      <Link to="/dac">
         <img 
           src={dacMapImage}
           alt="Direct Air Capture Map Image"
           loading="lazy"
           id="mapimg"
         />
-      </a>
+      </Link>
     )
   }
 

@@ -36,6 +36,10 @@
   width: 28vw;
 }
 
+.bottomColRight{
+  width: 28vw;
+  padding-bottom: 12vh;
+}
 hr{
   margin-left: 10vw;
   width: 80vw;
@@ -57,3 +61,4 @@ hr{
   max-height: 80%;
   padding-right: 5vw;
 }
+
