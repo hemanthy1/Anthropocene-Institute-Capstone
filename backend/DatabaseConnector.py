@@ -1,5 +1,4 @@
 import os
-
 from google.cloud.sql.connector import Connector, IPTypes
 import pg8000
 
