@@ -36,7 +36,7 @@ def get_coordinates():
 
 @app.route('/')
 def index():
-    return('<h1>hello</h1>')
+    return('<h1>Main Page</h1>')
 
 
 if __name__ == '__main__':  
