@@ -49,7 +49,7 @@ function OptimizationToolBlurb() {
             <div className= "colLeft">
                 <DACMapImage/>
             </div>
-            <div className="colRight">
+            <div className="bottomColRight">
               <Link to="dac">
                 <h2 className="toolTitle">Direct Air Capture</h2>
               </Link>
