@@ -77,6 +77,8 @@ def scrape_land_price(state: str, county: str):
 
 if __name__ == '__main__':
     state = 'MI'
+    country = 'USA'
+
     michigan_counties = [
         'Alcona', 'Alger', 'Allegan', 'Alpena', 'Antrim', 'Arenac', 'Baraga', 'Barry',
         'Bay', 'Benzie', 'Berrien', 'Branch', 'Calhoun', 'Cass', 'Charlevoix', 'Cheboygan',
@@ -94,6 +96,9 @@ if __name__ == '__main__':
     engine = connect_with_connector()
     meta = sqlalchemy.MetaData()
     Reforestation = sqlalchemy.Table('reforestation_table', meta,
+                                     sqlalchemy.Column('county', sqlalchemy.String),
+                                     sqlalchemy.Column('state', sqlalchemy.String),
+                                     sqlalchemy.Column('country', sqlalchemy.String),
                                      sqlalchemy.Column('land_price', sqlalchemy.Float),
                                      sqlalchemy.Column('latitude', sqlalchemy.Float),
                                      sqlalchemy.Column('longitude', sqlalchemy.Float),
@@ -101,8 +106,12 @@ if __name__ == '__main__':
 
     with engine.connect() as connection:
         for county in michigan_counties:
-            cost = scrape_land_price('MI', county)
-        new_row_values = {"land_price": cost, "latitude": 0.0,
-                          "longitude": 0.0}  # TODO replace longitute/latitude
-        connection.execute(Reforestation.insert(), new_row_values)
+            cost = scrape_land_price(state, county)
+            new_row_values = {"county": county,
+                              "state": state,
+                              "country": country,
+                              "land_price": cost,
+                              "latitude": 0.0,
+                              "longitude": 0.0}  # TODO replace longitute/latitude
+            connection.execute(Reforestation.insert(), new_row_values)
 
