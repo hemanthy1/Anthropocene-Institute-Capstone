@@ -16,7 +16,7 @@ function Footer() {
           <div className="col">
               <ul className="names">
                   <li className="title">Contributors</li>
-                  <li className="link"><a href="https://www.linkedin.com/in/eden-haase-90b688212/">Jack Holscher</a></li>
+                  <li className="link"><a href="https://www.linkedin.com/in/jackson-holscher/">Jack Holscher</a></li>
                   <li className="link"><a href="https://www.linkedin.com/in/eden-haase-90b688212/">Ishita Kokil</a></li>
                   <li className="link"><a href="https://www.linkedin.com/in/nicholas-wang7190/">Nick Wang</a></li>
                   <li className="link"><a href="https://www.linkedin.com/in/eden-haase-90b688212/">Edie Haase</a></li>

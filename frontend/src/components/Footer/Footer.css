@@ -1,18 +1,24 @@
-
+.layout{
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+}
 .container {
+  margin-top:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content at the bottom */
+}
+.row{
   background-color: var(--secondary);
-  left: 0;
-  right:0;
-  bottom:0;
-  padding-left: 3vw;
-  padding-right: 3vw;
-  height: 24vh;
+  width: 100vw;
 }
 
 .col{
   display: inline-block;
   padding-right: 10vw;
   vertical-align: top;
+  margin-left: 3vw;
 }
 
 .names {
