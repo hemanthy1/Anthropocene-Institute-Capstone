@@ -6,15 +6,16 @@
 .toolTitle{
   text-align: right;
   font-size: 2vw;
-  font-weight: normal;
   letter-spacing: .05em;
-  color: #000000
+  color: #000000;
+  font-weight: bold;
 }
 
 .homePageText{
   color: #000000;
   font-size: 1.25vw;
-  text-align: right;
+  text-align: justify;
+  text-justify: inter-word;
   letter-spacing: .05em;
 }
 
@@ -46,7 +47,7 @@ hr{
   margin-bottom: 5vh;
 }
 
-.blurb-container>h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 4vw; font-style: normal; font-variant: normal; font-weight: 100; line-height: 26.4px; } 
+.blurb-container>h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 4vw; font-style: normal; font-variant: normal; font-weight: bold; line-height: 26.4px; }
 
 .blurb-container>h1 {
   text-align: right;

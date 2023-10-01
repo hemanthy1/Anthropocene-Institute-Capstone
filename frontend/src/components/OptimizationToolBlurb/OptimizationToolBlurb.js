@@ -126,14 +126,14 @@ function OptimizationToolBlurb() {
       function ReforestationText() {
         return (
           <p className="homePageText" >Reforestation plays a crucial role in carbon removal and 
-          ecosystem restoration efforts. Planting trees and restoring forests not onnly enhances 
+          ecosystem restoration efforts. Planting trees and restoring forests not only enhances
           biodiversity but also serves as a powerful carbon sink. As trees grow, they absorb carbon 
-          dioxide from the atmosphere during photosynthesis, coverting it into organic matter and 
+          dioxide from the atmosphere during photosynthesis, converting it into organic matter and
           locking it away in their biomass. This process helps combat climate change by reducing the 
           concentration of greenhouse gases in the atmosphere. Additionally, mature forests act as 
-          long-term carbon resevoirs, storing carbon for decades or even centuries. Reforestation 
+          long-term carbon resevoirs, storing carbon for decades or even centuries. Reforestation
           projects also offer numerous co-benefits, such as improving air and water quality, 
-          and providing hatibats for wildlife.</p>
+          and providing habitats for wildlife.</p>
         )
       }
 
