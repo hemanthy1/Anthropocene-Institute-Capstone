@@ -1,14 +1,11 @@
 import os
-import csv
 import time
 import sqlalchemy
 import pg8000
-from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from google.cloud.sql.connector import Connector, IPTypes
 from google.cloud import secretmanager
-import json
 import json
 
 # TODO
