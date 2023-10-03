@@ -1,9 +1,10 @@
 import React from 'react'
+import "./About.css"
 
 function About() {
   return (
     <div>
-      <h1>ABOUT</h1>
+      <h1>ABOUT (about us???)</h1>
       
       <h2>Project overview</h2>
     
