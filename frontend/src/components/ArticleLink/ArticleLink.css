@@ -1,17 +1,29 @@
 .article-wrap {
-  justify-content: center;
-  flex: 1 0 350px;
+  flex: 1 0 25rem;
+}
+
+.article-image:hover {
+  transform: scale(1.02)
 }
 
 .article-image {
   width: 100%;
-  height: 5%;
+  height: 60vh;
+  object-fit: fill;
+  border: 5px solid var(--secondary);
+  border-radius: 1%;
 }
 
 .article-link-wrap {
   text-align: center;
+  margin: 1rem;
 }
 
 .article-title {
   text-align: center;
+  color: var(--secondary)
+}
+
+.article-title:hover {
+  transform: scale(1.02);
 }

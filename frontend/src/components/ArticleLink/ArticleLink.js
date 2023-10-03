@@ -14,9 +14,11 @@ function ArticleLink(props) {
         </a>
       </div>
 
-      <h4 className="article-title">
-        {props.children}
-      </h4>
+      <a href={props.link} target="_blank">
+        <h4 className="article-title">
+          {props.children}
+        </h4>
+      </a>
     </div>
   );
 }
