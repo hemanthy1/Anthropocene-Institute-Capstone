@@ -1,0 +1,3194 @@
+State,County,Population,Temperature,Precipitation,Palmer-Z
+Alabama,Autauga,59759.0,66.1,51.89,-0.26
+Alabama,Baldwin,246435.0,70.1,50.71,-0.84
+Alabama,Barbour,24706.0,66.4,48.95,-0.22
+Alabama,Bibb,22005.0,64.4,53.22,-0.29
+Alabama,Blount,59512.0,62.5,60.68,0.24
+Alabama,Bullock,10202.0,66,52.37,0.08
+Alabama,Butler,18650.0,66.6,51.82,-0.41
+Alabama,Calhoun,115788.0,63,55.15,0
+Alabama,Chambers,34088.0,63,60.09,0.39
+Alabama,Cherokee,25302.0,61.9,58.58,0.27
+Alabama,Chilton,45884.0,64.5,53.86,-0.21
+Alabama,Choctaw,12439.0,66.9,57.14,0.12
+Alabama,Clarke,22515.0,67,59.79,0.1
+Alabama,Clay,14198.0,62.6,62.57,0.48
+Alabama,Cleburne,15346.0,62,55.56,0.05
+Alabama,Coffee,54805.0,67.2,49.33,-0.52
+Alabama,Colbert,58033.0,61.7,57.07,0.08
+Alabama,Conecuh,11206.0,67.2,46.3,-0.88
+Alabama,Coosa,10166.0,64,61.17,0.46
+Alabama,Covington,37602.0,67.6,47.76,-0.82
+Alabama,Crenshaw,13025.0,66.4,53.29,-0.24
+Alabama,Cullman,90665.0,62,63.31,0.37
+Alabama,Dale,49544.0,67.4,47.11,-0.5
+Alabama,Dallas,36767.0,66.6,51.41,-0.12
+Alabama,DeKalb,71998.0,60.3,60.21,0.34
+Alabama,Elmore,89563.0,65.7,57.19,0.25
+Alabama,Escambia,36666.0,68.2,46.95,-0.9
+Alabama,Etowah,103088.0,62.5,57.68,0.13
+Alabama,Fayette,16118.0,63.7,59.17,0.07
+Alabama,Franklin,31932.0,61.9,60.43,0.19
+Alabama,Geneva,26783.0,68,45.2,-0.83
+Alabama,Greene,7422.0,65.2,57.03,0.37
+Alabama,Hale,14595.0,65.1,52.94,-0.02
+Alabama,Henry,17655.0,67.5,45.45,-0.56
+Alabama,Houston,108079.0,68.3,40.44,-0.99
+Alabama,Jackson,52891.0,60.5,57.75,0.18
+Alabama,Jefferson,665409.0,63.9,53.63,-0.34
+Alabama,Lamar,13705.0,64.1,57.29,-0.06
+Alabama,Lauderdale,95878.0,60.8,55.57,0.01
+Alabama,Lawrence,33214.0,61.2,56.46,0.11
+Alabama,Lee,180773.0,64.4,58.36,0.42
+Alabama,Limestone,110900.0,60.9,56.91,0.12
+Alabama,Lowndes,9777.0,66.9,51.2,-0.04
+Alabama,Macon,18516.0,65.7,55.4,0.32
+Alabama,Madison,403565.0,61.4,57.92,0.11
+Alabama,Marengo,18745.0,66.2,53.62,0.05
+Alabama,Marion,29156.0,62.8,60.48,0.11
+Alabama,Marshall,99423.0,62,59.21,0.26
+Alabama,Mobile,411411.0,69.7,55.93,-0.55
+Alabama,Monroe,19404.0,67.3,50.48,-0.58
+Alabama,Montgomery,226361.0,66.6,52.66,0.12
+Alabama,Morgan,124211.0,61.8,58.97,0.19
+Alabama,Perry,8035.0,65.4,51.06,-0.23
+Alabama,Pickens,18697.0,64.9,61.59,0.46
+Alabama,Pike,33014.0,66.5,52.25,-0.18
+Alabama,Randolph,22479.0,62.5,59.01,0.2
+Alabama,Russell,58555.0,65.6,53.59,0.33
+Alabama,St.-Clair,93932.0,63.1,59.89,0.27
+Alabama,Shelby,230115.0,63.9,55.69,-0.02
+Alabama,Sumter,11853.0,65.8,54.08,0
+Alabama,Talladega,80704.0,63.7,61.64,0.57
+Alabama,Tallapoosa,40977.0,63.7,61.53,0.42
+Alabama,Tuscaloosa,236780.0,64.5,55.03,-0.1
+Alabama,Walker,64339.0,63.4,57.81,-0.13
+Alabama,Washington,15122.0,67.7,61.42,0.13
+Alabama,Wilcox,10059.0,66.9,51.76,-0.22
+Alabama,Winston,23755.0,61.7,63.59,0.35
+Alaska,Aleutians-East-Borough,3398.0,0,0,0
+Alaska,Aleutians-West-Census-Area,5122.0,0,0,0
+Alaska,Anchorage-Municipality,287145.0,0,0,0
+Alaska,Bethel-Census-Area,18257.0,0,0,0
+Alaska,Bristol-Bay-Borough,865.0,0,0,0
+Alaska,Chugach-Census-Area,6874.0,0,0,0
+Alaska,Copper-River-Census-Area,2589.0,0,0,0
+Alaska,Denali-Borough,1585.0,0,0,0
+Alaska,Dillingham-Census-Area,4723.0,0,0,0
+Alaska,Fairbanks-North-Star-Borough,95356.0,0,0,0
+Alaska,Haines-Borough,2056.0,0,0,0
+Alaska,Hoonah-Angoon-Census-Area,2287.0,0,0,0
+Alaska,Juneau-City-and-Borough,31685.0,0,0,0
+Alaska,Kenai-Peninsula-Borough,60690.0,0,0,0
+Alaska,Ketchikan-Gateway-Borough,13741.0,0,0,0
+Alaska,Kodiak-Island-Borough,12720.0,0,0,0
+Alaska,Kusilvak-Census-Area,8278.0,0,0,0
+Alaska,Lake-and-Peninsula-Borough,1381.0,0,0,0
+Alaska,Matanuska-Susitna-Borough,113325.0,0,0,0
+Alaska,Nome-Census-Area,9835.0,0,0,0
+Alaska,North-Slope-Borough,10805.0,0,0,0
+Alaska,Northwest-Arctic-Borough,7423.0,0,0,0
+Alaska,Petersburg-Borough,3360.0,0,0,0
+Alaska,Prince-of-Wales-Hyder-Census-Area,5650.0,0,0,0
+Alaska,Sitka-City-and-Borough,8382.0,0,0,0
+Alaska,Skagway-Municipality,1081.0,0,0,0
+Alaska,Southeast-Fairbanks-Census-Area,7021.0,0,0,0
+Alaska,Wrangell-City-and-Borough,2070.0,0,0,0
+Alaska,Yakutat-City-and-Borough,700.0,0,0,0
+Alaska,Yukon-Koyukuk-Census-Area,5179.0,0,0,0
+Arizona,Apache,65432.0,50.2,13.48,0.12
+Arizona,Cochise,125663.0,60.6,11.38,-0.53
+Arizona,Coconino,144060.0,52,16.22,0.8
+Arizona,Gila,53922.0,59.1,21.35,-0.04
+Arizona,Graham,38779.0,60.8,13.3,-0.29
+Arizona,Greenlee,9302.0,56.2,16.04,-0.17
+Arizona,La-Paz,16506.0,71.1,6.02,-0.18
+Arizona,Maricopa,4551524.0,70,8.67,0.16
+Arizona,Mohave,220816.0,61.5,12.16,0.62
+Arizona,Navajo,108650.0,51.4,14,0.81
+Arizona,Pima,1057597.0,67.1,10.1,-0.31
+Arizona,Pinal,464154.0,68.6,11.22,0.09
+Arizona,Santa-Cruz,48759.0,59.7,15.22,-0.16
+Arizona,Yavapai,246191.0,58.9,17.94,0.39
+Arizona,Yuma,207842.0,72,4.12,-0.47
+Arkansas,Arkansas,16512.0,64.3,52.01,-0.16
+Arkansas,Ashley,18354.0,65.8,53.65,-0.03
+Arkansas,Baxter,42435.0,58.7,52.48,0.66
+Arkansas,Benton,302863.0,58.9,50.6,0.32
+Arkansas,Boone,38284.0,58.4,47.25,0.18
+Arkansas,Bradley,10135.0,65,63.54,0.72
+Arkansas,Calhoun,4695.0,64.4,66.01,0.94
+Arkansas,Carroll,28742.0,58.3,47.84,0.14
+Arkansas,Chicot,9873.0,65.9,48.46,-0.37
+Arkansas,Clark,21250.0,63.3,57.63,0.3
+Arkansas,Clay,14265.0,60.5,49.26,-0.24
+Arkansas,Cleburne,25284.0,61.2,57.58,0.33
+Arkansas,Cleveland,7467.0,64.2,61.31,0.49
+Arkansas,Columbia,22216.0,64.6,57.52,0.46
+Arkansas,Conway,21046.0,61.7,52.87,0.13
+Arkansas,Craighead,113017.0,61.3,53.12,0.26
+Arkansas,Crawford,61075.0,61.6,48.35,-0.22
+Arkansas,Crittenden,47061.0,62.9,55.46,0.15
+Arkansas,Cross,16601.0,62.4,54.25,0.06
+Arkansas,Dallas,6191.0,63.4,60.93,0.53
+Arkansas,Desha,10771.0,64.6,54.45,0.07
+Arkansas,Drew,16911.0,65.1,57.65,0.26
+Arkansas,Faulkner,127665.0,62.1,54.09,0.07
+Arkansas,Franklin,17271.0,61.2,49.58,-0.09
+Arkansas,Fulton,12382.0,59,49.71,0.12
+Arkansas,Garland,100089.0,62.8,60.67,0.3
+Arkansas,Grant,18160.0,63.8,57.86,0.21
+Arkansas,Greene,46448.0,60.9,50.61,0
+Arkansas,Hempstead,19453.0,64,58.4,0.4
+Arkansas,Hot-Spring,33203.0,63.3,56.49,0.06
+Arkansas,Howard,12557.0,62.8,61.01,0.51
+Arkansas,Independence,37945.0,60.5,57.08,0.44
+Arkansas,Izard,14048.0,59.1,52.98,0.46
+Arkansas,Jackson,16624.0,61,55.38,0.25
+Arkansas,Jefferson,64246.0,64.2,54.98,-0.06
+Arkansas,Johnson,26001.0,60.4,53.9,0.19
+Arkansas,Lafayette,6101.0,65.5,55.49,0.32
+Arkansas,Lawrence,16205.0,60.3,51.19,0.17
+Arkansas,Lee,8364.0,63.4,54.36,-0.1
+Arkansas,Lincoln,12916.0,64.7,56.75,0.03
+Arkansas,Little-River,11821.0,64.9,56.05,0.43
+Arkansas,Logan,21253.0,62.2,49.88,0.02
+Arkansas,Lonoke,75225.0,63.4,53.64,-0.06
+Arkansas,Madison,17486.0,58.2,47.9,-0.12
+Arkansas,Marion,17254.0,58.6,47.27,0.25
+Arkansas,Miller,42552.0,66.1,53.26,0.24
+Arkansas,Mississippi,38896.0,61.8,51.92,0.12
+Arkansas,Monroe,6564.0,63.8,51.32,-0.22
+Arkansas,Montgomery,8556.0,62,62.22,0.51
+Arkansas,Nevada,8181.0,63.7,56.51,0.32
+Arkansas,Newton,7078.0,57.7,44.48,-0.38
+Arkansas,Ouachita,22049.0,63.9,60.86,0.65
+Arkansas,Perry,10063.0,62.4,55.13,0.36
+Arkansas,Phillips,15304.0,63.9,53.47,-0.15
+Arkansas,Pike,10179.0,62.6,62.23,0.45
+Arkansas,Poinsett,22495.0,61.8,54.24,0.29
+Arkansas,Polk,19337.0,60.9,62.5,0.59
+Arkansas,Pope,64065.0,60.6,53.69,0.2
+Arkansas,Prairie,8069.0,63.7,52.23,-0.17
+Arkansas,Pulaski,399145.0,63.1,57.2,0.17
+Arkansas,Randolph,18837.0,60,50.53,0.02
+Arkansas,St.-Francis,22451.0,63,53.48,-0.11
+Arkansas,Saline,127357.0,63,61.9,0.46
+Arkansas,Scott,9805.0,61.7,57.17,0.52
+Arkansas,Searcy,7918.0,57.9,48.59,0.16
+Arkansas,Sebastian,129059.0,62.6,51.55,0.32
+Arkansas,Sevier,15686.0,63.6,58.01,0.45
+Arkansas,Sharp,17810.0,59.2,51.2,0.13
+Arkansas,Stone,12575.0,59.3,55.05,0.45
+Arkansas,Union,37752.0,65.1,62.78,0.72
+Arkansas,Van-Buren,16102.0,59.6,52.83,0.07
+Arkansas,Washington,256054.0,59.3,48.44,-0.08
+Arkansas,White,77755.0,62.5,55.76,0.08
+Arkansas,Woodruff,6049.0,62.6,52.99,-0.07
+Arkansas,Yell,20129.0,62.4,52.73,0.15
+California,Alameda,1628997.0,58.8,31.85,1.33
+California,Alpine,1190.0,43.3,61.81,1.14
+California,Amador,41412.0,57.5,55.94,0.84
+California,Butte,207303.0,59.9,52.61,0.27
+California,Calaveras,46563.0,57.9,53.98,0.85
+California,Colusa,21914.0,60.8,30.95,1
+California,Contra-Costa,1156966.0,59.5,30.49,1.22
+California,Del-Norte,27082.0,51.8,67.05,-0.96
+California,El-Dorado,192646.0,53.3,68.08,0.88
+California,Fresno,1015190.0,55.2,34.2,1.21
+California,Glenn,28339.0,59.9,34.97,0.88
+California,Humboldt,135010.0,53.5,65.95,-0.33
+California,Imperial,178713.0,73.7,3.82,0.2
+California,Inyo,18718.0,59.6,10.37,1.99
+California,Kern,916108.0,60.9,15.01,1.74
+California,Kings,152981.0,63.5,13.48,2.18
+California,Lake,68191.0,56.6,57.91,0.71
+California,Lassen,29904.0,46.2,24.61,0.85
+California,Los-Angeles,9721138.0,60.6,27.26,1.28
+California,Madera,160256.0,55.8,35.15,0.78
+California,Marin,256018.0,55.4,47.27,0.63
+California,Mariposa,17020.0,54.7,53.99,0.99
+California,Mendocino,89783.0,54.8,62.71,0.52
+California,Merced,290014.0,62,19.33,1.73
+California,Modoc,8511.0,46.7,21.56,0.74
+California,Mono,12978.0,43.2,31.75,1.92
+California,Monterey,432858.0,57.9,33.72,1.23
+California,Napa,134300.0,58.9,43.13,0.74
+California,Nevada,102293.0,51.6,69.84,0.81
+California,Orange,3151184.0,63,23.34,1.52
+California,Placer,417772.0,52.9,67.53,0.97
+California,Plumas,19351.0,46.8,55.61,0.94
+California,Riverside,2473902.0,67.7,10.65,0.76
+California,Sacramento,1584169.0,61.9,27.34,0.73
+California,San-Benito,67579.0,58.3,26.18,1.07
+California,San-Bernardino,2193656.0,65.6,8.26,0.58
+California,San-Diego,3276208.0,61.7,23.82,1.52
+California,San-Francisco,808437.0,56.4,38.63,1.11
+California,San-Joaquin,793229.0,62,24.09,1.43
+California,San-Luis-Obispo,282013.0,58.7,32.51,1.5
+California,San-Mateo,729181.0,56.4,45.2,1.02
+California,Santa-Barbara,443837.0,57.6,34.41,1.36
+California,Santa-Clara,1870945.0,58,40.34,1.33
+California,Santa-Cruz,264370.0,57.1,56.8,1.14
+California,Shasta,180930.0,55.1,49.88,0.44
+California,Sierra,3217.0,46.2,63.24,0.93
+California,Siskiyou,43660.0,49.3,37.58,-0.3
+California,Solano,448747.0,60.4,31.24,1.08
+California,Sonoma,482650.0,56.3,54.52,0.69
+California,Stanislaus,551275.0,61.3,23.53,1.52
+California,Sutter,98503.0,62.5,26.96,1
+California,Tehama,65245.0,58.6,46.34,0.5
+California,Trinity,15781.0,52.6,66.71,0.21
+California,Tulare,477544.0,53.5,37.16,0.89
+California,Tuolumne,54531.0,49.4,69.29,1.27
+California,Ventura,832605.0,56.5,38.1,1.38
+California,Yolo,222115.0,61.4,30.02,1.02
+California,Yuba,84310.0,60.4,46.78,0.47
+Colorado,Adams,527575.0,48.6,23.45,2.18
+Colorado,Alamosa,16592.0,43.5,7.87,-0.87
+Colorado,Arapahoe,655808.0,48.2,24.46,1.97
+Colorado,Archuleta,14003.0,42.7,23.5,-0.01
+Colorado,Baca,3432.0,53.6,16.7,-0.26
+Colorado,Bent,5399.0,52.8,16.98,0.52
+Colorado,Boulder,327468.0,43.9,23.94,1.03
+Colorado,Broomfield,76121.0,49.7,20.56,1.75
+Colorado,Chaffee,20223.0,37.6,16.18,-0.11
+Colorado,Cheyenne,1732.0,51.1,16.3,0.1
+Colorado,Clear-Creek,9355.0,36.6,27.22,0.32
+Colorado,Conejos,7579.0,40.3,16.18,-0.04
+Colorado,Costilla,3603.0,42.4,14.63,-0.55
+Colorado,Crowley,5614.0,51.5,13.58,0.21
+Colorado,Custer,5335.0,41.2,16.35,-0.74
+Colorado,Delta,31602.0,46.2,20.49,0.55
+Colorado,Denver,713252.0,49.8,21.04,1.6
+Colorado,Dolores,2455.0,42.6,26.05,0.08
+Colorado,Douglas,375988.0,46.2,24.15,1.09
+Colorado,Eagle,55285.0,38.7,23.49,-0.09
+Colorado,Elbert,27799.0,47.2,23.25,1.35
+Colorado,El-Paso,740567.0,47.7,20.63,1.03
+Colorado,Fremont,49621.0,45,12.28,-0.64
+Colorado,Garfield,62271.0,42.8,29.19,0.85
+Colorado,Gilpin,5891.0,38.7,25.59,0.64
+Colorado,Grand,15769.0,36.4,23.66,0.22
+Colorado,Gunnison,17267.0,37.5,23.92,-0.06
+Colorado,Hinsdale,775.0,35.2,29.26,-0.29
+Colorado,Huerfano,7082.0,47,14.62,-0.73
+Colorado,Jackson,1302.0,35.8,25.28,0.15
+Colorado,Jefferson,576143.0,45.3,21.49,0.8
+Colorado,Kiowa,1424.0,51.8,17.44,0.73
+Colorado,Kit-Carson,6961.0,50.4,18.32,0.24
+Colorado,Lake,7327.0,34.2,22.75,-0.11
+Colorado,La-Plata,56607.0,44.3,23.83,-0.23
+Colorado,Larimer,366778.0,41.7,23.82,0.84
+Colorado,Las-Animas,14327.0,51.1,14.25,-0.82
+Colorado,Lincoln,5510.0,49.2,16.64,0.41
+Colorado,Logan,20823.0,48.1,20.12,1.01
+Colorado,Mesa,158636.0,47.2,20.21,0.73
+Colorado,Mineral,931.0,35.6,29.61,-0.16
+Colorado,Moffat,13177.0,42.4,17.99,0.87
+Colorado,Montezuma,26468.0,48.1,20.38,0.35
+Colorado,Montrose,43811.0,47.3,17.6,0.42
+Colorado,Morgan,29239.0,48.3,22.61,2.39
+Colorado,Otero,18303.0,52.6,15.15,0.27
+Colorado,Ouray,5100.0,41.3,21.74,-0.4
+Colorado,Park,17939.0,37.6,16.9,0.08
+Colorado,Phillips,4449.0,48.6,19.45,0.43
+Colorado,Pitkin,16876.0,37.1,30.48,0.1
+Colorado,Prowers,11854.0,53.1,18.83,0.63
+Colorado,Pueblo,169544.0,52.1,13.38,-0.36
+Colorado,Rio-Blanco,6569.0,43.1,23.41,0.81
+Colorado,Rio-Grande,11325.0,39.4,11.9,-0.6
+Colorado,Routt,25007.0,39.1,28.9,0.28
+Colorado,Saguache,6623.0,38.9,14.31,-0.47
+Colorado,San-Juan,803.0,34.6,43.17,-0.17
+Colorado,San-Miguel,8003.0,44.2,20.12,0.01
+Colorado,Sedgwick,2295.0,48.2,19.23,0.4
+Colorado,Summit,30565.0,35,25.14,-0.11
+Colorado,Teller,24857.0,39.5,18.87,-0.53
+Colorado,Washington,4812.0,48.1,21.32,1.32
+Colorado,Weld,350176.0,47.7,19.78,1.67
+Colorado,Yuma,9899.0,50,18.76,0.2
+Connecticut,Capitol-Planning-Region,981447.0,0,0,0
+Connecticut,Greater-Bridgeport-Planning-Region,327286.0,0,0,0
+Connecticut,Lower-Connecticut-River-Valley-Planning-Regio,176622.0,0,0,0
+Connecticut,Naugatuck-Valley-Planning-Region,454083.0,0,0,0
+Connecticut,Northeastern-Connecticut-Planning-Region,96196.0,0,0,0
+Connecticut,Northwest-Hills-Planning-Region,113234.0,0,0,0
+Connecticut,South-Central-Connecticut-Planning-Region,573244.0,0,0,0
+Connecticut,Southeastern-Connecticut-Planning-Region,280403.0,0,0,0
+Connecticut,Western-Connecticut-Planning-Region,623690.0,0,0,0
+Delaware,Kent,186946.0,57.1,40.71,-0.55
+Delaware,New-Castle,575494.0,56.4,44.46,-0.1
+Delaware,Sussex,255956.0,58.1,41.19,-0.58
+Florida,Alachua,284030.0,71.2,51.34,-0.24
+Florida,Baker,27803.0,70,44.87,-0.69
+Florida,Bay,185134.0,70.3,44.39,-0.99
+Florida,Bradford,27313.0,70.7,49.27,-0.33
+Florida,Brevard,630693.0,74.9,61.62,0.52
+Florida,Broward,1947026.0,77.8,75.14,0.89
+Florida,Calhoun,13464.0,69.5,40.24,-1.28
+Florida,Charlotte,202661.0,76.3,55.5,-0.29
+Florida,Citrus,162529.0,73.1,50.29,-0.63
+Florida,Clay,226589.0,71.5,50.67,-0.25
+Florida,Collier,397994.0,77.6,54.12,-0.64
+Florida,Columbia,71908.0,69.8,44.85,-0.63
+Florida,DeSoto,35312.0,75.1,60.57,0.09
+Florida,Dixie,17124.0,71.3,50.18,-0.66
+Florida,Duval,1016536.0,71.5,49.24,-0.35
+Florida,Escambia,324878.0,70.3,50,-0.93
+Florida,Flagler,126705.0,73.1,52.36,-0.52
+Florida,Franklin,12498.0,70.3,49.44,-0.74
+Florida,Gadsden,43403.0,69.6,39.39,-1.32
+Florida,Gilchrist,18992.0,71,49.05,-0.59
+Florida,Glades,12454.0,75.6,51.71,-0.46
+Florida,Gulf,15314.0,70.1,46.92,-0.89
+Florida,Hamilton,13217.0,69.2,45.34,-0.63
+Florida,Hardee,25645.0,75,59.24,-0.38
+Florida,Hendry,41339.0,76.4,49.09,-0.86
+Florida,Hernando,206896.0,73.8,49.16,-0.85
+Florida,Highlands,105618.0,75,61.39,0.22
+Florida,Hillsborough,1513301.0,75.1,54.4,-0.49
+Florida,Holmes,19651.0,68.6,44.29,-0.91
+Florida,Indian-River,167352.0,75.1,60.61,0.26
+Florida,Jackson,48211.0,69,38.31,-1.18
+Florida,Jefferson,15042.0,70.1,46.48,-0.83
+Florida,Lafayette,7786.0,70.4,52.31,-0.45
+Florida,Lake,410139.0,74.1,47.76,-0.89
+Florida,Lee,822453.0,77.6,49.65,-0.98
+Florida,Leon,297369.0,70.2,42.77,-1.26
+Florida,Levy,45260.0,72.1,48.84,-0.89
+Florida,Liberty,7603.0,69.7,42.83,-1.23
+Florida,Madison,18198.0,69.7,50.34,-0.51
+Florida,Manatee,429125.0,75,53.11,-0.64
+Florida,Marion,396415.0,72.8,53.62,-0.35
+Florida,Martin,162006.0,76.5,61.84,0.26
+Florida,Miami-Dade,2673837.0,78.4,65.64,0.27
+Florida,Monroe,81708.0,78.9,52.79,-0.75
+Florida,Nassau,97899.0,70.7,47.5,-0.45
+Florida,Okaloosa,216482.0,69.9,49.84,-0.78
+Florida,Okeechobee,40412.0,75.3,59.24,0.21
+Florida,Orange,1452726.0,75,56.33,-0.26
+Florida,Osceola,422545.0,75.3,58.13,-0.08
+Florida,Palm-Beach,1518477.0,76.9,63.34,0.02
+Florida,Pasco,608794.0,74.2,51.45,-0.66
+Florida,Pinellas,961739.0,75.4,44.89,-0.91
+Florida,Polk,787404.0,75.1,57.05,-0.33
+Florida,Putnam,74731.0,72.4,52.86,-0.28
+Florida,St.-Johns,306841.0,72.3,52.08,-0.2
+Florida,St.-Lucie,358704.0,75.9,62.8,0.46
+Florida,Santa-Rosa,198268.0,70,50.01,-0.9
+Florida,Sarasota,462286.0,75.2,55.95,-0.26
+Florida,Seminole,478772.0,74.8,57.66,-0.11
+Florida,Sumter,144970.0,73.6,48.67,-0.76
+Florida,Suwannee,45411.0,70,48.59,-0.55
+Florida,Taylor,21283.0,70.8,53.5,-0.45
+Florida,Union,15460.0,70.2,47.01,-0.46
+Florida,Volusia,579192.0,74,55.86,-0.33
+Florida,Wakulla,35178.0,70.5,44.84,-1.14
+Florida,Walton,83304.0,69.5,48.6,-0.85
+Florida,Washington,25414.0,69.3,42.64,-0.99
+Georgia,Appling,18428.0,68,52.38,0.15
+Georgia,Atkinson,8183.0,67.6,50.33,0.04
+Georgia,Bacon,11191.0,68.2,51.25,0.06
+Georgia,Baker,2788.0,68.6,45.67,-0.43
+Georgia,Baldwin,43635.0,65.4,49.83,0.33
+Georgia,Banks,19328.0,62.2,59.92,0.38
+Georgia,Barrow,89299.0,62.9,59.35,0.51
+Georgia,Bartow,112816.0,61.5,53.1,-0.12
+Georgia,Ben-Hill,17069.0,67,47.78,-0.07
+Georgia,Berrien,18214.0,67.3,46.54,-0.19
+Georgia,Bibb,156197.0,65.6,47.17,0.09
+Georgia,Bleckley,12257.0,66.2,46.57,-0.07
+Georgia,Brantley,18183.0,69.3,51.14,-0.3
+Georgia,Brooks,16253.0,68.4,42.33,-0.88
+Georgia,Bryan,48225.0,68.2,51.39,0.03
+Georgia,Bulloch,83059.0,67.3,54.86,0.5
+Georgia,Burke,24388.0,65.4,55.9,0.86
+Georgia,Butts,26649.0,64.4,50.04,-0.17
+Georgia,Calhoun,5469.0,67.9,47.06,-0.33
+Georgia,Camden,57013.0,70.4,47.25,-0.66
+Georgia,Candler,11000.0,67.1,54.46,0.59
+Georgia,Carroll,124592.0,62.1,58.95,0.28
+Georgia,Catoosa,68826.0,60.9,52.55,-0.16
+Georgia,Charlton,12781.0,70,47.69,-0.42
+Georgia,Chatham,301107.0,68.4,46.74,-0.27
+Georgia,Chattahoochee,8819.0,65.5,53.1,0.4
+Georgia,Chattooga,24936.0,61,62.4,0.52
+Georgia,Cherokee,281278.0,60.9,55.3,-0.05
+Georgia,Clarke,129875.0,63.5,60.49,0.64
+Georgia,Clay,2845.0,67.2,46.66,-0.38
+Georgia,Clayton,296564.0,63.6,51.14,-0.19
+Georgia,Clinch,6662.0,68.6,47.31,-0.35
+Georgia,Cobb,771952.0,62.3,52.98,-0.15
+Georgia,Coffee,43172.0,67.3,49.86,0.03
+Georgia,Colquitt,45762.0,67.8,42.33,-0.72
+Georgia,Columbia,162419.0,64.2,54.92,0.75
+Georgia,Cook,17404.0,67.6,43.02,-0.58
+Georgia,Coweta,152882.0,63.3,53.64,-0.06
+Georgia,Crawford,12140.0,65.2,47.99,0
+Georgia,Crisp,19708.0,67.3,48.17,-0.02
+Georgia,Dade,16081.0,59.8,55.62,0.07
+Georgia,Dawson,30138.0,59.5,63.14,0.23
+Georgia,Decatur,28982.0,69.2,39.34,-1.12
+Georgia,DeKalb,762820.0,63.1,55.32,0.09
+Georgia,Dodge,19802.0,66.3,45.8,-0.13
+Georgia,Dooly,10572.0,66.8,48.17,-0.02
+Georgia,Dougherty,82966.0,68.4,46.82,-0.19
+Georgia,Douglas,147316.0,62.5,54.96,0
+Georgia,Early,10574.0,68.2,41.69,-0.82
+Georgia,Echols,3686.0,68.7,43.66,-0.64
+Georgia,Effingham,69041.0,67.6,52,0.15
+Georgia,Elbert,19814.0,63.1,52.01,0.15
+Georgia,Emanuel,22929.0,66.3,53.15,0.55
+Georgia,Evans,10695.0,67.8,56.46,0.62
+Georgia,Fannin,25737.0,57,64.85,0.35
+Georgia,Fayette,122030.0,63.7,50.23,-0.28
+Georgia,Floyd,99443.0,61.5,58.55,0.32
+Georgia,Forsyth,267237.0,60.9,58.55,0.38
+Georgia,Franklin,24128.0,62.1,55.46,0.27
+Georgia,Fulton,1074634.0,62.8,54.31,-0.01
+Georgia,Gilmer,32407.0,58,66.61,0.3
+Georgia,Glascock,2939.0,64.4,54.77,0.71
+Georgia,Glynn,85079.0,70.1,47.25,-0.6
+Georgia,Gordon,58954.0,61.2,59,0.3
+Georgia,Grady,26008.0,69.2,43.43,-0.84
+Georgia,Greene,20139.0,64.3,54.75,0.48
+Georgia,Gwinnett,975353.0,62.3,58.14,0.42
+Georgia,Habersham,47475.0,59.6,62.92,-0.12
+Georgia,Hall,212692.0,61.3,60.66,0.34
+Georgia,Hancock,8387.0,64.7,52.82,0.52
+Georgia,Haralson,31337.0,61.3,56.84,0.1
+Georgia,Harris,36276.0,64,56.76,0.37
+Georgia,Hart,26909.0,62.1,52.06,0.1
+Georgia,Heard,11725.0,63,58.68,0.32
+Georgia,Henry,248364.0,63.9,52.38,-0.06
+Georgia,Houston,169631.0,66.2,47.21,-0.05
+Georgia,Irwin,9126.0,67,48.03,-0.05
+Georgia,Jackson,83936.0,62.9,60.2,0.58
+Georgia,Jasper,15951.0,64.6,47.53,-0.3
+Georgia,Jeff-Davis,14889.0,67.2,50.22,0.09
+Georgia,Jefferson,15314.0,64.8,54.76,0.77
+Georgia,Jenkins,8689.0,66,51.46,0.33
+Georgia,Johnson,9242.0,65.8,53.41,0.64
+Georgia,Jones,28472.0,65.1,47.07,-0.04
+Georgia,Lamar,19467.0,64.2,49.51,-0.27
+Georgia,Lanier,10171.0,67.7,46.64,-0.3
+Georgia,Laurens,49660.0,66.2,49.26,0.21
+Georgia,Lee,33642.0,67.8,48.16,-0.14
+Georgia,Liberty,68030.0,68.5,50.44,-0.07
+Georgia,Lincoln,7841.0,63.6,50.01,0.25
+Georgia,Long,18348.0,68.6,51.63,-0.02
+Georgia,Lowndes,119739.0,68.2,43.73,-0.64
+Georgia,Lumpkin,34796.0,58.7,66.19,0.17
+Georgia,McDuffie,21713.0,63.9,54.62,0.64
+Georgia,McIntosh,11180.0,69.5,48.25,-0.39
+Georgia,Macon,11765.0,66.1,48.58,-0.02
+Georgia,Madison,31473.0,62.9,59.13,0.58
+Georgia,Marion,7449.0,65.2,52.31,0.21
+Georgia,Meriwether,20845.0,63.6,52.11,-0.14
+Georgia,Miller,5807.0,68.6,40.7,-0.89
+Georgia,Mitchell,21116.0,68.7,44.99,-0.45
+Georgia,Monroe,29427.0,64.7,47.73,-0.2
+Georgia,Montgomery,8655.0,66.9,52.47,0.35
+Georgia,Morgan,21031.0,64.4,52.39,0.16
+Georgia,Murray,40472.0,60.2,62.56,0.44
+Georgia,Muscogee,202616.0,65.2,54.72,0.41
+Georgia,Newton,117621.0,63.9,51.99,-0.03
+Georgia,Oconee,43588.0,63.8,60.09,0.63
+Georgia,Oglethorpe,15469.0,63.6,56.86,0.5
+Georgia,Paulding,178421.0,61.8,51.7,-0.27
+Georgia,Peach,28562.0,65.7,47.56,0.03
+Georgia,Pickens,34826.0,59.6,61.92,0.2
+Georgia,Pierce,20168.0,69,52.47,0.03
+Georgia,Pike,19990.0,64,49.21,-0.36
+Georgia,Polk,43709.0,61.6,53.5,-0.11
+Georgia,Pulaski,9984.0,66.6,46.94,-0.11
+Georgia,Putnam,22984.0,64.8,47.94,-0.07
+Georgia,Quitman,2249.0,66.4,48.49,-0.11
+Georgia,Rabun,17206.0,57.1,61,-0.42
+Georgia,Randolph,6116.0,66.8,48.49,-0.2
+Georgia,Richmond,206640.0,65.1,56.72,0.98
+Georgia,Rockdale,94984.0,63.5,54.54,0.09
+Georgia,Schley,4496.0,65.9,49.89,0.02
+Georgia,Screven,13977.0,66.4,51.35,0.24
+Georgia,Seminole,9127.0,68.9,36.99,-1.19
+Georgia,Spalding,68919.0,64.1,50.55,-0.21
+Georgia,Stephens,26767.0,61.1,58.41,0.12
+Georgia,Stewart,4648.0,65.8,51.05,0.18
+Georgia,Sumter,28877.0,66.9,48.67,-0.1
+Georgia,Talbot,5747.0,64.3,55,0.3
+Georgia,Taliaferro,1600.0,63.9,53.55,0.38
+Georgia,Tattnall,24064.0,67.9,55.58,0.53
+Georgia,Taylor,7737.0,65.1,50.54,0.1
+Georgia,Telfair,12354.0,66.9,47.95,-0.03
+Georgia,Terrell,8754.0,67.4,48.53,-0.2
+Georgia,Thomas,45561.0,68.8,43.13,-0.86
+Georgia,Tift,41412.0,67.1,46.19,-0.23
+Georgia,Toombs,26837.0,67.4,54,0.47
+Georgia,Towns,12972.0,56.5,63.22,0.03
+Georgia,Treutlen,6365.0,66.5,52.96,0.49
+Georgia,Troup,70191.0,63.5,56.52,0.27
+Georgia,Turner,8842.0,67,47.78,-0.1
+Georgia,Twiggs,7680.0,65.9,47.12,0.04
+Georgia,Union,26388.0,56.7,65.8,0.33
+Georgia,Upson,28086.0,64.4,49.95,-0.12
+Georgia,Walker,68915.0,60.4,55.59,0.07
+Georgia,Walton,103065.0,63.4,57.19,0.38
+Georgia,Ware,35614.0,69.1,50.19,-0.16
+Georgia,Warren,5155.0,64,54.66,0.6
+Georgia,Washington,19738.0,65.4,53.49,0.65
+Georgia,Wayne,30896.0,68.8,51.6,-0.16
+Georgia,Webster,2328.0,66.1,49.42,-0.08
+Georgia,Wheeler,7314.0,66.8,49.94,0.16
+Georgia,White,28806.0,58.9,67.22,0.15
+Georgia,Whitfield,103132.0,60.9,56.77,0.13
+Georgia,Wilcox,8761.0,66.9,47.04,-0.09
+Georgia,Wilkes,9599.0,63.6,50.58,0.11
+Georgia,Wilkinson,8681.0,65.9,49.2,0.26
+Georgia,Worth,20424.0,67.6,45.95,-0.32
+Hawaii,Hawaii,206315.0,0,0,0
+Hawaii,Honolulu,995638.0,0,0,0
+Hawaii,Kalawao,82.0,0,0,0
+Hawaii,Kauai,73810.0,0,0,0
+Hawaii,Maui,164351.0,0,0,0
+Idaho,Ada,518907.0,51.4,13.92,0.79
+Idaho,Adams,4817.0,43.4,29.99,-0.49
+Idaho,Bannock,89517.0,44.1,24.66,0.84
+Idaho,Bear-Lake,6722.0,39.7,28.96,0.95
+Idaho,Benewah,10370.0,47.1,26.41,-1.02
+Idaho,Bingham,49923.0,43.3,15.68,0.7
+Idaho,Blaine,24866.0,41.1,22.24,0.64
+Idaho,Boise,8333.0,43,33.7,0.23
+Idaho,Bonner,51414.0,44.7,28.45,-1.25
+Idaho,Bonneville,129496.0,41.1,24.7,0.62
+Idaho,Boundary,13345.0,42.7,33.1,-0.88
+Idaho,Butte,2684.0,39.4,17.79,1.02
+Idaho,Camas,1153.0,41.1,26.44,0.26
+Idaho,Canyon,251065.0,51.7,10.89,0.9
+Idaho,Caribou,7190.0,40.8,29.48,0.97
+Idaho,Cassia,25655.0,45.2,18.42,0.85
+Idaho,Clark,806.0,38.6,18.59,0.07
+Idaho,Clearwater,9015.0,44.7,38.15,-0.95
+Idaho,Custer,4506.0,37.3,27.27,0.59
+Idaho,Elmore,29403.0,46.6,21.37,0.24
+Idaho,Franklin,15189.0,43.3,29.48,0.72
+Idaho,Fremont,13978.0,38.6,24.51,0.02
+Idaho,Gem,20418.0,48.6,20.79,0.48
+Idaho,Gooding,15715.0,48.9,10.08,-0.24
+Idaho,Idaho,17593.0,42.1,33,-0.72
+Idaho,Jefferson,33428.0,41.7,10.73,0.53
+Idaho,Jerome,25311.0,48.8,8.12,-0.49
+Idaho,Kootenai,183578.0,47,26.64,-1.1
+Idaho,Latah,40978.0,47.5,27.29,-0.84
+Idaho,Lemhi,8240.0,38.8,22.17,-0.13
+Idaho,Lewis,3763.0,46.3,21.76,-0.85
+Idaho,Lincoln,5329.0,46.4,10.17,-0.23
+Idaho,Madison,54976.0,41.9,17.87,0.55
+Idaho,Minidoka,22194.0,45.5,10.51,0.45
+Idaho,Nez-Perce,43004.0,49.8,19.86,-0.53
+Idaho,Oneida,4712.0,45,24.18,0.84
+Idaho,Owyhee,12613.0,46.7,13.08,0.45
+Idaho,Payette,26956.0,51.1,14.15,0.62
+Idaho,Power,8068.0,44.3,19.09,1.02
+Idaho,Shoshone,14012.0,43.9,37.62,-1.06
+Idaho,Teton,12544.0,38.5,27.77,0.64
+Idaho,Twin-Falls,93696.0,46.9,11.83,0.02
+Idaho,Valley,12464.0,39,33.22,-0.47
+Idaho,Washington,11087.0,47.9,21.9,0.12
+Illinois,Adams,64725.0,54,30.11,-0.67
+Illinois,Alexander,4858.0,58.9,52.64,0.13
+Illinois,Bond,16566.0,56.1,34.56,-0.33
+Illinois,Boone,53154.0,49.4,34.41,0.36
+Illinois,Brown,6330.0,53.3,28.95,-0.61
+Illinois,Bureau,32828.0,51.1,30.14,-0.33
+Illinois,Calhoun,4360.0,55.4,32.64,-0.24
+Illinois,Carroll,15529.0,49.7,31.8,0.08
+Illinois,Cass,12657.0,53.4,33.07,-0.07
+Illinois,Champaign,206542.0,53.1,30.67,-0.88
+Illinois,Christian,33436.0,54.3,34.53,0.1
+Illinois,Clark,15229.0,55,35.47,-0.35
+Illinois,Clay,13047.0,56.1,40.96,0.3
+Illinois,Clinton,36909.0,56.7,36.73,-0.43
+Illinois,Coles,46334.0,54.3,33.51,-0.47
+Illinois,Cook,5109292.0,51.5,32.59,-0.38
+Illinois,Crawford,18536.0,55.6,34.78,-0.53
+Illinois,Cumberland,10324.0,54.9,35.4,-0.13
+Illinois,DeKalb,100232.0,49.9,32.4,0.09
+Illinois,De-Witt,15310.0,53.3,32.88,-0.51
+Illinois,Douglas,19755.0,54,32.97,-0.74
+Illinois,DuPage,920901.0,51.2,33,-0.3
+Illinois,Edgar,16433.0,53.8,34.03,-0.6
+Illinois,Edwards,6071.0,56.7,41.29,-0.23
+Illinois,Effingham,34325.0,55.2,36.6,0.05
+Illinois,Fayette,21305.0,55.5,32.8,-0.32
+Illinois,Ford,13249.0,52.4,32.43,-0.43
+Illinois,Franklin,37242.0,57.2,44.08,-0.11
+Illinois,Fulton,33021.0,53.3,31.08,-0.74
+Illinois,Gallatin,4855.0,57.6,38.02,-0.89
+Illinois,Greene,11651.0,54.7,32.28,-0.17
+Illinois,Grundy,53041.0,51.8,28.87,-0.77
+Illinois,Hamilton,7984.0,57.1,39.11,-0.63
+Illinois,Hancock,17244.0,53.1,33.83,-0.17
+Illinois,Hardin,3597.0,57.9,41.24,-0.75
+Illinois,Henderson,6151.0,52.1,32.65,-0.6
+Illinois,Henry,48419.0,51.3,29.61,-0.45
+Illinois,Iroquois,26473.0,52,32.62,-0.41
+Illinois,Jackson,52617.0,57.2,45.36,-0.22
+Illinois,Jasper,9212.0,55.5,37.84,0.01
+Illinois,Jefferson,36400.0,57,36.39,-0.79
+Illinois,Jersey,21246.0,55.7,31.87,-0.4
+Illinois,Jo-Daviess,21758.0,48.7,31.85,0.17
+Illinois,Johnson,13381.0,57.7,52.92,0.22
+Illinois,Kane,514182.0,50.3,33.26,0.03
+Illinois,Kankakee,106074.0,51.7,30.74,-0.58
+Illinois,Kendall,137254.0,51.2,31.34,-0.38
+Illinois,Knox,48640.0,51.8,33.71,-0.25
+Illinois,Lake,709150.0,50.3,32.82,-0.08
+Illinois,LaSalle,108078.0,51.3,30.42,-0.4
+Illinois,Lawrence,14914.0,56,39.67,-0.11
+Illinois,Lee,33848.0,50.4,33.61,0.19
+Illinois,Livingston,35521.0,52.6,31.92,-0.47
+Illinois,Logan,27591.0,53.6,32.47,-0.24
+Illinois,McDonough,26861.0,52.4,33.2,-0.33
+Illinois,McHenry,311747.0,49.6,31.06,-0.18
+Illinois,McLean,171141.0,53,31.64,-0.74
+Illinois,Macon,101483.0,53.8,32.82,-0.2
+Illinois,Macoupin,44245.0,54.8,33.36,-0.14
+Illinois,Madison,263864.0,56.3,34.75,-0.15
+Illinois,Marion,36914.0,56.3,38.63,-0.11
+Illinois,Marshall,11678.0,52.3,30.23,-0.55
+Illinois,Mason,12748.0,53.8,31.17,-0.32
+Illinois,Massac,13896.0,58.9,55.27,0.2
+Illinois,Menard,12121.0,53.4,32.7,0.01
+Illinois,Mercer,15504.0,51.7,30.37,-0.49
+Illinois,Monroe,35033.0,57.5,33.75,-0.73
+Illinois,Montgomery,28020.0,54.9,36.14,0.2
+Illinois,Morgan,32209.0,53.6,33.92,0.05
+Illinois,Moultrie,14323.0,54,32.7,-0.53
+Illinois,Ogle,51351.0,49.7,32.68,0.17
+Illinois,Peoria,178383.0,53.3,32.76,-0.55
+Illinois,Perry,20588.0,57,41.3,-0.37
+Illinois,Piatt,16723.0,53.5,31.88,-0.65
+Illinois,Pike,14484.0,54.2,30.64,-0.58
+Illinois,Pope,3770.0,57.9,49.51,-0.19
+Illinois,Pulaski,4991.0,58.9,55.93,0.38
+Illinois,Putnam,5572.0,51.9,28.44,-0.53
+Illinois,Randolph,30068.0,56.9,39.17,-0.42
+Illinois,Richland,15435.0,56,40.43,0.21
+Illinois,Rock-Island,141527.0,51.7,28.79,-0.71
+Illinois,St.-Clair,252671.0,57,34.7,-0.47
+Illinois,Saline,23087.0,57.3,41.51,-0.49
+Illinois,Sangamon,194534.0,53.8,33.71,0.14
+Illinois,Schuyler,6746.0,53.2,31.64,-0.36
+Illinois,Scott,4790.0,53.9,32.26,-0.14
+Illinois,Shelby,20761.0,54.4,33.75,-0.1
+Illinois,Stark,5345.0,51.7,30.31,-0.37
+Illinois,Stephenson,43627.0,48.7,33.34,0.34
+Illinois,Tazewell,129911.0,53.6,31.46,-0.63
+Illinois,Union,16767.0,57.8,49.5,-0.05
+Illinois,Vermilion,72337.0,52.7,31.4,-0.79
+Illinois,Wabash,11087.0,56.6,41.74,-0.11
+Illinois,Warren,16354.0,51.6,33.38,-0.43
+Illinois,Washington,13643.0,56.8,37.82,-0.55
+Illinois,Wayne,15872.0,56.8,37.9,-0.59
+Illinois,White,13614.0,57.3,40.79,-0.53
+Illinois,Whiteside,54658.0,50.9,30.41,-0.51
+Illinois,Will,696757.0,51.4,30.84,-0.59
+Illinois,Williamson,66695.0,57.1,47.44,0.07
+Illinois,Winnebago,282188.0,49.5,33.55,0.29
+Illinois,Woodford,38128.0,52.8,32.17,-0.52
+Indiana,Adams,36068.0,51.9,34.23,-0.19
+Indiana,Allen,391449.0,51.6,33.64,-0.03
+Indiana,Bartholomew,83540.0,54.8,39.53,-0.26
+Indiana,Benton,8719.0,52,33.29,-0.63
+Indiana,Blackford,11919.0,52.4,31.74,-1.01
+Indiana,Boone,74164.0,52.4,32.5,-0.99
+Indiana,Brown,15570.0,54.1,41.55,-0.22
+Indiana,Carroll,20555.0,52.2,31.85,-0.99
+Indiana,Cass,37540.0,51.8,31.62,-0.94
+Indiana,Clark,124237.0,56,45.18,0.21
+Indiana,Clay,26379.0,54.6,36.98,-0.54
+Indiana,Clinton,32843.0,52.2,32.48,-0.99
+Indiana,Crawford,10536.0,54.9,47.31,0.33
+Indiana,Daviess,33418.0,55.7,41.29,-0.11
+Indiana,Dearborn,51138.0,54.8,40.95,-0.07
+Indiana,Decatur,26416.0,54.1,38.25,-0.48
+Indiana,DeKalb,43731.0,50.8,32.16,-0.1
+Indiana,Delaware,112031.0,53.1,33.36,-0.94
+Indiana,Dubois,43632.0,55.2,45.61,0.28
+Indiana,Elkhart,206890.0,51.1,33.38,-0.41
+Indiana,Fayette,23349.0,52.7,37.91,-0.34
+Indiana,Floyd,80714.0,56.4,44.11,-0.14
+Indiana,Fountain,16574.0,52.6,32.14,-0.78
+Indiana,Franklin,23028.0,53.6,40.42,-0.22
+Indiana,Fulton,20327.0,51.2,35.03,-0.46
+Indiana,Gibson,32993.0,57,42.32,-0.36
+Indiana,Grant,66022.0,52.4,33.64,-0.79
+Indiana,Greene,31006.0,54.9,42.1,-0.3
+Indiana,Hamilton,364921.0,52.8,33.7,-0.68
+Indiana,Hancock,83070.0,53.4,36.46,-0.53
+Indiana,Harrison,39851.0,56.2,45.16,-0.06
+Indiana,Hendricks,182534.0,53,35.46,-0.75
+Indiana,Henry,48915.0,52.5,35.2,-0.65
+Indiana,Howard,83574.0,52,32.2,-0.89
+Indiana,Huntington,36834.0,51.6,34.88,-0.21
+Indiana,Jackson,46300.0,55,40.83,-0.18
+Indiana,Jasper,33281.0,51.5,31.79,-0.63
+Indiana,Jay,20198.0,52,32.59,-0.87
+Indiana,Jefferson,32946.0,55.6,45.63,0.52
+Indiana,Jennings,27536.0,55.1,39,-0.36
+Indiana,Johnson,165782.0,54,38.19,-0.52
+Indiana,Knox,35789.0,56.2,40.16,-0.2
+Indiana,Kosciusko,80826.0,51.1,33.6,-0.58
+Indiana,LaGrange,40866.0,50.9,30.97,-0.49
+Indiana,Lake,499689.0,51.3,32.17,-0.57
+Indiana,LaPorte,111675.0,51,36.92,-0.13
+Indiana,Lawrence,45222.0,54.3,46.05,0.16
+Indiana,Madison,131744.0,53.2,33.79,-0.9
+Indiana,Marion,969466.0,53.6,35.9,-0.64
+Indiana,Marshall,46332.0,51,33.48,-0.75
+Indiana,Martin,9803.0,54.8,45.5,0.19
+Indiana,Miami,35674.0,51.8,32.67,-0.81
+Indiana,Monroe,139745.0,53.9,42.08,-0.34
+Indiana,Montgomery,38273.0,52.5,33.19,-0.88
+Indiana,Morgan,72236.0,53.9,39.06,-0.39
+Indiana,Newton,13823.0,51.7,34.03,-0.28
+Indiana,Noble,47367.0,50.9,31.73,-0.41
+Indiana,Ohio,6114.0,55.6,40.35,0.02
+Indiana,Orange,19623.0,54.4,47.3,0.33
+Indiana,Owen,21482.0,54.1,40.19,-0.39
+Indiana,Parke,16369.0,53.1,32.1,-0.76
+Indiana,Perry,19183.0,55.5,49.01,0.58
+Indiana,Pike,12168.0,56.2,41.69,-0.18
+Indiana,Porter,174791.0,51.1,35.71,-0.25
+Indiana,Posey,25063.0,57.7,40.1,-0.68
+Indiana,Pulaski,12485.0,51.2,34.13,-0.38
+Indiana,Putnam,37301.0,53,35.7,-0.58
+Indiana,Randolph,24437.0,51.9,33.95,-0.74
+Indiana,Ripley,29087.0,54.3,40.35,-0.24
+Indiana,Rush,16673.0,53.2,37,-0.47
+Indiana,St.-Joseph,272234.0,51,36.8,-0.25
+Indiana,Scott,24588.0,55.6,43.75,0.23
+Indiana,Shelby,44991.0,54.3,37.03,-0.57
+Indiana,Spencer,19967.0,56.5,46.23,0.18
+Indiana,Starke,23258.0,51.2,35.26,-0.28
+Indiana,Steuben,34725.0,50.2,31.69,-0.18
+Indiana,Sullivan,20670.0,55.8,36.89,-0.53
+Indiana,Switzerland,10006.0,55.9,41.79,0.16
+Indiana,Tippecanoe,188717.0,52.6,32.55,-0.88
+Indiana,Tipton,15361.0,52.2,31.34,-0.91
+Indiana,Union,6952.0,52.7,38.02,-0.38
+Indiana,Vanderburgh,179744.0,57.8,40.91,-0.63
+Indiana,Vermillion,15451.0,53.3,31.84,-0.75
+Indiana,Vigo,106006.0,55.1,35.36,-0.68
+Indiana,Wabash,30828.0,51.7,34.38,-0.5
+Indiana,Warren,8461.0,52.4,32.86,-0.72
+Indiana,Warrick,65185.0,57,43.62,-0.24
+Indiana,Washington,28224.0,54.8,44.43,0.04
+Indiana,Wayne,66273.0,51.9,34.07,-0.69
+Indiana,Wells,28335.0,51.9,34.07,-0.34
+Indiana,White,24598.0,51.9,31.84,-0.7
+Indiana,Whitley,34627.0,51.1,33.53,-0.22
+Iowa,Adair,7494.0,49.6,27.65,-0.6
+Iowa,Adams,3611.0,50.3,28.86,-0.54
+Iowa,Allamakee,13960.0,46.9,25.23,-0.31
+Iowa,Appanoose,12094.0,51.3,31.18,-0.34
+Iowa,Audubon,5598.0,48.6,24.13,-0.85
+Iowa,Benton,25711.0,49.1,22.08,-1.3
+Iowa,Black-Hawk,130274.0,48.8,23.26,-0.98
+Iowa,Boone,26609.0,49.1,29.35,-0.02
+Iowa,Bremer,25259.0,47.6,23.06,-0.89
+Iowa,Buchanan,20714.0,48,24.49,-0.82
+Iowa,Buena-Vista,20600.0,46.9,23.17,-0.71
+Iowa,Butler,14269.0,47.7,22.63,-0.9
+Iowa,Calhoun,9725.0,47.7,23.06,-0.85
+Iowa,Carroll,20567.0,48.5,23.12,-0.99
+Iowa,Cass,13104.0,49.8,25.39,-0.78
+Iowa,Cedar,18399.0,50,26.3,-0.83
+Iowa,Cerro-Gordo,42409.0,46.4,24.49,-0.4
+Iowa,Cherokee,11491.0,47,25.74,-0.35
+Iowa,Chickasaw,11716.0,46.5,23.19,-0.75
+Iowa,Clarke,9692.0,50.9,30.08,-0.46
+Iowa,Clay,16475.0,46.4,26.22,-0.21
+Iowa,Clayton,17027.0,47.4,25.21,-0.46
+Iowa,Clinton,46344.0,50.9,27.38,-0.65
+Iowa,Crawford,16123.0,49.2,22.76,-1.05
+Iowa,Dallas,108016.0,50.1,26.79,-0.53
+Iowa,Davis,9130.0,51.5,31.19,-0.4
+Iowa,Decatur,7683.0,51.6,31.3,-0.47
+Iowa,Delaware,17568.0,47.8,26.65,-0.53
+Iowa,Des-Moines,38293.0,52,33.63,-0.45
+Iowa,Dickinson,18028.0,45.6,25,-0.02
+Iowa,Dubuque,98677.0,48.4,26.64,-0.58
+Iowa,Emmet,9176.0,45.5,24.99,-0.34
+Iowa,Fayette,19294.0,46.7,23.62,-0.66
+Iowa,Floyd,15337.0,46.6,23.94,-0.52
+Iowa,Franklin,9916.0,47.1,23.33,-0.83
+Iowa,Fremont,6464.0,51.7,25.36,-1.1
+Iowa,Greene,8741.0,48.6,26.52,-0.39
+Iowa,Grundy,12356.0,48.2,23.34,-0.89
+Iowa,Guthrie,10647.0,49.1,25.7,-0.53
+Iowa,Hamilton,14820.0,47.6,26.37,-0.25
+Iowa,Hancock,10685.0,46,24.31,-0.62
+Iowa,Hardin,16567.0,48,24.98,-0.55
+Iowa,Harrison,14658.0,50.2,23.17,-1.01
+Iowa,Henry,20196.0,51.5,30.39,-0.75
+Iowa,Howard,9533.0,45.5,24.71,-0.42
+Iowa,Humboldt,9572.0,47,22.86,-1.12
+Iowa,Ida,6888.0,48.2,23.45,-0.79
+Iowa,Iowa,16475.0,50,24.15,-1.18
+Iowa,Jackson,19324.0,49.8,26.58,-0.56
+Iowa,Jasper,37938.0,50.1,28.91,-0.52
+Iowa,Jefferson,15698.0,50.8,28.87,-0.77
+Iowa,Johnson,156420.0,50.2,24.99,-0.99
+Iowa,Jones,20848.0,49.5,23.76,-0.96
+Iowa,Keokuk,9904.0,50.5,26.2,-0.96
+Iowa,Kossuth,14475.0,46.1,24.8,-0.64
+Iowa,Lee,32840.0,52.5,36.07,-0.12
+Iowa,Linn,229033.0,49.5,23.86,-1.01
+Iowa,Louisa,10677.0,51.8,28.02,-0.9
+Iowa,Lucas,8689.0,50.9,28.66,-0.5
+Iowa,Lyon,12179.0,45.6,21.58,-0.54
+Iowa,Madison,17036.0,50.5,27.27,-0.68
+Iowa,Mahaska,21946.0,50.9,28.43,-0.67
+Iowa,Marion,33642.0,50.7,30.03,-0.28
+Iowa,Marshall,39879.0,49,25.75,-0.62
+Iowa,Mills,14553.0,51.2,24.32,-1.2
+Iowa,Mitchell,10532.0,45.8,25.29,-0.24
+Iowa,Monona,8486.0,49.7,21.96,-1.1
+Iowa,Monroe,7550.0,51.2,28.79,-0.54
+Iowa,Montgomery,10205.0,50.8,24.97,-1.06
+Iowa,Muscatine,42377.0,50.7,27.71,-0.6
+Iowa,O'Brien,14060.0,46.3,26.07,-0.24
+Iowa,Osceola,6036.0,45.6,23.61,-0.39
+Iowa,Page,15143.0,51.3,26.32,-0.89
+Iowa,Palo-Alto,8764.0,46.1,25.52,-0.49
+Iowa,Plymouth,25681.0,47.5,25.24,-0.43
+Iowa,Pocahontas,7053.0,46.8,23.11,-0.8
+Iowa,Polk,501089.0,50.3,27.19,-0.42
+Iowa,Pottawattamie,93173.0,50.5,24.81,-1.11
+Iowa,Poweshiek,18467.0,49.8,26.06,-0.97
+Iowa,Ringgold,4670.0,51.3,29.95,-0.64
+Iowa,Sac,9673.0,48,22.1,-1
+Iowa,Scott,173924.0,51.5,28.93,-0.68
+Iowa,Shelby,11645.0,49.3,23.99,-0.99
+Iowa,Sioux,36050.0,46.3,24.12,-0.46
+Iowa,Story,99673.0,49.2,30.24,0.07
+Iowa,Tama,16903.0,48.8,23.24,-1.19
+Iowa,Taylor,5858.0,51,29.97,-0.55
+Iowa,Union,11887.0,50.4,29.41,-0.58
+Iowa,Van-Buren,7256.0,51.4,31.72,-0.52
+Iowa,Wapello,35043.0,51.2,27.56,-0.82
+Iowa,Warren,54327.0,50.7,27.3,-0.51
+Iowa,Washington,22571.0,50.7,26.45,-0.95
+Iowa,Wayne,6467.0,51.1,30.55,-0.5
+Iowa,Webster,36626.0,47.6,24.8,-0.63
+Iowa,Winnebago,10617.0,45.6,24.15,-0.5
+Iowa,Winneshiek,19974.0,46.8,25.44,-0.43
+Iowa,Woodbury,105671.0,48.7,23.05,-0.9
+Iowa,Worth,7319.0,45.9,23.97,-0.48
+Iowa,Wright,12681.0,46.7,24.01,-0.76
+Kansas,Allen,12579.0,57.2,29.92,-0.65
+Kansas,Anderson,7776.0,56.3,29.39,-0.65
+Kansas,Atchison,16108.0,54.2,30.36,-0.28
+Kansas,Barber,4122.0,57.8,26.98,-0.14
+Kansas,Barton,25080.0,55.1,24.62,-0.55
+Kansas,Bourbon,14493.0,57.1,28.59,-0.93
+Kansas,Brown,9364.0,53.5,29.56,-0.34
+Kansas,Butler,68240.0,57.6,23.39,-1.19
+Kansas,Chase,2548.0,56.4,24.28,-0.69
+Kansas,Chautauqua,3415.0,58.5,24.42,-1.27
+Kansas,Cherokee,19088.0,59.2,35.85,-0.51
+Kansas,Cheyenne,2583.0,51,20.78,0.09
+Kansas,Clark,1933.0,57.2,25.36,-0.1
+Kansas,Clay,8043.0,55.3,22.72,-1.22
+Kansas,Cloud,8946.0,55,21.93,-1.4
+Kansas,Coffey,8280.0,57.1,24.84,-1.08
+Kansas,Comanche,1681.0,57.4,27.29,0.16
+Kansas,Cowley,34453.0,58.4,25.06,-1.04
+Kansas,Crawford,39078.0,58.1,32.37,-0.73
+Kansas,Decatur,2689.0,51.7,20.94,-0.52
+Kansas,Dickinson,18430.0,56.3,24.85,-0.87
+Kansas,Doniphan,7440.0,53.6,30.42,-0.19
+Kansas,Douglas,119964.0,56,30.39,-0.47
+Kansas,Edwards,2739.0,55.9,18.97,-0.98
+Kansas,Elk,2441.0,58,22.37,-1.48
+Kansas,Ellis,28941.0,54.3,18.94,-1.01
+Kansas,Ellsworth,6355.0,56.1,24.2,-0.86
+Kansas,Finney,37650.0,54.4,19.01,-0.64
+Kansas,Ford,33848.0,55.8,20.83,-0.82
+Kansas,Franklin,25992.0,56.2,31.17,-0.46
+Kansas,Geary,35691.0,55.9,25.69,-0.66
+Kansas,Gove,2717.0,53.4,17.64,-0.86
+Kansas,Graham,2411.0,53.2,18.09,-1.12
+Kansas,Grant,7197.0,54.9,18.88,-0.38
+Kansas,Gray,5729.0,55.1,20.62,-0.66
+Kansas,Greeley,1223.0,51.9,18.95,0.17
+Kansas,Greenwood,5939.0,57.4,21.99,-1.38
+Kansas,Hamilton,2430.0,53.6,19.95,0.29
+Kansas,Harper,5323.0,58.2,28.96,-0.1
+Kansas,Harvey,33801.0,57.2,20.87,-1.32
+Kansas,Haskell,3576.0,55,20.68,-0.49
+Kansas,Hodgeman,1755.0,55.5,17.2,-1.05
+Kansas,Jackson,13286.0,54.2,29.22,-0.36
+Kansas,Jefferson,18344.0,55.3,29.17,-0.57
+Kansas,Jewell,2898.0,53.5,20.33,-1.42
+Kansas,Johnson,619195.0,56.2,29.4,-0.63
+Kansas,Kearny,3855.0,54.2,20.79,0.05
+Kansas,Kingman,7193.0,57.1,26.03,-0.41
+Kansas,Kiowa,2404.0,56.5,23.45,-0.39
+Kansas,Labette,19757.0,58.6,32.24,-0.71
+Kansas,Lane,1556.0,54,16.44,-1.01
+Kansas,Leavenworth,82892.0,55.8,30.18,-0.54
+Kansas,Lincoln,2899.0,55.7,21.14,-1.23
+Kansas,Linn,9796.0,56.5,31.03,-0.59
+Kansas,Logan,2705.0,52.9,20.75,-0.09
+Kansas,Lyon,31898.0,56.7,25.71,-0.84
+Kansas,McPherson,30012.0,56.5,22.17,-0.98
+Kansas,Marion,11868.0,56.4,21.98,-1.15
+Kansas,Marshall,9982.0,52.5,27.32,-0.14
+Kansas,Meade,3897.0,56.7,23.58,-0.26
+Kansas,Miami,34867.0,56.4,30.45,-0.61
+Kansas,Mitchell,5738.0,54.4,19.88,-1.36
+Kansas,Montgomery,30996.0,58.8,28.19,-0.87
+Kansas,Morris,5349.0,55.6,24.27,-0.82
+Kansas,Morton,2599.0,55.2,18.95,-0.15
+Kansas,Nemaha,10115.0,52.7,29.59,-0.15
+Kansas,Neosho,15606.0,57.8,31.76,-0.65
+Kansas,Ness,2645.0,54.5,15.11,-1.19
+Kansas,Norton,5301.0,52,21.07,-0.7
+Kansas,Osage,15654.0,56.5,26.86,-0.78
+Kansas,Osborne,3490.0,54.2,21.1,-1.09
+Kansas,Ottawa,5795.0,55.8,21.46,-1.28
+Kansas,Pawnee,6179.0,55.2,18.34,-1.06
+Kansas,Phillips,4809.0,52.6,20.3,-0.95
+Kansas,Pottawatomie,26273.0,54.3,26.31,-0.51
+Kansas,Pratt,9067.0,56.8,22.89,-0.56
+Kansas,Rawlins,2528.0,51.3,22.07,0.15
+Kansas,Reno,61516.0,56.6,22.61,-0.78
+Kansas,Republic,4642.0,53.8,20.84,-1.49
+Kansas,Rice,9407.0,55.9,24.93,-0.4
+Kansas,Riley,71108.0,55,25.31,-0.58
+Kansas,Rooks,4813.0,53.7,19.99,-0.95
+Kansas,Rush,2927.0,54.5,18.4,-1.03
+Kansas,Russell,6639.0,55.6,20.89,-1.28
+Kansas,Saline,53596.0,56.5,25.03,-0.8
+Kansas,Scott,5014.0,53.7,17.94,-0.75
+Kansas,Sedgwick,525525.0,58,23.44,-0.99
+Kansas,Seward,21358.0,56.4,21.89,-0.34
+Kansas,Shawnee,177480.0,56,27,-0.74
+Kansas,Sheridan,2425.0,52.3,19.5,-0.86
+Kansas,Sherman,5830.0,51.3,20.58,0.09
+Kansas,Smith,3533.0,52.7,21.86,-0.9
+Kansas,Stafford,3993.0,55.5,22.44,-0.62
+Kansas,Stanton,1963.0,54.5,18.58,-0.15
+Kansas,Stevens,5175.0,55.8,20.68,-0.23
+Kansas,Sumner,22473.0,58.6,26.37,-0.64
+Kansas,Thomas,7893.0,51.7,21.71,-0.16
+Kansas,Trego,2752.0,53.8,15.36,-1.28
+Kansas,Wabaunsee,7019.0,55.6,26.36,-0.62
+Kansas,Wallace,1488.0,52.1,19.13,-0.08
+Kansas,Washington,5501.0,53,22.84,-0.76
+Kansas,Wichita,2064.0,52.9,19.13,-0.26
+Kansas,Wilson,8622.0,58.2,30.12,-0.62
+Kansas,Woodson,3109.0,57.7,25.93,-0.96
+Kansas,Wyandotte,165746.0,56.2,30.39,-0.63
+Kentucky,Adair,19067.0,57.2,43.85,-0.49
+Kentucky,Allen,21275.0,58.8,49.41,-0.07
+Kentucky,Anderson,24224.0,56.3,44.26,-0.19
+Kentucky,Ballard,7650.0,59.4,57.76,0.43
+Kentucky,Barren,44854.0,58.5,47.7,-0.26
+Kentucky,Bath,12829.0,55.6,42.02,-0.14
+Kentucky,Bell,23568.0,55.6,49.09,-0.04
+Kentucky,Boone,139093.0,55.6,39.72,-0.07
+Kentucky,Bourbon,20093.0,55.6,43.6,-0.18
+Kentucky,Boyd,48110.0,56.4,34.66,-0.88
+Kentucky,Boyle,30904.0,56.3,44.11,-0.4
+Kentucky,Bracken,8452.0,55,41.74,-0.04
+Kentucky,Breathitt,13351.0,57.1,45.29,0.02
+Kentucky,Breckinridge,20943.0,56.4,52,0.41
+Kentucky,Bullitt,83836.0,57.4,44.43,-0.25
+Kentucky,Butler,12295.0,58.8,49.77,0
+Kentucky,Caldwell,12570.0,58.8,43.54,-0.61
+Kentucky,Calloway,37685.0,59.2,51.69,-0.15
+Kentucky,Campbell,93300.0,55.6,38.63,-0.22
+Kentucky,Carlisle,4720.0,59.6,58.38,0.43
+Kentucky,Carroll,10938.0,56.4,44.19,0.4
+Kentucky,Carter,26395.0,55.4,36.18,-0.61
+Kentucky,Casey,15920.0,56.3,45.16,-0.37
+Kentucky,Christian,73037.0,59.2,45.57,-0.44
+Kentucky,Clark,37061.0,56,44.21,-0.15
+Kentucky,Clay,19913.0,56.8,47.78,0.05
+Kentucky,Clinton,9123.0,57.2,47.85,-0.24
+Kentucky,Crittenden,8981.0,58.4,42.15,-0.69
+Kentucky,Cumberland,5946.0,58,45.68,-0.4
+Kentucky,Daviess,103222.0,57.5,44.88,-0.11
+Kentucky,Edmonson,12269.0,58.7,50.93,-0.04
+Kentucky,Elliott,7293.0,55.5,37.25,-0.53
+Kentucky,Estill,14044.0,56.7,45.32,0.05
+Kentucky,Fayette,320347.0,55.9,43.26,-0.33
+Kentucky,Fleming,15288.0,55.1,41.76,-0.06
+Kentucky,Floyd,34978.0,56.9,41.33,-0.16
+Kentucky,Franklin,51607.0,56.3,43.69,-0.15
+Kentucky,Fulton,6382.0,59.8,54,0.07
+Kentucky,Gallatin,8763.0,56.3,39.07,-0.16
+Kentucky,Garrard,17589.0,56.6,42.69,-0.42
+Kentucky,Grant,25502.0,55.8,38.8,-0.21
+Kentucky,Graves,36412.0,59.4,56.78,0.2
+Kentucky,Grayson,26631.0,57.6,53.3,0.17
+Kentucky,Green,11365.0,57.8,43.41,-0.43
+Kentucky,Greenup,35403.0,55.6,36.11,-0.73
+Kentucky,Hancock,9021.0,56.3,49.29,0.47
+Kentucky,Hardin,111862.0,57.1,48.97,0.06
+Kentucky,Harlan,25662.0,54.7,47.18,-0.28
+Kentucky,Harrison,19103.0,55.6,42.21,-0.12
+Kentucky,Hart,19600.0,58.1,48.03,-0.15
+Kentucky,Henderson,44046.0,58.1,40.52,-0.64
+Kentucky,Henry,15771.0,55.9,44.79,0.18
+Kentucky,Hickman,4422.0,59.6,56.76,0.28
+Kentucky,Hopkins,44812.0,59,45.11,-0.26
+Kentucky,Jackson,12973.0,56.1,46.32,-0.13
+Kentucky,Jefferson,773399.0,57.1,43.73,-0.21
+Kentucky,Jessamine,54254.0,56.4,42.52,-0.44
+Kentucky,Johnson,22244.0,56.3,41.48,-0.27
+Kentucky,Kenton,170313.0,55.5,38.89,-0.16
+Kentucky,Knott,13874.0,56.3,44.09,-0.05
+Kentucky,Knox,29791.0,56.5,47.84,-0.02
+Kentucky,Larue,15163.0,57.3,45.44,-0.25
+Kentucky,Laurel,62885.0,56.5,45.9,-0.23
+Kentucky,Lawrence,16109.0,56.3,38.87,-0.52
+Kentucky,Lee,7261.0,56.9,45.78,0.12
+Kentucky,Leslie,10093.0,56.3,47.78,0.09
+Kentucky,Letcher,20893.0,55.3,40.25,-0.46
+Kentucky,Lewis,12954.0,54.8,40.43,-0.19
+Kentucky,Lincoln,24360.0,56.2,44.27,-0.44
+Kentucky,Livingston,8963.0,58.8,47.91,-0.42
+Kentucky,Logan,27877.0,58.4,50.93,0.16
+Kentucky,Lyon,9101.0,59.1,45.88,-0.56
+Kentucky,McCracken,67490.0,59.4,56.44,0.24
+Kentucky,McCreary,16701.0,56,47.89,-0.03
+Kentucky,McLean,9105.0,58.7,45.17,-0.19
+Kentucky,Madison,95187.0,56.6,43.47,-0.19
+Kentucky,Magoffin,11357.0,56.4,42.17,-0.21
+Kentucky,Marion,19775.0,56.9,44.5,-0.33
+Kentucky,Marshall,31777.0,59.3,52.38,-0.07
+Kentucky,Martin,11095.0,56.7,44.01,-0.07
+Kentucky,Mason,16930.0,54.6,43.16,0.08
+Kentucky,Meade,30001.0,56.3,47.56,0.18
+Kentucky,Menifee,6250.0,55.7,42.89,-0.17
+Kentucky,Mercer,22902.0,56.5,43.47,-0.38
+Kentucky,Metcalfe,10370.0,57.6,45.07,-0.38
+Kentucky,Monroe,11355.0,58.1,47.68,-0.32
+Kentucky,Montgomery,28367.0,55.7,44.23,-0.08
+Kentucky,Morgan,14120.0,55.9,40.13,-0.35
+Kentucky,Muhlenberg,30455.0,58.9,48.6,0.02
+Kentucky,Nelson,47392.0,57.1,45.21,-0.22
+Kentucky,Nicholas,7805.0,55.3,43.7,-0.04
+Kentucky,Ohio,23527.0,58.1,49.73,0.18
+Kentucky,Oldham,69431.0,55.9,46,0.21
+Kentucky,Owen,11290.0,56.1,41.47,-0.08
+Kentucky,Owsley,3929.0,57.1,46.72,0.11
+Kentucky,Pendleton,14676.0,55.6,39.19,-0.2
+Kentucky,Perry,27361.0,56.6,46.3,0.07
+Kentucky,Pike,56286.0,56.7,41.32,-0.18
+Kentucky,Powell,13083.0,56.3,45.51,0.04
+Kentucky,Pulaski,65795.0,56.6,45.5,-0.36
+Kentucky,Robertson,2229.0,55.2,43.15,0.02
+Kentucky,Rockcastle,16242.0,56.3,45.07,-0.45
+Kentucky,Rowan,24388.0,55.1,38.7,-0.43
+Kentucky,Russell,18178.0,56.9,44.96,-0.43
+Kentucky,Scott,59099.0,55.8,43.12,-0.19
+Kentucky,Shelby,48886.0,55.9,44.86,-0.11
+Kentucky,Simpson,19949.0,58.8,51.04,0.17
+Kentucky,Spencer,20204.0,56.5,45,-0.25
+Kentucky,Taylor,26407.0,57.1,43.65,-0.44
+Kentucky,Todd,12404.0,58.6,48.71,-0.16
+Kentucky,Trigg,14332.0,59.4,46.02,-0.54
+Kentucky,Trimble,8539.0,56,48.3,0.78
+Kentucky,Union,12961.0,58.1,38.81,-0.79
+Kentucky,Warren,139843.0,59.2,48.39,-0.15
+Kentucky,Washington,12061.0,56.6,45.2,-0.22
+Kentucky,Wayne,19681.0,56.6,46.76,-0.21
+Kentucky,Webster,12726.0,58.5,42.42,-0.45
+Kentucky,Whitley,36873.0,56.3,47.74,0.05
+Kentucky,Wolfe,6400.0,56.4,43.49,-0.06
+Kentucky,Woodford,27062.0,56.3,43.36,-0.3
+Louisiana,Acadia-Parish,56744.0,70.4,51.12,-0.84
+Louisiana,Allen-Parish,22320.0,69.7,54.64,-0.67
+Louisiana,Ascension-Parish,130458.0,71.1,50,-1.03
+Louisiana,Assumption-Parish,20604.0,71.3,45.31,-1.37
+Louisiana,Avoyelles-Parish,38751.0,69,51.52,-0.66
+Louisiana,Beauregard-Parish,36570.0,69.9,52.28,-0.78
+Louisiana,Bienville-Parish,12641.0,66.9,52.12,-0.33
+Louisiana,Bossier-Parish,129276.0,66.9,55.51,0.25
+Louisiana,Caddo-Parish,229025.0,67.3,52.76,0.16
+Louisiana,Calcasieu-Parish,202418.0,70.7,49.87,-0.8
+Louisiana,Caldwell-Parish,9554.0,67.4,45.09,-0.8
+Louisiana,Cameron-Parish,4902.0,71.2,48.38,-0.71
+Louisiana,Catahoula-Parish,8566.0,68.2,45.17,-0.9
+Louisiana,Claiborne-Parish,13744.0,65.6,54.71,0.06
+Louisiana,Concordia-Parish,18116.0,68.5,45.63,-0.96
+Louisiana,De-Soto-Parish,26853.0,67.6,51.12,-0.26
+Louisiana,East-Baton-Rouge-Parish,450544.0,70.7,52.76,-0.89
+Louisiana,East-Carroll-Parish,6990.0,66.9,43.46,-0.75
+Louisiana,East-Feliciana-Parish,19135.0,69.6,51.69,-1.09
+Louisiana,Evangeline-Parish,31986.0,69.5,53.69,-0.58
+Louisiana,Franklin-Parish,19308.0,67.6,48.6,-0.53
+Louisiana,Grant-Parish,22000.0,68.5,46.24,-0.88
+Louisiana,Iberia-Parish,68327.0,71.1,44.58,-1.22
+Louisiana,Iberville-Parish,29506.0,70.9,51.65,-0.84
+Louisiana,Jackson-Parish,14839.0,66.7,49.48,-0.59
+Louisiana,Jefferson-Parish,425884.0,72.3,41.47,-1.56
+Louisiana,Jefferson-Davis-Parish,32026.0,70.3,52.65,-0.71
+Louisiana,Lafayette-Parish,247866.0,70.9,48.04,-0.96
+Louisiana,Lafourche-Parish,95870.0,72.2,39.09,-1.73
+Louisiana,LaSalle-Parish,14729.0,0,0,0
+Louisiana,Lincoln-Parish,48129.0,66.2,51.14,-0.36
+Louisiana,Livingston-Parish,148425.0,70.6,53.42,-0.96
+Louisiana,Madison-Parish,9478.0,67.4,48.49,-0.43
+Louisiana,Morehouse-Parish,24446.0,66.4,48.04,-0.41
+Louisiana,Natchitoches-Parish,36663.0,68.5,51.63,-0.5
+Louisiana,Orleans-Parish,369749.0,71.9,41.53,-1.49
+Louisiana,Ouachita-Parish,157702.0,66.8,46.45,-0.63
+Louisiana,Plaquemines-Parish,22516.0,72.6,40.49,-1.6
+Louisiana,Pointe-Coupee-Parish,20151.0,70.1,49.25,-1.03
+Louisiana,Rapides-Parish,127189.0,69.1,50.2,-0.74
+Louisiana,Red-River-Parish,7420.0,67.6,51.82,-0.23
+Louisiana,Richland-Parish,19826.0,67.2,45.98,-0.68
+Louisiana,Sabine-Parish,21985.0,68.4,54.93,-0.29
+Louisiana,St.-Bernard-Parish,44479.0,71.9,41.1,-1.52
+Louisiana,St.-Charles-Parish,50998.0,72,41.31,-1.56
+Louisiana,St.-Helena-Parish,10822.0,69.1,53.65,-1.03
+Louisiana,St.-James-Parish,19423.0,71.3,45.74,-1.31
+Louisiana,St.-John-the-Baptist-Parish,39864.0,71.4,44.3,-1.39
+Louisiana,St.-Landry-Parish,81773.0,69.9,52.52,-0.78
+Louisiana,St.-Martin-Parish,51236.0,70.9,47.75,-1.09
+Louisiana,St.-Mary-Parish,47789.0,71.4,40.66,-1.61
+Louisiana,St.-Tammany-Parish,273263.0,70.5,47.5,-1.21
+Louisiana,Tangipahoa-Parish,137048.0,69.7,50.67,-1.18
+Louisiana,Tensas-Parish,3846.0,67.9,47.77,-0.63
+Louisiana,Terrebonne-Parish,104786.0,72.1,36.43,-1.89
+Louisiana,Union-Parish,20721.0,66,54.98,0.11
+Louisiana,Vermilion-Parish,56952.0,71.1,44.09,-1.13
+Louisiana,Vernon-Parish,47247.0,69.3,52.11,-0.78
+Louisiana,Washington-Parish,45025.0,69.3,55.64,-0.79
+Louisiana,Webster-Parish,35643.0,66.4,54.81,0.16
+Louisiana,West-Baton-Rouge-Parish,28034.0,70.8,50.25,-0.94
+Louisiana,West-Carroll-Parish,9475.0,66.7,42.82,-0.82
+Louisiana,West-Feliciana-Parish,15381.0,69.6,49.31,-1.09
+Louisiana,Winn-Parish,13205.0,67.7,47.18,-0.81
+Maine,Androscoggin,113023.0,47.4,62.13,1.37
+Maine,Aroostook,67255.0,41.9,46.07,0.81
+Maine,Cumberland,307451.0,47.5,60.94,1.41
+Maine,Franklin,30474.0,42.5,59.55,1.47
+Maine,Hancock,56701.0,47,59.94,1.06
+Maine,Kennebec,125540.0,47.3,59.08,1.34
+Maine,Knox,41164.0,47.2,63.29,1.29
+Maine,Lincoln,36215.0,47.7,60.99,1.28
+Maine,Oxford,59495.0,44.7,60.37,1.54
+Maine,Penobscot,153704.0,45.2,54.54,1.18
+Maine,Piscataquis,17417.0,42.5,54.6,1.38
+Maine,Sagadahoc,37393.0,48.1,61.53,1.37
+Maine,Somerset,51098.0,42.5,52.93,1.33
+Maine,Waldo,40241.0,46.7,60.75,1.26
+Maine,Washington,31437.0,46.4,55.04,0.72
+Maine,York,216732.0,47.9,63.05,1.71
+Maryland,Allegany,67267.0,53,34.47,-0.43
+Maryland,Anne-Arundel,593286.0,58.5,37.09,-0.73
+Maryland,Baltimore,846161.0,56.4,38.88,-0.71
+Maryland,Calvert,94573.0,58.2,36.31,-0.83
+Maryland,Caroline,33433.0,57.5,39.1,-0.66
+Maryland,Carroll,175305.0,54.8,37.2,-0.72
+Maryland,Cecil,104942.0,56.2,42.52,-0.27
+Maryland,Charles,170102.0,58.7,32.66,-1.26
+Maryland,Dorchester,32726.0,58.7,37.89,-0.86
+Maryland,Frederick,287079.0,55.2,35.3,-0.9
+Maryland,Garrett,28579.0,49.2,42.13,-0.51
+Maryland,Harford,263867.0,56.3,40.6,-0.48
+Maryland,Howard,335411.0,56.3,37.4,-0.81
+Maryland,Kent,19320.0,57.2,36.68,-0.84
+Maryland,Montgomery,1052521.0,56.6,35.11,-0.97
+Maryland,Prince-George's,946971.0,57.8,36.25,-0.76
+Maryland,Queen-Anne's,51711.0,57.3,36.89,-0.79
+Maryland,St.-Mary's,114877.0,58.6,36.48,-0.81
+Maryland,Somerset,24546.0,59.5,39.14,-0.71
+Maryland,Talbot,37932.0,58,38,-0.68
+Maryland,Washington,155590.0,54.5,32.75,-0.9
+Maryland,Wicomico,104664.0,58.9,38.93,-0.85
+Maryland,Worcester,53866.0,59.1,39.01,-0.78
+Maryland,Baltimore-city,569931.0,0,0,0
+Massachusetts,Barnstable,232457.0,53.5,54.13,0.54
+Massachusetts,Berkshire,127859.0,47.8,55.91,0.74
+Massachusetts,Bristol,580068.0,53.2,55.73,0.73
+Massachusetts,Dukes,20868.0,53.7,49.52,0.21
+Massachusetts,Essex,806765.0,51.1,55.59,0.83
+Massachusetts,Franklin,70894.0,49.3,58.81,1.05
+Massachusetts,Hampden,461041.0,50.4,59.23,1.02
+Massachusetts,Hampshire,162588.0,49.8,59.03,1.07
+Massachusetts,Middlesex,1617105.0,51.7,58.4,1.05
+Massachusetts,Nantucket,14421.0,52.9,40.5,-0.52
+Massachusetts,Norfolk,725531.0,52.7,58.13,0.81
+Massachusetts,Plymouth,533069.0,53.5,56.32,0.66
+Massachusetts,Suffolk,766381.0,52.9,57.27,0.72
+Massachusetts,Worcester,862927.0,50.5,59.98,1.08
+Michigan,Alcona,10417.0,46,30.45,-0.13
+Michigan,Alger,8807.0,42.3,38.57,0.75
+Michigan,Allegan,121210.0,49.9,36.58,0.21
+Michigan,Alpena,28847.0,46.2,31.9,-0.03
+Michigan,Antrim,24249.0,46.7,33.93,-0.19
+Michigan,Arenac,15089.0,48.1,31.54,-0.18
+Michigan,Baraga,8277.0,40.9,39.27,0.8
+Michigan,Barry,63554.0,49.6,35.15,0.1
+Michigan,Bay,102821.0,49.1,33.72,0.16
+Michigan,Benzie,18297.0,46.8,31.97,-0.29
+Michigan,Berrien,152900.0,50.9,39.84,0.33
+Michigan,Branch,44531.0,50.2,32.57,-0.08
+Michigan,Calhoun,133289.0,50,33.84,-0.19
+Michigan,Cass,51403.0,50.6,38.87,0.33
+Michigan,Charlevoix,26293.0,46.5,33.49,-0.11
+Michigan,Cheboygan,25940.0,45.5,30.76,-0.12
+Michigan,Chippewa,36293.0,42.8,35.7,0.29
+Michigan,Clare,31352.0,46.8,33.08,0.03
+Michigan,Clinton,79748.0,49.5,34.38,0.01
+Michigan,Crawford,13491.0,45.6,30.97,-0.74
+Michigan,Delta,36741.0,43.3,32.23,-0.04
+Michigan,Dickinson,25874.0,42.5,29,-0.55
+Michigan,Eaton,108992.0,49.6,34.6,-0.02
+Michigan,Emmet,34163.0,45.7,31.17,-0.24
+Michigan,Genesee,401983.0,49.6,34.73,-0.07
+Michigan,Gladwin,25728.0,47.9,32.83,-0.08
+Michigan,Gogebic,14319.0,40.5,36.19,0.32
+Michigan,Grand-Traverse,96464.0,47.1,31.88,-0.27
+Michigan,Gratiot,41100.0,48.9,34.99,0.34
+Michigan,Hillsdale,45762.0,49.9,31.76,-0.37
+Michigan,Houghton,37035.0,42.2,34.65,0.22
+Michigan,Huron,31248.0,48.7,34.04,0
+Michigan,Ingham,284108.0,49.4,32.55,-0.32
+Michigan,Ionia,66809.0,49.1,36.29,0.38
+Michigan,Iosco,25521.0,47.1,31.05,-0.24
+Michigan,Iron,11622.0,40.7,31.68,-0.13
+Michigan,Isabella,64447.0,48,35.4,0.53
+Michigan,Jackson,160066.0,49.4,31.23,-0.47
+Michigan,Kalamazoo,261173.0,50.5,35.22,-0.07
+Michigan,Kalkaska,18182.0,46.2,32.89,-0.31
+Michigan,Kent,659083.0,48.9,36,0.27
+Michigan,Keweenaw,2180.0,41.8,36.36,0.53
+Michigan,Lake,12594.0,46.7,32.06,-0.17
+Michigan,Lapeer,88780.0,49.5,37.91,0.65
+Michigan,Leelanau,22870.0,47,32.22,-0.17
+Michigan,Lenawee,98567.0,50.7,33.25,-0.08
+Michigan,Livingston,196161.0,49.2,32.36,-0.57
+Michigan,Luce,5330.0,42,35.24,0.14
+Michigan,Mackinac,10941.0,43.3,32.92,0.07
+Michigan,Macomb,874195.0,51.1,36.22,0.09
+Michigan,Manistee,25287.0,46.5,32.35,-0.03
+Michigan,Marquette,66661.0,41.6,38.86,0.77
+Michigan,Mason,29409.0,46.8,32.04,0.11
+Michigan,Mecosta,40720.0,47.1,31.81,-0.02
+Michigan,Menominee,23266.0,44.1,28.72,-0.57
+Michigan,Midland,83674.0,48.9,34.73,0.3
+Michigan,Missaukee,15213.0,45.9,31.28,-0.24
+Michigan,Monroe,155609.0,51.9,33,-0.29
+Michigan,Montcalm,67433.0,48,36.76,0.61
+Michigan,Montmorency,9569.0,45.8,29.99,-0.48
+Michigan,Muskegon,176565.0,48.8,35.19,0.26
+Michigan,Newaygo,50886.0,47.6,32.81,-0.04
+Michigan,Oakland,1269431.0,49.9,34.79,-0.37
+Michigan,Oceana,26973.0,47.6,35.17,0.32
+Michigan,Ogemaw,20970.0,46.5,31.2,-0.28
+Michigan,Ontonagon,5863.0,41.6,34.88,0.24
+Michigan,Osceola,23274.0,46.1,31.07,-0.16
+Michigan,Oscoda,8404.0,45.8,29.66,-0.6
+Michigan,Otsego,25644.0,45.4,31.52,-0.52
+Michigan,Ottawa,300873.0,49.4,34.53,0.04
+Michigan,Presque-Isle,13361.0,45.7,32.04,0.01
+Michigan,Roscommon,23708.0,46.1,31.23,-0.45
+Michigan,Saginaw,188330.0,49.4,35.23,0.37
+Michigan,St.-Clair,160151.0,50.6,36.35,-0.04
+Michigan,St.-Joseph,60874.0,50.8,32.98,-0.19
+Michigan,Sanilac,40657.0,49.1,35.35,0.2
+Michigan,Schoolcraft,8188.0,42.8,35.63,0.44
+Michigan,Shiawassee,68022.0,49.3,35.11,0.12
+Michigan,Tuscola,52945.0,49.1,36.59,0.62
+Michigan,Van-Buren,75692.0,50.4,38.31,0.26
+Michigan,Washtenaw,366376.0,49.6,32.28,-0.11
+Michigan,Wayne,1757043.0,51.5,35.23,-0.12
+Michigan,Wexford,34196.0,46.1,32.93,-0.19
+Minnesota,Aitkin,16126.0,40.8,23.1,-0.61
+Minnesota,Anoka,368864.0,45.3,23.3,-0.93
+Minnesota,Becker,35371.0,40.2,18.18,-1.05
+Minnesota,Beltrami,46799.0,39.5,16.28,-1.55
+Minnesota,Benton,41463.0,43.5,23.8,-0.47
+Minnesota,Big-Stone,5144.0,43.5,18.97,-0.72
+Minnesota,Blue-Earth,69631.0,45.5,24.21,-0.53
+Minnesota,Brown,25723.0,45.2,23.67,-0.43
+Minnesota,Carlton,36708.0,40.1,24.57,-0.45
+Minnesota,Carver,110034.0,45.5,21.64,-0.97
+Minnesota,Cass,31274.0,41.3,19.66,-1.03
+Minnesota,Chippewa,12284.0,44,22.1,-0.41
+Minnesota,Chisago,57988.0,44.5,24.55,-0.55
+Minnesota,Clay,65929.0,40.8,19.25,-0.35
+Minnesota,Clearwater,8649.0,39.6,17.19,-1.18
+Minnesota,Cook,5708.0,37.2,30.56,-0.03
+Minnesota,Cottonwood,11356.0,45,24.11,-0.35
+Minnesota,Crow-Wing,67948.0,42.3,22.48,-0.5
+Minnesota,Dakota,443341.0,46.1,22.49,-1
+Minnesota,Dodge,20981.0,44.9,25.47,-0.29
+Minnesota,Douglas,39668.0,42.2,18.3,-1.53
+Minnesota,Faribault,13926.0,45.8,25.09,-0.45
+Minnesota,Fillmore,21414.0,45.2,24.94,-0.37
+Minnesota,Freeborn,30718.0,45.6,23.22,-0.73
+Minnesota,Goodhue,48013.0,45.6,26.64,-0.39
+Minnesota,Grant,6136.0,42.6,18.71,-1.19
+Minnesota,Hennepin,1260121.0,45.8,21.92,-1.12
+Minnesota,Houston,18800.0,46.8,26.05,-0.26
+Minnesota,Hubbard,21960.0,40.7,17.5,-1.53
+Minnesota,Isanti,42727.0,44.3,23.03,-0.79
+Minnesota,Itasca,45205.0,39.8,19.18,-1.13
+Minnesota,Jackson,9893.0,45.5,24.55,-0.15
+Minnesota,Kanabec,16463.0,43,24.79,-0.5
+Minnesota,Kandiyohi,43839.0,43.4,21.29,-0.63
+Minnesota,Kittson,4059.0,38.9,14.32,-1.5
+Minnesota,Koochiching,11844.0,39.1,19.72,-1.07
+Minnesota,Lac-qui-Parle,6689.0,44.3,20.19,-0.57
+Minnesota,Lake,10939.0,37.7,27.03,-0.25
+Minnesota,Lake-of-the-Woods,3871.0,38.9,15.56,-2.28
+Minnesota,Le-Sueur,29153.0,45.3,23.72,-0.64
+Minnesota,Lincoln,5580.0,43.5,21.35,-0.18
+Minnesota,Lyon,25262.0,44.6,22.06,-0.19
+Minnesota,McLeod,36714.0,44.8,17.28,-1.67
+Minnesota,Mahnomen,5328.0,39.4,19.28,-0.65
+Minnesota,Marshall,8861.0,38.5,14.3,-1.37
+Minnesota,Martin,19650.0,45.6,24.97,-0.35
+Minnesota,Meeker,23496.0,43.6,20.97,-0.82
+Minnesota,Mille-Lacs,27280.0,43,22.83,-0.79
+Minnesota,Morrison,34246.0,43.1,20.88,-0.8
+Minnesota,Mower,40140.0,45.2,24,-0.49
+Minnesota,Murray,8060.0,44.3,21.44,-0.6
+Minnesota,Nicollet,34441.0,45.5,18.97,-1.32
+Minnesota,Nobles,21947.0,44.9,20.64,-0.75
+Minnesota,Norman,6377.0,39.8,18.45,-0.36
+Minnesota,Olmsted,164020.0,45.3,25.24,-0.28
+Minnesota,Otter-Tail,60519.0,41.4,18.41,-1.09
+Minnesota,Pennington,13845.0,38.6,14.11,-1.34
+Minnesota,Pine,29446.0,42.4,25.34,-0.6
+Minnesota,Pipestone,9355.0,44.1,18.02,-1.04
+Minnesota,Polk,30731.0,39.4,14.8,-1.19
+Minnesota,Pope,11431.0,42.8,18.86,-1.24
+Minnesota,Ramsey,536413.0,46.1,23.65,-0.88
+Minnesota,Red-Lake,3874.0,38.9,14.23,-1.35
+Minnesota,Redwood,15361.0,45,23.64,-0.06
+Minnesota,Renville,14525.0,44.8,22.26,-0.47
+Minnesota,Rice,67693.0,45.3,26.35,-0.3
+Minnesota,Rock,9537.0,45.2,17.83,-1.08
+Minnesota,Roseau,15292.0,38,16.33,-1.29
+Minnesota,St.-Louis,199532.0,38.7,25.2,-0.36
+Minnesota,Scott,154520.0,45.9,23.3,-0.76
+Minnesota,Sherburne,100824.0,44.2,22.98,-0.71
+Minnesota,Sibley,14955.0,45.4,17.66,-1.64
+Minnesota,Stearns,160405.0,43,21.57,-0.66
+Minnesota,Steele,37398.0,45.1,26.26,-0.11
+Minnesota,Stevens,9637.0,43.2,19.54,-0.91
+Minnesota,Swift,9755.0,43.5,19.22,-0.97
+Minnesota,Todd,25538.0,42.6,19.51,-0.86
+Minnesota,Traverse,3275.0,42.9,19.92,-0.47
+Minnesota,Wabasha,21658.0,46.1,26.05,-0.57
+Minnesota,Wadena,14307.0,41.9,18.32,-1.24
+Minnesota,Waseca,18893.0,45.2,25.9,-0.15
+Minnesota,Washington,275912.0,45.7,25.08,-0.68
+Minnesota,Watonwan,11075.0,45.3,25.78,-0.2
+Minnesota,Wilkin,6350.0,42,18.61,-0.86
+Minnesota,Winona,49478.0,46.4,27.43,-0.14
+Minnesota,Wright,148003.0,44.5,20.67,-1.08
+Minnesota,Yellow-Medicine,9486.0,44.6,22.68,-0.11
+Mississippi,Adams,28408.0,68.2,46.9,-0.91
+Mississippi,Alcorn,34204.0,61.4,61.28,0.56
+Mississippi,Amite,12619.0,68,52.7,-0.94
+Mississippi,Attala,17509.0,64.8,54.52,0.03
+Mississippi,Benton,7550.0,61.6,62.02,0.42
+Mississippi,Bolivar,29370.0,64.5,55.68,0.18
+Mississippi,Calhoun,12781.0,63.8,51.89,-0.29
+Mississippi,Carroll,9731.0,65.5,52.15,-0.44
+Mississippi,Chickasaw,16812.0,64.5,55.92,-0.12
+Mississippi,Choctaw,8037.0,64.1,57.27,0.1
+Mississippi,Claiborne,8805.0,67.6,48.83,-0.55
+Mississippi,Clarke,15271.0,66.9,56.94,0.01
+Mississippi,Clay,18380.0,65.1,58.11,0.03
+Mississippi,Coahoma,20197.0,64.1,55.93,0.13
+Mississippi,Copiah,27719.0,67.5,52.01,-0.51
+Mississippi,Covington,18098.0,67.6,52,-0.59
+Mississippi,DeSoto,191723.0,63,59.19,0.36
+Mississippi,Forrest,78110.0,68.3,59.2,-0.23
+Mississippi,Franklin,7642.0,67.7,51.34,-0.84
+Mississippi,George,25206.0,68.9,59.41,-0.39
+Mississippi,Greene,13552.0,68.1,62.88,0.02
+Mississippi,Grenada,21088.0,64.7,52.52,-0.29
+Mississippi,Hancock,46094.0,70.1,46.09,-1.14
+Mississippi,Harrison,211044.0,69.6,46.38,-1.03
+Mississippi,Hinds,217730.0,67.5,52.85,-0.21
+Mississippi,Holmes,16121.0,66.5,50.82,-0.46
+Mississippi,Humphreys,7333.0,67,48.9,-0.57
+Mississippi,Issaquena,1273.0,67,44.96,-0.64
+Mississippi,Itawamba,23903.0,64,60.49,0.16
+Mississippi,Jackson,144975.0,69.9,54.05,-0.62
+Mississippi,Jasper,16167.0,66.6,57.18,-0.04
+Mississippi,Jefferson,7087.0,67.7,47.38,-0.83
+Mississippi,Jefferson-Davis,11088.0,68,50.32,-0.82
+Mississippi,Jones,66569.0,67.3,55.64,-0.2
+Mississippi,Kemper,8654.0,65.3,52.58,-0.23
+Mississippi,Lafayette,57615.0,63.2,58.66,0.11
+Mississippi,Lamar,65783.0,68.5,56.43,-0.52
+Mississippi,Lauderdale,70904.0,66.3,54.87,-0.07
+Mississippi,Lawrence,11713.0,68.2,49.66,-0.81
+Mississippi,Leake,21135.0,65.5,56.49,0.11
+Mississippi,Lee,82959.0,64.4,60.85,0.19
+Mississippi,Leflore,26570.0,66.5,50.59,-0.51
+Mississippi,Lincoln,34717.0,67.5,51.95,-0.75
+Mississippi,Lowndes,57603.0,65.4,56.14,-0.09
+Mississippi,Madison,111113.0,66.9,53.64,-0.03
+Mississippi,Marion,24050.0,68.9,53.62,-0.7
+Mississippi,Marshall,34110.0,62.2,61.85,0.42
+Mississippi,Monroe,33577.0,64.8,58.08,-0.06
+Mississippi,Montgomery,9530.0,64,56.39,0.06
+Mississippi,Neshoba,28673.0,65.1,56.16,0.03
+Mississippi,Newton,21029.0,66.2,58.8,0.19
+Mississippi,Noxubee,9990.0,65.3,52.75,-0.18
+Mississippi,Oktibbeha,51427.0,65.2,57.78,0.11
+Mississippi,Panola,32661.0,63.5,57.93,0.05
+Mississippi,Pearl-River,57261.0,69.2,56.9,-0.61
+Mississippi,Perry,11368.0,68.1,62.5,0.01
+Mississippi,Pike,39644.0,68.1,52.25,-0.94
+Mississippi,Pontotoc,31389.0,63.9,58.35,-0.03
+Mississippi,Prentiss,24792.0,62.7,63.44,0.49
+Mississippi,Quitman,5701.0,64.1,57.17,0.07
+Mississippi,Rankin,158979.0,67.1,52.98,-0.3
+Mississippi,Scott,27707.0,66.2,58.15,0.18
+Mississippi,Sharkey,3488.0,67,45.73,-0.65
+Mississippi,Simpson,25587.0,67.3,50.51,-0.66
+Mississippi,Smith,14092.0,66.8,55.22,-0.18
+Mississippi,Stone,18669.0,68.8,55.32,-0.58
+Mississippi,Sunflower,24811.0,65.6,54.12,-0.13
+Mississippi,Tallahatchie,12035.0,65,55.55,-0.12
+Mississippi,Tate,28296.0,63,58.6,0.28
+Mississippi,Tippah,21431.0,61.7,62.59,0.48
+Mississippi,Tishomingo,18619.0,62,61.03,0.38
+Mississippi,Tunica,9458.0,63.5,56.26,0.06
+Mississippi,Union,28125.0,63.2,60.65,0.19
+Mississippi,Walthall,13761.0,68.6,53.25,-0.9
+Mississippi,Warren,42649.0,67.6,50.22,-0.24
+Mississippi,Washington,42514.0,65.9,49.21,-0.39
+Mississippi,Wayne,19681.0,67.1,59.54,0.09
+Mississippi,Webster,9993.0,63.9,54.56,-0.04
+Mississippi,Wilkinson,8143.0,68.7,49.87,-1.02
+Mississippi,Winston,17543.0,64.7,53.54,-0.1
+Mississippi,Yalobusha,12364.0,63.9,54.92,-0.18
+Mississippi,Yazoo,25948.0,67.3,51.47,-0.26
+Missouri,Adair,25165.0,52.9,36.01,-0.22
+Missouri,Andrew,18003.0,53.1,32.5,-0.08
+Missouri,Atchison,5182.0,52.5,27.35,-0.78
+Missouri,Audrain,24434.0,54.8,30.3,-0.78
+Missouri,Barry,34926.0,57.8,47.36,0.02
+Missouri,Barton,11694.0,57.9,30.18,-0.94
+Missouri,Bates,16177.0,57,31.48,-0.54
+Missouri,Benton,20224.0,56.5,31.35,-0.65
+Missouri,Bollinger,10518.0,57.5,48.92,0.05
+Missouri,Boone,187690.0,56.1,31.75,-0.93
+Missouri,Buchanan,82911.0,54,33.06,-0.06
+Missouri,Butler,42179.0,59.3,45.07,-0.46
+Missouri,Caldwell,8933.0,53.6,32.32,-0.42
+Missouri,Callaway,44762.0,56.6,33.63,-0.6
+Missouri,Camden,43768.0,57.6,36.24,-0.62
+Missouri,Cape-Girardeau,82899.0,58,48.19,-0.12
+Missouri,Carroll,8423.0,54.4,31.7,-0.53
+Missouri,Carter,5268.0,57.9,42.72,-0.39
+Missouri,Cass,110394.0,56.4,32.61,-0.56
+Missouri,Cedar,14601.0,58.6,30.13,-1.08
+Missouri,Chariton,7386.0,54.7,30.47,-0.85
+Missouri,Christian,93114.0,56.7,46.65,0.17
+Missouri,Clark,6723.0,53,34.42,-0.31
+Missouri,Clay,257033.0,55.3,33.27,-0.5
+Missouri,Clinton,21328.0,53.8,31.94,-0.54
+Missouri,Cole,76969.0,57.5,32.45,-0.79
+Missouri,Cooper,16772.0,56.1,32.54,-0.67
+Missouri,Crawford,22659.0,55.7,44.76,0.39
+Missouri,Dade,7660.0,58.3,36.97,-0.5
+Missouri,Dallas,17626.0,56.7,41.19,-0.14
+Missouri,Daviess,8435.0,53.3,33.05,-0.31
+Missouri,DeKalb,11336.0,53.2,32.19,-0.35
+Missouri,Dent,14467.0,55.5,41.38,-0.06
+Missouri,Douglas,11975.0,56.9,47.23,0.25
+Missouri,Dunklin,27406.0,60.8,47.5,-0.37
+Missouri,Franklin,105879.0,56.2,40.04,0.16
+Missouri,Gasconade,14768.0,56.1,42.62,0.35
+Missouri,Gentry,6253.0,53,32.81,-0.28
+Missouri,Greene,303293.0,57.1,44.49,0.1
+Missouri,Grundy,9838.0,53,34.31,0
+Missouri,Harrison,8199.0,52.7,33.28,-0.34
+Missouri,Henry,22438.0,56.8,29.04,-0.81
+Missouri,Hickory,8630.0,57.2,33.76,-0.66
+Missouri,Holt,4262.0,53.2,29.77,-0.43
+Missouri,Howard,10168.0,55.6,31.62,-0.82
+Missouri,Howell,40631.0,58.5,44.58,-0.43
+Missouri,Iron,9414.0,55.9,46.31,0.16
+Missouri,Jackson,716531.0,56,32.04,-0.66
+Missouri,Jasper,124075.0,58.7,33.78,-0.83
+Missouri,Jefferson,229336.0,57.4,36.78,-0.33
+Missouri,Johnson,54368.0,56.2,30.17,-0.91
+Missouri,Knox,3776.0,52.9,31.66,-0.58
+Missouri,Laclede,36313.0,57,41.71,-0.17
+Missouri,Lafayette,32961.0,55.5,30.81,-0.77
+Missouri,Lawrence,38683.0,57.6,43.54,-0.06
+Missouri,Lewis,9891.0,53.4,28.28,-0.94
+Missouri,Lincoln,63155.0,55.3,33.29,-0.25
+Missouri,Linn,11820.0,53.4,35.13,0.06
+Missouri,Livingston,14402.0,53.7,34.84,0.17
+Missouri,McDonald,23588.0,59.3,45.05,-0.07
+Missouri,Macon,15049.0,53.6,32.99,-0.51
+Missouri,Madison,12753.0,56.6,45.63,-0.04
+Missouri,Maries,8431.0,57.3,36.65,-0.51
+Missouri,Marion,28438.0,54.2,28.13,-0.94
+Missouri,Mercer,3437.0,51.9,33.79,-0.24
+Missouri,Miller,25403.0,57.9,35.07,-0.73
+Missouri,Mississippi,11688.0,59.6,53.81,0.15
+Missouri,Moniteau,15220.0,56.8,30.47,-0.98
+Missouri,Monroe,8652.0,54,29.09,-0.74
+Missouri,Montgomery,11470.0,55.4,33.47,-0.47
+Missouri,Morgan,21785.0,56.6,32.76,-0.73
+Missouri,New-Madrid,15695.0,60,49.12,-0.22
+Missouri,Newton,60011.0,59.3,38.7,-0.54
+Missouri,Nodaway,20670.0,52.4,30.91,-0.39
+Missouri,Oregon,8732.0,59,48.9,-0.09
+Missouri,Osage,13399.0,57.2,37.13,-0.29
+Missouri,Ozark,8940.0,58.1,51.54,0.63
+Missouri,Pemiscot,14841.0,61,45.42,-0.5
+Missouri,Perry,18858.0,57.1,47.49,0.09
+Missouri,Pettis,43353.0,56,33.69,-0.41
+Missouri,Phelps,45313.0,56.9,39.53,-0.26
+Missouri,Pike,17664.0,54.7,31.51,-0.61
+Missouri,Platte,110534.0,55.4,33.26,-0.26
+Missouri,Polk,32693.0,57.7,38.79,-0.36
+Missouri,Pulaski,53941.0,57.6,38.7,-0.49
+Missouri,Putnam,4666.0,51.7,34.12,-0.16
+Missouri,Ralls,10420.0,54.5,28.55,-0.96
+Missouri,Randolph,24622.0,54.4,33.08,-0.62
+Missouri,Ray,23107.0,54.6,31.89,-0.56
+Missouri,Reynolds,6006.0,56.2,43.14,-0.29
+Missouri,Ripley,10703.0,59,47.83,-0.2
+Missouri,St.-Charles,413803.0,56.9,34.23,-0.11
+Missouri,St.-Clair,9576.0,57.6,29.32,-0.92
+Missouri,Ste.-Genevieve,18644.0,56.9,41.51,-0.12
+Missouri,St.-Francois,66969.0,56.4,43.54,0.02
+Missouri,St.-Louis,990414.0,57.4,34.79,-0.07
+Missouri,Saline,23007.0,55.5,30.87,-0.81
+Missouri,Schuyler,4002.0,52.3,35.05,-0.26
+Missouri,Scotland,4643.0,52.6,34.05,-0.47
+Missouri,Scott,37840.0,59.2,50.18,-0.1
+Missouri,Shannon,7193.0,57.5,39.91,-0.75
+Missouri,Shelby,5982.0,53.2,28.15,-0.78
+Missouri,Stoddard,28377.0,59.2,46.74,-0.3
+Missouri,Stone,32136.0,57.6,45.96,0.05
+Missouri,Sullivan,5840.0,52.4,35.41,-0.06
+Missouri,Taney,56821.0,58.1,49.94,0.51
+Missouri,Texas,25336.0,56.9,42.23,-0.31
+Missouri,Vernon,19651.0,57.6,27.92,-1.01
+Missouri,Warren,37260.0,55.7,35.97,-0.3
+Missouri,Washington,23441.0,56.2,47.09,0.55
+Missouri,Wayne,10792.0,57.5,43.24,-0.37
+Missouri,Webster,40335.0,55.8,45.19,0.18
+Missouri,Worth,1955.0,52.3,31.62,-0.45
+Missouri,Wright,19156.0,56.2,43.04,-0.09
+Missouri,St.-Louis-city,286578.0,0,0,0
+Montana,Beaverhead,9719.0,37.4,21.57,-0.44
+Montana,Big-Horn,12851.0,44.1,18.74,0.46
+Montana,Blaine,6936.0,41.8,13.81,-0.06
+Montana,Broadwater,7793.0,42.1,18.31,0.04
+Montana,Carbon,11179.0,42.3,19.43,-0.25
+Montana,Carter,1382.0,44,15.3,-0.04
+Montana,Cascade,84864.0,43.1,18.95,0.24
+Montana,Chouteau,5898.0,44.2,13.91,-0.22
+Montana,Custer,12032.0,44.9,15.09,-0.07
+Montana,Daniels,1628.0,39,12.13,-0.56
+Montana,Dawson,8830.0,42.5,15.8,0.47
+Montana,Deer-Lodge,9510.0,37.5,24.88,0.03
+Montana,Fallon,3011.0,43.1,17.11,0.41
+Montana,Fergus,11663.0,43.6,19.67,0.58
+Montana,Flathead,111814.0,40.9,28.35,-1.54
+Montana,Gallatin,124857.0,38.9,26.69,0.09
+Montana,Garfield,1218.0,44.3,15.72,0.43
+Montana,Glacier,13681.0,40.5,19.21,-1.53
+Montana,Golden-Valley,835.0,43.7,19.63,1.42
+Montana,Granite,3502.0,39.4,23.26,-0.65
+Montana,Hill,16068.0,41.1,12.36,0.01
+Montana,Jefferson,12826.0,40.6,21.46,0.04
+Montana,Judith-Basin,2105.0,41.5,21.9,-0.07
+Montana,Lake,32853.0,44.1,24.19,-0.55
+Montana,Lewis-and-Clark,73832.0,40.9,23.84,0.11
+Montana,Liberty,1972.0,41.9,12.18,-0.04
+Montana,Lincoln,21525.0,42.9,25.28,-1.4
+Montana,McCone,1709.0,42.3,13.38,-0.3
+Montana,Madison,9265.0,39.1,27.04,0.45
+Montana,Meagher,2013.0,39.6,24.06,0.1
+Montana,Mineral,5058.0,42.7,32.18,-0.77
+Montana,Missoula,121041.0,41.7,28.28,-0.49
+Montana,Musselshell,5197.0,45,17.54,0.97
+Montana,Park,17790.0,38.8,29.13,0.26
+Montana,Petroleum,524.0,45.5,15.26,0.24
+Montana,Phillips,4240.0,42.3,13.22,0.07
+Montana,Pondera,6078.0,42.2,14.1,-1.16
+Montana,Powder-River,1725.0,45,15.57,-0.07
+Montana,Powell,7051.0,39.6,26.58,-0.18
+Montana,Prairie,1107.0,43.6,16.12,0.64
+Montana,Ravalli,47298.0,40.4,25.79,-0.71
+Montana,Richland,11237.0,42.1,13.69,-0.33
+Montana,Roosevelt,10572.0,40.9,11.94,-0.58
+Montana,Rosebud,8088.0,44.8,16.93,0.5
+Montana,Sanders,13442.0,43.2,26.02,-1
+Montana,Sheridan,3564.0,39.8,10.77,-0.9
+Montana,Silver-Bow,36068.0,38.9,20.97,-0.12
+Montana,Stillwater,9177.0,42.7,21.72,0.72
+Montana,Sweet-Grass,3715.0,42.1,24.54,1.03
+Montana,Teton,6368.0,41.8,17.3,-0.41
+Montana,Toole,5082.0,42.6,11.24,-0.47
+Montana,Treasure,758.0,45.1,17.1,0.8
+Montana,Valley,7513.0,40.5,12.67,-0.04
+Montana,Wheatland,2032.0,42.2,21.67,0.8
+Montana,Wibaux,919.0,42.6,18.12,0.82
+Montana,Yellowstone,169852.0,45.6,17.68,0.87
+Nebraska,Adams,30970.0,51.3,18.84,-1.39
+Nebraska,Antelope,6293.0,48.5,22.88,-0.56
+Nebraska,Arthur,433.0,47.7,22.32,0.64
+Nebraska,Banner,660.0,46.8,22.83,1.16
+Nebraska,Blaine,453.0,48.3,22.11,-0.08
+Nebraska,Boone,5385.0,49.2,24.24,-0.89
+Nebraska,Box-Butte,10672.0,46.3,19.86,0.38
+Nebraska,Boyd,1741.0,48,20.49,-0.3
+Nebraska,Brown,2872.0,47.6,23.7,0.14
+Nebraska,Buffalo,50586.0,50.4,20.71,-1.07
+Nebraska,Burt,6755.0,50,19.76,-1.42
+Nebraska,Butler,8427.0,50.3,19.67,-1.52
+Nebraska,Cass,27122.0,51.7,25.25,-1.06
+Nebraska,Cedar,8371.0,47.8,23.6,-0.57
+Nebraska,Chase,3772.0,50,19.83,0.36
+Nebraska,Cherry,5464.0,47.3,25.82,1.14
+Nebraska,Cheyenne,9511.0,46.7,21.62,0.75
+Nebraska,Clay,6049.0,51.4,19.01,-1.47
+Nebraska,Colfax,10444.0,50.5,18.99,-1.81
+Nebraska,Cuming,8929.0,49.7,18.99,-1.57
+Nebraska,Custer,10476.0,48.9,20.72,-0.85
+Nebraska,Dakota,21042.0,48.7,21.72,-0.95
+Nebraska,Dawes,8241.0,47.2,20.17,0.49
+Nebraska,Dawson,23884.0,49.9,18.52,-1.08
+Nebraska,Deuel,1902.0,48,19.15,0.24
+Nebraska,Dixon,5464.0,48,22.49,-0.84
+Nebraska,Dodge,36997.0,50.7,20.22,-1.61
+Nebraska,Douglas,586327.0,51.5,23.3,-1.18
+Nebraska,Dundy,1590.0,50.7,20.46,0.48
+Nebraska,Fillmore,5553.0,51.6,18.82,-1.72
+Nebraska,Franklin,2873.0,51.5,22.18,-0.76
+Nebraska,Frontier,2633.0,50.5,21.3,-0.1
+Nebraska,Furnas,4575.0,51.3,22.73,-0.19
+Nebraska,Gage,21583.0,52.2,23.02,-1.17
+Nebraska,Garden,1837.0,47.3,19.73,0.33
+Nebraska,Garfield,1801.0,48.2,21.97,-0.41
+Nebraska,Gosper,1808.0,50.4,19.88,-0.72
+Nebraska,Grant,576.0,46.8,24.61,1
+Nebraska,Greeley,2227.0,49.1,22.8,-0.82
+Nebraska,Hall,62097.0,51.1,18.04,-1.54
+Nebraska,Hamilton,9429.0,51.5,17.5,-1.59
+Nebraska,Harlan,3054.0,51.6,23.72,-0.25
+Nebraska,Hayes,849.0,50.2,21.68,0.29
+Nebraska,Hitchcock,2598.0,51.1,23.2,0.51
+Nebraska,Holt,10043.0,47.6,21.18,-0.35
+Nebraska,Hooker,686.0,47.4,24.45,0.43
+Nebraska,Howard,6515.0,50.4,20.46,-1.12
+Nebraska,Jefferson,7154.0,52.3,19.38,-1.55
+Nebraska,Johnson,5287.0,52.1,25.8,-0.93
+Nebraska,Kearney,6690.0,50.7,20.72,-1.01
+Nebraska,Keith,8269.0,48.9,17.9,-0.21
+Nebraska,Keya-Paha,787.0,47.7,24.75,0.59
+Nebraska,Kimball,3315.0,45.5,20.74,0.74
+Nebraska,Knox,8336.0,48.2,22.57,-0.54
+Nebraska,Lancaster,324756.0,52.3,22.75,-1.38
+Nebraska,Lincoln,33685.0,49.2,20.66,-0.16
+Nebraska,Logan,675.0,48.2,22.13,-0.01
+Nebraska,Loup,599.0,48.3,20.51,-0.62
+Nebraska,McPherson,372.0,47.8,22.02,0.11
+Nebraska,Madison,35368.0,49.4,21.89,-1.23
+Nebraska,Merrick,7721.0,51.2,18.09,-1.51
+Nebraska,Morrill,4527.0,47.3,20.12,0.83
+Nebraska,Nance,3326.0,50.3,19.77,-1.39
+Nebraska,Nemaha,7035.0,52.6,27.14,-0.84
+Nebraska,Nuckolls,4041.0,52.2,18.28,-1.54
+Nebraska,Otoe,16198.0,52,27.21,-0.79
+Nebraska,Pawnee,2528.0,52.3,26.98,-0.68
+Nebraska,Perkins,2829.0,49.1,18.27,-0.04
+Nebraska,Phelps,8988.0,50.5,21.66,-0.59
+Nebraska,Pierce,7332.0,48.5,20.59,-1.07
+Nebraska,Platte,34296.0,50.1,19.47,-1.68
+Nebraska,Polk,5166.0,50.7,18.95,-1.46
+Nebraska,Red-Willow,10573.0,51.4,22.32,0.09
+Nebraska,Richardson,7705.0,53.3,28.09,-0.6
+Nebraska,Rock,1245.0,47.3,23.2,0.02
+Nebraska,Saline,14116.0,52.2,20.19,-1.59
+Nebraska,Sarpy,196553.0,51.7,23.04,-1.28
+Nebraska,Saunders,23118.0,51.4,21.77,-1.46
+Nebraska,Scotts-Bluff,35603.0,47.9,19.66,0.89
+Nebraska,Seward,17692.0,51.3,19.55,-1.6
+Nebraska,Sheridan,4996.0,46.6,21.72,0.52
+Nebraska,Sherman,2980.0,49.6,21.31,-0.86
+Nebraska,Sioux,1127.0,45.6,18.19,0.16
+Nebraska,Stanton,5717.0,49.9,19.87,-1.6
+Nebraska,Thayer,4885.0,52.4,19.05,-1.6
+Nebraska,Thomas,671.0,48,23.7,0.43
+Nebraska,Thurston,6507.0,49.2,20.27,-1.26
+Nebraska,Valley,4073.0,48.9,21.76,-0.81
+Nebraska,Washington,21167.0,50.9,22.46,-1.19
+Nebraska,Wayne,9871.0,48.8,20.07,-1.34
+Nebraska,Webster,3336.0,51.9,20.04,-1.15
+Nebraska,Wheeler,785.0,48.5,24.43,-0.18
+Nebraska,York,14354.0,51,18.23,-1.62
+Nevada,Churchill,25843.0,51,10.6,2.43
+Nevada,Clark,2322985.0,63.4,8.43,0.3
+Nevada,Douglas,49628.0,47.7,30.09,1.78
+Nevada,Elko,54046.0,43.9,17.35,0.92
+Nevada,Esmeralda,744.0,52.1,9.28,2.15
+Nevada,Eureka,1863.0,44.7,15.53,1.6
+Nevada,Humboldt,17272.0,48.4,14.04,1.18
+Nevada,Lander,5766.0,46.9,15.78,2.08
+Nevada,Lincoln,4482.0,54,15.97,1.53
+Nevada,Lyon,61585.0,49.9,15.64,2.76
+Nevada,Mineral,4525.0,49.8,12.93,3.22
+Nevada,Nye,54738.0,51,10.82,1.24
+Nevada,Pershing,6462.0,50.6,11.22,1.59
+Nevada,Storey,4170.0,49.7,18.86,1.25
+Nevada,Washoe,496745.0,48.2,17.25,1.58
+Nevada,White-Pine,8788.0,44.6,19.36,1.82
+Nevada,Carson-City,58130.0,49,23.17,1.22
+New Hampshire,Belknap,64781.0,47.7,57.57,1.4
+New Hampshire,Carroll,52199.0,46.3,67.29,1.71
+New Hampshire,Cheshire,77350.0,47.9,56.25,1.12
+New Hampshire,Coos,31504.0,42.6,56.32,1.22
+New Hampshire,Grafton,91126.0,45,58.03,1.2
+New Hampshire,Hillsborough,426594.0,49.3,57.71,1.09
+New Hampshire,Merrimack,156020.0,48,54.82,1.06
+New Hampshire,Rockingham,319424.0,49.7,59.29,1.36
+New Hampshire,Strafford,132275.0,48.3,62.41,1.57
+New Hampshire,Sullivan,43958.0,46.6,55.57,1.23
+New Jersey,Atlantic,275638.0,56.4,44.61,-0.27
+New Jersey,Bergen,952997.0,54.7,48.55,-0.27
+New Jersey,Burlington,466103.0,56,45.37,-0.1
+New Jersey,Camden,524907.0,56.3,44.25,-0.17
+New Jersey,Cape-May,95634.0,56.8,43.99,-0.31
+New Jersey,Cumberland,151356.0,56.7,42.3,-0.49
+New Jersey,Essex,849477.0,55.1,50.03,-0.19
+New Jersey,Gloucester,306601.0,56.7,42.71,-0.36
+New Jersey,Hudson,703366.0,56.7,48.7,-0.21
+New Jersey,Hunterdon,129777.0,53.1,51.77,0.2
+New Jersey,Mercer,380688.0,55.1,46.21,-0.11
+New Jersey,Middlesex,861418.0,55.7,47.59,-0.16
+New Jersey,Monmouth,644098.0,55.8,46.37,-0.25
+New Jersey,Morris,511151.0,52.3,50.71,-0.13
+New Jersey,Ocean,655735.0,55.7,45.46,-0.21
+New Jersey,Passaic,513936.0,52.6,46.85,-0.41
+New Jersey,Salem,65117.0,56.9,41.97,-0.36
+New Jersey,Somerset,346875.0,54.3,49.56,-0.05
+New Jersey,Sussex,146084.0,50.9,48.02,-0.08
+New Jersey,Union,569815.0,55.8,49.55,-0.17
+New Jersey,Warren,110926.0,51.7,52.25,0.24
+New Mexico,Bernalillo,672508.0,54,8.03,-1.24
+New Mexico,Catron,3827.0,48.5,14.91,0.01
+New Mexico,Chaves,63894.0,61.5,9.57,-1.22
+New Mexico,Cibola,26950.0,48.9,11.24,-0.04
+New Mexico,Colfax,12246.0,47.1,15.64,-0.64
+New Mexico,Curry,47532.0,58.3,14.86,-0.91
+New Mexico,De-Baca,1693.0,59.9,12.63,-0.81
+New Mexico,Doña-Ana,223337.0,0,0,0
+New Mexico,Eddy,60400.0,63.2,8.05,-1.28
+New Mexico,Grant,27686.0,55.9,14.1,-0.22
+New Mexico,Guadalupe,4310.0,56,12.45,-0.61
+New Mexico,Harding,628.0,54.5,13.46,-0.9
+New Mexico,Hidalgo,4003.0,59.5,9.22,-0.95
+New Mexico,Lea,72452.0,62.1,9.64,-1.31
+New Mexico,Lincoln,20411.0,56.3,10.19,-1.55
+New Mexico,Los-Alamos,19187.0,47.5,14.25,-0.83
+New Mexico,Luna,25749.0,61,7.13,-1
+New Mexico,McKinley,69830.0,49.2,10.88,-0.13
+New Mexico,Mora,4169.0,48.5,16.08,-0.71
+New Mexico,Otero,68823.0,59.1,10.57,-1.14
+New Mexico,Quay,8546.0,58.3,13.7,-0.92
+New Mexico,Rio-Arriba,40048.0,45.4,15.57,-0.21
+New Mexico,Roosevelt,18934.0,59.2,12.31,-1.14
+New Mexico,Sandoval,153501.0,50.4,10.4,-0.79
+New Mexico,San-Juan,120418.0,51.3,9.38,0.26
+New Mexico,San-Miguel,26953.0,53.3,13.45,-0.7
+New Mexico,Santa-Fe,155664.0,49.6,13.31,-0.05
+New Mexico,Sierra,11436.0,58.5,9.31,-0.9
+New Mexico,Socorro,16115.0,54.9,9.23,-0.68
+New Mexico,Taos,34580.0,43.4,16.92,-0.01
+New Mexico,Torrance,15454.0,51.3,12.5,-0.43
+New Mexico,Union,3980.0,52.1,15.01,-0.57
+New Mexico,Valencia,78080.0,55.8,7.05,-1.09
+New York,Albany,315811.0,49.8,45.57,0.77
+New York,Allegany,46694.0,47.7,37.14,-0.05
+New York,Bronx,1379946.0,56.6,48.82,-0.24
+New York,Broome,197117.0,48.3,49.01,1.2
+New York,Cattaraugus,76439.0,47.5,42.18,-0.09
+New York,Cayuga,74998.0,48.7,44.02,1.02
+New York,Chautauqua,126027.0,48.9,47.14,0.44
+New York,Chemung,81426.0,48.9,40.84,0.59
+New York,Chenango,46458.0,46.9,49.45,1
+New York,Clinton,78753.0,45.6,44.43,1.21
+New York,Columbia,61286.0,50.7,50.47,0.82
+New York,Cortland,46126.0,46.8,46.61,0.61
+New York,Delaware,44740.0,46.5,46.98,0.46
+New York,Dutchess,297545.0,51.8,49,0.23
+New York,Erie,950312.0,49.6,45.74,0.71
+New York,Essex,36910.0,43.6,55.74,1.62
+New York,Franklin,46373.0,44.1,50.31,1.41
+New York,Fulton,52669.0,46.8,53.85,0.83
+New York,Genesee,57535.0,48.8,37.39,0.25
+New York,Greene,48061.0,48.2,48.36,0.45
+New York,Hamilton,5118.0,43,59.07,1.27
+New York,Herkimer,59822.0,44.8,55.73,1.04
+New York,Jefferson,116637.0,47.1,48.3,1.17
+New York,Kings,2590516.0,57,47.47,-0.27
+New York,Lewis,26699.0,44.8,53.08,0.9
+New York,Livingston,61516.0,49.4,33.14,-0.11
+New York,Madison,67097.0,47,47.82,0.92
+New York,Monroe,752035.0,49.6,36.87,0.54
+New York,Montgomery,49623.0,48.8,46.31,0.9
+New York,Nassau,1383726.0,55.9,42.23,-0.71
+New York,New-York,1596273.0,56.9,48.62,-0.21
+New York,Niagara,210880.0,49.5,37.75,0.52
+New York,Oneida,228846.0,47.1,52.09,0.87
+New York,Onondaga,468249.0,48.8,45.84,1
+New York,Ontario,112707.0,49.1,38.28,0.71
+New York,Orange,405941.0,51.1,52.9,0.56
+New York,Orleans,39318.0,49.2,36.74,0.52
+New York,Oswego,118287.0,48.3,47.55,0.75
+New York,Otsego,60636.0,46.2,49.27,1.04
+New York,Putnam,98045.0,52.4,50.77,-0.04
+New York,Queens,2278029.0,56.6,46.52,-0.35
+New York,Rensselaer,159853.0,49.6,47.27,0.47
+New York,Richmond,491133.0,56.9,48.45,-0.23
+New York,Rockland,339022.0,53.4,50.46,-0.13
+New York,St.-Lawrence,107733.0,45.8,45.2,0.78
+New York,Saratoga,238797.0,48.6,47.87,0.47
+New York,Schenectady,160093.0,49.5,44.95,0.69
+New York,Schoharie,30063.0,47.1,43.66,0.59
+New York,Schuyler,17650.0,48.5,39.41,0.63
+New York,Seneca,32882.0,49.5,39.58,0.85
+New York,Steuben,92599.0,48.2,35.72,-0.06
+New York,Suffolk,1525465.0,54.2,44.54,-0.41
+New York,Sullivan,79658.0,48.4,55.93,0.76
+New York,Tioga,47772.0,48.5,44.49,0.92
+New York,Tompkins,104777.0,48,43.22,0.77
+New York,Ulster,182319.0,49.4,55.16,0.51
+New York,Warren,65599.0,45.6,51.46,0.85
+New York,Washington,60841.0,48.1,44.7,0.44
+New York,Wayne,91125.0,49,37.01,0.23
+New York,Westchester,990427.0,54.2,50.11,-0.24
+New York,Wyoming,39666.0,48,39.77,0.22
+New York,Yates,24451.0,49,37.29,0.63
+North Carolina,Alamance,176353.0,59.7,50.07,0.38
+North Carolina,Alexander,36512.0,58.4,49,0.3
+North Carolina,Alleghany,11185.0,53.2,55.64,0.38
+North Carolina,Anson,22202.0,62.5,48.04,0.05
+North Carolina,Ashe,27110.0,51.5,55.41,0.35
+North Carolina,Avery,17571.0,50.6,59.2,0.31
+North Carolina,Beaufort,44272.0,63.2,46.61,-0.53
+North Carolina,Bertie,17240.0,61.9,42.35,-0.8
+North Carolina,Bladen,29446.0,63.7,45.35,-0.66
+North Carolina,Brunswick,153064.0,64.7,50.76,-0.06
+North Carolina,Buncombe,273589.0,54.6,47.16,-0.07
+North Carolina,Burke,87881.0,58.2,54.57,0.44
+North Carolina,Cabarrus,235797.0,60,49.2,0.43
+North Carolina,Caldwell,80492.0,57.8,57.04,0.53
+North Carolina,Camden,11088.0,62,43.39,-0.68
+North Carolina,Carteret,69380.0,64.1,54.79,0.05
+North Carolina,Caswell,22614.0,59,43.24,0.02
+North Carolina,Catawba,163462.0,59.5,49.55,0.24
+North Carolina,Chatham,79864.0,60.8,49.73,0.22
+North Carolina,Cherokee,29512.0,56.5,63.22,0.26
+North Carolina,Chowan,13940.0,62.4,43.8,-0.69
+North Carolina,Clay,11614.0,55.5,61.96,-0.01
+North Carolina,Cleveland,100670.0,59.7,51.67,0.25
+North Carolina,Columbus,49885.0,64.1,47.4,-0.18
+North Carolina,Craven,100874.0,63.4,47.79,-0.46
+North Carolina,Cumberland,336699.0,63.3,44.64,-0.62
+North Carolina,Currituck,31015.0,62.2,43.54,-0.66
+North Carolina,Dare,37956.0,63.2,48.61,-0.33
+North Carolina,Davidson,172586.0,59.4,45.07,-0.16
+North Carolina,Davie,44090.0,59,44.27,-0.12
+North Carolina,Duplin,48990.0,62.7,46.26,-0.68
+North Carolina,Durham,332680.0,60.4,47.42,0.19
+North Carolina,Edgecombe,48301.0,61.6,40.47,-0.92
+North Carolina,Forsyth,389157.0,58.6,47.74,0.33
+North Carolina,Franklin,74539.0,60.5,46.37,-0.14
+North Carolina,Gaston,234215.0,60.7,50.12,0.16
+North Carolina,Gates,10383.0,61.6,42.54,-0.78
+North Carolina,Graham,7980.0,54.5,59.38,-0.3
+North Carolina,Granville,61903.0,59.8,45.95,0.02
+North Carolina,Greene,20211.0,62.3,43.04,-0.81
+North Carolina,Guilford,546101.0,59.3,50.38,0.52
+North Carolina,Halifax,47848.0,60.7,42.44,-0.51
+North Carolina,Harnett,138832.0,62.3,48.47,-0.06
+North Carolina,Haywood,62609.0,51.3,53.45,-0.12
+North Carolina,Henderson,118106.0,55.5,52.84,-0.32
+North Carolina,Hertford,20875.0,61.5,41.43,-0.88
+North Carolina,Hoke,53787.0,63.3,45.94,-0.55
+North Carolina,Hyde,4576.0,63.7,50.72,-0.19
+North Carolina,Iredell,195897.0,59.2,47.35,0.04
+North Carolina,Jackson,42955.0,53,59.25,-0.19
+North Carolina,Johnston,234778.0,62.3,48.81,-0.15
+North Carolina,Jones,9233.0,62.9,45.96,-0.61
+North Carolina,Lee,65476.0,61.6,48.98,0.04
+North Carolina,Lenoir,54633.0,62.2,42.81,-0.84
+North Carolina,Lincoln,93095.0,60,49.67,0.22
+North Carolina,McDowell,44753.0,56.9,58.49,0.4
+North Carolina,Macon,38065.0,54.3,58.35,-0.39
+North Carolina,Madison,21768.0,55.2,48.84,0.11
+North Carolina,Martin,21508.0,62.2,42.96,-0.73
+North Carolina,Mecklenburg,1145392.0,61.1,48.79,0.2
+North Carolina,Mitchell,15094.0,51.7,52.78,0.22
+North Carolina,Montgomery,25894.0,61.7,48.71,0.06
+North Carolina,Moore,105531.0,62.2,46.92,-0.28
+North Carolina,Nash,95789.0,61.1,43.73,-0.61
+North Carolina,New-Hanover,234921.0,65.2,51.48,-0.36
+North Carolina,Northampton,16779.0,60.8,42.25,-0.62
+North Carolina,Onslow,207298.0,63.7,48.04,-0.48
+North Carolina,Orange,150477.0,59.7,48.84,0.35
+North Carolina,Pamlico,12381.0,63.8,51.05,-0.2
+North Carolina,Pasquotank,40938.0,62.1,43.25,-0.72
+North Carolina,Pender,65737.0,64.1,50.31,-0.22
+North Carolina,Perquimans,13210.0,62.2,43.67,-0.71
+North Carolina,Person,39386.0,59,43.47,-0.02
+North Carolina,Pitt,173542.0,62.5,42.97,-0.76
+North Carolina,Polk,19986.0,59.2,57.52,0.08
+North Carolina,Randolph,146043.0,60.1,47.61,0.11
+North Carolina,Richmond,42778.0,63,47.82,-0.15
+North Carolina,Robeson,116663.0,64.1,44.5,-0.64
+North Carolina,Rockingham,91957.0,58.9,46.15,0.2
+North Carolina,Rowan,149645.0,59.5,45.96,-0.1
+North Carolina,Rutherford,64963.0,59.3,51.63,0.1
+North Carolina,Sampson,59120.0,62.9,46.74,-0.53
+North Carolina,Scotland,34162.0,63.8,45.41,-0.64
+North Carolina,Stanly,64153.0,61.1,50.77,0.39
+North Carolina,Stokes,45175.0,58,50.87,0.54
+North Carolina,Surry,71403.0,57.5,54.77,0.71
+North Carolina,Swain,13967.0,52.4,60.78,-0.13
+North Carolina,Transylvania,33355.0,54.6,62.05,-0.42
+North Carolina,Tyrrell,3365.0,63.1,46,-0.6
+North Carolina,Union,249070.0,61.8,45.6,-0.08
+North Carolina,Vance,42138.0,59.8,45.35,-0.01
+North Carolina,Wake,1175021.0,61.4,48.02,-0.04
+North Carolina,Warren,18713.0,60,43.98,-0.11
+North Carolina,Washington,10828.0,62.7,45,-0.6
+North Carolina,Watauga,55089.0,51.6,58.82,0.47
+North Carolina,Wayne,117286.0,62.5,45.87,-0.62
+North Carolina,Wilkes,65784.0,57.6,54.88,0.48
+North Carolina,Wilson,78449.0,62.3,44.65,-0.63
+North Carolina,Yadkin,37463.0,58.1,49.23,0.53
+North Carolina,Yancey,18811.0,51.5,53.42,0.17
+North Dakota,Adams,2115.0,42.2,17.19,-0.15
+North Dakota,Barnes,10758.0,39.6,19.33,0.18
+North Dakota,Benson,5770.0,38.5,15.92,-0.12
+North Dakota,Billings,1018.0,41.9,17.43,0.37
+North Dakota,Bottineau,6376.0,38.5,12.38,-1.05
+North Dakota,Bowman,2894.0,42.9,17.35,0.23
+North Dakota,Burke,2155.0,38,13.64,-0.6
+North Dakota,Burleigh,99280.0,39.4,18.58,0.73
+North Dakota,Cass,192734.0,40.3,18.34,-0.02
+North Dakota,Cavalier,3597.0,37.4,11.3,-1.6
+North Dakota,Dickey,4923.0,40,20.19,0.58
+North Dakota,Divide,2187.0,38.8,12.29,-0.68
+North Dakota,Dunn,4015.0,41.3,16.59,0.02
+North Dakota,Eddy,2314.0,38.8,15.33,-0.35
+North Dakota,Emmons,3250.0,40.2,20.47,1.05
+North Dakota,Foster,3378.0,38.7,15.58,-0.44
+North Dakota,Golden-Valley,1744.0,42.3,18.61,0.78
+North Dakota,Grand-Forks,72413.0,39.2,14.58,-0.8
+North Dakota,Grant,2243.0,41,19.61,0.78
+North Dakota,Griggs,2252.0,38.5,17.51,-0.14
+North Dakota,Hettinger,2406.0,41.1,16.82,-0.11
+North Dakota,Kidder,2393.0,38.4,17.95,0.68
+North Dakota,LaMoure,4098.0,40.2,20.38,0.6
+North Dakota,Logan,1855.0,39.1,20.62,1.28
+North Dakota,McHenry,5189.0,39.3,14.33,-0.56
+North Dakota,McIntosh,2475.0,39.5,21.7,1.43
+North Dakota,McKenzie,13908.0,41.7,15.06,-0.04
+North Dakota,McLean,9824.0,40.3,16.4,0.26
+North Dakota,Mercer,8333.0,40.9,16.62,0.13
+North Dakota,Morton,33710.0,40.4,19.03,0.72
+North Dakota,Mountrail,9290.0,39.4,14.33,-0.32
+North Dakota,Nelson,2995.0,38.2,16.31,-0.28
+North Dakota,Oliver,1856.0,40.4,18.03,0.34
+North Dakota,Pembina,6763.0,38.9,11.92,-1.57
+North Dakota,Pierce,3942.0,38.2,14.24,-0.65
+North Dakota,Ramsey,11515.0,38.4,14.97,-0.16
+North Dakota,Ransom,5640.0,40.4,20.14,0.47
+North Dakota,Renville,2220.0,38.9,11.95,-1.16
+North Dakota,Richland,16580.0,41.7,20.36,0.03
+North Dakota,Rolette,11933.0,37.9,11.85,-1.51
+North Dakota,Sargent,3795.0,40.8,20.21,0.37
+North Dakota,Sheridan,1295.0,39.2,17.9,0.04
+North Dakota,Sioux,3711.0,41.3,19.81,0.67
+North Dakota,Slope,672.0,42.3,16.95,-0.1
+North Dakota,Stark,32803.0,41,16.59,-0.12
+North Dakota,Steele,1788.0,38.1,16.33,-0.2
+North Dakota,Stutsman,21487.0,39.4,18.12,0.21
+North Dakota,Towner,2064.0,38.2,11.07,-1.68
+North Dakota,Traill,7958.0,39.2,16.05,-0.28
+North Dakota,Walsh,10438.0,38.8,14.02,-0.95
+North Dakota,Ward,68870.0,39.6,14.17,-0.57
+North Dakota,Wells,3930.0,38.2,16.69,-0.46
+North Dakota,Williams,38109.0,40.2,13.87,-0.26
+Ohio,Adams,27420.0,54.4,40.56,-0.08
+Ohio,Allen,101115.0,52.7,34.68,-0.09
+Ohio,Ashland,52181.0,50.8,39.57,0.5
+Ohio,Ashtabula,97014.0,50.5,42.49,0.24
+Ohio,Athens,58979.0,53.7,36.86,-0.16
+Ohio,Auglaize,45948.0,52.2,33.82,-0.22
+Ohio,Belmont,65509.0,52,42.06,0.52
+Ohio,Brown,43680.0,54,41.23,-0.08
+Ohio,Butler,388420.0,54.5,42.5,0.15
+Ohio,Carroll,26659.0,51.6,43.5,0.64
+Ohio,Champaign,38709.0,52.1,39.86,0.5
+Ohio,Clark,134831.0,53.3,40.76,0.34
+Ohio,Clermont,210805.0,54.8,40.33,-0.19
+Ohio,Clinton,41964.0,53.5,41.86,-0.1
+Ohio,Columbiana,100511.0,50.8,42.37,0.67
+Ohio,Coshocton,36571.0,52.1,42.01,0.42
+Ohio,Crawford,41522.0,51.9,39.37,0.09
+Ohio,Cuyahoga,1236041.0,52.3,43.04,0.91
+Ohio,Darke,51529.0,52.5,33.85,-0.63
+Ohio,Defiance,38187.0,51.9,31.24,-0.16
+Ohio,Delaware,226296.0,52.8,39.31,0.25
+Ohio,Erie,74501.0,52.1,35.23,-0.08
+Ohio,Fairfield,162898.0,52.8,36.3,-0.02
+Ohio,Fayette,28839.0,53.4,38.35,0.04
+Ohio,Franklin,1321820.0,53.9,39.33,0.26
+Ohio,Fulton,42171.0,51.8,33.14,-0.19
+Ohio,Gallia,29068.0,54.2,37.74,-0.13
+Ohio,Geauga,95469.0,50.4,46.75,0.93
+Ohio,Greene,168456.0,54,40.2,-0.11
+Ohio,Guernsey,38098.0,53,42.11,0.39
+Ohio,Hamilton,825037.0,55.3,41.2,-0.03
+Ohio,Hancock,74861.0,52.9,30.48,-0.9
+Ohio,Hardin,30416.0,52.8,32.76,-0.6
+Ohio,Harrison,14378.0,52,42.64,0.56
+Ohio,Henry,27512.0,52.4,32.25,-0.25
+Ohio,Highland,43391.0,53.6,39.11,-0.25
+Ohio,Hocking,27858.0,52.9,35.96,-0.24
+Ohio,Holmes,44390.0,51.2,41.58,0.53
+Ohio,Huron,58218.0,51.3,37.41,0.2
+Ohio,Jackson,32586.0,54.1,36.5,-0.34
+Ohio,Jefferson,64330.0,51.9,40.39,0.58
+Ohio,Knox,63183.0,51,43.97,0.75
+Ohio,Lake,231842.0,51.5,46.8,1.17
+Ohio,Lawrence,56653.0,55.4,35.72,-0.65
+Ohio,Licking,181359.0,52.1,40.79,0.42
+Ohio,Logan,46040.0,51.7,37.31,0.23
+Ohio,Lorain,316268.0,51.7,36.92,0.35
+Ohio,Lucas,426643.0,53.3,30.26,-0.64
+Ohio,Madison,43540.0,53.4,38.27,0.07
+Ohio,Mahoning,225636.0,50.9,40.53,0.01
+Ohio,Marion,64642.0,52.6,34.4,-0.42
+Ohio,Medina,183512.0,51.7,37.29,-0.05
+Ohio,Meigs,21969.0,53.7,39.35,0.24
+Ohio,Mercer,42348.0,51.9,32.14,-0.59
+Ohio,Miami,110247.0,53.7,35.85,-0.39
+Ohio,Monroe,13234.0,52.5,46.2,0.7
+Ohio,Montgomery,533892.0,54.5,37.02,-0.45
+Ohio,Morgan,13668.0,53.4,39.61,0.16
+Ohio,Morrow,35339.0,51.4,42.17,0.34
+Ohio,Muskingum,86113.0,53.1,41.39,0.4
+Ohio,Noble,14335.0,53.1,41.28,0.22
+Ohio,Ottawa,39978.0,52.8,29.47,-0.67
+Ohio,Paulding,18757.0,52.2,31.99,-0.12
+Ohio,Perry,35480.0,52.7,38.58,0.15
+Ohio,Pickaway,60023.0,53.9,35.09,-0.28
+Ohio,Pike,27005.0,54.5,38.41,-0.18
+Ohio,Portage,161745.0,51.4,40.64,-0.09
+Ohio,Preble,40596.0,52.6,35.91,-0.53
+Ohio,Putnam,34334.0,52.7,31.87,-0.4
+Ohio,Richland,125319.0,50.9,42.03,0.62
+Ohio,Ross,76606.0,54.1,36.65,-0.24
+Ohio,Sandusky,58667.0,52.5,32.19,-0.21
+Ohio,Scioto,72194.0,54.9,38.34,-0.44
+Ohio,Seneca,54632.0,52.1,33.9,-0.19
+Ohio,Shelby,47671.0,52.3,35.9,-0.15
+Ohio,Stark,372657.0,52.2,39.54,-0.27
+Ohio,Summit,535882.0,52.6,36.93,-0.57
+Ohio,Trumbull,200643.0,50.8,41.8,0.19
+Ohio,Tuscarawas,91937.0,52.3,43.77,0.59
+Ohio,Union,66898.0,52.4,35.89,0.13
+Ohio,Van-Wert,28769.0,52.3,34.95,0.06
+Ohio,Vinton,12565.0,53.5,35.83,-0.34
+Ohio,Warren,249778.0,54.8,41.34,-0.17
+Ohio,Washington,58901.0,54.3,41.92,0.28
+Ohio,Wayne,116559.0,51.5,37.77,0.12
+Ohio,Williams,36652.0,51.1,31.71,-0.18
+Ohio,Wood,131592.0,53,30.82,-0.43
+Ohio,Wyandot,21567.0,53,32.98,-0.57
+Oklahoma,Adair,19576.0,60.6,48.44,0.12
+Oklahoma,Alfalfa,5637.0,59.4,27.23,-0.03
+Oklahoma,Atoka,14262.0,63.7,42.19,-0.04
+Oklahoma,Beaver,5016.0,57.8,24.57,-0.11
+Oklahoma,Beckham,22009.0,61.4,25,-0.33
+Oklahoma,Blaine,8409.0,60.2,31.87,0.29
+Oklahoma,Bryan,48182.0,64.9,39.52,-0.07
+Oklahoma,Caddo,26198.0,61.2,32.44,0.57
+Oklahoma,Canadian,169149.0,60.6,35.17,0.68
+Oklahoma,Carter,48510.0,63.4,33.82,0.03
+Oklahoma,Cherokee,48098.0,61.2,45.47,0.08
+Oklahoma,Choctaw,14358.0,64.3,47.37,0.1
+Oklahoma,Cimarron,2252.0,54.8,17.05,-0.28
+Oklahoma,Cleveland,299587.0,61.4,37.73,0.39
+Oklahoma,Coal,5313.0,63.2,40.45,0.07
+Oklahoma,Comanche,123046.0,62.6,29.64,0.31
+Oklahoma,Cotton,5477.0,64,28.71,0.05
+Oklahoma,Craig,14123.0,59.8,36.2,-0.4
+Oklahoma,Creek,72699.0,60.8,38.09,0.11
+Oklahoma,Custer,27886.0,60.4,30.87,0.42
+Oklahoma,Delaware,41413.0,60.1,46.86,0.24
+Oklahoma,Dewey,4401.0,59.5,27.26,-0.23
+Oklahoma,Ellis,3657.0,58.6,25.77,-0.19
+Oklahoma,Garfield,61920.0,60.1,28.76,-0.26
+Oklahoma,Garvin,25713.0,62.3,36.74,0.47
+Oklahoma,Grady,56658.0,61.6,32.93,0.27
+Oklahoma,Grant,4124.0,59.5,26.46,-0.47
+Oklahoma,Greer,5547.0,62.3,23.81,-0.54
+Oklahoma,Harmon,2428.0,62.7,21.36,-0.76
+Oklahoma,Harper,3129.0,58.2,25.96,-0.16
+Oklahoma,Haskell,11641.0,62.7,47.05,0.13
+Oklahoma,Hughes,13407.0,62.2,41.44,0.17
+Oklahoma,Jackson,24556.0,63.2,21.56,-0.63
+Oklahoma,Jefferson,5389.0,64.1,30.22,-0.08
+Oklahoma,Johnston,10406.0,63.7,35.76,-0.26
+Oklahoma,Kay,43668.0,59.7,26.36,-0.73
+Oklahoma,Kingfisher,15293.0,60.7,32,0.29
+Oklahoma,Kiowa,8345.0,62,27.65,0.19
+Oklahoma,Latimer,9630.0,62.2,49.53,0.28
+Oklahoma,Le-Flore,48907.0,62.1,53.29,0.32
+Oklahoma,Lincoln,34188.0,61.2,37.91,0.24
+Oklahoma,Logan,51933.0,60.9,30.64,-0.1
+Oklahoma,Love,10218.0,64.4,33.64,-0.03
+Oklahoma,McClain,45306.0,61.7,36.88,0.43
+Oklahoma,McCurtain,30931.0,63.1,53.71,0.17
+Oklahoma,McIntosh,19451.0,62.5,40.5,-0.06
+Oklahoma,Major,7502.0,59.8,27.47,-0.11
+Oklahoma,Marshall,15882.0,64.5,34.44,-0.26
+Oklahoma,Mayes,39589.0,60.6,42.92,0.13
+Oklahoma,Murray,13672.0,62.8,36.42,0.13
+Oklahoma,Muskogee,66354.0,62.4,40.83,-0.15
+Oklahoma,Noble,10896.0,60.5,28.25,-0.57
+Oklahoma,Nowata,9483.0,59.6,30.4,-0.7
+Oklahoma,Okfuskee,11134.0,61.6,42.81,0.43
+Oklahoma,Oklahoma,802559.0,61,36.5,0.5
+Oklahoma,Okmulgee,36990.0,61.7,39.15,0.11
+Oklahoma,Osage,45839.0,59.5,29.32,-0.46
+Oklahoma,Ottawa,30338.0,60.3,39.53,-0.26
+Oklahoma,Pawnee,15757.0,60.4,30.69,-0.3
+Oklahoma,Payne,82794.0,61,31.07,-0.31
+Oklahoma,Pittsburg,43613.0,62.5,44.15,0.12
+Oklahoma,Pontotoc,38141.0,62.4,38.17,0.11
+Oklahoma,Pottawatomie,73533.0,61.6,38.39,0.28
+Oklahoma,Pushmataha,10769.0,62.8,49.07,0.05
+Oklahoma,Roger-Mills,3320.0,60.1,26.09,-0.27
+Oklahoma,Rogers,98836.0,60.5,37.28,-0.08
+Oklahoma,Seminole,23351.0,61.8,39.95,0.25
+Oklahoma,Sequoyah,39667.0,62.5,47.83,0.01
+Oklahoma,Stephens,43710.0,62.8,33.84,0.43
+Oklahoma,Texas,20495.0,57,19.95,-0.36
+Oklahoma,Tillman,6977.0,63.9,23.9,-0.27
+Oklahoma,Tulsa,677358.0,60.8,36.02,-0.15
+Oklahoma,Wagoner,86644.0,61.6,39.39,-0.11
+Oklahoma,Washington,53242.0,59.6,29.81,-0.71
+Oklahoma,Washita,10732.0,61,33.3,0.91
+Oklahoma,Woods,8587.0,58.6,26.41,-0.05
+Oklahoma,Woodward,19990.0,58.6,25.31,-0.25
+Oregon,Baker,16938.0,45.6,21.97,-0.01
+Oregon,Benton,97630.0,52.6,48.37,-1.07
+Oregon,Clackamas,423177.0,49.4,59.65,-1.25
+Oregon,Clatsop,41695.0,50.7,70.52,-1.31
+Oregon,Columbia,53588.0,51.7,47.1,-1.14
+Oregon,Coos,64990.0,52.3,56.27,-1.04
+Oregon,Crook,26375.0,46.1,13.26,-0.44
+Oregon,Curry,23598.0,52.6,73.45,-1
+Oregon,Deschutes,206549.0,44.4,19.49,-0.75
+Oregon,Douglas,112297.0,51.3,43.41,-1.04
+Oregon,Gilliam,2018.0,51,9.44,-0.6
+Oregon,Grant,7218.0,44.2,21.85,0.07
+Oregon,Harney,7515.0,45.5,14.03,0.5
+Oregon,Hood-River,24048.0,46.7,48.16,-1.12
+Oregon,Jackson,221644.0,50.7,31.89,-0.67
+Oregon,Jefferson,25330.0,48.2,14.58,-0.79
+Oregon,Josephine,87730.0,51.6,51.75,-0.53
+Oregon,Klamath,70212.0,44.7,26.18,-0.32
+Oregon,Lake,8385.0,44.9,14.86,0.17
+Oregon,Lane,382353.0,50.4,50.43,-1.2
+Oregon,Lincoln,50813.0,51.7,78.04,-1
+Oregon,Linn,130467.0,49.9,53.2,-1.26
+Oregon,Malheur,31879.0,47.5,15.33,1.08
+Oregon,Marion,346703.0,50.7,51.08,-1.23
+Oregon,Morrow,12300.0,50.3,12.04,-0.75
+Oregon,Multnomah,795083.0,52.5,53.47,-1.07
+Oregon,Polk,89614.0,52.8,57.15,-1.03
+Oregon,Sherman,1955.0,50.8,11.45,-0.28
+Oregon,Tillamook,27574.0,50.4,89.48,-0.93
+Oregon,Umatilla,80215.0,49.3,17.93,-0.67
+Oregon,Union,26177.0,44.9,25.53,-0.8
+Oregon,Wallowa,7659.0,44.1,23.91,-0.89
+Oregon,Wasco,26561.0,49.3,16.04,-0.92
+Oregon,Washington,600176.0,52,50.08,-0.84
+Oregon,Wheeler,1445.0,47.8,13.93,-0.49
+Oregon,Yamhill,108226.0,52.7,52.95,-1.01
+Pennsylvania,Adams,106027.0,54,37.72,-0.63
+Pennsylvania,Allegheny,1233253.0,52.7,38.35,0.04
+Pennsylvania,Armstrong,64747.0,51,43.54,0.27
+Pennsylvania,Beaver,165677.0,51.5,42.27,0.68
+Pennsylvania,Bedford,47418.0,51.8,37.82,-0.03
+Pennsylvania,Berks,430449.0,53.6,44.52,-0.24
+Pennsylvania,Blair,121032.0,50.7,41.44,0.13
+Pennsylvania,Bradford,59866.0,48.5,42.52,0.66
+Pennsylvania,Bucks,645054.0,54.2,46.12,-0.25
+Pennsylvania,Butler,197300.0,51,41.54,0.02
+Pennsylvania,Cambria,131441.0,48.8,44.86,0.24
+Pennsylvania,Cameron,4418.0,48.5,46.33,0.7
+Pennsylvania,Carbon,65460.0,49.7,53.69,0.18
+Pennsylvania,Centre,158425.0,50.1,43.9,0.35
+Pennsylvania,Chester,545823.0,54.6,45.4,-0.09
+Pennsylvania,Clarion,37346.0,49.7,44.19,0.08
+Pennsylvania,Clearfield,77904.0,49.1,42.31,0.04
+Pennsylvania,Clinton,37931.0,49.6,45.17,0.51
+Pennsylvania,Columbia,64926.0,50.4,48.57,0.51
+Pennsylvania,Crawford,82670.0,49.2,45.49,0.2
+Pennsylvania,Cumberland,268579.0,53.9,39.23,-0.38
+Pennsylvania,Dauphin,288800.0,53.5,43.27,-0.28
+Pennsylvania,Delaware,575182.0,56.3,44.07,-0.28
+Pennsylvania,Elk,30477.0,48.5,44.78,0.15
+Pennsylvania,Erie,267689.0,49.3,49.52,0.71
+Pennsylvania,Fayette,125755.0,51,46.2,0.34
+Pennsylvania,Forest,6626.0,48.6,45.24,0.06
+Pennsylvania,Franklin,156902.0,53.5,35.41,-0.77
+Pennsylvania,Fulton,14533.0,53,35.91,-0.45
+Pennsylvania,Greene,34663.0,52.2,41.73,0.38
+Pennsylvania,Huntingdon,43281.0,52.1,40.97,0.11
+Pennsylvania,Indiana,82957.0,50.1,46.57,0.39
+Pennsylvania,Jefferson,43794.0,49.3,43.25,-0.17
+Pennsylvania,Juniata,23339.0,52.6,44.93,0.35
+Pennsylvania,Lackawanna,215615.0,49.3,51.03,0.61
+Pennsylvania,Lancaster,556629.0,54.5,38.61,-0.58
+Pennsylvania,Lawrence,84849.0,51.2,41.6,0.19
+Pennsylvania,Lebanon,144011.0,53.6,40.89,-0.59
+Pennsylvania,Lehigh,376317.0,53.1,48.19,-0.02
+Pennsylvania,Luzerne,326369.0,49.5,49.04,0.41
+Pennsylvania,Lycoming,113104.0,49.7,48.32,0.65
+Pennsylvania,McKean,39866.0,47.3,43.11,0.02
+Pennsylvania,Mercer,109220.0,50.3,42.29,-0.09
+Pennsylvania,Mifflin,45988.0,51.9,44.93,0.48
+Pennsylvania,Monroe,167198.0,49.2,54.9,0.38
+Pennsylvania,Montgomery,864683.0,55,45.53,-0.16
+Pennsylvania,Montour,18091.0,51.5,49.72,0.75
+Pennsylvania,Northampton,318526.0,52.3,51.66,0.23
+Pennsylvania,Northumberland,90133.0,51.7,48.3,0.6
+Pennsylvania,Perry,46114.0,53.1,42.37,-0.16
+Pennsylvania,Philadelphia,1567258.0,56.5,45.38,-0.13
+Pennsylvania,Pike,60558.0,49.1,52.03,0.47
+Pennsylvania,Potter,16220.0,47.3,42.73,0.38
+Pennsylvania,Schuylkill,143104.0,51,47.24,-0.06
+Pennsylvania,Snyder,39652.0,52,48.19,0.53
+Pennsylvania,Somerset,72710.0,49,45.18,0.27
+Pennsylvania,Sullivan,5855.0,46.9,53.42,0.88
+Pennsylvania,Susquehanna,38074.0,48.6,51.85,1.15
+Pennsylvania,Tioga,41106.0,47.9,39.52,0.36
+Pennsylvania,Union,42744.0,51.3,48.08,0.61
+Pennsylvania,Venango,49777.0,49.5,44.41,0.15
+Pennsylvania,Warren,37808.0,48,44.47,0.05
+Pennsylvania,Washington,210383.0,52.2,39.96,0.26
+Pennsylvania,Wayne,51173.0,48.5,53.33,0.91
+Pennsylvania,Westmoreland,352057.0,51.8,46.33,0.5
+Pennsylvania,Wyoming,26014.0,49.3,49.66,0.82
+Pennsylvania,York,461058.0,54.6,38.08,-0.62
+Rhode Island,Bristol,50360.0,53.6,58.49,0.99
+Rhode Island,Kent,171275.0,52.4,59.75,0.98
+Rhode Island,Newport,84481.0,53.4,55.26,0.91
+Rhode Island,Providence,657288.0,52.1,60.32,0.94
+Rhode Island,Washington,130330.0,52.8,53.89,0.71
+South Carolina,Abbeville,24356.0,62.8,52.33,0.37
+South Carolina,Aiken,174150.0,64.8,57.44,0.97
+South Carolina,Allendale,7579.0,65.4,60.3,1.17
+South Carolina,Anderson,209581.0,61.8,53.79,0.32
+South Carolina,Bamberg,12908.0,64.7,66.4,1.72
+South Carolina,Barnwell,20414.0,64.8,64.46,1.65
+South Carolina,Beaufort,196371.0,68.3,50.41,0.07
+South Carolina,Berkeley,245117.0,66.2,50.73,0.25
+South Carolina,Calhoun,14179.0,65.1,53.95,0.72
+South Carolina,Charleston,419279.0,67.3,49.96,0.12
+South Carolina,Cherokee,56121.0,60.6,52.84,0.33
+South Carolina,Chester,31931.0,61.8,47.86,0.21
+South Carolina,Chesterfield,43683.0,62.9,47.9,0.02
+South Carolina,Clarendon,30913.0,64.9,52.73,0.46
+South Carolina,Colleton,38599.0,66.5,54.83,0.54
+South Carolina,Darlington,62398.0,64.3,46.95,-0.08
+South Carolina,Dillon,27738.0,64.6,45.99,-0.3
+South Carolina,Dorchester,166133.0,66.5,53.81,0.49
+South Carolina,Edgefield,26932.0,64,53.61,0.63
+South Carolina,Fairfield,20455.0,62.9,48.15,0.21
+South Carolina,Florence,136721.0,64.9,48.18,0.05
+South Carolina,Georgetown,64722.0,65,50.31,0.21
+South Carolina,Greenville,547950.0,60.7,59.08,0.25
+South Carolina,Greenwood,69267.0,63,50.98,0.38
+South Carolina,Hampton,18113.0,66.4,55.8,0.57
+South Carolina,Horry,383101.0,64.6,46.19,-0.01
+South Carolina,Jasper,32039.0,67.6,51.06,0.07
+South Carolina,Kershaw,67751.0,63.4,45.86,-0.2
+South Carolina,Lancaster,104577.0,62,49.58,0.27
+South Carolina,Laurens,67965.0,62.2,52.71,0.5
+South Carolina,Lee,16153.0,64.3,47.9,-0.05
+South Carolina,Lexington,304797.0,64.3,52.82,0.53
+South Carolina,McCormick,9764.0,63.6,50.39,0.35
+South Carolina,Marion,28450.0,64.9,46.53,0
+South Carolina,Marlboro,26039.0,64.1,45.96,-0.4
+South Carolina,Newberry,38247.0,63,49.67,0.32
+South Carolina,Oconee,80180.0,60.1,60.56,0.05
+South Carolina,Orangeburg,83094.0,65.2,58.48,1.1
+South Carolina,Pickens,133462.0,60.5,61.17,0.14
+South Carolina,Richland,421566.0,64.4,49.05,0.32
+South Carolina,Saluda,18938.0,63.6,53.91,0.64
+South Carolina,Spartanburg,345831.0,61.1,55.77,0.43
+South Carolina,Sumter,104012.0,64.8,50.64,0.27
+South Carolina,Union,26752.0,61.9,47.18,-0.01
+South Carolina,Williamsburg,30058.0,65,49.89,0.22
+South Carolina,York,294248.0,61.2,48.25,0.11
+South Dakota,Aurora,2755.0,45.9,18.97,-0.24
+South Dakota,Beadle,19376.0,44.8,17.01,-0.35
+South Dakota,Bennett,3336.0,47,26.32,2.04
+South Dakota,Bon-Homme,7062.0,47.7,23.26,-0.29
+South Dakota,Brookings,35484.0,43,19.47,-0.23
+South Dakota,Brown,37972.0,41.7,19.79,0.23
+South Dakota,Brule,5321.0,46.5,18.75,-0.21
+South Dakota,Buffalo,1861.0,45.3,18.7,0.22
+South Dakota,Butte,10774.0,45.7,19.17,0.57
+South Dakota,Campbell,1349.0,41.6,20.18,0.87
+South Dakota,Charles-Mix,9213.0,47.7,20.13,-0.31
+South Dakota,Clark,3912.0,42.9,20.16,-0.19
+South Dakota,Clay,15280.0,47.2,23.05,-0.4
+South Dakota,Codington,28721.0,42.2,20.21,-0.38
+South Dakota,Corson,3826.0,42.9,19.25,0.45
+South Dakota,Custer,9006.0,45.4,19.38,0.53
+South Dakota,Davison,19973.0,45.5,20.64,0.45
+South Dakota,Day,5479.0,41.7,20.64,-0.1
+South Dakota,Deuel,4352.0,42.9,20.83,-0.31
+South Dakota,Dewey,5140.0,44.4,20.37,0.63
+South Dakota,Douglas,2776.0,46.5,20.87,0.01
+South Dakota,Edmunds,4065.0,42,20.68,0.83
+South Dakota,Fall-River,7370.0,47.1,17.98,0.45
+South Dakota,Faulk,2126.0,43,22.97,1.31
+South Dakota,Grant,7463.0,43.1,20.07,-0.48
+South Dakota,Gregory,3962.0,47.5,20.63,0.1
+South Dakota,Haakon,1826.0,46.3,16.96,-0.16
+South Dakota,Hamlin,6352.0,42.7,20.62,-0.32
+South Dakota,Hand,3140.0,44.1,20.38,0.56
+South Dakota,Hanson,3461.0,45.2,20.67,0.3
+South Dakota,Harding,1330.0,44.7,16.11,-0.18
+South Dakota,Hughes,17692.0,45.6,18.34,0.43
+South Dakota,Hutchinson,7368.0,46.5,22.54,0.02
+South Dakota,Hyde,1184.0,43.8,21.86,1.27
+South Dakota,Jackson,2821.0,47.4,19.89,0.76
+South Dakota,Jerauld,1650.0,45,17.86,-0.34
+South Dakota,Jones,884.0,47.2,18.05,0.2
+South Dakota,Kingsbury,5294.0,43.4,20.89,-0.28
+South Dakota,Lake,10972.0,43.9,20.12,-0.22
+South Dakota,Lawrence,27214.0,42.6,27.19,0.34
+South Dakota,Lincoln,70987.0,46.1,21.65,-0.45
+South Dakota,Lyman,3692.0,46.8,19.32,0.42
+South Dakota,McCook,5778.0,45.4,20.56,-0.24
+South Dakota,McPherson,2395.0,40.5,20.85,1
+South Dakota,Marshall,4374.0,41.1,20.44,0.1
+South Dakota,Meade,30698.0,46.1,20.47,0.74
+South Dakota,Mellette,1892.0,47.9,20.86,0.92
+South Dakota,Miner,2304.0,44.4,18.92,-0.29
+South Dakota,Minnehaha,203971.0,45.8,20.44,-0.63
+South Dakota,Moody,6349.0,44,18.82,-0.5
+South Dakota,Oglala-Lakota,13519.0,47.7,21.17,1.08
+South Dakota,Pennington,114461.0,45.7,19.22,0.45
+South Dakota,Perkins,2804.0,44.1,18.67,0.27
+South Dakota,Potter,2438.0,43,20.85,0.83
+South Dakota,Roberts,10163.0,42.7,21.29,-0.08
+South Dakota,Sanborn,2415.0,45,18.44,-0.17
+South Dakota,Spink,6235.0,43.9,19.85,0.23
+South Dakota,Stanley,2999.0,46.2,16.94,-0.01
+South Dakota,Sully,1471.0,44.5,19.49,0.73
+South Dakota,Todd,9220.0,47.1,26.46,1.9
+South Dakota,Tripp,5565.0,47.6,20.53,0.4
+South Dakota,Turner,8856.0,46.5,21.62,-0.44
+South Dakota,Union,17063.0,47.2,23.43,-0.32
+South Dakota,Walworth,5265.0,42.4,20.6,0.66
+South Dakota,Yankton,23373.0,47.4,22.66,-0.52
+South Dakota,Ziebach,2395.0,45.2,20.14,0.63
+Tennessee,Anderson,78913.0,57.6,57.1,0.57
+Tennessee,Bedford,51950.0,60,58.17,0.33
+Tennessee,Benton,16002.0,59.9,49.7,-0.39
+Tennessee,Bledsoe,14798.0,57.8,60.12,0.35
+Tennessee,Blount,139958.0,58.5,56.47,0.21
+Tennessee,Bradley,110616.0,60.3,56.1,0.33
+Tennessee,Campbell,39584.0,55.6,51.89,0.29
+Tennessee,Cannon,14788.0,59,59.19,0.55
+Tennessee,Carroll,28458.0,59.9,54.05,0.12
+Tennessee,Carter,56410.0,54.3,50.74,0.31
+Tennessee,Cheatham,41830.0,60.2,46.35,-0.5
+Tennessee,Chester,17609.0,60.6,58.06,0.43
+Tennessee,Claiborne,32431.0,56.3,48.11,-0.04
+Tennessee,Clay,7620.0,58.6,50.27,-0.13
+Tennessee,Cocke,36879.0,58,50.68,0.14
+Tennessee,Coffee,59728.0,59,61.46,0.6
+Tennessee,Crockett,13888.0,60.7,53.05,0.03
+Tennessee,Cumberland,63522.0,55.8,62.91,0.68
+Tennessee,Davidson,708144.0,60.5,45.14,-0.46
+Tennessee,Decatur,11564.0,60.5,59.51,0.39
+Tennessee,DeKalb,21003.0,59,54.73,0.22
+Tennessee,Dickson,55761.0,59.8,47.47,-0.61
+Tennessee,Dyer,36410.0,60.9,48.11,-0.18
+Tennessee,Fayette,43630.0,61.6,59.63,0.58
+Tennessee,Fentress,19332.0,55.7,55.82,0.29
+Tennessee,Franklin,43942.0,59.4,63.17,0.74
+Tennessee,Gibson,50837.0,60.3,53.28,0.05
+Tennessee,Giles,30554.0,59,55.51,0.09
+Tennessee,Grainger,24277.0,57.8,46.56,-0.11
+Tennessee,Greene,71405.0,57.7,47.26,0.3
+Tennessee,Grundy,13783.0,57,67.3,0.81
+Tennessee,Hamblen,65168.0,58.4,44.33,-0.11
+Tennessee,Hamilton,374682.0,60.3,54.05,-0.12
+Tennessee,Hancock,6845.0,56.8,47.42,-0.03
+Tennessee,Hardeman,25529.0,61,58.59,0.39
+Tennessee,Hardin,27077.0,61.1,56.89,0.21
+Tennessee,Hawkins,58043.0,57.6,46.72,0.12
+Tennessee,Haywood,17550.0,61.1,54.99,0.15
+Tennessee,Henderson,27929.0,60.3,58.8,0.5
+Tennessee,Henry,32379.0,59.5,50.73,-0.09
+Tennessee,Hickman,25455.0,59.8,51.43,-0.32
+Tennessee,Houston,8219.0,59.9,48.8,-0.53
+Tennessee,Humphreys,19106.0,59.9,47.93,-0.68
+Tennessee,Jackson,11989.0,59,50.86,-0.16
+Tennessee,Jefferson,56727.0,58.9,48.26,0.2
+Tennessee,Johnson,18086.0,52.7,55.2,0.67
+Tennessee,Knox,494574.0,58.9,54.91,0.56
+Tennessee,Lake,6507.0,60.4,48.56,-0.13
+Tennessee,Lauderdale,24793.0,61.5,50.81,-0.05
+Tennessee,Lawrence,45415.0,58.9,54.03,-0.09
+Tennessee,Lewis,12957.0,59.2,55.03,0.05
+Tennessee,Lincoln,36004.0,60,60.25,0.48
+Tennessee,Loudon,58181.0,59.4,57.1,0.46
+Tennessee,McMinn,54719.0,59.7,58.28,0.44
+Tennessee,McNairy,25988.0,60.9,59.04,0.51
+Tennessee,Macon,26229.0,58.5,50.72,-0.13
+Tennessee,Madison,99245.0,60.6,55.32,0.16
+Tennessee,Marion,29094.0,59.1,63.93,0.55
+Tennessee,Marshall,35878.0,59.9,57.65,0.28
+Tennessee,Maury,108159.0,59.8,53.56,-0.14
+Tennessee,Meigs,13272.0,59.8,60.24,0.46
+Tennessee,Monroe,47740.0,58.4,56.47,0.08
+Tennessee,Montgomery,235201.0,60.1,48.51,-0.41
+Tennessee,Moore,6742.0,59.8,60.52,0.4
+Tennessee,Morgan,21224.0,56.3,59.09,0.56
+Tennessee,Obion,30394.0,59.9,52.45,0.05
+Tennessee,Overton,23044.0,57.7,57.16,0.31
+Tennessee,Perry,8685.0,60,55.85,0.1
+Tennessee,Pickett,5107.0,57.2,52.01,0.05
+Tennessee,Polk,17863.0,58.9,58.82,0.4
+Tennessee,Putnam,82382.0,58,56.85,0.24
+Tennessee,Rhea,33730.0,58.8,62.36,0.47
+Tennessee,Roane,55082.0,59,59.99,0.57
+Tennessee,Robertson,75470.0,59.2,51.84,0.11
+Tennessee,Rutherford,360619.0,60.2,53.18,0.2
+Tennessee,Scott,22035.0,55.3,52.1,0.1
+Tennessee,Sequatchie,16909.0,57.9,60.73,0.28
+Tennessee,Sevier,98789.0,56.6,57.67,0.37
+Tennessee,Shelby,916371.0,62.6,60.71,0.58
+Tennessee,Smith,20489.0,59.2,49.23,-0.25
+Tennessee,Stewart,14035.0,59.8,49.52,-0.4
+Tennessee,Sullivan,160820.0,57.1,44.45,-0.05
+Tennessee,Sumner,203858.0,59.4,50.96,0.01
+Tennessee,Tipton,61656.0,61.8,57.06,0.46
+Tennessee,Trousdale,12111.0,59.4,49.97,-0.16
+Tennessee,Unicoi,17674.0,53.9,47.69,-0.13
+Tennessee,Union,20452.0,57.2,50.28,0.32
+Tennessee,Van-Buren,6429.0,57.4,58.02,0.4
+Tennessee,Warren,42026.0,58.5,60.1,0.59
+Tennessee,Washington,136172.0,57.3,43.71,-0.17
+Tennessee,Wayne,16308.0,59.8,57.31,0.15
+Tennessee,Weakley,33063.0,59.8,52.96,-0.01
+Tennessee,White,28064.0,58.1,58.16,0.38
+Tennessee,Williamson,260815.0,59.9,46.32,-0.56
+Tennessee,Wilson,158555.0,59.8,49.58,-0.21
+Texas,Anderson,58064.0,67.4,36.91,-0.54
+Texas,Andrews,18334.0,64.7,6.43,-1.66
+Texas,Angelina,87101.0,69.2,43.1,-0.77
+Texas,Aransas,24944.0,73.3,26.38,-1.01
+Texas,Archer,8835.0,65.6,23.18,-0.62
+Texas,Armstrong,1850.0,60.6,19.77,-0.79
+Texas,Atascosa,50864.0,71.8,22.96,-0.8
+Texas,Austin,31097.0,72,36.79,-0.71
+Texas,Bailey,6779.0,59,14.45,-0.84
+Texas,Bandera,22115.0,69.2,17.51,-1.65
+Texas,Bastrop,106188.0,70.6,29,-0.83
+Texas,Baylor,3466.0,65.7,22.87,-0.48
+Texas,Bee,30394.0,72.6,22.99,-0.92
+Texas,Bell,388386.0,68.9,20.31,-1.69
+Texas,Bexar,2059530.0,71.2,20.4,-1.45
+Texas,Blanco,12418.0,68.9,17.44,-1.69
+Texas,Borden,585.0,64.6,13.05,-1.12
+Texas,Bosque,18697.0,68,24.26,-1.19
+Texas,Bowie,92035.0,65.5,51.31,0.24
+Texas,Brazoria,388181.0,72.2,34.76,-0.87
+Texas,Brazos,242014.0,70.4,36.99,-0.53
+Texas,Brewster,9343.0,66.8,11.54,-0.79
+Texas,Briscoe,1431.0,61.6,19.27,-0.59
+Texas,Brooks,6906.0,75.8,17.64,-1.04
+Texas,Brown,38373.0,67.5,24.12,-0.68
+Texas,Burleson,18657.0,70.6,35.39,-0.52
+Texas,Burnet,52502.0,68.8,20.38,-1.15
+Texas,Caldwell,47848.0,71.2,24.71,-1.17
+Texas,Calhoun,19706.0,73,30.28,-0.83
+Texas,Callahan,14210.0,66,25.84,-0.32
+Texas,Cameron,425208.0,76.5,24.11,-0.48
+Texas,Camp,12716.0,65.5,46.44,0.24
+Texas,Carson,5784.0,59.7,21.81,-0.48
+Texas,Cass,28539.0,66,50.37,0.29
+Texas,Castro,7298.0,58.6,17.93,-0.55
+Texas,Chambers,51288.0,71.7,43.36,-0.61
+Texas,Cherokee,51645.0,67.6,42.75,-0.39
+Texas,Childress,6809.0,63.3,20.29,-0.64
+Texas,Clay,10486.0,65.2,24.92,-0.63
+Texas,Cochran,2526.0,59.9,13.11,-1.05
+Texas,Coke,3333.0,66.7,15.45,-1.16
+Texas,Coleman,7850.0,67.2,22.84,-0.77
+Texas,Collin,1158696.0,66.5,32.84,-0.58
+Texas,Collingsworth,2568.0,61.6,19.86,-0.8
+Texas,Colorado,20754.0,72.5,37.52,-0.61
+Texas,Comal,184642.0,70.1,21.39,-1.52
+Texas,Comanche,13878.0,67.5,21.96,-1.31
+Texas,Concho,3340.0,67.5,19.93,-0.81
+Texas,Cooke,43050.0,65.3,32.47,-0.22
+Texas,Coryell,85057.0,68.2,20.1,-1.58
+Texas,Cottle,1307.0,63.5,20.98,-0.42
+Texas,Crane,4546.0,67.9,6.98,-1.52
+Texas,Crockett,2943.0,67.5,13.99,-1.06
+Texas,Crosby,4998.0,62.1,17.56,-0.84
+Texas,Culberson,2155.0,63.5,8.93,-1.02
+Texas,Dallam,7241.0,55.4,17.58,-0.12
+Texas,Dallas,2600840.0,67.6,31.88,-0.45
+Texas,Dawson,12130.0,63.2,11.96,-1.07
+Texas,Deaf-Smith,18377.0,58.1,15.86,-0.96
+Texas,Delta,5406.0,65.7,49.39,0.5
+Texas,Denton,977281.0,66.9,25.77,-0.87
+Texas,DeWitt,19772.0,72.3,32.85,-0.4
+Texas,Dickens,1726.0,63.2,19.66,-0.61
+Texas,Dimmit,8387.0,73.4,14.88,-1.18
+Texas,Donley,3339.0,61,18.74,-0.88
+Texas,Duval,9888.0,74.3,20.92,-0.58
+Texas,Eastland,17944.0,66.3,24.89,-0.66
+Texas,Ector,160869.0,66.2,5.71,-1.74
+Texas,Edwards,1422.0,68.3,12.9,-1.63
+Texas,Ellis,212182.0,67.7,31.53,-0.48
+Texas,El-Paso,868763.0,65.5,6.58,-1.09
+Texas,Erath,43895.0,67.5,20.98,-1.49
+Texas,Falls,17049.0,68.6,27.66,-0.79
+Texas,Fannin,37125.0,65.6,44.64,0.26
+Texas,Fayette,24913.0,72,34.88,-0.64
+Texas,Fisher,3622.0,65.8,18.94,-1.01
+Texas,Floyd,5235.0,60.5,18.66,-0.61
+Texas,Foard,1057.0,64.5,21.48,-0.53
+Texas,Fort-Bend,889146.0,72.1,34.86,-0.89
+Texas,Franklin,10618.0,65.4,47.08,0.31
+Texas,Freestone,19950.0,67.9,34.24,-0.48
+Texas,Frio,17815.0,72.2,19.27,-1.1
+Texas,Gaines,22181.0,62.8,9.73,-1.28
+Texas,Galveston,357117.0,72.2,39.6,-0.64
+Texas,Garza,6262.0,64.2,16.42,-0.91
+Texas,Gillespie,27477.0,67.5,17.74,-1.49
+Texas,Glasscock,1164.0,66,10.42,-1.44
+Texas,Goliad,7131.0,72.6,25.24,-1.01
+Texas,Gonzales,19832.0,72,29.5,-0.67
+Texas,Gray,21015.0,59.9,21.74,-0.71
+Texas,Grayson,143131.0,65.5,35.93,-0.09
+Texas,Gregg,125443.0,66.8,46.25,-0.1
+Texas,Grimes,30754.0,70.3,39.09,-0.54
+Texas,Guadalupe,182760.0,71.3,23.47,-1.18
+Texas,Hale,31827.0,59.7,19.49,-0.32
+Texas,Hall,2810.0,62.9,19.59,-0.55
+Texas,Hamilton,8298.0,67.8,18.49,-1.77
+Texas,Hansford,5151.0,58.7,20.03,-0.39
+Texas,Hardeman,3516.0,63.9,20.24,-0.75
+Texas,Hardin,57811.0,70.3,46.72,-0.73
+Texas,Harris,4780913.0,71.8,39.04,-0.71
+Texas,Harrison,69955.0,66.6,47.57,-0.08
+Texas,Hartley,5208.0,56.8,16.63,-0.53
+Texas,Haskell,5403.0,66.1,20.93,-0.88
+Texas,Hays,269225.0,69.7,22.51,-1.39
+Texas,Hemphill,3217.0,59.3,24.47,-0.28
+Texas,Henderson,84511.0,66.9,37.2,-0.45
+Texas,Hidalgo,888367.0,76.6,19.93,-0.74
+Texas,Hill,37329.0,67.9,29,-0.69
+Texas,Hockley,21161.0,60.5,14.74,-0.92
+Texas,Hood,66373.0,67.7,27.05,-0.57
+Texas,Hopkins,37804.0,65.7,46.08,0.31
+Texas,Houston,21950.0,68.3,41.74,-0.41
+Texas,Howard,33672.0,65.6,9.99,-1.46
+Texas,Hudspeth,3432.0,63,7.43,-1.04
+Texas,Hunt,108282.0,66.2,41.52,-0.04
+Texas,Hutchinson,20215.0,60.5,21.79,-0.15
+Texas,Irion,1530.0,66.6,15.56,-1.02
+Texas,Jack,8922.0,65.7,24.9,-0.67
+Texas,Jackson,15142.0,72.6,31.97,-0.76
+Texas,Jasper,32484.0,69.5,44.79,-1.17
+Texas,Jeff-Davis,1903.0,62.2,10.68,-1.14
+Texas,Jefferson,250830.0,71.4,48.12,-0.54
+Texas,Jim-Hogg,4763.0,75.4,19.21,-0.66
+Texas,Jim-Wells,38826.0,74.6,19.98,-0.96
+Texas,Johnson,195506.0,67.6,28.01,-0.62
+Texas,Jones,19935.0,66.2,23.62,-0.56
+Texas,Karnes,14836.0,71.8,31.68,-0.11
+Texas,Kaufman,172366.0,67,31.17,-0.77
+Texas,Kendall,48973.0,68.7,17.93,-1.58
+Texas,Kenedy,358.0,75.7,18.39,-1.18
+Texas,Kent,740.0,65,16.96,-0.99
+Texas,Kerr,53741.0,67.4,15.21,-1.81
+Texas,Kimble,4422.0,67.4,15.49,-1.54
+Texas,King,233.0,64.6,21.51,-0.51
+Texas,Kinney,3128.0,71.3,18.04,-0.83
+Texas,Kleberg,30362.0,75.5,17.55,-1.29
+Texas,Knox,3273.0,65.5,22.81,-0.36
+Texas,Lamar,50484.0,65,51.29,0.59
+Texas,Lamb,12724.0,59.1,17.37,-0.48
+Texas,Lampasas,22785.0,68.1,22.21,-0.84
+Texas,La-Salle,6604.0,73.1,19.3,-0.83
+Texas,Lavaca,20589.0,72.6,33.01,-0.77
+Texas,Lee,17954.0,70.5,34.09,-0.56
+Texas,Leon,16209.0,68.4,36.61,-0.48
+Texas,Liberty,101992.0,71.1,44.43,-0.61
+Texas,Limestone,22253.0,68,31.15,-0.63
+Texas,Lipscomb,2854.0,58.2,25.63,-0.04
+Texas,Live-Oak,11428.0,72.8,24.64,-0.54
+Texas,Llano,22540.0,68.9,21.05,-1.06
+Texas,Loving,51.0,66.6,5.86,-1.41
+Texas,Lubbock,317561.0,61.6,15.08,-1.09
+Texas,Lynn,5724.0,62.4,15.12,-0.94
+Texas,McCulloch,7497.0,67.4,22.28,-0.58
+Texas,McLennan,266836.0,68.2,26.72,-0.8
+Texas,McMullen,576.0,72.8,23.48,-0.38
+Texas,Madison,13661.0,69.3,38.87,-0.45
+Texas,Marion,9560.0,66.2,48.92,0.16
+Texas,Martin,5217.0,65.1,6.76,-1.69
+Texas,Mason,3982.0,67.8,20.59,-0.97
+Texas,Matagorda,36125.0,72.4,31.5,-0.85
+Texas,Maverick,57843.0,73.1,15.34,-1.08
+Texas,Medina,53723.0,71.3,21.6,-1.25
+Texas,Menard,1968.0,67,19.07,-1.07
+Texas,Midland,171999.0,66.1,6.42,-1.72
+Texas,Milam,25628.0,69.5,28.71,-0.84
+Texas,Mills,4500.0,67.6,22.81,-0.97
+Texas,Mitchell,8943.0,66.2,13.21,-1.4
+Texas,Montague,21063.0,65.2,26.6,-0.76
+Texas,Montgomery,678490.0,70.9,43.27,-0.53
+Texas,Moore,20996.0,58.9,19,-0.45
+Texas,Morris,12083.0,65.5,47.83,0.22
+Texas,Motley,1032.0,62.7,21.07,-0.27
+Texas,Nacogdoches,64862.0,68.1,39.73,-0.92
+Texas,Navarro,54636.0,67.8,33.73,-0.35
+Texas,Newton,12052.0,69.6,46.96,-1.13
+Texas,Nolan,14473.0,65.8,18.93,-0.93
+Texas,Nueces,351674.0,74.7,21.55,-0.99
+Texas,Ochiltree,9606.0,58.4,23.74,-0.12
+Texas,Oldham,1752.0,58.1,14.57,-1.02
+Texas,Orange,84934.0,70.9,47.96,-0.79
+Texas,Palo-Pinto,29239.0,66.8,24.32,-0.78
+Texas,Panola,22677.0,67.3,46.01,-0.32
+Texas,Parker,165834.0,66.8,24.92,-0.79
+Texas,Parmer,9620.0,58.6,16.28,-0.7
+Texas,Pecos,14735.0,67.1,10.73,-0.85
+Texas,Polk,53255.0,69.7,46.51,-0.61
+Texas,Potter,115645.0,59.6,17.96,-0.77
+Texas,Presidio,5939.0,65.5,10.39,-0.95
+Texas,Rains,12823.0,66.1,42.22,0.13
+Texas,Randall,146140.0,59.1,17.45,-0.99
+Texas,Reagan,3135.0,66.4,13.21,-1.17
+Texas,Real,2840.0,68.6,14.7,-1.69
+Texas,Red-River,11542.0,64.7,51.73,0.43
+Texas,Reeves,12905.0,66.7,7.65,-1.17
+Texas,Refugio,6632.0,72.9,24.91,-1.1
+Texas,Roberts,803.0,59.9,22.26,-0.39
+Texas,Robertson,17153.0,69.3,32.18,-0.67
+Texas,Rockwall,123208.0,66.7,34.53,-0.5
+Texas,Runnels,9859.0,67,20.36,-0.78
+Texas,Rusk,53333.0,67.3,44.88,-0.3
+Texas,Sabine,10048.0,68.7,49.72,-0.7
+Texas,San-Augustine,7857.0,68.6,45.18,-0.86
+Texas,San-Jacinto,28348.0,69.9,46.5,-0.43
+Texas,San-Patricio,69954.0,73.5,23.47,-0.86
+Texas,San-Saba,5824.0,68,22.59,-0.78
+Texas,Schleicher,2357.0,66.7,16.38,-1.05
+Texas,Scurry,16686.0,65.2,14.29,-1.27
+Texas,Shackelford,3186.0,66.3,23.28,-0.67
+Texas,Shelby,24008.0,67.7,45.46,-0.6
+Texas,Sherman,2799.0,57.5,17.73,-0.53
+Texas,Smith,241922.0,66.5,40.34,-0.52
+Texas,Somervell,9757.0,68,29.44,-0.34
+Texas,Starr,65728.0,76.5,18.8,-0.62
+Texas,Stephens,9390.0,66.1,22.72,-0.7
+Texas,Sterling,1417.0,66.3,12.42,-1.38
+Texas,Stonewall,1182.0,65.5,20.18,-0.92
+Texas,Sutton,3217.0,67.5,13.58,-1.47
+Texas,Swisher,6881.0,59.5,20.07,-0.37
+Texas,Tarrant,2154595.0,67.7,27.77,-0.58
+Texas,Taylor,145163.0,66,23,-0.42
+Texas,Terrell,693.0,68.7,16.71,0.08
+Texas,Terry,11567.0,61.6,14.77,-0.72
+Texas,Throckmorton,1550.0,66.1,21.3,-0.87
+Texas,Titus,31208.0,65.2,47.24,0.2
+Texas,Tom-Green,118892.0,67.2,17.01,-0.92
+Texas,Travis,1326436.0,69.8,22.98,-1.21
+Texas,Trinity,13996.0,69.1,44.66,-0.45
+Texas,Tyler,20030.0,69.6,44.5,-0.99
+Texas,Upshur,42488.0,66,46.23,0.07
+Texas,Upton,3152.0,67.1,8.73,-1.43
+Texas,Uvalde,24940.0,71.4,21.02,-0.92
+Texas,Val-Verde,47606.0,70,16.24,-0.67
+Texas,Van-Zandt,62859.0,66.4,37.42,-0.4
+Texas,Victoria,91065.0,72.7,30.18,-0.65
+Texas,Walker,78870.0,69.6,42.51,-0.4
+Texas,Waller,61894.0,71.6,36.83,-0.72
+Texas,Ward,10964.0,67.8,5.93,-1.48
+Texas,Washington,36159.0,71.3,34.95,-0.67
+Texas,Webb,267780.0,74.2,19.04,-0.64
+Texas,Wharton,41824.0,72.4,35.37,-0.65
+Texas,Wheeler,4807.0,60.5,22.34,-0.73
+Texas,Wichita,129978.0,65,24.47,-0.33
+Texas,Wilbarger,12491.0,64.8,22.26,-0.57
+Texas,Willacy,20143.0,76.1,21.48,-0.83
+Texas,Williamson,671418.0,69.3,22.41,-1.35
+Texas,Wilson,52735.0,71.4,28.81,-0.4
+Texas,Winkler,7306.0,66.6,5.6,-1.59
+Texas,Wise,74895.0,66.3,23.88,-0.94
+Texas,Wood,46857.0,65.9,41.93,-0.05
+Texas,Yoakum,7451.0,61.2,12.5,-0.95
+Texas,Young,17962.0,65.8,22.5,-0.77
+Texas,Zapata,13849.0,76,18.87,-0.51
+Texas,Zavala,9377.0,73,17.15,-1.13
+Utah,Beaver,7327.0,47.9,16.28,1.36
+Utah,Box-Elder,61498.0,46.7,16.01,1.48
+Utah,Cache,140173.0,42.9,38.03,0.99
+Utah,Carbon,20571.0,44,18.71,0.65
+Utah,Daggett,1014.0,40,18.15,0.75
+Utah,Davis,369948.0,49,32.78,0.65
+Utah,Duchesne,20161.0,40.6,20.64,0.4
+Utah,Emery,10099.0,49.8,11.25,1.03
+Utah,Garfield,5281.0,47.8,15.78,0.72
+Utah,Grand,9769.0,50.7,13.81,0.86
+Utah,Iron,62429.0,48,20.06,1.27
+Utah,Juab,12567.0,49.1,15.68,1.67
+Utah,Kane,8227.0,51.4,16.67,1.28
+Utah,Millard,13330.0,49.7,12.75,1.89
+Utah,Morgan,12832.0,43.5,33.18,0.65
+Utah,Piute,1487.0,43.2,21.71,0.72
+Utah,Rich,2628.0,39.8,22.11,0.97
+Utah,Salt-Lake,1186257.0,48.5,28.72,0.89
+Utah,San-Juan,14359.0,52,12.87,1.16
+Utah,Sanpete,29724.0,43.6,23.38,0.51
+Utah,Sevier,22069.0,44.1,19.34,0.63
+Utah,Summit,43036.0,38.3,31.11,0.49
+Utah,Tooele,79934.0,49.8,12.47,1.6
+Utah,Uintah,37141.0,44.4,14.13,0.9
+Utah,Utah,702434.0,46.2,25.08,1.01
+Utah,Wasatch,36619.0,40.6,32.44,0.8
+Utah,Washington,197680.0,55.1,23.03,1.37
+Utah,Wayne,2645.0,50.7,10.88,0.86
+Utah,Weber,269561.0,45.8,35.49,0.73
+Vermont,Addison,37578.0,46.2,50.29,1.08
+Vermont,Bennington,37392.0,45.6,56.6,0.66
+Vermont,Caledonia,30579.0,43.9,50.3,0.94
+Vermont,Chittenden,169301.0,47.2,47.12,0.73
+Vermont,Essex,5994.0,42.8,50.77,0.9
+Vermont,Franklin,50731.0,46.3,50.15,0.67
+Vermont,Grand-Isle,7489.0,47.6,43.51,0.93
+Vermont,Lamoille,26090.0,44.4,55.3,1.05
+Vermont,Orange,29846.0,45.6,54.01,1.3
+Vermont,Orleans,27666.0,43.7,55.14,1.12
+Vermont,Rutland,60366.0,45.5,53.56,1.17
+Vermont,Washington,60048.0,44.8,52.9,1.05
+Vermont,Windham,45842.0,46.5,60.57,1.11
+Vermont,Windsor,58142.0,46.1,58.24,1.47
+Virginia,Accomack,33191.0,59.6,42.32,-0.24
+Virginia,Albemarle,114534.0,57.8,39.33,-0.42
+Virginia,Alleghany,14835.0,53.3,39.49,0.18
+Virginia,Amelia,13455.0,59,42.28,-0.23
+Virginia,Amherst,31589.0,56.5,49.51,0.3
+Virginia,Appomattox,16748.0,57.7,49.42,0.5
+Virginia,Arlington,234000.0,57.9,36.5,-0.76
+Virginia,Augusta,78064.0,53.7,36.66,-0.35
+Virginia,Bath,4049.0,52.4,39.83,-0.03
+Virginia,Bedford,80848.0,57.3,47.24,0.24
+Virginia,Bland,6148.0,52,44.99,0.75
+Virginia,Botetourt,34135.0,55.3,43.45,0.34
+Virginia,Brunswick,15921.0,59.7,44.79,-0.14
+Virginia,Buchanan,19352.0,55,41.14,-0.25
+Virginia,Buckingham,16982.0,58.4,48.2,0.3
+Virginia,Campbell,55141.0,57.9,46.36,0.25
+Virginia,Caroline,31957.0,58.3,34.2,-1.02
+Virginia,Carroll,29147.0,53.6,52.69,0.7
+Virginia,Charles-City,6605.0,60.3,40.52,-0.39
+Virginia,Charlotte,11475.0,58,44.81,0.21
+Virginia,Chesterfield,378408.0,59.3,38.5,-0.54
+Virginia,Clarke,15266.0,55.4,32.63,-0.64
+Virginia,Craig,4847.0,53.6,40.92,0.15
+Virginia,Culpeper,54381.0,57.1,34.36,-0.72
+Virginia,Cumberland,9746.0,58.8,45.54,0.13
+Virginia,Dickenson,13725.0,54.8,37.66,-0.56
+Virginia,Dinwiddie,28161.0,59.6,42.68,-0.24
+Virginia,Essex,10630.0,58.5,37.66,-0.61
+Virginia,Fairfax,1138331.0,57.8,34.52,-1.01
+Virginia,Fauquier,74664.0,56.7,33.78,-0.88
+Virginia,Floyd,15619.0,52.8,50.14,0.44
+Virginia,Fluvanna,28159.0,58.4,43.29,0.09
+Virginia,Franklin,55074.0,56.7,48.34,0.44
+Virginia,Frederick,95051.0,54.3,33.43,-0.42
+Virginia,Giles,16453.0,53.2,38.2,-0.25
+Virginia,Gloucester,39493.0,60.2,43.84,-0.19
+Virginia,Goochland,26109.0,58.4,40.07,-0.23
+Virginia,Grayson,15343.0,51.7,49.13,0.37
+Virginia,Greene,21107.0,56.4,37.41,-0.62
+Virginia,Greensville,11226.0,60.3,44.99,-0.23
+Virginia,Halifax,33644.0,58.3,43.13,0.06
+Virginia,Hanover,112938.0,58.7,36.38,-0.74
+Virginia,Henrico,333962.0,59.4,37.12,-0.68
+Virginia,Henry,49906.0,57.7,53.74,0.85
+Virginia,Highland,2301.0,49.5,39.09,-0.4
+Virginia,Isle-of-Wight,40151.0,61.1,45.52,-0.24
+Virginia,James-City,81199.0,60.5,44.02,-0.18
+Virginia,King-and-Queen,6718.0,58.9,39.09,-0.53
+Virginia,King-George,27856.0,58.9,31.62,-1.37
+Virginia,King-William,18492.0,59,37.53,-0.68
+Virginia,Lancaster,10750.0,59.1,40.69,-0.39
+Virginia,Lee,21982.0,56,46.2,-0.28
+Virginia,Loudoun,432085.0,56.6,31.69,-1.26
+Virginia,Louisa,40116.0,57.4,38.94,-0.27
+Virginia,Lunenburg,12031.0,58.6,44.59,0.09
+Virginia,Madison,14000.0,55.9,36.29,-0.61
+Virginia,Mathews,8490.0,60.2,44.42,-0.11
+Virginia,Mecklenburg,30508.0,59.1,42.07,-0.16
+Virginia,Middlesex,10943.0,59.4,41.37,-0.34
+Virginia,Montgomery,98915.0,54.6,40.14,-0.07
+Virginia,Nelson,14652.0,56.4,45.47,-0.02
+Virginia,New-Kent,24986.0,59.6,39.74,-0.5
+Virginia,Northampton,11900.0,60.4,44.64,-0.04
+Virginia,Northumberland,12302.0,58.8,39.1,-0.53
+Virginia,Nottoway,15559.0,59,44.99,0
+Virginia,Orange,37991.0,57.3,34.79,-0.67
+Virginia,Page,23750.0,54.5,35.59,-0.48
+Virginia,Patrick,17643.0,55.9,57.05,0.57
+Virginia,Pittsylvania,59952.0,57.6,46.92,0.39
+Virginia,Powhatan,31489.0,58.8,40.26,-0.32
+Virginia,Prince-Edward,21927.0,58.2,47.42,0.27
+Virginia,Prince-George,43134.0,60.1,40.77,-0.36
+Virginia,Prince-William,486943.0,58.2,31.32,-1.41
+Virginia,Pulaski,33706.0,54,40.06,0.14
+Virginia,Rappahannock,7502.0,55.3,36.89,-0.35
+Virginia,Richmond,9080.0,58.4,38.63,-0.47
+Virginia,Roanoke,96914.0,56,44.14,0.29
+Virginia,Rockbridge,22593.0,54.5,43.82,0.38
+Virginia,Rockingham,85397.0,54.1,34.67,-0.56
+Virginia,Russell,25448.0,54.4,42.74,-0.04
+Virginia,Scott,21476.0,56.2,43.38,-0.23
+Virginia,Shenandoah,44968.0,54.5,33.35,-0.33
+Virginia,Smyth,29449.0,52.7,47.53,0.38
+Virginia,Southampton,17932.0,60.8,44.29,-0.42
+Virginia,Spotsylvania,146688.0,57.4,34.58,-0.79
+Virginia,Stafford,163380.0,58.4,29.97,-1.52
+Virginia,Surry,6527.0,60.7,44.87,-0.11
+Virginia,Sussex,10680.0,60.3,44.44,-0.25
+Virginia,Tazewell,39821.0,52.2,48.05,0.45
+Virginia,Warren,41440.0,55,35.89,-0.13
+Virginia,Washington,53958.0,54.9,45.22,0.22
+Virginia,Westmoreland,18712.0,58.5,37.04,-0.67
+Virginia,Wise,35421.0,53.7,39.67,-0.66
+Virginia,Wythe,28111.0,52.9,43.81,0.65
+Virginia,York,71341.0,60.9,45.22,-0.14
+Virginia,Alexandria-city,155525.0,0,0,0
+Virginia,Bristol-city,16975.0,0,0,0
+Virginia,Buena-Vista-city,6591.0,0,0,0
+Virginia,Charlottesville-city,45373.0,0,0,0
+Virginia,Chesapeake-city,252488.0,0,0,0
+Virginia,Colonial-Heights-city,18294.0,0,0,0
+Virginia,Covington-city,5679.0,0,0,0
+Virginia,Danville-city,42229.0,0,0,0
+Virginia,Emporia-city,5481.0,0,0,0
+Virginia,Fairfax-city,24835.0,0,0,0
+Virginia,Falls-Church-city,14586.0,0,0,0
+Virginia,Franklin-city,8247.0,0,0,0
+Virginia,Fredericksburg-city,28757.0,0,0,0
+Virginia,Galax-city,6730.0,0,0,0
+Virginia,Hampton-city,138037.0,0,0,0
+Virginia,Harrisonburg-city,51158.0,0,0,0
+Virginia,Hopewell-city,22962.0,0,0,0
+Virginia,Lexington-city,7457.0,0,0,0
+Virginia,Lynchburg-city,79287.0,0,0,0
+Virginia,Manassas-city,42642.0,0,0,0
+Virginia,Manassas-Park-city,16703.0,0,0,0
+Virginia,Martinsville-city,13725.0,0,0,0
+Virginia,Newport-News-city,184306.0,0,0,0
+Virginia,Norfolk-city,232995.0,0,0,0
+Virginia,Norton-city,3609.0,0,0,0
+Virginia,Petersburg-city,33394.0,0,0,0
+Virginia,Poquoson-city,12582.0,0,0,0
+Virginia,Portsmouth-city,97029.0,0,0,0
+Virginia,Radford-city,16738.0,0,0,0
+Virginia,Richmond-city,229395.0,0,0,0
+Virginia,Roanoke-city,97847.0,0,0,0
+Virginia,Salem-city,25523.0,0,0,0
+Virginia,Staunton-city,25904.0,0,0,0
+Virginia,Suffolk-city,98537.0,0,0,0
+Virginia,Virginia-Beach-city,455618.0,0,0,0
+Virginia,Waynesboro-city,22808.0,0,0,0
+Virginia,Williamsburg-city,15909.0,0,0,0
+Virginia,Winchester-city,27936.0,0,0,0
+Washington,Adams,20961.0,50.1,9.73,-0.27
+Washington,Asotin,22508.0,49.6,16.19,-0.32
+Washington,Benton,212791.0,52.8,7.01,-0.31
+Washington,Chelan,79926.0,44.1,30.01,-1.14
+Washington,Clallam,77805.0,48.4,68.75,-1.44
+Washington,Clark,516779.0,52.7,58.28,-0.94
+Washington,Columbia,4026.0,48.6,21.67,-1.03
+Washington,Cowlitz,111956.0,50.7,65.76,-1.09
+Washington,Douglas,44192.0,48.4,12.05,0.36
+Washington,Ferry,7448.0,43.5,20.34,0.03
+Washington,Franklin,98678.0,52.3,7.61,-0.54
+Washington,Garfield,2363.0,49.4,17.62,-0.48
+Washington,Grant,101311.0,50.9,8.22,0.08
+Washington,Grays-Harbor,77038.0,50.9,75.85,-1.35
+Washington,Island,86625.0,51.4,21.34,-1.25
+Washington,Jefferson,33589.0,46.7,91.83,-1.09
+Washington,King,2266789.0,48.8,54.23,-1.56
+Washington,Kitsap,277673.0,52.3,38.02,-0.93
+Washington,Kittitas,45189.0,46.2,25.49,-1.36
+Washington,Klickitat,23271.0,49.3,17.73,-1.02
+Washington,Lewis,85370.0,48.8,58.79,-1.32
+Washington,Lincoln,11601.0,47.2,12.24,-0.15
+Washington,Mason,68166.0,50.1,75.65,-1.04
+Washington,Okanogan,43127.0,43.5,20.98,-0.62
+Washington,Pacific,24113.0,51.1,70.1,-1.39
+Washington,Pend-Oreille,14179.0,43.4,30.32,-0.92
+Washington,Pierce,927380.0,48.1,48.52,-1.5
+Washington,San-Juan,18662.0,51.2,19.84,-1.55
+Washington,Skagit,131179.0,46.6,59.22,-1.38
+Washington,Skamania,12460.0,46.7,77.82,-1.08
+Washington,Snohomish,840079.0,47.5,64.36,-1.3
+Washington,Spokane,549690.0,48.2,17.94,-0.75
+Washington,Stevens,48229.0,45.6,21.75,-0.54
+Washington,Thurston,298758.0,52.1,39.68,-1.39
+Washington,Wahkiakum,4688.0,51,59.06,-1.61
+Washington,Walla-Walla,61890.0,52.6,11.59,-0.74
+Washington,Whatcom,230677.0,45.3,51.55,-1.51
+Washington,Whitman,47619.0,50.2,15.77,-0.48
+Washington,Yakima,257001.0,47.3,22,-0.99
+West Virginia,Barbour,15414.0,52.7,45.06,-0.23
+West Virginia,Berkeley,129490.0,54.4,31.61,-0.83
+West Virginia,Boone,20968.0,55.4,39.8,-0.41
+West Virginia,Braxton,12185.0,54.5,42.24,-0.24
+West Virginia,Brooke,21733.0,52.6,39.61,0.32
+West Virginia,Cabell,92730.0,56.3,36.2,-0.62
+West Virginia,Calhoun,6068.0,54.5,39.53,-0.34
+West Virginia,Clay,7814.0,55,43.75,-0.09
+West Virginia,Doddridge,7698.0,54,44.22,-0.02
+West Virginia,Fayette,39487.0,53.2,46.86,0.16
+West Virginia,Gilmer,7325.0,54.6,40.01,-0.41
+West Virginia,Grant,10968.0,51.6,34.41,-0.5
+West Virginia,Greenbrier,32435.0,51,45.98,0.37
+West Virginia,Hampshire,23468.0,53.4,31.69,-0.66
+West Virginia,Hancock,28172.0,51.6,41.91,0.8
+West Virginia,Hardy,14192.0,52.7,32.59,-0.56
+West Virginia,Harrison,64915.0,53.7,43.11,0
+West Virginia,Jackson,27716.0,55,38.48,-0.25
+West Virginia,Jefferson,58979.0,55.2,30.97,-0.97
+West Virginia,Kanawha,175515.0,55.7,39.07,-0.41
+West Virginia,Lewis,16767.0,54.2,43.16,-0.31
+West Virginia,Lincoln,19901.0,56.6,38.47,-0.39
+West Virginia,Logan,31316.0,56,39.21,-0.5
+West Virginia,McDowell,17850.0,54.4,42.72,-0.01
+West Virginia,Marion,55952.0,53,41.67,-0.03
+West Virginia,Marshall,29752.0,52.3,45.42,0.58
+West Virginia,Mason,25000.0,54.5,39.13,0
+West Virginia,Mercer,58700.0,52.3,43.01,0.55
+West Virginia,Mineral,26855.0,53.4,32.07,-0.63
+West Virginia,Mingo,22573.0,56.5,41.61,-0.22
+West Virginia,Monongalia,106869.0,52.6,41.94,0
+West Virginia,Monroe,12296.0,53.1,40.4,0.17
+West Virginia,Morgan,17430.0,53.8,32.77,-0.68
+West Virginia,Nicholas,24335.0,52.5,48.52,0.03
+West Virginia,Ohio,41447.0,52.4,40.4,0.26
+West Virginia,Pendleton,6011.0,50.7,35.86,-0.31
+West Virginia,Pleasants,7586.0,54.1,44.22,0.22
+West Virginia,Pocahontas,7819.0,48.3,44.38,-0.31
+West Virginia,Preston,34172.0,50.8,45.92,-0.3
+West Virginia,Putnam,57015.0,55.9,36.99,-0.48
+West Virginia,Raleigh,72882.0,52.7,43.89,0.03
+West Virginia,Randolph,27600.0,49.1,48.49,-0.49
+West Virginia,Ritchie,8207.0,54.2,42.74,0
+West Virginia,Roane,13834.0,54.8,37.57,-0.48
+West Virginia,Summers,11762.0,53.5,41.15,0.38
+West Virginia,Taylor,16342.0,53.1,42.47,-0.11
+West Virginia,Tucker,6568.0,49,46.87,-0.38
+West Virginia,Tyler,8183.0,53.7,46.67,0.43
+West Virginia,Upshur,23712.0,52.7,46.8,-0.43
+West Virginia,Wayne,37998.0,56.7,39.65,-0.45
+West Virginia,Webster,8167.0,50.8,48.74,-0.38
+West Virginia,Wetzel,14025.0,52.7,48.75,0.58
+West Virginia,Wirt,5091.0,54.6,40.51,-0.16
+West Virginia,Wood,83340.0,55,42.92,0.35
+West Virginia,Wyoming,20527.0,54.1,40.95,-0.41
+Wisconsin,Adams,21226.0,46.5,29.31,0
+Wisconsin,Ashland,16039.0,40.9,30.96,-0.28
+Wisconsin,Barron,46843.0,43,24.55,-0.71
+Wisconsin,Bayfield,16608.0,41.1,28.51,-0.45
+Wisconsin,Brown,270036.0,46.4,30.51,0.19
+Wisconsin,Buffalo,13391.0,46.2,28.16,-0.21
+Wisconsin,Burnett,17036.0,43,25.7,-0.61
+Wisconsin,Calumet,52718.0,46.8,31.06,0.2
+Wisconsin,Chippewa,66807.0,44.1,28.03,-0.33
+Wisconsin,Clark,34691.0,44.4,29.49,-0.32
+Wisconsin,Columbia,58193.0,47.8,31.07,0.07
+Wisconsin,Crawford,16007.0,47.5,26.04,-0.31
+Wisconsin,Dane,568203.0,48.4,32.83,0.16
+Wisconsin,Dodge,88282.0,47.5,31.95,0.36
+Wisconsin,Door,30526.0,44.9,29.39,-0.04
+Wisconsin,Douglas,44144.0,41.3,25.59,-0.76
+Wisconsin,Dunn,45651.0,44.7,28.71,-0.29
+Wisconsin,Eau-Claire,106837.0,45.1,29.26,-0.37
+Wisconsin,Florence,4688.0,41.9,27.6,-0.66
+Wisconsin,Fond-du-Lac,103836.0,47.2,31.54,0.2
+Wisconsin,Forest,9381.0,41.3,30.18,-0.26
+Wisconsin,Grant,51276.0,48,27.49,-0.32
+Wisconsin,Green,36816.0,48.4,32.81,0.22
+Wisconsin,Green-Lake,19220.0,47.4,31.37,0.18
+Wisconsin,Iowa,23865.0,47.7,30.28,-0.15
+Wisconsin,Iron,6224.0,40.2,33.68,0.04
+Wisconsin,Jackson,20836.0,45.9,29.99,-0.19
+Wisconsin,Jefferson,85784.0,48.4,33.47,0.4
+Wisconsin,Juneau,26866.0,46.4,29.57,0.08
+Wisconsin,Kenosha,167817.0,49.8,32.87,-0.08
+Wisconsin,Kewaunee,20623.0,45.8,27.41,-0.18
+Wisconsin,La-Crosse,120294.0,46.6,28.38,-0.08
+Wisconsin,Lafayette,16877.0,47.8,31.78,0.13
+Wisconsin,Langlade,19559.0,42.3,28.15,-0.65
+Wisconsin,Lincoln,28376.0,42.4,26.85,-0.58
+Wisconsin,Manitowoc,81172.0,46.6,28.76,-0.11
+Wisconsin,Marathon,137958.0,44.3,30.51,-0.15
+Wisconsin,Marinette,41988.0,44.1,29.72,-0.16
+Wisconsin,Marquette,15779.0,47.3,30.5,0.14
+Wisconsin,Menominee,4197.0,44.3,30.35,-0.37
+Wisconsin,Milwaukee,918661.0,49.4,33.5,0.41
+Wisconsin,Monroe,46109.0,45.6,28.01,-0.15
+Wisconsin,Oconto,39633.0,44.6,31.7,0.18
+Wisconsin,Oneida,38212.0,41.1,29.54,-0.17
+Wisconsin,Outagamie,192127.0,46.7,31.32,0.31
+Wisconsin,Ozaukee,93009.0,48,29.99,0.13
+Wisconsin,Pepin,7410.0,45.9,28.93,-0.28
+Wisconsin,Pierce,42532.0,45,28.27,-0.31
+Wisconsin,Polk,45709.0,43.6,26.87,-0.32
+Wisconsin,Portage,70718.0,45.7,29.76,0.01
+Wisconsin,Price,14179.0,41.3,26.58,-0.98
+Wisconsin,Racine,195846.0,49.3,34.03,0.16
+Wisconsin,Richland,17090.0,47.4,26.95,-0.31
+Wisconsin,Rock,164060.0,48.9,33.16,0.19
+Wisconsin,Rusk,14186.0,42.7,26.96,-0.6
+Wisconsin,St.-Croix,96017.0,44.5,27.65,-0.39
+Wisconsin,Sauk,65777.0,47.2,29.11,-0.19
+Wisconsin,Sawyer,18559.0,41.6,26.46,-0.8
+Wisconsin,Shawano,40886.0,45.3,30.99,-0.06
+Wisconsin,Sheboygan,117841.0,47.3,30.39,-0.07
+Wisconsin,Taylor,19975.0,42.7,28.7,-0.22
+Wisconsin,Trempealeau,30899.0,46.1,28.77,-0.14
+Wisconsin,Vernon,31060.0,46.2,26.27,-0.24
+Wisconsin,Vilas,23763.0,40.2,32.6,0.03
+Wisconsin,Walworth,105380.0,48.5,33.44,0.18
+Wisconsin,Washburn,16911.0,42.1,25.48,-0.7
+Wisconsin,Washington,137688.0,47.1,31.53,0.36
+Wisconsin,Waukesha,410434.0,48.3,35.1,0.6
+Wisconsin,Waupaca,51488.0,46.6,30.54,0.14
+Wisconsin,Waushara,24999.0,46.9,29.93,-0.03
+Wisconsin,Winnebago,170718.0,47.4,31.93,0.35
+Wisconsin,Wood,73993.0,45.5,28.78,-0.14
+Wyoming,Albany,38031.0,40.2,15.36,-0.57
+Wyoming,Big-Horn,11855.0,42.2,17.25,0.54
+Wyoming,Campbell,47058.0,44.1,16.82,0.7
+Wyoming,Carbon,14542.0,40.6,18.4,0.7
+Wyoming,Converse,13786.0,43.5,16.35,0.33
+Wyoming,Crook,7448.0,43.7,19.08,0.14
+Wyoming,Fremont,39472.0,39.9,20.02,1.58
+Wyoming,Goshen,12562.0,47,15.8,-0.14
+Wyoming,Hot-Springs,4588.0,42.2,18.67,1.41
+Wyoming,Johnson,8730.0,42.8,20.23,0.99
+Wyoming,Laramie,100723.0,45.2,19.57,0.57
+Wyoming,Lincoln,20660.0,37.7,24.27,0.48
+Wyoming,Natrona,79601.0,42.4,15.45,1.14
+Wyoming,Niobrara,2380.0,45.6,16.41,0.04
+Wyoming,Park,30518.0,38.2,24.85,0.34
+Wyoming,Platte,8645.0,46.2,14.43,-0.3
+Wyoming,Sheridan,32096.0,42,23.88,0.57
+Wyoming,Sublette,8763.0,34.9,21.77,0.29
+Wyoming,Sweetwater,41345.0,40,13,1.75
+Wyoming,Teton,23287.0,34.3,36.3,0.09
+Wyoming,Uinta,20712.0,38.5,14.86,0.89
+Wyoming,Washakie,7719.0,43.3,16.02,1.11
+Wyoming,Weston,6860.0,44.3,15.14,-0.07
+Connecticut,Fairfield,0.0,53.6,50.56,-0.21
+Connecticut,Hartford,0.0,52.1,58.92,0.86
+Connecticut,Litchfield,0.0,49.8,58.28,0.69
+Connecticut,Middlesex,0.0,52.4,54.23,0.39
+Connecticut,New-Haven,0.0,52.4,54.46,0.34
+Connecticut,New-London,0.0,52.6,51.43,0.22
+Connecticut,Tolland,0.0,51.1,58.07,0.86
+Connecticut,Windham,0.0,51.3,58.05,0.82
+Louisiana,La-Salle-Parish,0.0,68.1,43,-1.07
+Maryland,Baltimore-City,0.0,58.7,37.7,-0.92
+Washington,"Washington,-D.C.",0.0, D.C., D.C., D.C.
+Missouri,St.-Louis-City,0.0,57.6,34.7,-0.06
+New Mexico,Dona-Ana,0.0,62.8,6.68,-1.26
+Virginia,Alexandria-City,0.0,58.5,35.8,-0.85
+Virginia,Bristol-City,0.0,56.6,44.78,0.01
+Virginia,Buena-Vista-City,0.0,55.9,44.1,0.31
+Virginia,Charlottesville-City,0.0,58.3,39.15,-0.42
+Virginia,Chesapeake-City,0.0,61.6,43.82,-0.59
+Virginia,Colonial-Heights-City,0.0,59.6,38.14,-0.51
+Virginia,Covington-City,0.0,54.8,37.1,0.07
+Virginia,Danville-City,0.0,58.6,43.81,0.14
+Virginia,Emporia-City,0.0,60.4,45.09,-0.22
+Virginia,Fairfax-City,0.0,57.4,35.65,-0.87
+Virginia,Falls-Church-City,0.0,57.4,36.64,-0.75
+Virginia,Franklin-City,0.0,61,44.14,-0.46
+Virginia,Fredericksburg-City,0.0,58.1,31.99,-1.19
+Virginia,Galax-City,0.0,53.6,50.07,0.59
+Virginia,Hampton-City,0.0,61.6,45.11,-0.21
+Virginia,Harrisonburg-City,0.0,55.5,33.3,-0.59
+Virginia,Hopewell-City,0.0,59.8,38.04,-0.49
+Virginia,Lynchburg-City,0.0,58.1,48.19,0.31
+Virginia,Manassas-City,0.0,58.1,31.96,-1.29
+Virginia,Manassas-Park-City,0.0,58,32.6,-1.23
+Virginia,Martinsville-City,0.0,57.7,56.03,1.05
+Virginia,Newport-News-City,0.0,61.5,45.47,-0.19
+Virginia,Norfolk-City,0.0,62.2,45.31,-0.37
+Virginia,Norton-City,0.0,53.7,38.62,-0.71
+Virginia,Petersburg-City,0.0,59.7,39.32,-0.45
+Virginia,Poquoson-City,0.0,61.4,45.1,-0.17
+Virginia,Portsmouth-City,0.0,62.2,44.96,-0.42
+Virginia,Radford-City,0.0,54.7,37.54,-0.22
+Virginia,Richmond-City,0.0,59.4,37.06,-0.68
+Virginia,Roanoke-City,0.0,57.6,43.96,0.3
+Virginia,Salem-City,0.0,57.5,43.35,0.28
+Virginia,Staunton-City,0.0,55.1,33.2,-0.45
+Virginia,Suffolk-City,0.0,61.3,43.92,-0.54
+Virginia,Virginia-Beach-City,0.0,61.9,43.25,-0.6
+Virginia,Waynesboro-City,0.0,55.9,35.66,-0.44
+Virginia,Williamsburg-City,0.0,60.6,45.55,-0.08
+Virginia,Winchester-City,0.0,54.7,33.69,-0.39
