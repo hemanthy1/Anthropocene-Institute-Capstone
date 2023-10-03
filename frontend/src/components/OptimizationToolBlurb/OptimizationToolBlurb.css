@@ -1,13 +1,18 @@
 .blurb-container{
   width: 100vw;
   padding-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.blurb-container > h1 {
+  color: var(--secondary)
 }
 
 .toolTitle{
   text-align: right;
   font-size: 2vw;
   letter-spacing: .05em;
-  color: #000000;
+  color: var(--secondary);
   font-weight: bold;
 }
 
