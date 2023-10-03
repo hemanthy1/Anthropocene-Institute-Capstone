@@ -1,5 +1,5 @@
 
-#TEST if stuff was appended to forestation db and table. 
+#TEST if stuff was appended to forestation db and table.
 import pandas as pd
 import sqlalchemy
 from DatabaseConnector import connect_with_connector
