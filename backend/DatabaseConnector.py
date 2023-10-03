@@ -16,7 +16,7 @@ DB_PASS="@]pzXU3(U@tB}Ss["
 DB_NAME="test-1"
 
 
-def connect_with_connector() -> sqlalchemy.engine.base.Engine:
+def connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DB_NAME) -> sqlalchemy.engine.base.Engine:
     """
     Initializes a connection pool for a Cloud SQL instance of Postgres.
 
@@ -47,9 +47,9 @@ def connect_with_connector() -> sqlalchemy.engine.base.Engine:
     return pool
 
 
-
+##TEST
 if __name__ == '__main__':  
-    engine=connect_with_connector()
+    engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DB_NAME)
     meta=sqlalchemy.MetaData()
     Reforestation = sqlalchemy.Table('reforestation_table', meta,
     sqlalchemy.Column('land_price', sqlalchemy.Float),
