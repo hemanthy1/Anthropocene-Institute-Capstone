@@ -15,15 +15,9 @@ import json
 # keep secrets safe.
 INSTANCE_CONNECTION_NAME = "carbon-mapp:us-east5:test-database"
 
-secret_name = "projects/402696929714/secrets/database-credentials"
-client = secretmanager.SecretManagerServiceClient()
-response = client.access_secret_version(secret_name)
-secret_payload = response.payload.data.decode('UTF-8')
-credentials = json.loads(secret_payload)
-
-DB_USER = credentials.get("DB_USER")
-DB_PASS = credentials.get("DB_PASS")
-DB_NAME = "test-1"
+DB_USER="testUser"
+DB_PASS="@]pzXU3(U@tB}Ss["
+DB_NAME="test-1"
 
 
 def connect_with_connector() -> sqlalchemy.engine.base.Engine:
