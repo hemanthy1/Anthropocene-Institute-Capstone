@@ -104,7 +104,6 @@ function DropdownMenu() {
       <ul className="navbar-dropdown">
         <Navlink path="/"> Home </Navlink>
         <Navlink path="/about"> About </Navlink>
-        <Navlink path="/tools"> Tools </Navlink>
         <Navlink path="/faq"> FAQ </Navlink>
         <Navlink path="/data"> Data </Navlink>
         <Navlink path="/articles"> Articles </Navlink>
@@ -122,7 +121,6 @@ function Menu() {
     <ul className="navbar-nav">
       <Navlink path="/"> Home </Navlink>
       <Navlink path="/about"> About </Navlink>
-      <Navlink path="/tools"> Tools </Navlink>
       <Navlink path="/faq"> FAQ </Navlink>
       <Navlink path="/data"> Data </Navlink>
       <Navlink path="/articles"> Articles </Navlink>
