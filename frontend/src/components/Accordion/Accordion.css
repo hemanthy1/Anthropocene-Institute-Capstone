@@ -44,6 +44,7 @@
     font-variant: normal;
     font-weight: bold;
     color: var(--secondary);
+    font-size: 2vw;
 }
 .eyebrow {
     border-top: 3px solid var(--primary); /* Change to your desired line color */

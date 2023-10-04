@@ -49,8 +49,8 @@ function Faq() {
   }
   return (
       <div className="faqs">
-        <div className="faqTitle">
-          <h1>FAQs</h1>
+        <div>
+          <h1 className="faqTitle">FAQs</h1>
         </div>
         {faqs.map((faq,i) => (
             <Accordion faq={faq} index={i} toggleFAQ={toggleFAQ} />
