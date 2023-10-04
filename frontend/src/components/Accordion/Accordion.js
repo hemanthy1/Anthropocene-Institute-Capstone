@@ -6,12 +6,14 @@ import {Link} from "react-router-dom";
 
 
 
-function Accordion({ faq, index }) {
+function Accordion({faq,index, toggleFAQ}) {
 
   return (
-    <div className={"faq " + (faq.open ? 'open' : '')} key={index} >
+    <div className={"faq " + (faq.open ? 'open' : '')} key={index} onClick={()=> toggleFAQ(index)}>
+        <Line></Line>
       <div className="faq-question" >
         {faq.question}
+
       </div>
       <div className="faq-answer">
           {faq.answer}
@@ -30,6 +32,12 @@ function CaretImage() {
         id="faqcaret"
       />
     </Link>
+  );
+}
+
+function Line() {
+  return (
+    <div className="line"></div>
   );
 }
 

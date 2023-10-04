@@ -24,19 +24,34 @@ function Faq() {
 
     }
 
-
-
-
   ])
 
-
+  const toggleFAQ = index =>{
+    setfaqs(faqs.map((faq, i) => {
+      if (i===index){
+        faq.open = !faq.open
+      }else{
+        faq.open=false;
+      }
+      return faq;
+    }))
+  }
   return (
-    <div className="faqs">
-      {faqs.map((faq,i) => (
-          <Accordion faq={faq} index={i} />
-      )) }
-    </div>
+      <div className="faqs">
+        <div className="faqTitle">
+          <h1>FAQs</h1>
+        </div>
+        {faqs.map((faq,i) => (
+            <Accordion faq={faq} index={i} toggleFAQ={toggleFAQ} />
+        )) }
+      </div>
   )
 }
+function Eyebrow() {
+  return (
+    <div className="eyebrow"></div>
+  );
+}
+
 
 export default Faq
