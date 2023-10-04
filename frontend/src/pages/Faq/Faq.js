@@ -3,6 +3,11 @@ import Accordion from "../../components/Accordion/Accordion";
 import  "../../components/Accordion/Accordion.css";
 
 
+/**
+ * Holds the questions and answers of the FAQs.
+ *
+ * @returns The contents of the FAQ page
+ */
 function Faq() {
   const[faqs,setfaqs]= useState([
     {
@@ -37,6 +42,11 @@ function Faq() {
 
   ])
 
+  /**
+   * Toggles the faq when needed. This will display the answer when clicked on
+   *
+   * @returns The faq with a new state of open or closed
+  */
   const toggleFAQ = index =>{
     setfaqs(faqs.map((faq, i) => {
       if (i===index){
@@ -57,11 +67,6 @@ function Faq() {
         )) }
       </div>
   )
-}
-function Eyebrow() {
-  return (
-    <div className="eyebrow"></div>
-  );
 }
 
 

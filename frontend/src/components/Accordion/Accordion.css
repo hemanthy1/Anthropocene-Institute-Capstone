@@ -46,11 +46,6 @@
     color: var(--secondary);
     font-size: 2vw;
 }
-.eyebrow {
-    border-top: 3px solid var(--primary); /* Change to your desired line color */
-    width: 10%; /* Adjust the width of the line as needed */
-    padding-bottom: 30px;
-}
 
 .line {
     border-top: 1px solid #d3d3d3; /* Change to your desired line color */
