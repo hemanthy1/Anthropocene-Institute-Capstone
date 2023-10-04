@@ -63,7 +63,7 @@ function Faq() {
           <h1 className="faqTitle">FAQs</h1>
         </div>
         {faqs.map((faq,i) => (
-            <Accordion faq={faq} index={i} toggleFAQ={toggleFAQ} />
+            <Accordion key={i} faq={faq} index={i} toggleFAQ={toggleFAQ} />
         )) }
       </div>
   )
