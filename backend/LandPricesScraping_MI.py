@@ -5,33 +5,18 @@ from selenium.webdriver.common.by import By
 import time
 import csv
 
-michigan_counties = [
-        'Alcona', 'Alger', 'Allegan', 'Alpena', 'Antrim', 'Arenac', 'Baraga', 'Barry',
-        'Bay', 'Benzie', 'Berrien', 'Branch', 'Calhoun', 'Cass', 'Charlevoix', 'Cheboygan',
-        'Chippewa', 'Clare', 'Clinton', 'Crawford', 'Delta', 'Dickinson', 'Eaton', 'Emmet',
-        'Genesee', 'Gladwin', 'Gogebic', 'Grand-Traverse', 'Gratiot', 'Hillsdale', 'Houghton',
-        'Huron', 'Ingham', 'Ionia', 'Iosco', 'Iron', 'Isabella', 'Jackson', 'Kalamazoo',
-        'Kalkaska', 'Kent', 'Keweenaw', 'Lake', 'Lapeer', 'Leelanau', 'Lenawee', 'Livingston',
-        'Luce', 'Mackinac', 'Macomb', 'Manistee', 'Marquette', 'Mason', 'Mecosta', 'Menominee',
-        'Midland', 'Missaukee', 'Monroe', 'Montcalm', 'Montmorency', 'Muskegon', 'Newaygo',
-        'Oakland', 'Oceana', 'Ogemaw', 'Ontonagon', 'Osceola', 'Oscoda', 'Otsego', 'Ottawa',
-        'Presque-Isle', 'Roscommon', 'Saginaw', 'St-Clair', 'St-Joseph', 'Sanilac', 'Schoolcraft',
-        'Shiawassee', 'Tuscola', 'Van-Buren', 'Washtenaw', 'Wayne', 'Wexford'
-    ]
-
-column_names = ['Cost (dollars per acre)']
-df = pd.DataFrame(columns=column_names)
-csv_file_path = "land_prices_michigan.csv"
-df.to_csv(csv_file_path, index=False)
+ref= pd.read_csv('reforestationDB.csv')
+ref['Land-Prices'] = None
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--headless") #No GUI (Chrome doesnt pop up)
 driver = webdriver.Chrome(options=chrome_options) # Initialize the Chrome webdriver
 
 
-for county in michigan_counties:
-    price = []
-    url = f"https://www.acrevalue.com/map/MI/{county}/"
+for index, row in ref.iterrows():
+    state = row['Abbreviation']
+    county = row['County']
+    url = f"https://www.acrevalue.com/map/{state}/{county}/"
     driver.get(url)
     print(url)
     time.sleep(5) # time for page to load
@@ -52,9 +37,9 @@ for county in michigan_counties:
     except Exception as e:
         cost = None
 
-    with open('land_prices_michigan.csv', mode='a', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow([cost])
+    ref.at[index, 'Land-Prices'] = cost
 
 driver.quit()
 
+
+ref.to_csv('reforestationDB.csv', index=False)
