@@ -4,7 +4,7 @@ import "./Footer.css"
 
 
 /**
- * Footer with columns and rows 
+ * Footer with columns and rows
  * @returns {JSX.Element}
  *
  */
