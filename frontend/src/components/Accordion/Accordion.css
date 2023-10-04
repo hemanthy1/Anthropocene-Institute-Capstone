@@ -20,19 +20,6 @@
 }
 
 
-.faqs .faq .faq-question::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-
-
-    transition: all 0.4s ease;
-}
-
 .faqs .faq .faq-answer{
     opacity: 0;
     max-height: 0;
@@ -57,15 +44,24 @@
     font-variant: normal;
     font-weight: bold;
     color: var(--secondary);
-}
-.eyebrow {
-    border-top: 3px solid var(--primary); /* Change to your desired line color */
-    width: 10%; /* Adjust the width of the line as needed */
-    padding-bottom: 30px;
+    font-size: 2vw;
 }
 
 .line {
     border-top: 1px solid #d3d3d3; /* Change to your desired line color */
     width: 100%; /* Adjust the width of the line as needed */
     margin: 10px 0;
+}
+
+#faqcaret{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0; /* Align to the top */
+    right: 10px; /* Align to the right */
+
+}
+
+.rotate {
+  transform: rotate(180deg); /* Adjust the degree of rotation as needed */
 }
