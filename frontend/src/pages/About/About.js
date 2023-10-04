@@ -21,7 +21,7 @@ function About() {
           <div class="column">
             <div class="card">
               <EdiePfp></EdiePfp>
-              <div class="container">
+              <div class="containerr">
                 <h2 class="name">Edie Haase</h2>
                 <p class="role">Front End Developer</p>
                 <p>Edie please fill in some text about you here if you want</p>
@@ -34,7 +34,7 @@ function About() {
           <div class="column">
             <div class="card">
               <JackPfp></JackPfp>
-              <div class="container">
+              <div class="containerr">
                 <h2 class="name">Jack Holsher</h2>
                 <p class="role">Front End Developer</p>
                 <p>Jack please fill in some text about you here if you want</p>
@@ -47,7 +47,7 @@ function About() {
           <div class="column">
             <div class="card">
               <NickPfp></NickPfp>
-              <div class="container">
+              <div class="containerr">
                 <h2 class="name">Nick Wang</h2>
                 <p class="role">Front End Developer</p>
                 <p>Nick please fill in some text about you here if you want</p>
@@ -63,7 +63,7 @@ function About() {
           <div class="column">
             <div class="card">
               <IshitaPfp></IshitaPfp>
-              <div class="container">
+              <div class="containerr">
                 <h2 class="name">Ishita Kokil</h2>
                 <p class="role">Back End Develeoper</p>
                 <p>Ishita please fill in some text about you here if you want</p>
@@ -76,7 +76,7 @@ function About() {
           <div class="column">
             <div class="card">
               <HemanthPfp></HemanthPfp>
-              <div class="container">
+              <div class="containerr">
                 <h2 class="name">Hemanth Yalamanchili</h2>
                 <p class="role">Back End Developer</p>
                 <p>Hemanth please fill in some text about you here if you want</p>
