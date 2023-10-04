@@ -9,8 +9,8 @@ import jackpfp from "../../assets/jackpfp.jpeg"
 function About() {
   return (
     <div>
-      <div class="top-text">
-        <h1>About Us</h1>
+      <div className="top-text">
+        <h1 className="about-title">About Us</h1>
         <p>We are a group of Michigan State Students and made this website for our capstone project.... </p>
       </div>
       <hr class="about-hr"></hr>

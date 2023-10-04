@@ -35,8 +35,8 @@ function Footer() {
             <div className="col">
               <ul className="names">
                   <li className="title">Anthropocene Institute</li>
-                  <li>855 EL Camino Real<br/>Ste 13A N399<br/>Palo Alto, CA 94301</li>
-                  <li>+1 (888) 863-8730</li>
+                  <li className="link">855 EL Camino Real<br/>Ste 13A N399<br/>Palo Alto, CA 94301</li>
+                  <li className="link">+1 (888) 863-8730</li>
 
               </ul>
           </div>

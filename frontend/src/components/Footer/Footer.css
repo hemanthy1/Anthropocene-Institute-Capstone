@@ -26,7 +26,7 @@
   padding:0 0;
 
 }
-li{
+li.link {
   padding-left:0;
   font-size: 1vw;
   color: #FAF1E4;
@@ -34,9 +34,15 @@ li{
 }
 li.title {
   color:#9EB384 ;
+  padding-left:0;
+  font-size: 1vw;
+  margin-bottom: 1vh;
 }
 li.address {
   padding-top: 1vh;
+  padding-left:0;
+  font-size: 1vw;
+  color: #FAF1E4;
 }
 .footerText {
   color: #FAF1E4;
@@ -46,8 +52,12 @@ li.address {
 }
 a {
     text-decoration: none; /* Remove underline from links */
-    color: #fff; /* Text color for links */
 }
+
+.link > a {
+  color: #FAF1E4;
+}
+
 li.link:hover {
     opacity: 0.7;
 }
