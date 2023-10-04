@@ -18,14 +18,12 @@ if __name__ == '__main__':
                               )
     #TO CREATE TABLE
     #test_table.create(engine)
-
     with engine.connect() as connection:
-
         # TO INSERT INTO TABLE
-        connection.execute(test_table.insert(), {"id": 1, "name": "Ishita", "value": "Test1"})
+        # connection.execute(test_table.insert(), {"id": 2, "name": "Hemanth", "value": "Test2"})
         # connection.execute(Reforestation.insert(), {"land_price": 101010.0, "latitude": 69.0, "longitude": 34.0})
         # connection.execute(Reforestation.insert(), {"land_price": 101010.0, "latitude": 1208.0, "longitude": 234.0})
-        connection.commit()
+        # connection.commit()
 
         result = connection.execute(sqlalchemy.text("select test_table.name from test_table"))
         for row in result:
