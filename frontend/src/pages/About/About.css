@@ -1,0 +1,78 @@
+h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 5vw; font-style: normal; font-variant: normal; font-weight: 100; line-height: 50px; } 
+h2 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 2vw; font-style: normal; font-variant: normal; font-weight: bold; line-height: 3.5vw; } 
+.our-team{ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 3.5vw; font-style: normal; font-variant: normal; font-weight: bold; line-height: 3.5vw; letter-spacing: .075;text-align: center; color: var(--secondary)} 
+.top-text {text-align: center;}
+.name {color: var(--secondary)}
+
+.about-hr {
+    margin-bottom: 75px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.row-one, .row-two {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    width: 33.3%;
+    max-width: 350px;
+    margin-bottom: 15px;
+    padding: 0px 8px;
+}
+
+.row-two>.column {
+    float: left;
+}
+
+.card {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.175);
+    margin: 7.5px;
+}
+
+.container {
+    padding: 0px 15px;
+}
+
+.role {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: var(--secondary);
+
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+background-color: #555;
+}
+
+.row-one, .row-two{
+    width: 100%;
+}
+
+
+#pfp {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 650px) {
+.column {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    min-width: 300px;
+    }
+}
