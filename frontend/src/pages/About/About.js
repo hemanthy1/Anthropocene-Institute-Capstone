@@ -26,7 +26,7 @@ function About() {
                 <p class="role">Front End Developer</p>
                 <p>Edie please fill in some text about you here if you want</p>
                 <p>haaseede@msu.edu</p>
-                <p><a href="https://google.com" target="_blank" class="button">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/eden-haase-90b688212/" target="_blank" class="button">LinkedIn</a></p>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ function About() {
                 <p class="role">Front End Developer</p>
                 <p>Jack please fill in some text about you here if you want</p>
                 <p>holsche2@msu.edu</p>
-                <p><a href="https://google.com" target="_blank" class="button">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/jackson-holscher/" target="_blank" class="button">LinkedIn</a></p>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ function About() {
                 <p class="role">Front End Developer</p>
                 <p>Nick please fill in some text about you here if you want</p>
                 <p>wangnich@msu.edu</p>
-                <p><a href="https://google.com" target="_blank" class="button">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/nicholas-wang7190/" target="_blank" class="button">LinkedIn</a></p>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ function About() {
                 <p class="role">Back End Develeoper</p>
                 <p>Ishita please fill in some text about you here if you want</p>
                 <p>kokilish@msu.edu</p>
-                <p><a href="https://google.com" target="_blank" class="button">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/ishitakokil/" target="_blank" class="button">LinkedIn</a></p>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ function About() {
                 <p>Hemanth please fill in some text about you here if you want</p>
                 <p>yalama12@msu.edu</p>
                 <div>
-                <p><a href="https://google.com" target="_blank" class="button">Website</a></p>
+                <p><a href="https://hemanthyalamanchili.com/" target="_blank" class="button">Website</a></p>
 
                 </div>
               </div>
