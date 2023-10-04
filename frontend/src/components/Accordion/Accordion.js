@@ -1,7 +1,7 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./Accordion.css"
 import faqcaret from '../../assets/faqcaret.png'
-import {Link} from "react-router-dom";
+
 
 
 
@@ -13,7 +13,7 @@ function Accordion({faq,index, toggleFAQ}) {
         <Line></Line>
       <div className="faq-question" >
         {faq.question}
-
+          <CaretImage isOpen={faq.open}></CaretImage>
       </div>
       <div className="faq-answer">
           {faq.answer}
@@ -22,18 +22,19 @@ function Accordion({faq,index, toggleFAQ}) {
   );
 
 }
-function CaretImage() {
+function CaretImage({ isOpen }) {
+    const imageClass = isOpen ? 'rotate' : '';
   return (
-    <Link to="/caretImage">
       <img
         src={faqcaret}
         alt="FAQ caret Image"
         loading="lazy"
         id="faqcaret"
+        className={imageClass}
       />
-    </Link>
   );
 }
+
 
 function Line() {
   return (

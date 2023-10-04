@@ -29,7 +29,7 @@
     width: 30px;
     height: 30px;
 
-
+    background-image: url('../../assets/faqcaret.png');
     transition: all 0.4s ease;
 }
 
@@ -68,4 +68,15 @@
     border-top: 1px solid #d3d3d3; /* Change to your desired line color */
     width: 100%; /* Adjust the width of the line as needed */
     margin: 10px 0;
+}
+
+#faqcaret{
+    width: 15px;
+    height: 15px;
+    float: right;
+
+}
+
+.rotate {
+  transform: rotate(180deg); /* Adjust the degree of rotation as needed */
 }
