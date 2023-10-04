@@ -3,9 +3,9 @@ import React from "react";
 import "./Footer.css"
 
 
-
 /**
- * The footer
+ * Footer with columns and rows 
+ * @returns {JSX.Element}
  *
  */
 
