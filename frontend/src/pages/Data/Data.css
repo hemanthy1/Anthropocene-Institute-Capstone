@@ -1,0 +1,28 @@
+#data-page {
+  margin: 1rem;
+}
+
+#data-links-wrap {
+  padding: 0 3rem;
+}
+
+#data-intro {
+  text-justify: auto;
+  padding: 0 1.5rem; 
+  color: var(--secondary)
+}
+
+#intro-sep {
+  width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.data-link-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.data-link-content:hover {
+  transform: scale(1.01);
+}
