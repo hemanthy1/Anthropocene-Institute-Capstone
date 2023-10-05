@@ -1,10 +1,13 @@
 import "./Heatmap.css"
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import mapboxgl from 'mapbox-gl';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 function ChoroplethMap() {
+
+  const mapContainer = useRef(null);
+
   const [legendDisplay] = useState('block');
 
 
@@ -14,7 +17,7 @@ function ChoroplethMap() {
     mapboxgl.accessToken = 'pk.eyJ1IjoiaGFhc2VlZGUiLCJhIjoiY2xuOTNwdmVxMDM0bjJtbjJxeHczYmhkbiJ9.LVjKKnnuccvPSd4rJG3uJQ';
 
     const map = new mapboxgl.Map({
-      container: 'map',
+      container: mapContainer.current,
       style: 'mapbox://styles/mapbox/light-v11',
       center: [-98, 38.88],
       minZoom: 2,
@@ -101,10 +104,9 @@ function ChoroplethMap() {
   }, []);
 
   return (
-    <div>
-      <div id="map" style={{ position: 'absolute', top: 0, bottom: 0, width: '100%' }}></div>
 
-      <div id="legend" className="legend" style={{ display: legendDisplay }}>
+      <div ref={mapContainer} className="map-container">
+        <div id="legend" className="legend" style={{ display: legendDisplay }}>
         <h4>Population</h4>
             <div><span className= "b723122" ></span>25,000,000</div>
             <div><span className= "b8b4225"></span>10,000,000</div>
@@ -116,8 +118,8 @@ function ChoroplethMap() {
             <div><span className= "beed322"></span>500,000</div>
             <div><span className= "bf2f12d"></span>0</div>
       </div>
-
-    </div>
+     </div>
+      
   );
 }
 
