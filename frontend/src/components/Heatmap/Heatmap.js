@@ -119,7 +119,7 @@ function ChoroplethMap() {
             <div><span className= "bf2f12d"></span>0</div>
       </div>
      </div>
-      
+
   );
 }
 

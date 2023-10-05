@@ -29,14 +29,12 @@ function HomeBodyIntro() {
  */
 function EnvironmentalBackground() {
   return (
-    <a href="/">
       <img 
         src={environmentalBackground}
         alt="Environmental Backgronud"
         loading="lazy"
         id="environmental-bg"
       />
-    </a>
   )
 }
   export default HomeBodyIntro
