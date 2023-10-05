@@ -5,7 +5,7 @@ import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-load
 // bind our personal access token to the 
 mapboxgl.accessToken = 'pk.eyJ1IjoiamhvbHNjaDI5IiwiYSI6ImNsbjJjaWllNzAwcDQyam1wYnF6NHQ0Z24ifQ.TYll92t4SavsRHHFUhU-UA';
 
-function Heatmap() {
+function Heatmap(props) {
 
   const mapContainer = useRef(null);
   const map = useRef(null);
@@ -23,11 +23,11 @@ function Heatmap() {
 
     map.current = new mapboxgl.Map( {
       container: mapContainer.current,
-      style: 'mapbox://styles/jholsch29/cln2e89yr06mc01qb2p5jegml',
+      style: props.style,
       center: [lng, lat],
       zoom: zoom,
       minZoom: 3.4,
-      maxZoom: 10,
+      maxZoom: 15,
       maxBounds: llb
     });
 

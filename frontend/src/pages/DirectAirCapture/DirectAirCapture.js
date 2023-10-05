@@ -10,7 +10,7 @@ import Heatmap from "../../components/Heatmap/Heatmap"
  */
 function DirectAirCapture() {
   return (
-    <Heatmap />
+    <Heatmap style="mapbox://styles/jholsch29/cln2e89yr06mc01qb2p5jegml"/>
   );
 }
 
