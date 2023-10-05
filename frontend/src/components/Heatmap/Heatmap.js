@@ -11,7 +11,7 @@ function ChoroplethMap() {
   const [legendDisplay] = useState('block');
 
 
-  const zoomThreshold = 4;
+  const zoomThreshold = 3.9;
 
   useEffect(() => {
     mapboxgl.accessToken = 'pk.eyJ1IjoiaGFhc2VlZGUiLCJhIjoiY2xuOTNwdmVxMDM0bjJtbjJxeHczYmhkbiJ9.LVjKKnnuccvPSd4rJG3uJQ';
@@ -42,26 +42,22 @@ function ChoroplethMap() {
             'interpolate',
             ['linear'],
             ['get', 'population'],
-            0,
-            '#F2F12D',
+            1000,
+            '#e2f9df',
+            5000,
+            '#c3f5bb',
+            10000,
+            '#95ee89',
+            50000,
+            '#70fe5d',
+            100000,
+            '#50ed3a',
             500000,
-            '#EED322',
-            750000,
-            '#E6B71E',
+            '#28d411',
             1000000,
-            '#DA9C20',
-            2500000,
-            '#CA8323',
-            5000000,
-            '#B86B25',
-            7500000,
-            '#A25626',
-            10000000,
-            '#8B4225',
-            25000000,
-            '#723122',
+            '#15aa00',
           ],
-          'fill-opacity': 0.75,
+          'fill-opacity': .85,
         },
       });
 
@@ -77,26 +73,22 @@ function ChoroplethMap() {
             'interpolate',
             ['linear'],
             ['get', 'population'],
-            0,
-            '#F2F12D',
-            100,
-            '#EED322',
             1000,
-            '#E6B71E',
+            '#effbed',
             5000,
-            '#DA9C20',
+            '#cff5c9',
             10000,
-            '#CA8323',
+            '#a1e499',
             50000,
-            '#B86B25',
+            '#75ed66',
             100000,
-            '#A25626',
+            '#3fa331',
             500000,
-            '#8B4225',
+            '#1b780f',
             1000000,
-            '#723122',
+            '#083e00',
           ],
-          'fill-opacity': 0.75,
+          'fill-opacity': .85,
         },
       });
     });
@@ -107,16 +99,16 @@ function ChoroplethMap() {
 
       <div ref={mapContainer} className="map-container">
         <div id="legend" className="legend" style={{ display: legendDisplay }}>
-        <h4>Population</h4>
-            <div><span className= "b723122" ></span>25,000,000</div>
-            <div><span className= "b8b4225"></span>10,000,000</div>
-            <div><span className= "ba25626"></span>7,500,000</div>
-            <div><span className= "bb86b25"></span>5,000,000</div>
-            <div><span className= "bca8323"></span>2,500,000</div>
-            <div><span className= "bda9c20"></span>1,000,000</div>
-            <div><span className= "be6b71e"></span>750,000</div>
-            <div><span className= "beed322"></span>500,000</div>
-            <div><span className= "bf2f12d"></span>0</div>
+        <h4>Cost Efficency</h4>
+            <h3>Most</h3>
+            <div><span className= "b723122" ></span></div>
+            <div><span className= "b8b4225"></span></div>
+            <div><span className= "ba25626"></span></div>
+            <div><span className= "bb86b25"></span></div>
+            <div><span className= "bca8323"></span></div>
+            <div><span className= "bda9c20"></span></div>
+            <div><span className= "be6b71e"></span></div>
+            <h3>Least</h3>
       </div>
      </div>
 

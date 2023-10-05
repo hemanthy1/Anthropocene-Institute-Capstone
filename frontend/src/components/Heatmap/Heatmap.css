@@ -20,36 +20,31 @@
     }
 
     .legend div span {
-        border-radius: 50%;
-        display: inline-block;
-        height: 10px;
+        border-radius: 0%;
+        display: block;
+        height: 20px;
         margin-right: 5px;
-        width: 10px;
+        width: 20px;
+        opacity: .85;
     }
     .b723122{
-        background-color: #723122;
+        background-color: #083e00;
     }
     .b8b4225{
-        background-color: #8b4225;
+        background-color: #1b780f;
     }
     .ba25626{
-        background-color: #a25626
+        background-color: #3fa331
     }
     .bb86b25{
-        background-color: #b86b25;
+        background-color: #75ed66;
     }
     .bca8323{
-        background-color: #ca8323;
+        background-color: #a1e499;
     }
     .bda9c20{
-        background-color: #da9c20;
+        background-color: #cff5c9;
     }
     .be6b71e{
-        background-color: #e6b71e;
-    }
-    .beed322{
-        background-color: #eed322;
-    }
-    .bf2f12d{
-        background-color: #f2f12d;
+        background-color: #effbed;
     }
