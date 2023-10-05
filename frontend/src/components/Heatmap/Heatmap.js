@@ -1,48 +1,124 @@
 import "./Heatmap.css"
-import React, {useState, useEffect, useRef} from 'react';
-import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import React, { useState, useEffect } from 'react';
+import mapboxgl from 'mapbox-gl';
 
-// bind our personal access token to the 
-mapboxgl.accessToken = 'pk.eyJ1IjoiamhvbHNjaDI5IiwiYSI6ImNsbjJjaWllNzAwcDQyam1wYnF6NHQ0Z24ifQ.TYll92t4SavsRHHFUhU-UA';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
-function Heatmap(props) {
-
-  const mapContainer = useRef(null);
-  const map = useRef(null);
-  const [lng, setLng] = useState(0);
-  const [lat, setLat] = useState(0);
-  const [zoom, setZoom] = useState(3.4);
+function ChoroplethMap() {
+  const [legendDisplay] = useState('block');
 
 
-  const sw = new mapboxgl.LngLat(-45, -35);
-  const ne = new mapboxgl.LngLat(45, 35);
-  const llb = new mapboxgl.LngLatBounds(sw, ne);
+  const zoomThreshold = 4;
 
   useEffect(() => {
-    if(map.current) return; // prevent multiple instances of map
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaGFhc2VlZGUiLCJhIjoiY2xuOTNwdmVxMDM0bjJtbjJxeHczYmhkbiJ9.LVjKKnnuccvPSd4rJG3uJQ';
 
-    map.current = new mapboxgl.Map( {
-      container: mapContainer.current,
-      style: props.style,
-      center: [lng, lat],
-      zoom: zoom,
-      minZoom: 3.4,
-      maxZoom: 15,
-      maxBounds: llb
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v11',
+      center: [-98, 38.88],
+      minZoom: 2,
+      zoom: 3,
     });
 
-    map.current.on('move', () => {
-      setLng(map.current.getCenter().lng.toFixed(4));
-      setLat(map.current.getCenter().lat.toFixed(4));
-      setZoom(map.current.getZoom().toFixed(2));
+    map.on('load', () => {
+      map.addSource('population', {
+        type: 'vector',
+        url: 'mapbox://mapbox.660ui7x6',
+      });
+
+      map.addLayer({
+        id: 'state-population',
+        source: 'population',
+        'source-layer': 'state_county_population_2014_cen',
+        maxzoom: zoomThreshold,
+        type: 'fill',
+        filter: ['==', 'isState', true],
+        paint: {
+          'fill-color': [
+            'interpolate',
+            ['linear'],
+            ['get', 'population'],
+            0,
+            '#F2F12D',
+            500000,
+            '#EED322',
+            750000,
+            '#E6B71E',
+            1000000,
+            '#DA9C20',
+            2500000,
+            '#CA8323',
+            5000000,
+            '#B86B25',
+            7500000,
+            '#A25626',
+            10000000,
+            '#8B4225',
+            25000000,
+            '#723122',
+          ],
+          'fill-opacity': 0.75,
+        },
+      });
+
+      map.addLayer({
+        id: 'county-population',
+        source: 'population',
+        'source-layer': 'state_county_population_2014_cen',
+        minzoom: zoomThreshold,
+        type: 'fill',
+        filter: ['==', 'isCounty', true],
+        paint: {
+          'fill-color': [
+            'interpolate',
+            ['linear'],
+            ['get', 'population'],
+            0,
+            '#F2F12D',
+            100,
+            '#EED322',
+            1000,
+            '#E6B71E',
+            5000,
+            '#DA9C20',
+            10000,
+            '#CA8323',
+            50000,
+            '#B86B25',
+            100000,
+            '#A25626',
+            500000,
+            '#8B4225',
+            1000000,
+            '#723122',
+          ],
+          'fill-opacity': 0.75,
+        },
+      });
     });
-  });
+
+  }, []);
 
   return (
     <div>
-      <div ref={mapContainer} className="map-container" />
+      <div id="map" style={{ position: 'absolute', top: 0, bottom: 0, width: '100%' }}></div>
+
+      <div id="legend" className="legend" style={{ display: legendDisplay }}>
+        <h4>Population</h4>
+            <div><span className= "b723122" ></span>25,000,000</div>
+            <div><span className= "b8b4225"></span>10,000,000</div>
+            <div><span className= "ba25626"></span>7,500,000</div>
+            <div><span className= "bb86b25"></span>5,000,000</div>
+            <div><span className= "bca8323"></span>2,500,000</div>
+            <div><span className= "bda9c20"></span>1,000,000</div>
+            <div><span className= "be6b71e"></span>750,000</div>
+            <div><span className= "beed322"></span>500,000</div>
+            <div><span className= "bf2f12d"></span>0</div>
+      </div>
+
     </div>
   );
 }
 
-export default Heatmap;
+export default ChoroplethMap;
