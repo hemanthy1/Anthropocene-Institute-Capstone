@@ -13,76 +13,76 @@ function About() {
         <h1 className="about-title">About Us</h1>
         <p>We are a group of Michigan State Students and made this website for our capstone project.... </p>
       </div>
-      <hr class="about-hr"></hr>
+      <hr className="about-hr"></hr>
 
-        <h2 class="our-team">Our Team</h2>
+        <h2 className="our-team">Our Team</h2>
 
-        <div class="row-one">
-          <div class="column">
-            <div class="card">
+        <div className="row-one">
+          <div className="column">
+            <div className="card">
               <EdiePfp></EdiePfp>
-              <div class="containerr">
-                <h2 class="name">Edie Haase</h2>
-                <p class="role">Front End Developer</p>
+              <div className="containerr">
+                <h2 className="name">Edie Haase</h2>
+                <p className="role">Front End Developer</p>
                 <p>Edie please fill in some text about you here if you want</p>
                 <p>haaseede@msu.edu</p>
-                <p><a href="https://www.linkedin.com/in/eden-haase-90b688212/" target="_blank" class="button">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/eden-haase-90b688212/" target="_blank" className="button">LinkedIn</a></p>
               </div>
             </div>
           </div>
 
-          <div class="column">
-            <div class="card">
+          <div className="column">
+            <div className="card">
               <JackPfp></JackPfp>
-              <div class="containerr">
-                <h2 class="name">Jack Holsher</h2>
-                <p class="role">Front End Developer</p>
+              <div className="containerr">
+                <h2 className="name">Jack Holsher</h2>
+                <p className="role">Front End Developer</p>
                 <p>Jack please fill in some text about you here if you want</p>
                 <p>holsche2@msu.edu</p>
-                <p><a href="https://www.linkedin.com/in/jackson-holscher/" target="_blank" class="button">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/jackson-holscher/" target="_blank" className="button">LinkedIn</a></p>
               </div>
             </div>
           </div>
 
-          <div class="column">
-            <div class="card">
+          <div className="column">
+            <div className="card">
               <NickPfp></NickPfp>
-              <div class="containerr">
-                <h2 class="name">Nick Wang</h2>
-                <p class="role">Front End Developer</p>
+              <div className="containerr">
+                <h2 className="name">Nick Wang</h2>
+                <p className="role">Front End Developer</p>
                 <p>Nick please fill in some text about you here if you want</p>
                 <p>wangnich@msu.edu</p>
-                <p><a href="https://www.linkedin.com/in/nicholas-wang7190/" target="_blank" class="button">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/nicholas-wang7190/" target="_blank" className="button">LinkedIn</a></p>
               </div>
             </div>
           </div>
         </div>
 
 
-        <div class="row-two">
-          <div class="column">
-            <div class="card">
+        <div className="row-two">
+          <div className="column">
+            <div className="card">
               <IshitaPfp></IshitaPfp>
-              <div class="containerr">
-                <h2 class="name">Ishita Kokil</h2>
-                <p class="role">Back End Develeoper</p>
+              <div className="containerr">
+                <h2 className="name">Ishita Kokil</h2>
+                <p className="role">Back End Develeoper</p>
                 <p>Ishita please fill in some text about you here if you want</p>
                 <p>kokilish@msu.edu</p>
-                <p><a href="https://www.linkedin.com/in/ishitakokil/" target="_blank" class="button">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/ishitakokil/" target="_blank" className="button">LinkedIn</a></p>
               </div>
             </div>
           </div>
 
-          <div class="column">
-            <div class="card">
+          <div className="column">
+            <div className="card">
               <HemanthPfp></HemanthPfp>
-              <div class="containerr">
-                <h2 class="name">Hemanth Yalamanchili</h2>
-                <p class="role">Back End Developer</p>
+              <div className="containerr">
+                <h2 className="name">Hemanth Yalamanchili</h2>
+                <p className="role">Back End Developer</p>
                 <p>Hemanth please fill in some text about you here if you want</p>
                 <p>yalama12@msu.edu</p>
                 <div>
-                <p><a href="https://hemanthyalamanchili.com/" target="_blank" class="button">Website</a></p>
+                <p><a href="https://hemanthyalamanchili.com/" target="_blank" className="button">Website</a></p>
 
                 </div>
               </div>
@@ -93,13 +93,13 @@ function About() {
         <hr></hr>
 
 
-        <h2>Project overview</h2>
+        {/* <h2>Project overview</h2>
         <h2>Motivation?</h2>
         <h2>Methodology</h2>
         <h3>Algae Blooms</h3>
         <h3>Reforestation</h3>
         <h3>DAC</h3>
-        <h2>Design Day Page</h2>
+        <h2>Design Day Page</h2> */}
       </div>
 
   )

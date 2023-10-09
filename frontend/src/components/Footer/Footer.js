@@ -26,17 +26,16 @@ function Footer() {
             <div className="col">
               <ul className="names">
                   <li className="title">Tools</li>
-                  <li className="link">Algae</li>
-                  <li className="link">Reforestation</li>
-                  <li className="link">Solar</li>
-
+                  <li className="link"><a href="/algaeblooms">Algae</a></li>
+                  <li className="link"><a href="/reforestation">Reforestation</a></li>
+                  <li className="link"><a href="/dac">Direct Air Capture</a></li>
               </ul>
           </div>
             <div className="col">
               <ul className="names">
                   <li className="title">Anthropocene Institute</li>
-                  <li className="link">855 EL Camino Real<br/>Ste 13A N399<br/>Palo Alto, CA 94301</li>
-                  <li className="link">+1 (888) 863-8730</li>
+                  <li className="link"><a href="https://anthropoceneinstitute.com/" target="_blank">855 EL Camino Real<br/>Ste 13A N399<br/>Palo Alto, CA 94301</a></li>
+                  <li className="link"><a href="tel:+1888-863-8730">+1 (888) 863-8730</a></li>
 
               </ul>
           </div>

@@ -14,10 +14,10 @@ function Faq() {
 
       question: 'What is the Anthropocene Institute and what do they do? ',
       answer: 'Anthropocene Institute is an organization founded by Carl Page' +
-          '2012 and is focused on making Earth sustainable by knowing and investing' +
-          'in the right technology. they partner with entrepreneurs, investors, ' +
+          ' in 2012 and is focused on making Earth sustainable by knowing and investing' +
+          ' in the right technology. They partner with entrepreneurs, investors, ' +
           'governments, non-profits, and universities to foster science, influence policy,' +
-          'promote sustainability, clean energy, and more',
+          ' promote sustainability, clean energy, and more.',
       open: true
 
     },
@@ -25,10 +25,10 @@ function Faq() {
       question: 'Why Carbon Dioxide removal? ',
       answer: 'As climate change has become more serious of an issue over time, it has ' +
           'become increasingly beneficial for companies and organizations to invest in ' +
-          'lowering their carbon footprint. For example one forth of the Fortune 500 companies' +
-          'have pledged to become carbon neutral by 2030. Investing in carbon removal' +
-          'technology is hard enough for the worlds biggest companies, but smaller organizations' +
-          'often dont have the time or resources to effectively do so',
+          'lowering their carbon footprint. For example, one forth of the Fortune 500 companies' +
+          ' have pledged to become carbon neutral by 2030. Investing in carbon removal' +
+          ' technology is hard enough for the worlds biggest companies, but smaller organizations' +
+          ' often don\'t have the time or resources to effectively do so',
       open: false
     },
     {

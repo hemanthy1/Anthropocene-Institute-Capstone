@@ -36,7 +36,7 @@ function Articles() {
         Reforestation - Learn More!
       </ArticleLink>
       <ArticleLink link={links.link4} image={article4}>
-        More about the Anthropocene Institute
+        More About the Anthropocene Institute
       </ArticleLink>
       <ArticleLink link={links.link5} image={article5}>
         The Importance of Carbon Dioxide Removal (CDR)

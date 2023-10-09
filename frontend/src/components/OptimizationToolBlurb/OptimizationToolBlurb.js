@@ -163,11 +163,12 @@ function OptimizationToolBlurb() {
  */
       function DACText() {
         return (
-          <p className="homePageText" >Direct Air Capture (DAC) is an interesting and effective 
-          approach to carbon removal. As the name suggests, this method entails setting up a facility 
-          to suck carbon dioxide from the air and store it in one form or another. Ti's possible to 
-          store it in tanks in underground caverns, chemically treat it and transform it into stones, 
-          and so much more. DAC is one of the most innovative approaches to carbon removal today.</p>
+          <p className="homePageText" >Direct Air Capture (DAC) is an promising and effective 
+          approach to carbon removal. A relatively new technology, direct air capture is the use of
+          chemical or physical processes to extract carbon dioxide directly from the ambient air. 
+          Once captured, the carbon dioxide can be securely stored in underground caverns or repurposed
+          and sold for sustainable applications. DAC stands out as one of today's most innovative strategies
+          for carbon mitigation. </p>
         )
       }
 

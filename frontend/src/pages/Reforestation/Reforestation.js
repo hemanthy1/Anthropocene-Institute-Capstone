@@ -5,9 +5,9 @@ import reforestationBanner from "../../assets/ReforestationBanner.png";
 function Reforestation() {
   return (
       <div>
-        <div className="reforestation_banner">
+        {/* <div className="reforestation_banner">
             <h3> Reforestation </h3>
-        </div>
+        </div> */}
 
         <Heatmap/>
       </div>

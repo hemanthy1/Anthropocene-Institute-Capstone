@@ -31,10 +31,10 @@ function Data() {
         <h3> 
           In the effort to provide complete transparency and to ensure reliable outcomes,
           we've provided a comprehensive list of the different data sources that power
-          the Carbon Mapp's machine learning models. These datasets have been carerfully
+          the Carbon Mapp's machine learning models. These datasets have been carefully
           chosen and utilized to offer the most accurate and dependable insights. By accessing
           the links below, you can dive deeper into the origins of the data, understanding the
-          basis of our model's predictions and results. 
+          basis of our models' predictions and results. 
         </h3>
         <hr id="intro-sep"/>
       </div>
