@@ -4,14 +4,11 @@ import mapboxgl from 'mapbox-gl';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-function ChoroplethMap() {
+function ChoroplethMap(props) {
 
   const mapContainer = useRef(null);
-
   const [legendDisplay] = useState('block');
-
-
-  const zoomThreshold = 3.9;
+  const zoomThreshold = 2;
 
   useEffect(() => {
     mapboxgl.accessToken = 'pk.eyJ1IjoiaGFhc2VlZGUiLCJhIjoiY2xuOTNwdmVxMDM0bjJtbjJxeHczYmhkbiJ9.LVjKKnnuccvPSd4rJG3uJQ';
@@ -43,19 +40,19 @@ function ChoroplethMap() {
             ['linear'],
             ['get', 'population'],
             1000,
-            '#e2f9df',
+            props.colors.color1,
             5000,
-            '#c3f5bb',
+            props.colors.color2,
             10000,
-            '#95ee89',
+            props.colors.color3,
             50000,
-            '#70fe5d',
+            props.colors.color4,
             100000,
-            '#50ed3a',
+            props.colors.color5,
             500000,
-            '#28d411',
+            props.colors.color6,
             1000000,
-            '#15aa00',
+            props.colors.color7,
           ],
           'fill-opacity': .85,
         },
@@ -74,19 +71,19 @@ function ChoroplethMap() {
             ['linear'],
             ['get', 'population'],
             1000,
-            '#effbed',
+            props.colors.color1,
             5000,
-            '#cff5c9',
+            props.colors.color2,
             10000,
-            '#a1e499',
+            props.colors.color3,
             50000,
-            '#75ed66',
+            props.colors.color4,
             100000,
-            '#3fa331',
+            props.colors.color5,
             500000,
-            '#1b780f',
+            props.colors.color6,
             1000000,
-            '#083e00',
+            props.colors.color7,
           ],
           'fill-opacity': .85,
         },
@@ -101,13 +98,13 @@ function ChoroplethMap() {
         <div id="legend" className="legend" style={{ display: legendDisplay }}>
         <h4>Cost Efficency</h4>
             <h3>Most</h3>
-            <div><span className= "b723122" ></span></div>
-            <div><span className= "b8b4225"></span></div>
-            <div><span className= "ba25626"></span></div>
-            <div><span className= "bb86b25"></span></div>
-            <div><span className= "bca8323"></span></div>
-            <div><span className= "bda9c20"></span></div>
-            <div><span className= "be6b71e"></span></div>
+            <div><span className= "b723122" style={{backgroundColor: props.colors.color7}}></span></div>
+            <div><span className= "b8b4225" style={{backgroundColor: props.colors.color6}}></span></div>
+            <div><span className= "ba25626" style={{backgroundColor: props.colors.color5}}></span></div>
+            <div><span className= "bb86b25" style={{backgroundColor: props.colors.color4}}></span></div>
+            <div><span className= "bca8323" style={{backgroundColor: props.colors.color3}}></span></div>
+            <div><span className= "bda9c20" style={{backgroundColor: props.colors.color2}}></span></div>
+            <div><span className= "be6b71e" style={{backgroundColor: props.colors.color1}}></span></div>
             <h3>Least</h3>
       </div>
      </div>

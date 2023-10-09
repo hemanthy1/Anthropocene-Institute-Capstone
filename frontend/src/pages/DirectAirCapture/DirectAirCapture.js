@@ -9,8 +9,19 @@ import Heatmap from "../../components/Heatmap/Heatmap"
  *  optimization tool.
  */
 function DirectAirCapture() {
+
+  const colors = {
+    color1: "#fbcfcf",
+    color2: "#f79d9d",
+    color3: "#f06262",
+    color4: "#da3a3a",
+    color5: "#bd2525",
+    color6: "#a20c0c",
+    color7: "#7a0000"
+  }
+
   return (
-    <Heatmap/>
+    <Heatmap colors={colors}/>
   );
 }
 

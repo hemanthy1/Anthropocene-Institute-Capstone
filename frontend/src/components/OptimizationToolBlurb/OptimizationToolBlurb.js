@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./OptimizationToolBlurb.css"
-import algaeBloomMapImage from "../../assets/algaebloomsmapimg.png";
+import algaeBloomMapImage from "../../assets/algaebloomsmap.png";
 import reforestationMapImage from "../../assets/reforestationmap.png";
-import dacMapImage from "../../assets/dacmapimg.png";
+import dacMapImage from "../../assets/dacmap.png";
 
 
 
