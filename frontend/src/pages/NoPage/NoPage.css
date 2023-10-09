@@ -1,0 +1,21 @@
+#error-title {
+  text-align: center;
+  color: var(--secondary)
+}
+
+#error-message {
+  text-align: center;
+
+}
+
+#return-link {
+  color: var(--secondary)
+}
+
+#return-link:hover {
+  font-size: calc(1rem + 10px);
+}
+
+#error-logo {
+  margin: 0 1rem;
+}
