@@ -8,7 +8,7 @@ function ChoroplethMap(props) {
 
   const mapContainer = useRef(null);
   const [legendDisplay] = useState('block');
-  const zoomThreshold = 2;
+  const zoomThreshold = 3;
 
   useEffect(() => {
     mapboxgl.accessToken = 'pk.eyJ1IjoiaGFhc2VlZGUiLCJhIjoiY2xuOTNwdmVxMDM0bjJtbjJxeHczYmhkbiJ9.LVjKKnnuccvPSd4rJG3uJQ';
@@ -18,7 +18,7 @@ function ChoroplethMap(props) {
       style: 'mapbox://styles/mapbox/light-v11',
       center: [-98, 38.88],
       minZoom: 2,
-      zoom: 3,
+      zoom: 2.2,
     });
 
     map.on('load', () => {
