@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: flask-backend
-        image: gcr.io/carbon-mapp/dev-app:latest
+        image: gcr.io/carbon-mapp/dev-flask-app:latest
         ports:
         - containerPort: 6001
