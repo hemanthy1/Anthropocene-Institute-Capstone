@@ -5,12 +5,14 @@ function Data() {
 
   const links = {
     link1: "https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/county/mapping",
-    link2: "https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/county/mapping/"
+    link2: "https://www.acrevalue.com/map/",
+    link3: "https://www.census.gov/data/tables/time-series/demo/popest/2020s-counties-total.html"
   };
 
   const titles = {
-    title1: "NCEI - NOAA: Climate Data at the County Level - Average Temperature",
-    title2: "NCEI - NOAA: Climate Data at the County Level - Precipitation"
+    title1: "NCEI - NOAA: Climate Data at the County Level - Average Temperature, Precipitation, Palmer-Z Index",
+    title2: "Land Prices by County - AcreValue.com",
+    title3: "Population by County - Census.gov"
   }
 
   const descs = {
@@ -18,10 +20,10 @@ function Data() {
             Climate at a Glance: County Mapping, published September 2023, \
             retrieved on October 4, 2023 from \
             https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/county/mapping",
-    desc2: "NOAA National Centers for Environmental information, \
-            Climate at a Glance: County Mapping, published September 2023, \
-            retrieved on October 4, 2023 from \
-            https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/county/mapping"
+    desc2: "Discover Land Values. acrevalue.com. (n.d.). https://www.acrevalue.com/map/ ",
+    desc3: "Bureau, U. C. (2023, June 13). County population totals and components of \
+            change: 2020-2022. Census.gov. \
+            https://www.census.gov/data/tables/time-series/demo/popest/2020s-counties-total.html"
   }
 
   return (
@@ -56,6 +58,15 @@ function Data() {
         desc={descs.desc2} 
         bg="white" 
         tc="var(--secondary)"
+      />
+
+      <DataLink
+        className="data-link"
+        link={links.link3}
+        title={titles.title3}
+        desc={descs.desc3}
+        bg="var(--primary)"
+        tc="white"
       />
       
       {/* 
