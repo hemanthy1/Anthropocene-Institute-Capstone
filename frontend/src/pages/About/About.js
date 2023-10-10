@@ -24,7 +24,7 @@ function About() {
               <div className="containerr">
                 <h2 className="name">Edie Haase</h2>
                 <p className="role">Front End Developer</p>
-                <p>Edie please fill in some text about you here if you want</p>
+                <p>Edie is pursing a major in computer science and a minor in environmental sustainability at Michigan State University </p>
                 <p>haaseede@msu.edu</p>
                 <p><a href="https://www.linkedin.com/in/eden-haase-90b688212/" target="_blank" className="button">LinkedIn</a></p>
               </div>
@@ -66,7 +66,7 @@ function About() {
               <div className="containerr">
                 <h2 className="name">Ishita Kokil</h2>
                 <p className="role">Back End Develeoper</p>
-                <p>Ishita please fill in some text about you here if you want</p>
+                <p>Ishita is pursuing a dual degree in Computer Science and Data Science at Michigan State University</p>
                 <p>kokilish@msu.edu</p>
                 <p><a href="https://www.linkedin.com/in/ishitakokil/" target="_blank" className="button">LinkedIn</a></p>
               </div>
@@ -79,7 +79,7 @@ function About() {
               <div className="containerr">
                 <h2 className="name">Hemanth Yalamanchili</h2>
                 <p className="role">Back End Developer</p>
-                <p>Hemanth please fill in some text about you here if you want</p>
+                <p>Hemanth Yalamanchili, a passionate computer science student with a minor in game design and development at Michigan State University.</p>
                 <p>yalama12@msu.edu</p>
                 <div>
                 <p><a href="https://hemanthyalamanchili.com/" target="_blank" className="button">Website</a></p>
