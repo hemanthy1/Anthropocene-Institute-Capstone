@@ -37,7 +37,7 @@ function About() {
               <div className="containerr">
                 <h2 className="name">Jack Holsher</h2>
                 <p className="role">Front End Developer</p>
-                <p>Jack please fill in some text about you here if you want</p>
+                <p>Jack Holscher, a fourth-year MSU computer science major, complemented by a minor in data science and a cognate in psychology.</p>
                 <p>holsche2@msu.edu</p>
                 <p><a href="https://www.linkedin.com/in/jackson-holscher/" target="_blank" className="button">LinkedIn</a></p>
               </div>
