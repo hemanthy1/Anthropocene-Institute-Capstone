@@ -50,7 +50,7 @@ function About() {
               <div className="containerr">
                 <h2 className="name">Nick Wang</h2>
                 <p className="role">Front End Developer</p>
-                <p>Nick please fill in some text about you here if you want</p>
+                <p>Nick Wang is a senior Computer Science student at MSU with a minor in Cognitive Science pursuing a career in Software Engineering.</p>
                 <p>wangnich@msu.edu</p>
                 <p><a href="https://www.linkedin.com/in/nicholas-wang7190/" target="_blank" className="button">LinkedIn</a></p>
               </div>
