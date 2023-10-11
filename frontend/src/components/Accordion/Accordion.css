@@ -12,8 +12,8 @@
 }
 
 .faqs .faq .faq-question {
+    font-size: 2vw;
     position: relative;
-    font-size: 20px;
     padding-right: 80px;
     font-weight: 20;
     transition: all 0.4s ease;
@@ -21,6 +21,7 @@
 
 
 .faqs .faq .faq-answer{
+    font-size: 2vw;
     opacity: 0;
     max-height: 0;
     overflow-y:hidden;
@@ -28,10 +29,12 @@
 }
 
 .faqs .faq.open .faq-question{
+    font-size: 2vw;
     margin-bottom: 15px;
 }
 
 .faqs .faq.open .faq-answer{
+    font-size: 2vw;
     max-height: 1000px;
     opacity: 1;
     font-weight: 57;
@@ -44,7 +47,7 @@
     font-variant: normal;
     font-weight: bold;
     color: var(--secondary);
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .line {

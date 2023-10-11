@@ -40,7 +40,7 @@ function Footer() {
               </ul>
           </div>
             <div className="col">
-                <p className="footerText">@ Anthropocene Institute, All Rights Reserved</p>
+                <p className="footerText">© Anthropocene Institute, All Rights Reserved</p>
           </div>
         </div>
       </div>
