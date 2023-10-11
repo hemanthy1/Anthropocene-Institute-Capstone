@@ -8,7 +8,7 @@ import jackpfp from "../../assets/jackpfp.jpeg"
 import carlpfp from "../../assets/carlpagepfp.jpeg"
 import frankpfp from "../../assets/frankpfp.png"
 import melindapfp from "../../assets/melindapfp.jpeg"
-
+import designdaypage from "../../assets/designdaypage.png"
 
 function About() {
   return (
@@ -59,90 +59,79 @@ function About() {
       </div>
 
 
+      <hr className='about-hr'></hr>
 
 
 
         <h2 className="our-team">Our Team</h2>
 
         <div className="row-one">
-          <div className="column">
-            <div className="card">
-            <GeneralPfp src={ediepfp} alt="Edie Haase Pfp"></GeneralPfp>
-              <div className="containerr">
-                <h2 className="name">Edie Haase</h2>
-                <p className="role">Front End Developer</p>
-                <p>Edie is pursing a major in computer science and a minor in environmental sustainability at Michigan State University </p>
-                <p>haaseede@msu.edu</p>
-                <p><a href="https://www.linkedin.com/in/eden-haase-90b688212/" target="_blank" className="button">LinkedIn</a></p>
-              </div>
-            </div>
-          </div>
+          <GeneralColumn className="Edie"
+            pfp={ediepfp} 
+            alt="Edie Haase Pfp" 
+            name="Edie Haase" 
+            role="Front End Developer" 
+            text="Edie is pursing a major in computer science and a minor in environmental sustainability at Michigan State University." 
+            email="haaseede@msu.edu" 
+            link="https://www.linkedin.com/in/eden-haase-90b688212/" 
+            buttontext="LinkedIn">
+          </GeneralColumn>
 
-          <div className="column">
-            <div className="card">
-            <GeneralPfp src={jackpfp} alt="Jack Holscher Pfp"></GeneralPfp>
-              <div className="containerr">
-                <h2 className="name">Jack Holsher</h2>
-                <p className="role">Front End Developer</p>
-                <p>Jack Holscher, a fourth-year MSU computer science major, complemented by a minor in data science and a cognate in psychology.</p>
-                <p>holsche2@msu.edu</p>
-                <p><a href="https://www.linkedin.com/in/jackson-holscher/" target="_blank" className="button">LinkedIn</a></p>
-              </div>
-            </div>
-          </div>
+          <GeneralColumn className="Jack"
+            pfp={jackpfp} 
+            alt="Jack Holscher Pfp" 
+            name="Jack Holscher" 
+            role="Front End Developer" 
+            text="Jack Holscher, a fourth-year MSU computer science major, complemented by a minor in data science and a cognate in psychology." 
+            email="holsche2@msu.edu" 
+            link="https://www.linkedin.com/in/jackson-holscher/" 
+            buttontext="LinkedIn">
+          </GeneralColumn>
 
-          <div className="column">
-            <div className="card">
-            <GeneralPfp src={nickpfp} alt="Nick Wang Pfp"></GeneralPfp>
-              <div className="containerr">
-                <h2 className="name">Nick Wang</h2>
-                <p className="role">Front End Developer</p>
-                <p>Nick Wang is a senior Computer Science student at MSU with a minor in Cognitive Science pursuing a career in Software Engineering.</p>
-                <p>wangnich@msu.edu</p>
-                <p><a href="https://www.linkedin.com/in/nicholas-wang7190/" target="_blank" className="button">LinkedIn</a></p>
-              </div>
-            </div>
-          </div>
+          <GeneralColumn className="Nick"
+            pfp={nickpfp} 
+            alt="Nick Wang Pfp" 
+            name="Nick Wang" 
+            role="Front End Developer" 
+            text="Nick Wang is a senior Computer Science student at MSU with a minor in Cognitive Science pursuing a career in Software Engineering." 
+            email="wangnich@msu.edu" 
+            link="https://www.linkedin.com/in/nicholas-wang7190/" 
+            buttontext="LinkedIn">
+          </GeneralColumn>
         </div>
 
 
         <div className="row-two">
-          <div className="column">
-            <div className="card">
-            <GeneralPfp src={ishitapfp} alt="Ishita Kokil Pfp"></GeneralPfp>
-              <div className="containerr">
-                <h2 className="name">Ishita Kokil</h2>
-                <p className="role">Back End Develeoper</p>
-                <p>Ishita is pursuing a dual degree in Computer Science and Data Science at Michigan State University</p>
-                <p>kokilish@msu.edu</p>
-                <p><a href="https://www.linkedin.com/in/ishitakokil/" target="_blank" className="button">LinkedIn</a></p>
-              </div>
-            </div>
-          </div>
 
-          <div className="column">
-            <div className="card">
-            <GeneralPfp src={hemanthpfp} alt="Hemanth Yalamanchili Pfp"></GeneralPfp>
-              <div className="containerr">
-                <h2 className="name">Hemanth Yalamanchili</h2>
-                <p className="role">Back End Developer</p>
-                <p>Hemanth Yalamanchili, a passionate computer science student with a minor in game design and development at Michigan State University.</p>
-                <p>yalama12@msu.edu</p>
-                <div>
-                <p><a href="https://hemanthyalamanchili.com/" target="_blank" className="button">Website</a></p>
+          <GeneralColumn className="Ishita"
+            pfp={ishitapfp} 
+            alt="Ishita Kokil Pfp" 
+            name="Ishita Kokil" 
+            role="Back End Developer" 
+            text="Ishita is pursuing a dual degree in Computer Science and Data Science at Michigan State University." 
+            email="kokilish@msu.edu" 
+            link="https://www.linkedin.com/in/ishitakokil/" 
+            buttontext="LinkedIn">
+          </GeneralColumn>
 
-                </div>
-              </div>
-            </div>
-          </div>
+          <GeneralColumn className="Hemanth"
+            pfp={hemanthpfp} 
+            alt="Hemanth Yalamanchili Pfp" 
+            name="Hemanth Yalamanchili" 
+            role="Back End Developer" 
+            text="Hemanth Yalamanchili, a passionate computer science student with a minor in game design and development at Michigan State University." 
+            email="yalama12@msu.edu" 
+            link="https://hemanthyalamanchili.com/" 
+            buttontext="Website">
+          </GeneralColumn>
+
         </div>
 
         <hr className="about-hr"></hr>
 
-
-
-        <h2>Design Day Page</h2>
-      </div>
+        <div className="bottom-text">
+        <h1 className="about-title">Our Design Day Booklet Page</h1>
+        </div><DesignDayPage></DesignDayPage></div>
 
   )
 }
@@ -163,6 +152,42 @@ function GeneralPfp(props) {
         alt={props.alt}
         loading="lazy"
         id="pfp"
+      />
+    </a>
+  )
+}
+
+/**
+ * General personal card element
+ * 
+ * @returns The image as an HTML element
+ */
+function GeneralColumn(props) {
+  return (
+    <div className="column">
+    <div className="card">
+    <GeneralPfp src={props.pfp} alt={props.alt}></GeneralPfp>
+      <div className="containerr">
+        <h2 className="name">{props.name}</h2>
+        <p className="role">{props.role}</p>
+        <p>{props.text}</p>
+        <p>{props.email}</p>
+        <p><a href={props.link} target="_blank" className="button">{props.buttontext}</a></p>
+      </div>
+    </div>
+  </div>
+  )
+}
+
+
+function DesignDayPage() {
+  return (
+    <a href="/">
+      <img 
+        src={designdaypage}
+        alt="Design Day Page"
+        loading="lazy"
+        id="ddp"
       />
     </a>
   )
