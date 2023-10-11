@@ -15,7 +15,9 @@ function About() {
     <div>
       <div className="top-text">
         <h1 className="about-title">About Us</h1>
-        <p>We are a group of Michigan State Students and made this website for our capstone project.... </p>
+        <div className="about-us-text">
+        <p className="about-us-text">We are a group of Michigan State Students and made this website for our capstone project with the guidance of our amazing sponsors at the Anthropocene Institute.  </p>
+        </div>
       </div>
       <hr className="about-hr"></hr>
 
@@ -135,16 +137,11 @@ function About() {
           </div>
         </div>
 
-        <hr></hr>
+        <hr className="about-hr"></hr>
 
 
-        {/* <h2>Project overview</h2>
-        <h2>Motivation?</h2>
-        <h2>Methodology</h2>
-        <h3>Algae Blooms</h3>
-        <h3>Reforestation</h3>
-        <h3>DAC</h3>
-        <h2>Design Day Page</h2> */}
+
+        <h2>Design Day Page</h2>
       </div>
 
   )

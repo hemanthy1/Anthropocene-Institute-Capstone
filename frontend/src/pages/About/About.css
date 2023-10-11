@@ -51,7 +51,6 @@ html {
     padding: 8px;
     color: white;
     background-color: var(--secondary);
-
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -61,22 +60,17 @@ html {
 background-color: #555;
 }
 
-.row-one, .row-two{
+.row-one, .row-two {
     width: 100%;
 }
-
 
 #pfp {
     width: 100%;
     overflow: hidden;
 }
 
-.sponsorcards>p {
-    font-size: 1px;
-}
-
 @media screen and (max-width: 650px) {
-.containerr{
-    font-size: 10px;
-}
+    .containerr {
+        font-size: 10px;
+    }
 }
