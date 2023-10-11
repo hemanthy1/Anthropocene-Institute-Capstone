@@ -5,6 +5,10 @@ import hemanthpfp from "../../assets/hemanthpfp.jpeg"
 import nickpfp from "../../assets/nickpfp.jpeg"
 import ishitapfp from "../../assets/ishitapfp.jpeg"
 import jackpfp from "../../assets/jackpfp.jpeg"
+import carlpfp from "../../assets/carlpagepfp.jpeg"
+import frankpfp from "../../assets/frankpfp.png"
+import melindapfp from "../../assets/melindapfp.jpeg"
+
 
 function About() {
   return (
@@ -15,12 +19,53 @@ function About() {
       </div>
       <hr className="about-hr"></hr>
 
+
+
+      <h2 className="our-team">Our Sponsors</h2>
+
+      
+      <div className="row-one">
+        <div className="column">
+          <div className="card">
+          <GeneralPfp src={carlpfp} alt="Carl Page Pfp"></GeneralPfp>
+            <div className="containerr">
+              <h2 className="name">Carl Page</h2>
+              <p className="role">President</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="column">
+          <div className="card">
+          <GeneralPfp src={frankpfp} alt="Frank Ling Pfp"></GeneralPfp>
+            <div className="containerr">
+              <h2 className="name">Frank Hiroshi Ling</h2>
+              <p className="role">Chief Scientist</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="column">
+          <div className="card">
+          <GeneralPfp src={melindapfp} alt="Melinda Alankar Pfp"></GeneralPfp>
+            <div className="containerr">
+              <h2 className="name">Melinda Chow Alankar</h2>
+              <p className="role">Director of Investment and Funding Opportunities</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
         <h2 className="our-team">Our Team</h2>
 
         <div className="row-one">
           <div className="column">
             <div className="card">
-              <EdiePfp></EdiePfp>
+            <GeneralPfp src={ediepfp} alt="Edie Haase Pfp"></GeneralPfp>
               <div className="containerr">
                 <h2 className="name">Edie Haase</h2>
                 <p className="role">Front End Developer</p>
@@ -33,7 +78,7 @@ function About() {
 
           <div className="column">
             <div className="card">
-              <JackPfp></JackPfp>
+            <GeneralPfp src={jackpfp} alt="Jack Holscher Pfp"></GeneralPfp>
               <div className="containerr">
                 <h2 className="name">Jack Holsher</h2>
                 <p className="role">Front End Developer</p>
@@ -46,7 +91,7 @@ function About() {
 
           <div className="column">
             <div className="card">
-              <NickPfp></NickPfp>
+            <GeneralPfp src={nickpfp} alt="Nick Wang Pfp"></GeneralPfp>
               <div className="containerr">
                 <h2 className="name">Nick Wang</h2>
                 <p className="role">Front End Developer</p>
@@ -62,7 +107,7 @@ function About() {
         <div className="row-two">
           <div className="column">
             <div className="card">
-              <IshitaPfp></IshitaPfp>
+            <GeneralPfp src={ishitapfp} alt="Ishita Kokil Pfp"></GeneralPfp>
               <div className="containerr">
                 <h2 className="name">Ishita Kokil</h2>
                 <p className="role">Back End Develeoper</p>
@@ -75,7 +120,7 @@ function About() {
 
           <div className="column">
             <div className="card">
-              <HemanthPfp></HemanthPfp>
+            <GeneralPfp src={hemanthpfp} alt="Hemanth Yalamanchili Pfp"></GeneralPfp>
               <div className="containerr">
                 <h2 className="name">Hemanth Yalamanchili</h2>
                 <p className="role">Back End Developer</p>
@@ -107,89 +152,18 @@ function About() {
 
 export default About
 
-/**
- * Edie's picture in the about us page
- * 
- * @returns The image as an HTML element
- */
-function EdiePfp() {
-  return (
-    <a href="/">
-      <img 
-        src={ediepfp}
-        alt="Edie Haase"
-        loading="lazy"
-        id="pfp"
-      />
-    </a>
-  )
-}
 
 /**
- * Nick's picture in the about us page
+ * General profile pic
  * 
  * @returns The image as an HTML element
  */
-function NickPfp() {
+function GeneralPfp(props) {
   return (
     <a href="/">
       <img 
-        src={nickpfp}
-        alt="Nick Wang"
-        loading="lazy"
-        id="pfp"
-      />
-    </a>
-  )
-}
-
-/**
- * Jack's picture in the about us page
- * 
- * @returns The image as an HTML element
- */
-function JackPfp() {
-  return (
-    <a href="/">
-      <img 
-        src={jackpfp}
-        alt="Jack Holsher"
-        loading="lazy"
-        id="pfp"
-      />
-    </a>
-  )
-}
-
-/**
- * Hemanths's picture in the about us page
- * 
- * @returns The image as an HTML element
- */
-function HemanthPfp() {
-  return (
-    <a href="/">
-      <img 
-        src={hemanthpfp}
-        alt="Hemanth Yalamanchili"
-        loading="lazy"
-        id="pfp"
-      />
-    </a>
-  )
-}
-
-/**
- * Ishita's picture in the about us page
- * 
- * @returns The image as an HTML element
- */
-function IshitaPfp() {
-  return (
-    <a href="/">
-      <img 
-        src={ishitapfp}
-        alt="Ishita Kokil"
+        src={props.src}
+        alt={props.alt}
         loading="lazy"
         id="pfp"
       />
