@@ -13,7 +13,6 @@ import designdaypage from "../../assets/designdaypage.png"
 function About() {
   return (
     <div>
-
       <div className="top-text">
         <h1 className="about-title">About Us</h1>
         <div className="about-us-text">
@@ -185,7 +184,11 @@ function GeneralSponsorColumn(props) {
   )
 }
 
-
+/**
+ * Design day document image
+ * 
+ * @returns The image as an HTML element
+ */
 function DesignDayPage() {
   return (
     <a href="/">
