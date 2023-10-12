@@ -90,6 +90,25 @@ function ChoroplethMap(props) {
       });
     });
 
+    map.on('click', 'county-population', (e) => {
+
+      console.log(e.features);
+
+      new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML(e.features[0].properties.population)
+      .addTo(map);
+    });
+
+    
+    map.on('mouseenter', 'county-population', () => {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+       
+    map.on('mouseleave', 'county-population', () => {
+      map.getCanvas().style.cursor = '';
+    });
+
   }, []);
 
   return (
