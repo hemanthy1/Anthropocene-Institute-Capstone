@@ -13,126 +13,112 @@ import designdaypage from "../../assets/designdaypage.png"
 function About() {
   return (
     <div>
+
       <div className="top-text">
         <h1 className="about-title">About Us</h1>
         <div className="about-us-text">
-        <p className="about-us-text">We are a group of Michigan State Students and made this website for our capstone project with the guidance of our amazing sponsors at the Anthropocene Institute.  </p>
+          <p className="about-us-text">We are a group of Michigan State Students and made this website for our capstone project with the guidance of our amazing sponsors at the Anthropocene Institute.  </p>
         </div>
       </div>
+
       <hr className="about-hr"></hr>
 
-
-
       <h2 className="our-team">Our Sponsors</h2>
-
       
       <div className="row-one">
-        <div className="column">
-          <div className="card">
-          <GeneralPfp src={carlpfp} alt="Carl Page Pfp"></GeneralPfp>
-            <div className="containerr">
-              <h2 className="name">Carl Page</h2>
-              <p className="role">President</p>
-            </div>
-          </div>
-        </div>
+        <GeneralSponsorColumn className="Carl"
+          pfp={carlpfp} 
+          alt="Carl Page Pfp" 
+          name="Carl Page" 
+          role="President">
+        </GeneralSponsorColumn>
 
-        <div className="column">
-          <div className="card">
-          <GeneralPfp src={frankpfp} alt="Frank Ling Pfp"></GeneralPfp>
-            <div className="containerr">
-              <h2 className="name">Frank Hiroshi Ling</h2>
-              <p className="role">Chief Scientist</p>
-            </div>
-          </div>
-        </div>
+        <GeneralSponsorColumn className="Frank"
+          pfp={frankpfp} 
+          alt="Frank Ling Pfp" 
+          name="Frank Hiroshi Ling" 
+          role="Chief Scientist">
+        </GeneralSponsorColumn>
 
-        <div className="column">
-          <div className="card">
-          <GeneralPfp src={melindapfp} alt="Melinda Alankar Pfp"></GeneralPfp>
-            <div className="containerr">
-              <h2 className="name">Melinda Chow Alankar</h2>
-              <p className="role">Director of Investment and Funding Opportunities</p>
-            </div>
-          </div>
-        </div>
+        <GeneralSponsorColumn className="Melinda"
+          pfp={melindapfp} 
+          alt="Melinda Alankar Pfp" 
+          name="Melinda Chow Alankar" 
+          role="Director of Investment and Funding Opportunities">
+        </GeneralSponsorColumn>
       </div>
-
 
       <hr className='about-hr'></hr>
 
+      <h2 className="our-team">Our Team</h2>
 
+      <div className="row-one">
+        <GeneralColumn className="Edie"
+          pfp={ediepfp} 
+          alt="Edie Haase Pfp" 
+          name="Edie Haase" 
+          role="Front End Developer" 
+          text="Edie is pursing a major in computer science and a minor in environmental sustainability at Michigan State University." 
+          email="haaseede@msu.edu" 
+          link="https://www.linkedin.com/in/eden-haase-90b688212/" 
+          buttontext="LinkedIn">
+        </GeneralColumn>
 
-        <h2 className="our-team">Our Team</h2>
+        <GeneralColumn className="Jack"
+          pfp={jackpfp} 
+          alt="Jack Holscher Pfp" 
+          name="Jack Holscher" 
+          role="Front End Developer" 
+          text="Jack Holscher, a fourth-year MSU computer science major, complemented by a minor in data science and a cognate in psychology." 
+          email="holsche2@msu.edu" 
+          link="https://www.linkedin.com/in/jackson-holscher/" 
+          buttontext="LinkedIn">
+        </GeneralColumn>
 
-        <div className="row-one">
-          <GeneralColumn className="Edie"
-            pfp={ediepfp} 
-            alt="Edie Haase Pfp" 
-            name="Edie Haase" 
-            role="Front End Developer" 
-            text="Edie is pursing a major in computer science and a minor in environmental sustainability at Michigan State University." 
-            email="haaseede@msu.edu" 
-            link="https://www.linkedin.com/in/eden-haase-90b688212/" 
-            buttontext="LinkedIn">
-          </GeneralColumn>
+        <GeneralColumn className="Nick"
+          pfp={nickpfp} 
+          alt="Nick Wang Pfp" 
+          name="Nick Wang" 
+          role="Front End Developer" 
+          text="Nick Wang is a senior Computer Science student at MSU with a minor in Cognitive Science pursuing a career in Software Engineering." 
+          email="wangnich@msu.edu" 
+          link="https://www.linkedin.com/in/nicholas-wang7190/" 
+          buttontext="LinkedIn">
+        </GeneralColumn>
+      </div>
 
-          <GeneralColumn className="Jack"
-            pfp={jackpfp} 
-            alt="Jack Holscher Pfp" 
-            name="Jack Holscher" 
-            role="Front End Developer" 
-            text="Jack Holscher, a fourth-year MSU computer science major, complemented by a minor in data science and a cognate in psychology." 
-            email="holsche2@msu.edu" 
-            link="https://www.linkedin.com/in/jackson-holscher/" 
-            buttontext="LinkedIn">
-          </GeneralColumn>
+      <div className="row-two">
+        <GeneralColumn className="Ishita"
+          pfp={ishitapfp} 
+          alt="Ishita Kokil Pfp" 
+          name="Ishita Kokil" 
+          role="Back End Developer" 
+          text="Ishita is pursuing a dual degree in Computer Science and Data Science at Michigan State University." 
+          email="kokilish@msu.edu" 
+          link="https://www.linkedin.com/in/ishitakokil/" 
+          buttontext="LinkedIn">
+        </GeneralColumn>
 
-          <GeneralColumn className="Nick"
-            pfp={nickpfp} 
-            alt="Nick Wang Pfp" 
-            name="Nick Wang" 
-            role="Front End Developer" 
-            text="Nick Wang is a senior Computer Science student at MSU with a minor in Cognitive Science pursuing a career in Software Engineering." 
-            email="wangnich@msu.edu" 
-            link="https://www.linkedin.com/in/nicholas-wang7190/" 
-            buttontext="LinkedIn">
-          </GeneralColumn>
-        </div>
+        <GeneralColumn className="Hemanth"
+          pfp={hemanthpfp} 
+          alt="Hemanth Yalamanchili Pfp" 
+          name="Hemanth Yalamanchili" 
+          role="Back End Developer" 
+          text="Hemanth Yalamanchili, a passionate computer science student with a minor in game design and development at Michigan State University." 
+          email="yalama12@msu.edu" 
+          link="https://hemanthyalamanchili.com/" 
+          buttontext="Website">
+        </GeneralColumn>
+      </div>
 
+      <hr className="about-hr"></hr>
 
-        <div className="row-two">
-
-          <GeneralColumn className="Ishita"
-            pfp={ishitapfp} 
-            alt="Ishita Kokil Pfp" 
-            name="Ishita Kokil" 
-            role="Back End Developer" 
-            text="Ishita is pursuing a dual degree in Computer Science and Data Science at Michigan State University." 
-            email="kokilish@msu.edu" 
-            link="https://www.linkedin.com/in/ishitakokil/" 
-            buttontext="LinkedIn">
-          </GeneralColumn>
-
-          <GeneralColumn className="Hemanth"
-            pfp={hemanthpfp} 
-            alt="Hemanth Yalamanchili Pfp" 
-            name="Hemanth Yalamanchili" 
-            role="Back End Developer" 
-            text="Hemanth Yalamanchili, a passionate computer science student with a minor in game design and development at Michigan State University." 
-            email="yalama12@msu.edu" 
-            link="https://hemanthyalamanchili.com/" 
-            buttontext="Website">
-          </GeneralColumn>
-
-        </div>
-
-        <hr className="about-hr"></hr>
-
-        <div className="bottom-text">
+      <div className="bottom-text">
         <h1 className="about-title">Our Design Day Booklet Page</h1>
-        </div><DesignDayPage></DesignDayPage></div>
-
+      </div>
+      
+      <DesignDayPage></DesignDayPage>
+    </div>
   )
 }
 
@@ -176,6 +162,26 @@ function GeneralColumn(props) {
       </div>
     </div>
   </div>
+  )
+}
+
+
+/**
+ * General sponsor card element
+ * 
+ * @returns The image as an HTML element
+ */
+function GeneralSponsorColumn(props) {
+  return (
+    <div className="column">
+      <div className="card">
+        <GeneralPfp src={props.pfp} alt={props.alt}></GeneralPfp>
+        <div className="containerr">
+          <h2 className="name">{props.name}</h2>
+          <p className="role">{props.role}</p>
+        </div>
+      </div>
+    </div>
   )
 }
 
