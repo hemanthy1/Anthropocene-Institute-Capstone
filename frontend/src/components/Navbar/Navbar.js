@@ -19,7 +19,7 @@ function Navbar() {
   const hamburgerClass = `hamburger-icon ${isMenuOpen ? 'open' : ''}`;
 
   /**
-   * Hamburger icon functional component. The Hamburger Icon is made of spans. 
+   * Hamburger icon functional component. The Hamburger Icon is made of spans.
    * 
    * @param {boolean} props the current state of the dropdown menu
    * 
