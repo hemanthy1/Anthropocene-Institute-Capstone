@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import React from 'react';
 import { useState } from "react";
 import logoImage from "../../assets/logo.png"
-import menuBar from "../../assets/menu-bar.png"
+//import menuBar from "../../assets/menu-bar.png"
 import "./Navbar.css"
 
 function Navbar() {
@@ -9,22 +10,33 @@ function Navbar() {
   // useState hook to manage the dropdown state
   const [down, setDown] = useState(false);
 
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+  const hamburgerClass = `hamburger-icon ${isMenuOpen ? 'open' : ''}`;
+
   /**
-   * Hamburger icon functional component
+   * Hamburger icon functional component. The Hamburger Icon is made of spans. 
    * 
    * @param {boolean} props the current state of the dropdown menu
    * 
-   * @returns the clickable hamburger icon image as an img tag
+   * @returns the clickable hamburger spans
    */
   function Hamburger(props) {
+      const handleHamburgerClick = () => {
+          setDown(!props.down); // Toggle the 'down' state
+          toggleMenu(); // Toggle the 'isMenuOpen' state
+      };
     return (
-      <img 
-        src={menuBar}
-        alt="Menu bar hamburger icon"
-        loading="lazy"
-        id="menubar"
-        onClick={() => setDown(!props.down)}
-      />
+        <div id="hamburger-icon" className={hamburgerClass} onClick={handleHamburgerClick}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
     )
   }
 
