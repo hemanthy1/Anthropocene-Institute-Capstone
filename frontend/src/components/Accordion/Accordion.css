@@ -12,7 +12,7 @@
 }
 
 .faqs .faq .faq-question {
-    font-size: 2vw;
+    font-size: clamp(10px,2vw,24px);
     position: relative;
     padding-right: 80px;
     font-weight: 20;
@@ -21,7 +21,7 @@
 
 
 .faqs .faq .faq-answer{
-    font-size: 2vw;
+    font-size: clamp(10px,2vw,24px);
     opacity: 0;
     max-height: 0;
     overflow-y:hidden;
@@ -29,12 +29,12 @@
 }
 
 .faqs .faq.open .faq-question{
-    font-size: 2vw;
+    font-size: clamp(10px,2vw,24px);
     margin-bottom: 15px;
 }
 
 .faqs .faq.open .faq-answer{
-    font-size: 2vw;
+    font-size: clamp(10px,2vw,24px);
     max-height: 1000px;
     opacity: 1;
     font-weight: 57;
@@ -47,7 +47,7 @@
     font-variant: normal;
     font-weight: bold;
     color: var(--secondary);
-    font-size: 3vw;
+    font-size: clamp(12px,3vw,30px);
 }
 
 .line {
