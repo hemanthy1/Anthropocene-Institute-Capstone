@@ -3,9 +3,10 @@ import shutil
 
 def updateReforestationDataState(stateJsonFile, stateReforestationCsv):
 
-    shutil.copyfile(stateJsonFile, "backend/geoJsonOutputs/stateData/stateReforestation.json")
-
     new_file = "backend/geoJsonOutputs/stateData/stateReforestation.json"
+
+    shutil.copyfile(stateJsonFile, new_file)
+
 
     # Write to new json file, NOT WORK
     with open(new_file, 'r+') as file:
@@ -13,19 +14,19 @@ def updateReforestationDataState(stateJsonFile, stateReforestationCsv):
 
         for feature in file_data["features"]:
             print(feature["properties"])
-            feature["properties"] = {"testing": "testing"}
+            feature["properties"]["TESTING"] = "testestest"
 
-    file.close()
+    with open(new_file, 'w') as file:
+        json.dump(file_data, file)
 
     print("\n\n\n")
-    # This just is to print to see if changes were made
-    with open(new_file, 'r') as file:
+
+    with open(new_file, "r") as file:
         file_data = json.load(file)
 
         for feature in file_data["features"]:
             print(feature["properties"])
-    
-    file.close()
+
     return
 
 
