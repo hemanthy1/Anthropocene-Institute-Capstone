@@ -92,11 +92,12 @@ function ChoroplethMap(props) {
 
     map.on('click', 'county-population', (e) => {
 
-      console.log(e.features);
+      let dropdown = document.getElementById("dropdown");
+      let title = dropdown.options[dropdown.selectedIndex].text
 
       new mapboxgl.Popup()
       .setLngLat(e.lngLat)
-      .setHTML(e.features[0].properties.population)
+      .setHTML(title + ": " + e.features[0].properties[dropdown.value])
       .addTo(map);
     });
 

@@ -1,4 +1,5 @@
 import Heatmap from "../../components/Heatmap/Heatmap"
+import Dropdown from "../../components/Dropdown/Dropdown";
 
 /**
  * A webpage for the Direct Air Capture optimization tool.
@@ -20,8 +21,20 @@ function DirectAirCapture() {
     color7: "#7a0000"
   }
 
+  const criteria = {
+    value1: "population",
+    option1: "Population",
+    value2: "name",
+    option2: "Name"
+  }
+
   return (
-    <Heatmap colors={colors}/>
+    <>
+      <Heatmap colors={colors}/>
+      <div>
+        <Dropdown criteria={criteria} />
+      </div>
+    </>
   );
 }
 
