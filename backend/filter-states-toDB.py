@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
     inspector = sqlalchemy.inspect(engine)
     if "reforest_select" in inspector.get_table_names():
-        with open('filter-reforest.csv', 'r') as csv_file:
+        with open('Reforestation/filter-reforest.csv', 'r') as csv_file:
             csv_reader = csv.DictReader(csv_file)
             with engine.connect() as connection:
                 connection.execute(reforest_select.delete()) #to delete so there are no duplicates
