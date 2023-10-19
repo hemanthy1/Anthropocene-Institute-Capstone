@@ -1,6 +1,8 @@
 from flask import Flask, render_template, jsonify
 from DatabaseConnector import connect_with_connector
 import sqlalchemy
+import os
+from google.oauth2.credentials import Credentials
 
 app = Flask(__name__)
 
@@ -8,6 +10,11 @@ INSTANCE_CONNECTION_NAME="carbon-mapp:us-east5:test-database"
 DB_USER="testUser"
 DB_PASS="@]pzXU3(U@tB}Ss["
 DB_NAME="test-1"
+
+
+# key_path = "/secrets/cloudsql/credentials.json"
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
+
 
 @app.route('/coordinates', methods=['GET'])
 def get_coordinates():

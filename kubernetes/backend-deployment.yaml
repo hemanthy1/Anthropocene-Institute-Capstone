@@ -12,23 +12,19 @@ spec:
       labels:
         app: flask-backend
     spec:
+      volumes:
+      - name: cloudsql-instance-credentials
+        secret:
+          secretName: cloudsql-instance-credentials
       containers:
       - name: flask-backend
         image: gcr.io/carbon-mapp/dev-flask-app:latest
         ports:
         - containerPort: 6001
-
-      - name: cloud-sql-proxy
-        image: gcr.io/cloudsql-docker/gce-proxy:1.17
-        command:
-          - "/cloud_sql_proxy"
-          - "-instances=carbon-mapp:us-east5:test-database=tcp:5432"
-          - "-credential_file=/secrets/cloudsql/credentials.json"
         volumeMounts:
-          - name: cloudsql-instance-credentials
-            mountPath: /secrets/cloudsql
-            readOnly: true
-      volumes:
         - name: cloudsql-instance-credentials
-          secret:
-            secretName: cloudsql-instance-credentials
+          mountPath: /secrets/cloudsql
+          readOnly: true
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /secrets/cloudsql/credentials.json
