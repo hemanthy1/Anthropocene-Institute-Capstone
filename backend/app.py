@@ -4,11 +4,14 @@ import sqlalchemy
 
 app = Flask(__name__)
 
-
+INSTANCE_CONNECTION_NAME="carbon-mapp:us-east5:test-database" 
+DB_USER="testUser"
+DB_PASS="@]pzXU3(U@tB}Ss["
+DB_NAME="test-1"
 
 @app.route('/coordinates', methods=['GET'])
 def get_coordinates():
-    engine=connect_with_connector()
+    engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DB_NAME)
     data = []
     try:
         with engine.connect() as connection:
