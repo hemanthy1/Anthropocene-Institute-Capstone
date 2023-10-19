@@ -2,7 +2,7 @@ import json
 import shutil
 import pandas as pd
 
-'''
+
 def updateReforestationDataState(stateJsonFile, stateReforestationCsv):
 
     # file path variables
@@ -51,23 +51,27 @@ def updateReforestationDataState(stateJsonFile, stateReforestationCsv):
     #
     # with open(new_file, "r") as file:
     #     file_data = json.load(file)
+    #     updated, non = 0, 0
+    #     print("Updated: --------------------------")
     #     for feature in file_data["features"]:
     #         if feature["properties"]["NAME"] in state_average.index:
     #             print("--------------------- Updated State Data: ---------------------")
     #             print(feature["properties"])
     #             print("--------------------- Updated State Data ---------------------")
     #             print()
-    #
+    #             updated += 1
     #     for feature in file_data["features"]:
     #         if feature["properties"]["NAME"] not in state_average.index:
     #             print("--------------------- Non-Updated State Data: ---------------------")
     #             print(feature["properties"])
     #             print("--------------------- Non-Updated State Data ---------------------")
     #             print()
+    #             non += 1
+    #     print(f"{updated} states were updated. {non} states weren't. {updated} + {non} = {updated + non}")
     #
     #
     return
-'''
+
 
 
 def updateAlgaeBloomDataState(stateJsonFile, stateAlgaeBloomCSV):
@@ -185,7 +189,7 @@ def updateDACDataCounty(countyJsonFile, countyDACCsv):
     return
 
 def main():
-    # updateReforestationDataState("backend/states.json", "dataOutputCSVs/stateData/stateReforestationCsv.csv")
+    updateReforestationDataState("backend/states.json", "dataOutputCSVs/stateData/stateReforestationCsv.csv")
     # updateAlgaeBloomDataState("backend/states.json", "dataOutputCSVs/stateData/stateAlgaeBloomCsv.csv")
     # updateDACDataState("backend/states.json", "dataOutputCSVs/stateData/stateDACCsv.csv")
     # updateReforestationDataCounty("backend/counties.json", "dataOutputCSVs/countyData/countyReforestationCsv.csv")
