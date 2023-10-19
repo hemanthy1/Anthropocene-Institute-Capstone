@@ -31,9 +31,8 @@ function DirectAirCapture() {
   return (
     <>
       <Heatmap colors={colors}/>
-      <div>
-        <Dropdown criteria={criteria} />
-      </div>
+      <hr id="map-break"/>
+      <Dropdown criteria={criteria} />
     </>
   );
 }

@@ -1,0 +1,42 @@
+#dropdown-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 20vh;
+  margin-bottom: 3rem;
+  margin-left: 4.7%;
+}
+
+#map-break {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+#dropdown-wrap:hover::after {
+  color: var(--secondary);
+}
+
+#dropdown-label {
+  padding: 1rem 0;
+  font-size: calc(18px + 1vw);
+  color: var(--secondary);
+}
+
+#dropdown {
+  cursor: pointer;
+  background: var(--secondary);
+  border-radius: 0.25em;
+  width: 40%;
+  min-height: 40%;
+  text-align: center;
+  color: white;
+  font-size: calc(14px + 1vw);
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--secondary); /* Optional: Adds a soft glow around the element */
+}
