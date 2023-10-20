@@ -12,8 +12,19 @@ spec:
       labels:
         app: flask-backend
     spec:
+      volumes:
+      - name: cloudsql-instance-credentials
+        secret:
+          secretName: cloudsql-instance-credentials
       containers:
       - name: flask-backend
         image: gcr.io/carbon-mapp/dev-flask-app:latest
         ports:
         - containerPort: 6001
+        volumeMounts:
+        - name: cloudsql-instance-credentials
+          mountPath: /secrets/cloudsql
+          readOnly: true
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /secrets/cloudsql/credentials.json
