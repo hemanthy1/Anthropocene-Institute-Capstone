@@ -20,7 +20,7 @@ def updateReforestationDataState(stateJsonFile, stateReforestationCsv):
     df = pd.read_csv(data_file)
 
     # Average the data from each county, group by state
-    state_average = df.groupby('State').mean()
+    state_average = df.groupby('State')[['Population', 'Temperature','Precipitation','Palmer-Z','Land-Prices','percentile_rank','Final_Class']].mean()
 
     # Add our data into the json object
     for feature in file_data["features"]:
