@@ -1,8 +1,11 @@
 import "./Heatmap.css"
 import React, {useState, useEffect, useRef} from 'react';
 import mapboxgl from 'mapbox-gl';
+import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
+import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
+
 
 function ChoroplethMap(props) {
 
@@ -20,6 +23,14 @@ function ChoroplethMap(props) {
       minZoom: 2,
       zoom: 2.2,
     });
+    // Add Geocoder which creates the search bar
+    const geocoder = new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      mapboxgl: mapboxgl,
+    });
+
+    // Add the search bar to the heatmap 
+    map.addControl(geocoder);
 
     map.on('load', () => {
       map.addSource('population', {
