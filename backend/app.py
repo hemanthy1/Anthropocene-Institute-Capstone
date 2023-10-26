@@ -6,42 +6,48 @@ from google.oauth2.credentials import Credentials
 
 app = Flask(__name__)
 
-INSTANCE_CONNECTION_NAME="carbon-mapp:us-east5:test-database" 
-DB_USER="testUser"
-DB_PASS="@]pzXU3(U@tB}Ss["
-DB_NAME="test-1"
+INSTANCE_CONNECTION_NAME="carbon-mapp:us-east5:carbon-mapp" 
+DB_USER="Uploader1"
+DB_PASS="Ubf:X$LI+{kRRiHz"
+DB_NAME="ForestationData"
 
 
-# key_path = "/secrets/cloudsql/credentials.json"
-# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
 
-
-@app.route('/coordinates', methods=['GET'])
+@app.route('/forestationstategeojson', methods=['GET'])
 def get_coordinates():
     engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DB_NAME)
-    data = []
-    try:
-        with engine.connect() as connection:
-            result = connection.execute(sqlalchemy.text("select reforestation_table.longitude from reforestation_table"))
-            lats = []
-            longs = []
-            for row in result:
-                print("Longitude:", row.longitude)
-                longs.append(row.longitude)
-            result = connection.execute(sqlalchemy.text("select reforestation_table.latitude from reforestation_table"))
-            for row in result:
-                print("Latitude:", row.latitude)
-                lats.append(row.latitude)
-        for i in range(len(lats)):
-            data.append({
-                    "latitude": lats[i],
-                    "longitude": longs[i]
-                })
-            
-        return jsonify(data), 200
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    json_format={"type":"FeatureCollection","features":[]}
 
+    with engine.connect() as connection:
+        result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
+        
+        for row in result:
+            json_object = {
+                "type": row.type,
+                "properties": row.properties,
+                "geometry": row.geometry
+            }
+            json_format["features"].append(json_object)
+    
+    return json_format
+
+@app.route('/forestationcountygeojson', methods=['GET'])
+def get_coordinates():
+    engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DB_NAME)
+    json_format={"type":"FeatureCollection","features":[]}
+
+    with engine.connect() as connection:
+        result = connection.execute(sqlalchemy.text("SELECT * FROM counties_table"))
+        
+        for row in result:
+            json_object = {
+                "type": row.type,
+                "properties": row.properties,
+                "geometry": row.geometry
+            }
+            json_format["features"].append(json_object)
+    
+    return json_format
 
 
 @app.route('/')
