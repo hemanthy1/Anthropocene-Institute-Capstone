@@ -14,40 +14,48 @@ DB_NAME="ForestationData"
 
 
 @app.route('/forestationstategeojson', methods=['GET'])
-def get_coordinates():
-    engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DB_NAME)
-    json_format={"type":"FeatureCollection","features":[]}
+def get_forestationstatejson():
+    try:
+        engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DB_NAME)
+        json_format={"type":"FeatureCollection","features":[]}
 
-    with engine.connect() as connection:
-        result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
+        with engine.connect() as connection:
+            result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
+            
+            for row in result:
+                json_object = {
+                    "type": row.type,
+                    "properties": row.properties,
+                    "geometry": row.geometry
+                }
+                json_format["features"].append(json_object)
         
-        for row in result:
-            json_object = {
-                "type": row.type,
-                "properties": row.properties,
-                "geometry": row.geometry
-            }
-            json_format["features"].append(json_object)
-    
-    return json_format
+        return json_format
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 @app.route('/forestationcountygeojson', methods=['GET'])
-def get_coordinates():
-    engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DB_NAME)
-    json_format={"type":"FeatureCollection","features":[]}
+def get_forestationcountyjson():
+    try:
+        engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DB_NAME)
+        json_format={"type":"FeatureCollection","features":[]}
 
-    with engine.connect() as connection:
-        result = connection.execute(sqlalchemy.text("SELECT * FROM counties_table"))
-        
-        for row in result:
-            json_object = {
-                "type": row.type,
-                "properties": row.properties,
-                "geometry": row.geometry
-            }
-            json_format["features"].append(json_object)
+        with engine.connect() as connection:
+            result = connection.execute(sqlalchemy.text("SELECT * FROM counties_table"))
+            
+            for row in result:
+                json_object = {
+                    "type": row.type,
+                    "properties": row.properties,
+                    "geometry": row.geometry
+                }
+                json_format["features"].append(json_object)
+        return json_format
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
     
-    return json_format
+    
 
 
 @app.route('/')
