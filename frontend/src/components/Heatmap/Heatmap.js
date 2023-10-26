@@ -103,20 +103,23 @@ function ChoroplethMap(props) {
         // });
 
         map.on('load', () => {
+            // state data vector tileset
             map.addSource('state', {
                 type: 'vector',
                 url: "mapbox://jholsch29.a47vgwym",
             });
 
+            // county data vector tileset
             map.addSource('county', {
                 type: 'vector',
                 url: "mapbox://jholsch29.5vi92hxq",
             });
 
+            // add choropleth layer for state level
             map.addLayer({
                 id: 'state-data',
                 source: 'state',
-                'source-layer': 'stateReforestation-2v0akk',
+                'source-layer': 'stateReforestation-2v0akk',  // vector tileset name
                 maxzoom: zoomThreshold,
                 type: 'fill',
                 filter: ['==', 'isState', "yes"],
@@ -149,7 +152,7 @@ function ChoroplethMap(props) {
             map.addLayer({
                 id: 'county-data',
                 source: 'county',
-                'source-layer': 'countyReforestation-4ser7q',
+                'source-layer': 'countyReforestation-4ser7q',  // vector tileset name
                 minzoom: zoomThreshold,
                 type: 'fill',
                 filter: ['==', 'isState', "no"],
@@ -177,6 +180,33 @@ function ChoroplethMap(props) {
                     ],
                     'fill-opacity': .85,
                 },
+            });
+
+            // define boundary lines for states so that
+            // divisions are always obvious regardless of zoom
+            map.addLayer({
+                id: 'state-boundaries',
+                source: 'state',
+                'source-layer': 'stateReforestation-2v0akk',
+                type: 'line',
+                paint: {
+                    'line-color': '#000', 
+                    'line-width': 0.1
+                }
+            });
+            
+            // define boundary lines for counties so that
+            // divisions are always obvious regardless of zoom
+            map.addLayer({
+                id: 'county-boundaries',
+                source: 'county',
+                'source-layer': 'countyReforestation-4ser7q',
+                type: 'line',
+                paint: {
+                    'line-color': '#000', 
+                    'line-width': 0.1,
+                    'line-opacity': 0.5
+                }
             });
         });
 
