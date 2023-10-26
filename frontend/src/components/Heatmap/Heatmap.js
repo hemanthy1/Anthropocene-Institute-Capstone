@@ -107,6 +107,11 @@ function ChoroplethMap(props) {
             map.addSource('state', {
                 type: 'vector',
                 url: "mapbox://jholsch29.a47vgwym",
+
+                //
+                // type: 'geojson',
+                // data: "https://cdn.rawgit.com/ebrelsford/geojson-examples/master/596acres-02-18-2014-queens.geojson"
+                //
             });
 
             // county data vector tileset
@@ -147,6 +152,20 @@ function ChoroplethMap(props) {
                     ],
                     'fill-opacity': .85,
                 },
+
+                //
+                // 'id': 'population',
+                // 'type': 'circle',
+                // source: 'state',
+                // 'paint': {
+                //     'circle-radius': {
+                //         'base': 1.75,
+                //         'stops': [[12, 2], [22, 180]]
+                //     },
+                // 'circle-color': '#f00'
+                
+                // }
+                //
             });
 
             map.addLayer({
