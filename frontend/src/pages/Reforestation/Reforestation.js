@@ -1,10 +1,12 @@
 import Heatmap from "../../components/Heatmap/Heatmap"
 import reforestationBanner from "../../assets/ReforestationBanner.png";
+import Dropdown from "../../components/Dropdown/Dropdown";
 
 
 function Reforestation() {
 
   const colors = {
+    color0: "#ffffff",
     color1: "#effbed",
     color2: "#cff5c9",
     color3: "#a1e499",
@@ -12,6 +14,21 @@ function Reforestation() {
     color5: "#3fa331",
     color6: "#1b780f",
     color7: "#083e00"
+  }
+
+  const criteria = {
+    value1: "population",
+    option1: "Population",
+    value2: "temperature",
+    option2: "Temperature",
+    value3: "precipitation",
+    option3: "Precipitation",
+    value3: "palmer",
+    option3: "Palmer-Z Index",
+    value4: "land",
+    option4: "Land Price (per acre)",
+    value5: "cost",
+    option5: "Cost Efficiency"
   }
   
 
@@ -22,6 +39,8 @@ function Reforestation() {
         </div> */}
 
         <Heatmap colors={colors}/>
+        <hr id="map-break"/>
+        <Dropdown criteria={criteria} />
       </div>
 
   );

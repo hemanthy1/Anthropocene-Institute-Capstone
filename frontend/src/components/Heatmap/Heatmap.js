@@ -15,7 +15,7 @@ function ChoroplethMap(props) {
     const zoomThreshold = 3;
 
     useEffect(() => {
-        mapboxgl.accessToken = 'pk.eyJ1IjoiaGFhc2VlZGUiLCJhIjoiY2xuOTNwdmVxMDM0bjJtbjJxeHczYmhkbiJ9.LVjKKnnuccvPSd4rJG3uJQ';
+        mapboxgl.accessToken = 'pk.eyJ1IjoiamhvbHNjaDI5IiwiYSI6ImNsbjJjaWllNzAwcDQyam1wYnF6NHQ0Z24ifQ.TYll92t4SavsRHHFUhU-UA';
 
         const map = new mapboxgl.Map({
             container: mapContainer.current,
@@ -33,76 +33,154 @@ function ChoroplethMap(props) {
         // Add the search bar to the heatmap
         map.addControl(geocoder);
 
+        // map.on('load', () => {
+        //     map.addSource('population', {
+        //         type: 'vector',
+        //         url: 'mapbox://mapbox.660ui7x6',
+        //     });
+
+        //     map.addLayer({
+        //         id: 'state-population',
+        //         source: 'population',
+        //         'source-layer': 'state_county_population_2014_cen',
+        //         maxzoom: zoomThreshold,
+        //         type: 'fill',
+        //         filter: ['==', 'isState', true],
+        //         paint: {
+        //             'fill-color': [
+        //                 'interpolate',
+        //                 ['linear'],
+        //                 ['get', 'population'],
+        //                 1000,
+        //                 props.colors.color1,
+        //                 5000,
+        //                 props.colors.color2,
+        //                 10000,
+        //                 props.colors.color3,
+        //                 50000,
+        //                 props.colors.color4,
+        //                 100000,
+        //                 props.colors.color5,
+        //                 500000,
+        //                 props.colors.color6,
+        //                 1000000,
+        //                 props.colors.color7,
+        //             ],
+        //             'fill-opacity': .85,
+        //         },
+        //     });
+
+        //     map.addLayer({
+        //         id: 'county-population',
+        //         source: 'population',
+        //         'source-layer': 'state_county_population_2014_cen',
+        //         minzoom: zoomThreshold,
+        //         type: 'fill',
+        //         filter: ['==', 'isCounty', true],
+        //         paint: {
+        //             'fill-color': [
+        //                 'interpolate',
+        //                 ['linear'],
+        //                 ['get', 'population'],
+        //                 1000,
+        //                 props.colors.color1,
+        //                 5000,
+        //                 props.colors.color2,
+        //                 10000,
+        //                 props.colors.color3,
+        //                 50000,
+        //                 props.colors.color4,
+        //                 100000,
+        //                 props.colors.color5,
+        //                 500000,
+        //                 props.colors.color6,
+        //                 1000000,
+        //                 props.colors.color7,
+        //             ],
+        //             'fill-opacity': .85,
+        //         },
+        //     });
+        // });
+
         map.on('load', () => {
-            map.addSource('population', {
+            map.addSource('state', {
                 type: 'vector',
-                url: 'mapbox://mapbox.660ui7x6',
+                url: "mapbox://jholsch29.a47vgwym",
+            });
+
+            map.addSource('county', {
+                type: 'vector',
+                url: "mapbox://jholsch29.5vi92hxq",
             });
 
             map.addLayer({
-                id: 'state-population',
-                source: 'population',
-                'source-layer': 'state_county_population_2014_cen',
+                id: 'state-data',
+                source: 'state',
+                'source-layer': 'stateReforestation-2v0akk',
                 maxzoom: zoomThreshold,
                 type: 'fill',
-                filter: ['==', 'isState', true],
+                filter: ['==', 'isState', "yes"],
                 paint: {
                     'fill-color': [
                         'interpolate',
                         ['linear'],
-                        ['get', 'population'],
-                        1000,
+                        ['get', 'class'],
+                        0,
+                        props.colors.color0,
+                        1,
                         props.colors.color1,
-                        5000,
+                        2,
                         props.colors.color2,
-                        10000,
+                        3,
                         props.colors.color3,
-                        50000,
+                        4,
                         props.colors.color4,
-                        100000,
+                        5,
                         props.colors.color5,
-                        500000,
+                        6,
                         props.colors.color6,
-                        1000000,
-                        props.colors.color7,
+                        7,
+                        props.colors.color7
                     ],
                     'fill-opacity': .85,
                 },
             });
 
             map.addLayer({
-                id: 'county-population',
-                source: 'population',
-                'source-layer': 'state_county_population_2014_cen',
+                id: 'county-data',
+                source: 'county',
+                'source-layer': 'countyReforestation-4ser7q',
                 minzoom: zoomThreshold,
                 type: 'fill',
-                filter: ['==', 'isCounty', true],
+                filter: ['==', 'isState', "no"],
                 paint: {
                     'fill-color': [
                         'interpolate',
                         ['linear'],
-                        ['get', 'population'],
-                        1000,
+                        ['get', 'class'],
+                        0,
+                        props.colors.color0,
+                        1,
                         props.colors.color1,
-                        5000,
+                        2,
                         props.colors.color2,
-                        10000,
+                        3,
                         props.colors.color3,
-                        50000,
+                        4,
                         props.colors.color4,
-                        100000,
+                        5,
                         props.colors.color5,
-                        500000,
+                        6,
                         props.colors.color6,
-                        1000000,
-                        props.colors.color7,
+                        7,
+                        props.colors.color7
                     ],
                     'fill-opacity': .85,
                 },
             });
         });
 
-        map.on('click', 'county-population', (e) => {
+        map.on('click', 'county-data', (e) => {
 
             let dropdown = document.getElementById("dropdown");
             let title = dropdown.options[dropdown.selectedIndex].text
@@ -114,11 +192,11 @@ function ChoroplethMap(props) {
         });
 
 
-        map.on('mouseenter', 'county-population', () => {
+        map.on('mouseenter', 'county-data', () => {
             map.getCanvas().style.cursor = 'pointer';
         });
 
-        map.on('mouseleave', 'county-population', () => {
+        map.on('mouseleave', 'county-data', () => {
             map.getCanvas().style.cursor = '';
         });
 
