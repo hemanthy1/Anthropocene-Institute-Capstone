@@ -12,6 +12,7 @@ import Dropdown from "../../components/Dropdown/Dropdown";
 function DirectAirCapture() {
 
   const colors = {
+    color0: "fffffff",
     color1: "#fbcfcf",
     color2: "#f79d9d",
     color3: "#f06262",
@@ -21,18 +22,11 @@ function DirectAirCapture() {
     color7: "#7a0000"
   }
 
-  const criteria = {
-    value1: "population",
-    option1: "Population",
-    value2: "name",
-    option2: "Name"
-  }
-
   return (
     <>
       <Heatmap colors={colors}/>
-      <hr id="map-break"/>
-      <Dropdown criteria={criteria} />
+      {/* <hr id="map-break"/>
+      <Dropdown criteria={criteria} /> */}
     </>
   );
 }
