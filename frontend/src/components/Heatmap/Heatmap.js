@@ -163,7 +163,7 @@ function ChoroplethMap(props) {
                 //         'stops': [[12, 2], [22, 180]]
                 //     },
                 // 'circle-color': '#f00'
-                
+
                 // }
                 //
             });
@@ -209,11 +209,11 @@ function ChoroplethMap(props) {
                 'source-layer': 'stateReforestation-2v0akk',
                 type: 'line',
                 paint: {
-                    'line-color': '#000', 
+                    'line-color': '#000',
                     'line-width': 0.1
                 }
             });
-            
+
             // define boundary lines for counties so that
             // divisions are always obvious regardless of zoom
             map.addLayer({
@@ -222,7 +222,7 @@ function ChoroplethMap(props) {
                 'source-layer': 'countyReforestation-4ser7q',
                 type: 'line',
                 paint: {
-                    'line-color': '#000', 
+                    'line-color': '#000',
                     'line-width': 0.1,
                     'line-opacity': 0.5
                 }
@@ -234,7 +234,7 @@ function ChoroplethMap(props) {
             //let dropdown = document.getElementById("dropdown");
             //let title = dropdown.options[dropdown.selectedIndex].text
             //title + ": " + e.features[0].properties[dropdown.value]
-                // Get the feature's properties
+            // Get the feature's properties
             const properties = e.features[0].properties;
             // Define the list of properties to display
             const propertiesToDisplay = ['NAME', 'cost', 'land', 'palmer', 'population', 'precipitation', 'temperature'];

@@ -1,10 +1,11 @@
 
-.faqs{
+.faqs {
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
     padding: 15px;
 }
+
 .faqs .faq {
 
     padding-top: 15px;
@@ -12,7 +13,7 @@
 }
 
 .faqs .faq .faq-question {
-    font-size: clamp(10px,2vw,24px);
+    font-size: clamp(10px, 2vw, 24px);
     position: relative;
     padding-right: 80px;
     font-weight: 20;
@@ -20,34 +21,34 @@
 }
 
 
-.faqs .faq .faq-answer{
-    font-size: clamp(10px,2vw,24px);
+.faqs .faq .faq-answer {
+    font-size: clamp(10px, 2vw, 24px);
     opacity: 0;
     max-height: 0;
-    overflow-y:hidden;
+    overflow-y: hidden;
 
 }
 
-.faqs .faq.open .faq-question{
-    font-size: clamp(10px,2vw,24px);
+.faqs .faq.open .faq-question {
+    font-size: clamp(10px, 2vw, 24px);
     margin-bottom: 15px;
 }
 
-.faqs .faq.open .faq-answer{
-    font-size: clamp(10px,2vw,24px);
+.faqs .faq.open .faq-answer {
+    font-size: clamp(10px, 2vw, 24px);
     max-height: 1000px;
     opacity: 1;
     font-weight: 57;
 }
 
-.faqTitle{
+.faqTitle {
     text-align: left;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
     color: var(--secondary);
-    font-size: clamp(12px,3vw,30px);
+    font-size: clamp(12px, 3vw, 30px);
 }
 
 .line {
@@ -56,7 +57,7 @@
     margin: 10px 0;
 }
 
-#faqcaret{
+#faqcaret {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -66,5 +67,5 @@
 }
 
 .rotate {
-  transform: rotate(180deg); /* Adjust the degree of rotation as needed */
+    transform: rotate(180deg); /* Adjust the degree of rotation as needed */
 }
