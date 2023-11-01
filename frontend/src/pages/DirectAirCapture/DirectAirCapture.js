@@ -1,6 +1,6 @@
 import Heatmap from "../../components/Heatmap/Heatmap"
 import Dropdown from "../../components/Dropdown/Dropdown";
-
+import "./DirectAirCapture.css"
 /**
  * A webpage for the Direct Air Capture optimization tool.
  * The webpage contains the heatmap for the most optimal locations
@@ -23,12 +23,28 @@ function DirectAirCapture() {
   }
 
   return (
-    <>
-      <Heatmap colors={colors}/>
-      {/* <hr id="map-break"/>
-      <Dropdown criteria={criteria} /> */}
-    </>
+        
+    <div className="dac-container">
+
+    <DACBanner></DACBanner>
+
+    <Heatmap colors={colors}/>
+    <hr id="map-break"/>
+    {/*<Dropdown criteria={criteria} />*/}
+</div>
   );
+}
+
+
+function DACBanner() {
+  return (
+      <div className="dac-banner-image">
+          <div className="dac-banner-text">
+              <h1>DAC</h1>
+              <p>Some text here about DAC probably, I'm not sure</p>
+          </div>
+      </div>
+  )
 }
 
 export default DirectAirCapture

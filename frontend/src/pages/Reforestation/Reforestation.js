@@ -1,7 +1,6 @@
 import Heatmap from "../../components/Heatmap/Heatmap"
-/*import reforestationBanner from "../../assets/ReforestationBanner.png";*/
 /*import Dropdown from "../../components/Dropdown/Dropdown";*/
-
+import "./Reforestation.css"
 
 function Reforestation() {
 
@@ -35,19 +34,12 @@ function Reforestation() {
 
 
     return (
+
+        
         <div className="reforestation-container">
-            {/*} <img
-        src={reforestationBanner}
-        alt="Reforestation Banner"
-        loading="lazy"
-        id="reforestation-banner"
-        className="reforestation-image"
+            <ReforestationBanner></ReforestationBanner>
 
-        />*/}
-            {/*<div className="reforestation_banner">
-            <h3> Reforestation </h3>
-        </div>*/}
-
+            {/* <img class="reforestation-image" src={reforestationBanner}> */}
             <Heatmap colors={colors}/>
             <hr id="map-break"/>
             {/*<Dropdown criteria={criteria} />*/}
@@ -56,18 +48,16 @@ function Reforestation() {
     );
 }
 
-/*
+
 function ReforestationBanner() {
     return (
-        <img
-            src={reforestationBanner}
-            alt="Reforestation Banner"
-            loading="lazy"
-            id="reforestation-banner"
-        />
+        <div className="banner-image">
+            <div className="banner-text">
+                <h1>Reforestation</h1>
+                <p>Some text here about reforestation probably, I'm not sure</p>
+            </div>
+        </div>
     )
 }
-
- */
 
 export default Reforestation

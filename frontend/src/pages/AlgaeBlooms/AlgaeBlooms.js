@@ -1,6 +1,8 @@
 import Heatmap from "../../components/Heatmap/Heatmap"
 import Dropdown from "../../components/Dropdown/Dropdown";
 
+import "./AlgaeBlooms.css"
+
 function AlgaeBlooms() {
 
   const colors =  {
@@ -16,11 +18,26 @@ function AlgaeBlooms() {
 
   return (
     <>
+
+      <ReforestationBanner></ReforestationBanner>
+
       <Heatmap colors={colors} />
       {/* <hr id="map-break"/>
       <Dropdown criteria={criteria} /> */}
     </>
   );
+}
+
+
+function ReforestationBanner() {
+  return (
+      <div className="algaeblooms-banner-image">
+          <div className="algaeblooms-banner-text">
+              <h1>Algae Blooms</h1>
+              <p>Some text here about Algae Blooms probably, I'm not sure</p>
+          </div>
+      </div>
+  )
 }
 
 export default AlgaeBlooms

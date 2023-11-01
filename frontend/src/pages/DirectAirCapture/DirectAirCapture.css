@@ -1,11 +1,7 @@
-.reforestation-container {
-    width: 100vw;
-}
-
-.banner-image {
+.dac-banner-image {
     width: 100vw;
     height: 12.5vh;
-    background-image: url("../../assets/reforestation-banner-image.jpeg");
+    background-image: url("../../assets/dac-banner-image.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,11 +9,11 @@
 }
 
 
-.banner-text {
+.dac-banner-text {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: yellow;
 }

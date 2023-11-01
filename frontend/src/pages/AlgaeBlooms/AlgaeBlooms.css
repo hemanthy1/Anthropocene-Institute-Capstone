@@ -1,11 +1,7 @@
-.reforestation-container {
-    width: 100vw;
-}
-
-.banner-image {
+.algaeblooms-banner-image {
     width: 100vw;
     height: 12.5vh;
-    background-image: url("../../assets/reforestation-banner-image.jpeg");
+    background-image: url("../../assets/algae-bloom-banner-image.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +9,7 @@
 }
 
 
-.banner-text {
+.algaeblooms-banner-text {
     text-align: center;
     position: absolute;
     top: 50%;
