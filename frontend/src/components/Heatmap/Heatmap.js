@@ -229,22 +229,40 @@ function ChoroplethMap(props) {
             });
         });
 
+        // When the map is clicked display a popup
         map.on('click', 'county-data', (e) => {
-
+            // Commented out code that was used when we had the dropdown option
             //let dropdown = document.getElementById("dropdown");
             //let title = dropdown.options[dropdown.selectedIndex].text
             //title + ": " + e.features[0].properties[dropdown.value]
             // Get the feature's properties
+            //The features at the coordinate that was picked
             const properties = e.features[0].properties;
             // Define the list of properties to display
             const propertiesToDisplay = ['NAME', 'cost', 'land', 'palmer', 'population', 'precipitation', 'temperature'];
 
-            // Build the HTML content to display selected properties
+            // Creating a div to be displayed when clicked
             let popupContent = "<div>";
-            for (const key of propertiesToDisplay) {
-                if (properties[key] !== undefined) {
-                    popupContent += `<strong>${key}:</strong> ${properties[key]}<br>`;
-                }
+            if (properties['NAME'] !== undefined) {
+                popupContent += `<strong>County Name:</strong> ${properties['NAME']}<br>`;
+            }
+            if (properties['cost'] !== undefined) {
+                popupContent += `<strong>Cost Efficiency:</strong> ${properties['cost']}<br>`;
+            }
+            if (properties['land'] !== undefined) {
+                popupContent += `<strong>Land Price in dollars:</strong> ${properties['land']}<br>`;
+            }
+            if (properties['palmer'] !== undefined) {
+                popupContent += `<strong>Palmer z index:</strong> ${properties['palmer']}<br>`;
+            }
+            if (properties['population'] !== undefined) {
+                popupContent += `<strong>Population:</strong> ${properties['population']}<br>`;
+            }
+            if (properties['precipitation'] !== undefined) {
+                popupContent += `<strong>Precipitation:</strong> ${properties['precipitation']}<br>`;
+            }
+            if (properties['temperature'] !== undefined) {
+                popupContent += `<strong>Average temperature:</strong> ${properties['temperature']}<br>`;
             }
             popupContent += "</div>";
 
