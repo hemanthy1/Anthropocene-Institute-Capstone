@@ -231,12 +231,26 @@ function ChoroplethMap(props) {
 
         map.on('click', 'county-data', (e) => {
 
-            let dropdown = document.getElementById("dropdown");
-            let title = dropdown.options[dropdown.selectedIndex].text
+            //let dropdown = document.getElementById("dropdown");
+            //let title = dropdown.options[dropdown.selectedIndex].text
+            //title + ": " + e.features[0].properties[dropdown.value]
+                // Get the feature's properties
+            const properties = e.features[0].properties;
+            // Define the list of properties to display
+            const propertiesToDisplay = ['NAME', 'cost', 'land', 'palmer', 'population', 'precipitation', 'temperature'];
+
+            // Build the HTML content to display selected properties
+            let popupContent = "<div>";
+            for (const key of propertiesToDisplay) {
+                if (properties[key] !== undefined) {
+                    popupContent += `<strong>${key}:</strong> ${properties[key]}<br>`;
+                }
+            }
+            popupContent += "</div>";
 
             new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
-                .setHTML(title + ": " + e.features[0].properties[dropdown.value])
+                .setHTML(popupContent)
                 .addTo(map);
         });
 
