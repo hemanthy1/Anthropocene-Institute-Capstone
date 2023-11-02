@@ -1,5 +1,4 @@
 import Heatmap from "../../components/Heatmap/Heatmap"
-/*import Dropdown from "../../components/Dropdown/Dropdown";*/
 import "./Reforestation.css"
 
 function Reforestation() {
@@ -38,11 +37,8 @@ function Reforestation() {
         
         <div className="reforestation-container">
             <ReforestationBanner></ReforestationBanner>
-
             {/* <img class="reforestation-image" src={reforestationBanner}> */}
             <Heatmap colors={colors}/>
-            <hr id="map-break"/>
-            {/*<Dropdown criteria={criteria} />*/}
         </div>
 
     );

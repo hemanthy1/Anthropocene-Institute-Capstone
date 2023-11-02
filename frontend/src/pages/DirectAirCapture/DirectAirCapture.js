@@ -1,5 +1,4 @@
 import Heatmap from "../../components/Heatmap/Heatmap"
-import Dropdown from "../../components/Dropdown/Dropdown";
 import "./DirectAirCapture.css"
 /**
  * A webpage for the Direct Air Capture optimization tool.
@@ -12,7 +11,7 @@ import "./DirectAirCapture.css"
 function DirectAirCapture() {
 
   const colors = {
-    color0: "fffffff",
+    color0: "#ffffff",
     color1: "#fbcfcf",
     color2: "#f79d9d",
     color3: "#f06262",
@@ -23,15 +22,10 @@ function DirectAirCapture() {
   }
 
   return (
-        
     <div className="dac-container">
-
-    <DACBanner></DACBanner>
-
-    <Heatmap colors={colors}/>
-    <hr id="map-break"/>
-    {/*<Dropdown criteria={criteria} />*/}
-</div>
+      <DACBanner></DACBanner>
+      <Heatmap colors={colors}/>
+    </div>
   );
 }
 
