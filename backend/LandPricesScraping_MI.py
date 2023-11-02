@@ -22,7 +22,7 @@ for index, row in refAcre.iterrows():
         url = f"https://www.acrevalue.com/map/{state}/{county}/"
         driver.get(url)
         print(url)
-        time.sleep(1) # time for page to load
+        time.sleep(2) # time for page to load
 
         content = driver.page_source #gets page source
         soup = BeautifulSoup(content, features="html.parser") #soup parses html code
@@ -49,7 +49,7 @@ for index, row in refCamo.iterrows():
         url = f"https://app.camo.ag/land-value/{state}/{county}-county"
         print(url)
         driver.get(url)
-        time.sleep(1)
+        time.sleep(2)
         content = driver.page_source  # get page source
         soup = BeautifulSoup(content, features="html.parser")  # parse html code
 
