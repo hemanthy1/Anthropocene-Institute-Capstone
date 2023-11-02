@@ -7,6 +7,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 
 
+
 function ChoroplethMap(props) {
 
     const mapContainer = useRef(null);
@@ -250,7 +251,7 @@ function ChoroplethMap(props) {
                 popupContent += `<strong>Cost Efficiency:</strong> ${properties['cost']}<br>`;
             }
             if (properties['land'] !== undefined) {
-                popupContent += `<strong>Land Price in dollars:</strong> ${properties['land']}<br>`;
+                popupContent += `<strong>Land Price:</strong>$ ${properties['land']}<br>`;
             }
             if (properties['palmer'] !== undefined) {
                 popupContent += `<strong>Palmer z index:</strong> ${properties['palmer']}<br>`;
@@ -286,7 +287,7 @@ function ChoroplethMap(props) {
     return (
 
         <div ref={mapContainer} className="map-container">
-
+        {/*
             <div className="map-overlay top" style={{display: dropdownDisplay}}>
                 <div className="map-overlay-inner">
                     <fieldset>
@@ -299,6 +300,7 @@ function ChoroplethMap(props) {
                     </fieldset>
                 </div>
             </div>
+           */}
             <div id="legend" className="legend" style={{display: legendDisplay}}>
                 <h4>Cost Efficency</h4>
                 <h3>Most</h3>

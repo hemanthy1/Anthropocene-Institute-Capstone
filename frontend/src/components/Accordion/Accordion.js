@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import nReact, {useState} from 'react'
 import "./Accordion.css"
 import faqcaret from '../../assets/faqcaret.png'
 
