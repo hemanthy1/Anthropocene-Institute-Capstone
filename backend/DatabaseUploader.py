@@ -175,15 +175,16 @@ def UpdateStatesDB():
 
     with engine.connect() as connection:
         # TO INSERT INTO TABLE
-        for i in range(len(JSONList)):
-            data_to_insert = JSONList[i]
-            connection.execute(GeoData.insert(), data_to_insert)
-            connection.commit()
+        # for i in range(len(JSONList)):
+        #     data_to_insert = JSONList[i]
+        #     connection.execute(GeoData.insert(), data_to_insert)
+        #     connection.commit()
         
         # To see data in table
-        result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
-        for row in result:
-            print(row)  
+        # result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
+        # for row in result:
+        #     print(len(row[1]))  
+        print()
 
 
 def UpdateCountiesDB():
@@ -205,15 +206,17 @@ def UpdateCountiesDB():
 
     with engine.connect() as connection:
         # TO INSERT INTO TABLE
-        for i in range(len(JSONList)):
-            data_to_insert = JSONList[i]
-            connection.execute(GeoData.insert(), data_to_insert)
-            connection.commit()
+        # for i in range(len(JSONList)):
+        #     data_to_insert = JSONList[i]
+        #     connection.execute(GeoData.insert(), data_to_insert)
+        #     connection.commit()
         
         # To see data in table
         result = connection.execute(sqlalchemy.text("SELECT * FROM counties_table"))
+        count=0
         for row in result:
-            print(row)  
+            print(row)
+        print(count)
 
 
 
