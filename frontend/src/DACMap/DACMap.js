@@ -134,9 +134,9 @@ function DACMap(props) {
                     'fill-color': [
                         'case',
                         ['boolean', ['feature-state', 'hover'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         ['boolean', ['feature-state', 'click'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         [
                             'interpolate',
                             ['linear'],
@@ -188,9 +188,9 @@ function DACMap(props) {
                     'fill-color': [
                         'case',
                         ['boolean', ['feature-state', 'hover'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         ['boolean', ['feature-state', 'click'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         [
                             'interpolate',
                             ['linear'],
@@ -244,16 +244,12 @@ function DACMap(props) {
                 }
             });
         });
-        let hoveredPolygonId = null;
-        let clickedPolygonId = null;
+        let stateHoveredPolygonId = null;
+        let stateClickedPolygonId = null;
+        let countyHoveredPolygonId = null;
+        let countyClickedPolygonId = null;
         // When the map is clicked display a popup
         map.on('click', 'state-data', (e) => {
-            // Commented out code that was used when we had the dropdown option
-            //let dropdown = document.getElementById("dropdown");
-            //let title = dropdown.options[dropdown.selectedIndex].text
-            //title + ": " + e.features[0].properties[dropdown.value]
-            // Get the feature's properties
-            //The features at the coordinate that was picked
 
             // the span elements used in the sidebar
             const nameDisplay = document.getElementById('name');
@@ -277,7 +273,7 @@ function DACMap(props) {
             const countyTemp = properties['temperature'];
 
             //display the property values
-            nameDisplay.textContent = countyName;
+            //nameDisplay.textContent = countyName;
             //costDisplay.textContent = countyCost;
             //landDisplay.textContent = countyLand;
             //zDisplay.textContent = countyZ;
@@ -285,17 +281,17 @@ function DACMap(props) {
             //preDisplay.textContent = countyPre;
             //tempDisplay.textContent = countyTemp;
 
-            if (clickedPolygonId !== null) {
+            if (stateClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature
                 map.setFeatureState(
-                    {source: 'state', sourceLayer: 'stateDAC-1m13bh', id: clickedPolygonId},
+                    {source: 'state', sourceLayer: 'stateDAC-1m13bh', id: stateClickedPolygonId},
                     {click: false}
                 );
             }
             // Set the state of the clicked feature to 'click'
-            clickedPolygonId = e.features[0].id;
+            stateClickedPolygonId = e.features[0].id;
             map.setFeatureState(
-                {source: 'state', sourceLayer: 'stateDAC-1m13bh', id: clickedPolygonId},
+                {source: 'state', sourceLayer: 'stateDAC-1m13bh', id: stateClickedPolygonId},
                 {click: true}
             );
 
@@ -306,18 +302,18 @@ function DACMap(props) {
 
             // the current features properties
             const countyName = properties['NAME'];
-            if (hoveredPolygonId !== null) {
+            if (stateHoveredPolygonId !== null) {
                 // Reset the state of the previously clicked feature
                 map.setFeatureState(
-                    {source: 'state', sourceLayer: 'stateDAC-1m13bh', id: hoveredPolygonId},
+                    {source: 'state', sourceLayer: 'stateDAC-1m13bh', id: stateHoveredPolygonId},
                     {hover: false}
                 );
             }
 
             // Set the state of the clicked feature to 'click'
-            hoveredPolygonId = e.features[0].id;
+            stateHoveredPolygonId = e.features[0].id;
             map.setFeatureState(
-                {source: 'state', sourceLayer: 'stateDAC-1m13bh', id: hoveredPolygonId},
+                {source: 'state', sourceLayer: 'stateDAC-1m13bh', id: stateHoveredPolygonId},
                 {hover: true}
             );
 
@@ -325,39 +321,39 @@ function DACMap(props) {
 
 
         map.on('mouseleave', 'state-data', () => {
-            if (hoveredPolygonId !== null) {
+            if (stateHoveredPolygonId !== null) {
                 map.setFeatureState(
-                    {source: 'state', sourceLayer: 'stateDAC-1m13bh', id: hoveredPolygonId},
+                    {source: 'state', sourceLayer: 'stateDAC-1m13bh', id: stateHoveredPolygonId},
                     {hover: false}
                 );
             }
-            hoveredPolygonId = null;
+            stateHoveredPolygonId = null;
         });
 
         map.on('mousemove', 'county-data', (e) => {
-            if (hoveredPolygonId !== null) {
+            if (countyHoveredPolygonId !== null) {
                 // Reset the state of the previously clicked feature in the 'county-data' layer
                 map.setFeatureState(
-                    {source: 'county', sourceLayer: 'countyDAC-68q8mt', id: hoveredPolygonId},
+                    {source: 'county', sourceLayer: 'countyDAC-68q8mt', id: countyHoveredPolygonId},
                     {hover: false}
                 );
             }
 
             // Set the state of the hovered feature in the 'county-data' layer to 'hover'
-            hoveredPolygonId = e.features[0].id;
+            countyHoveredPolygonId = e.features[0].id;
             map.setFeatureState(
-                {source: 'county', sourceLayer: 'countyDAC-68q8mt', id: hoveredPolygonId},
+                {source: 'county', sourceLayer: 'countyDAC-68q8mt', id: countyHoveredPolygonId},
                 {hover: true}
             );
         });
         map.on('mouseleave', 'county-data', () => {
-            if (hoveredPolygonId !== null) {
+            if (countyHoveredPolygonId !== null) {
                 map.setFeatureState(
-                    {source: 'county', sourceLayer: 'countyDAC-68q8mt', id: hoveredPolygonId},
+                    {source: 'county', sourceLayer: 'countyDAC-68q8mt', id: countyHoveredPolygonId},
                     {hover: false}
                 );
             }
-            hoveredPolygonId = null;
+            countyHoveredPolygonId = null;
         });
         // When the map is clicked display a popup
         map.on('click', 'county-data', (e) => {
@@ -383,26 +379,26 @@ function DACMap(props) {
             const countyPre = properties['precipitation'];
             const countyTemp = properties['temperature'];
 
-            nameDisplay.textContent = countyName;
+            //nameDisplay.textContent = countyName;
             //costDisplay.textContent = countyCost;
             //landDisplay.textContent = countyLand;
             //zDisplay.textContent = countyZ;
             //popDisplay.textContent = countyPop;
             //preDisplay.textContent = countyPre;
             //tempDisplay.textContent = countyTemp;
-            if (clickedPolygonId !== null) {
+            if (countyClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature in the 'county-data' layer
                 map.setFeatureState(
-                    {source: 'county', sourceLayer: 'countyDAC-68q8mt', id: clickedPolygonId},
+                    {source: 'county', sourceLayer: 'countyDAC-68q8mt', id: countyClickedPolygonId},
                     {click: false}
                 );
             }
 
             // Set the state of the clicked feature in the 'county-data' layer to 'click'
-            clickedPolygonId = e.features[0].id;
+            countyClickedPolygonId = e.features[0].id;
 
             map.setFeatureState(
-                {source: 'county', sourceLayer: 'countyDAC-68q8mt', id: clickedPolygonId},
+                {source: 'county', sourceLayer: 'countyDAC-68q8mt', id: countyClickedPolygonId},
                 {click: true}
             );
 
@@ -423,8 +419,8 @@ function DACMap(props) {
     return (
 
         <div ref={mapContainer} className="map-container">
-            {/*
-                            <div className='info-section'>
+
+            <div className='info-section'>
                 <div><strong>Name:</strong> <span id='name'></span></div>
                 <div><strong>Cost Efficiency:</strong> <span id='cost'></span></div>
                 <div><strong>Land prices:</strong> <span id='elec'></span></div>
@@ -433,7 +429,7 @@ function DACMap(props) {
                 <div><strong>Precipitation:</strong> <span id='pre'></span></div>
                 <div><strong>Temperature:</strong> <span id='temp'></span></div>
             </div>
-            */}
+
 
             {/*
             <div className="map-overlay top" style={{display: dropdownDisplay}}>

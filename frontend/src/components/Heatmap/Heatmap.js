@@ -66,9 +66,9 @@ function ChoroplethMap(props) {
                     'fill-color': [
                         'case',
                         ['boolean', ['feature-state', 'hover'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         ['boolean', ['feature-state', 'click'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         [
                             'interpolate',
                             ['linear'],
@@ -107,9 +107,9 @@ function ChoroplethMap(props) {
                     'fill-color': [
                         'case',
                         ['boolean', ['feature-state', 'hover'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         ['boolean', ['feature-state', 'click'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         [
                             'interpolate',
                             ['linear'],
@@ -165,8 +165,10 @@ function ChoroplethMap(props) {
 
         });
 
-        let hoveredPolygonId = null;
-        let clickedPolygonId = null;
+        let stateHoveredPolygonId = null;
+        let stateClickedPolygonId = null;
+        let countyHoveredPolygonId = null;
+        let countyClickedPolygonId = null;
         // When the map is clicked display a popup
         map.on('click', 'state-data', (e) => {
             // Commented out code that was used when we had the dropdown option
@@ -206,17 +208,17 @@ function ChoroplethMap(props) {
             preDisplay.textContent = countyPre;
             tempDisplay.textContent = countyTemp;
 
-            if (clickedPolygonId !== null) {
+            if (stateClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature
                 map.setFeatureState(
-                    {source: 'state', sourceLayer: 'stateReforestation-2v0akk', id: clickedPolygonId},
+                    {source: 'state', sourceLayer: 'stateReforestation-2v0akk', id: stateClickedPolygonId},
                     {click: false}
                 );
             }
             // Set the state of the clicked feature to 'click'
-            clickedPolygonId = e.features[0].id;
+            stateClickedPolygonId = e.features[0].id;
             map.setFeatureState(
-                {source: 'state', sourceLayer: 'stateReforestation-2v0akk', id: clickedPolygonId},
+                {source: 'state', sourceLayer: 'stateReforestation-2v0akk', id: stateClickedPolygonId},
                 {click: true}
             );
 
@@ -227,18 +229,18 @@ function ChoroplethMap(props) {
 
             // the current features properties
             const countyName = properties['NAME'];
-            if (hoveredPolygonId !== null) {
+            if (stateHoveredPolygonId !== null) {
                 // Reset the state of the previously clicked feature
                 map.setFeatureState(
-                    {source: 'state', sourceLayer: 'stateReforestation-2v0akk', id: hoveredPolygonId},
+                    {source: 'state', sourceLayer: 'stateReforestation-2v0akk', id: stateHoveredPolygonId},
                     {hover: false}
                 );
             }
 
             // Set the state of the clicked feature to 'click'
-            hoveredPolygonId = e.features[0].id;
+            stateHoveredPolygonId = e.features[0].id;
             map.setFeatureState(
-                {source: 'state', sourceLayer: 'stateReforestation-2v0akk', id: hoveredPolygonId},
+                {source: 'state', sourceLayer: 'stateReforestation-2v0akk', id: stateHoveredPolygonId},
                 {hover: true}
             );
 
@@ -246,39 +248,39 @@ function ChoroplethMap(props) {
 
 
         map.on('mouseleave', 'state-data', () => {
-            if (hoveredPolygonId !== null) {
+            if (stateHoveredPolygonId !== null) {
                 map.setFeatureState(
-                    {source: 'state', sourceLayer: 'stateReforestation-2v0akk', id: hoveredPolygonId},
+                    {source: 'state', sourceLayer: 'stateReforestation-2v0akk', id: stateHoveredPolygonId},
                     {hover: false}
                 );
             }
-            hoveredPolygonId = null;
+            stateHoveredPolygonId = null;
         });
 
         map.on('mousemove', 'county-data', (e) => {
-            if (hoveredPolygonId !== null) {
+            if (countyHoveredPolygonId !== null) {
                 // Reset the state of the previously clicked feature in the 'county-data' layer
                 map.setFeatureState(
-                    {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: hoveredPolygonId},
+                    {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: countyHoveredPolygonId},
                     {hover: false}
                 );
             }
 
             // Set the state of the hovered feature in the 'county-data' layer to 'hover'
-            hoveredPolygonId = e.features[0].id;
+            countyHoveredPolygonId = e.features[0].id;
             map.setFeatureState(
-                {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: hoveredPolygonId},
+                {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: countyHoveredPolygonId},
                 {hover: true}
             );
         });
         map.on('mouseleave', 'county-data', () => {
-            if (hoveredPolygonId !== null) {
+            if (countyHoveredPolygonId !== null) {
                 map.setFeatureState(
-                    {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: hoveredPolygonId},
+                    {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: countyHoveredPolygonId},
                     {hover: false}
                 );
             }
-            hoveredPolygonId = null;
+            countyHoveredPolygonId = null;
         });
         // When the map is clicked display a popup
         map.on('click', 'county-data', (e) => {
@@ -311,19 +313,19 @@ function ChoroplethMap(props) {
             popDisplay.textContent = countyPop;
             preDisplay.textContent = countyPre;
             tempDisplay.textContent = countyTemp;
-            if (clickedPolygonId !== null) {
+            if (countyClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature in the 'county-data' layer
                 map.setFeatureState(
-                    {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: clickedPolygonId},
+                    {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: countyClickedPolygonId},
                     {click: false}
                 );
             }
 
             // Set the state of the clicked feature in the 'county-data' layer to 'click'
-            clickedPolygonId = e.features[0].id;
+            countyClickedPolygonId = e.features[0].id;
 
             map.setFeatureState(
-                {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: clickedPolygonId},
+                {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: countyClickedPolygonId},
                 {click: true}
             );
 
