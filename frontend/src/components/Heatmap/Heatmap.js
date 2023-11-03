@@ -7,13 +7,13 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 
 
-
 function ChoroplethMap(props) {
 
     const mapContainer = useRef(null);
     const [legendDisplay] = useState('block');
     const [dropdownDisplay] = useState('block');
     const zoomThreshold = 3;
+
 
     useEffect(() => {
         mapboxgl.accessToken = 'pk.eyJ1IjoiamhvbHNjaDI5IiwiYSI6ImNsbjJjaWllNzAwcDQyam1wYnF6NHQ0Z24ifQ.TYll92t4SavsRHHFUhU-UA';
@@ -151,10 +151,15 @@ function ChoroplethMap(props) {
                         7,
                         props.colors.color7
                     ],
-                    'fill-opacity': .85,
+                    'fill-opacity': [
+                        'case',
+                        ['boolean', ['feature-state', 'hover'], false],
+                        .85,
+                        1
+                    ]
                 },
 
-                //
+                //'fill-opacity': .85,
                 // 'id': 'population',
                 // 'type': 'circle',
                 // source: 'state',
@@ -229,48 +234,111 @@ function ChoroplethMap(props) {
                 }
             });
         });
-
+        let hoveredPolygonId = null;
         // When the map is clicked display a popup
-        map.on('click', 'county-data', (e) => {
+        map.on('mousemove', 'state-data', (e) => {
             // Commented out code that was used when we had the dropdown option
             //let dropdown = document.getElementById("dropdown");
             //let title = dropdown.options[dropdown.selectedIndex].text
             //title + ": " + e.features[0].properties[dropdown.value]
             // Get the feature's properties
             //The features at the coordinate that was picked
+
+            // the span elements used in the sidebar
+            const nameDisplay = document.getElementById('name');
+            const costDisplay = document.getElementById('cost');
+            const landDisplay = document.getElementById('land');
+            const zDisplay = document.getElementById('z');
+            const popDisplay = document.getElementById('pop');
+            const preDisplay = document.getElementById('pre');
+            const tempDisplay = document.getElementById('temp');
+
+            // the properties of the feature
             const properties = e.features[0].properties;
-            // Define the list of properties to display
-            const propertiesToDisplay = ['NAME', 'cost', 'land', 'palmer', 'population', 'precipitation', 'temperature'];
 
-            // Creating a div to be displayed when clicked
-            let popupContent = "<div>";
-            if (properties['NAME'] !== undefined) {
-                popupContent += `<strong>County Name:</strong> ${properties['NAME']}<br>`;
-            }
-            if (properties['cost'] !== undefined) {
-                popupContent += `<strong>Cost Efficiency:</strong> ${properties['cost']}<br>`;
-            }
-            if (properties['land'] !== undefined) {
-                popupContent += `<strong>Land Price:</strong>$ ${properties['land']}<br>`;
-            }
-            if (properties['palmer'] !== undefined) {
-                popupContent += `<strong>Palmer z index:</strong> ${properties['palmer']}<br>`;
-            }
-            if (properties['population'] !== undefined) {
-                popupContent += `<strong>Population:</strong> ${properties['population']}<br>`;
-            }
-            if (properties['precipitation'] !== undefined) {
-                popupContent += `<strong>Precipitation:</strong> ${properties['precipitation']}<br>`;
-            }
-            if (properties['temperature'] !== undefined) {
-                popupContent += `<strong>Average temperature:</strong> ${properties['temperature']}<br>`;
-            }
-            popupContent += "</div>";
+            // the current features properties
+            const countyName = properties['NAME'];
+            const countyCost = properties['cost'];
+            const countyLand = properties['land'];
+            const countyZ = properties['palmer'];
+            const countyPop = properties['population'];
+            const countyPre = properties['precipitation'];
+            const countyTemp = properties['temperature'];
 
-            new mapboxgl.Popup()
-                .setLngLat(e.lngLat)
-                .setHTML(popupContent)
-                .addTo(map);
+
+            //display the property values
+            nameDisplay.textContent = countyName;
+            costDisplay.textContent = countyCost;
+            landDisplay.textContent = countyLand;
+            zDisplay.textContent = countyZ;
+            popDisplay.textContent = countyPop;
+            preDisplay.textContent = countyPre;
+            tempDisplay.textContent = countyTemp;
+
+            if (hoveredPolygonId !== null) {
+                map.setFeatureState(
+                    {source: 'state', sourceLayer: 'stateReforestation-2v0akk', id: hoveredPolygonId},
+                    {hover: false}
+                );
+            }
+            hoveredPolygonId = e.features[0].id;
+            map.setFeatureState(
+                {source: 'state',sourceLayer: 'stateReforestation-2v0akk',  id: hoveredPolygonId},
+                {hover: true}
+            );
+
+        });
+
+        map.on('mouseleave', 'state-data', () => {
+            if (hoveredPolygonId !== null) {
+                map.setFeatureState(
+                    {source: 'state',sourceLayer: 'stateReforestation-2v0akk', id: hoveredPolygonId},
+                    {hover: false}
+                );
+            }
+            hoveredPolygonId = null;
+        });
+
+        // When the map is clicked display a popup
+        map.on('mousemove', 'county-data', (e) => {
+            // Commented out code that was used when we had the dropdown option
+            //let dropdown = document.getElementById("dropdown");
+            //let title = dropdown.options[dropdown.selectedIndex].text
+            //title + ": " + e.features[0].properties[dropdown.value]
+            // Get the feature's properties
+            //The features at the coordinate that was picked
+
+            // the span elements used in the sidebar
+            const nameDisplay = document.getElementById('name');
+            const costDisplay = document.getElementById('cost');
+            const landDisplay = document.getElementById('land');
+            const zDisplay = document.getElementById('z');
+            const popDisplay = document.getElementById('pop');
+            const preDisplay = document.getElementById('pre');
+            const tempDisplay = document.getElementById('temp');
+
+            // the properties of the feature
+            const properties = e.features[0].properties;
+
+            // the current features properties
+            const countyName = properties['NAME'];
+            const countyCost = properties['cost'];
+            const countyLand = properties['land'];
+            const countyZ = properties['palmer'];
+            const countyPop = properties['population'];
+            const countyPre = properties['precipitation'];
+            const countyTemp = properties['temperature'];
+
+
+            //display the property values
+            nameDisplay.textContent = countyName;
+            costDisplay.textContent = countyCost;
+            landDisplay.textContent = countyLand;
+            zDisplay.textContent = countyZ;
+            popDisplay.textContent = countyPop;
+            preDisplay.textContent = countyPre;
+            tempDisplay.textContent = countyTemp;
+
         });
 
 
@@ -287,7 +355,16 @@ function ChoroplethMap(props) {
     return (
 
         <div ref={mapContainer} className="map-container">
-        {/*
+            <div className='info-section'>
+                <div><strong>County Name:</strong> <span id='name'></span></div>
+                <div><strong>Cost Efficiency:</strong> <span id='cost'></span></div>
+                <div><strong>Land prices:</strong> <span id='land'></span></div>
+                <div><strong>Palmer-z index:</strong> <span id='z'></span></div>
+                <div><strong>Population:</strong> <span id='pop'></span></div>
+                <div><strong>Precipitation:</strong> <span id='pre'></span></div>
+                <div><strong>Temperature:</strong> <span id='temp'></span></div>
+            </div>
+            {/*
             <div className="map-overlay top" style={{display: dropdownDisplay}}>
                 <div className="map-overlay-inner">
                     <fieldset>
