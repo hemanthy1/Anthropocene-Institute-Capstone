@@ -1,10 +1,11 @@
 import "./Heatmap.css"
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import mapboxgl from 'mapbox-gl';
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
+import {Link} from "react-router-dom";
 
 
 function ChoroplethMap(props) {
@@ -40,7 +41,6 @@ function ChoroplethMap(props) {
             map.addSource('state', {
                 type: 'vector',
                 url: "mapbox://jholsch29.a47vgwym",
-                generateId: true
                 //
                 // type: 'geojson',
                 // data: "https://cdn.rawgit.com/ebrelsford/geojson-examples/master/596acres-02-18-2014-queens.geojson"
@@ -51,7 +51,6 @@ function ChoroplethMap(props) {
             map.addSource('county', {
                 type: 'vector',
                 url: "mapbox://jholsch29.5vi92hxq",
-                generateId: true
             });
 
             // add choropleth layer for state level
@@ -162,10 +161,22 @@ function ChoroplethMap(props) {
                     'line-width': .5
                 }
             });
+            // Iterate through features and add a unique identifier based on properties
+            map.querySourceFeatures('county', {sourceLayer: 'countyReforestation-4ser7q'}).forEach((feature) => {
+                const countyName = feature.properties['NAME'];
+                // Create a unique identifier based on state abbreviation and county name
+                feature.id = countyName;
+            });
+            map.querySourceFeatures('state', {sourceLayer: 'stateReforestation-2v0akk'}).forEach((feature) => {
+                const stateName = feature.properties['NAME'];
+                // Create a unique identifier based on state abbreviation and county name
+                feature.id = stateName;
+            });
         });
 
         let hoveredPolygonId = null;
         let clickedPolygonId = null;
+        let check = null;
 
 
         // When the map is clicked display a popup
@@ -198,9 +209,9 @@ function ChoroplethMap(props) {
             const countyPre = properties['precipitation'];
             const countyTemp = properties['temperature'];
 
-
+            check = e.features[0].id;
             //display the property values
-            nameDisplay.textContent = countyName;
+            nameDisplay.textContent = check;
             costDisplay.textContent = countyCost;
             landDisplay.textContent = countyLand;
             zDisplay.textContent = countyZ;
@@ -302,7 +313,7 @@ function ChoroplethMap(props) {
             const countyPop = properties['population'];
             const countyPre = properties['precipitation'];
             const countyTemp = properties['temperature'];
-
+            check = e.features[0].id;
 
             //display the property values
             nameDisplay.textContent = countyName;
@@ -322,6 +333,7 @@ function ChoroplethMap(props) {
 
             // Set the state of the clicked feature in the 'county-data' layer to 'click'
             clickedPolygonId = e.features[0].id;
+
             map.setFeatureState(
                 {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: clickedPolygonId},
                 {click: true}
@@ -344,13 +356,14 @@ function ChoroplethMap(props) {
 
         <div ref={mapContainer} className="map-container">
             <div className='info-section'>
-                <div><strong>County Name:</strong> <span id='name'></span></div>
+                <div><strong>Name:</strong> <span id='name'></span></div>
                 <div><strong>Cost Efficiency:</strong> <span id='cost'></span></div>
                 <div><strong>Land prices:</strong> <span id='land'></span></div>
                 <div><strong>Palmer-z index:</strong> <span id='z'></span></div>
                 <div><strong>Population:</strong> <span id='pop'></span></div>
                 <div><strong>Precipitation:</strong> <span id='pre'></span></div>
                 <div><strong>Temperature:</strong> <span id='temp'></span></div>
+                <Link to="/moreinfo">More Info</Link>
             </div>
 
             <div id="legend" className="legend" style={{display: legendDisplay}}>

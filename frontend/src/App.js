@@ -11,6 +11,7 @@ import NoPage from "./pages/NoPage/NoPage";
 import DirectAirCapture from './pages/DirectAirCapture/DirectAirCapture';
 import AlgaeBlooms from './pages/AlgaeBlooms/AlgaeBlooms';
 import Reforestation from './pages/Reforestation/Reforestation';
+import MoreInfo from "./pages/MoreInfo/MoreInfo";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="dac" element={<DirectAirCapture />} />
             <Route path="algaeblooms" element={<AlgaeBlooms />} />
             <Route path="reforestation" element={<Reforestation />} />
+            <Route path="moreinfo" element={<MoreInfo />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
