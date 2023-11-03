@@ -145,7 +145,7 @@ function ChoroplethMap(props) {
                 type: 'line',
                 paint: {
                     'line-color': '#000',
-                    'line-width': 1
+                    'line-width': .1
                 }
             });
 
@@ -159,7 +159,7 @@ function ChoroplethMap(props) {
                 type: 'line',
                 paint: {
                     'line-color': '#000',
-                    'line-width': .5
+                    'line-width': .1
                 }
             });
 
