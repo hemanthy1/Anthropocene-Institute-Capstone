@@ -167,7 +167,6 @@ function ChoroplethMap(props) {
 
         let hoveredPolygonId = null;
         let clickedPolygonId = null;
-        let check = null;
         // When the map is clicked display a popup
         map.on('click', 'state-data', (e) => {
             // Commented out code that was used when we had the dropdown option
@@ -305,9 +304,7 @@ function ChoroplethMap(props) {
             const countyPre = properties['precipitation'];
             const countyTemp = properties['temperature'];
 
-            check = e.features[0].id;
-            //display the property values
-            nameDisplay.textContent = check;
+            nameDisplay.textContent = countyName;
             costDisplay.textContent = countyCost;
             landDisplay.textContent = countyLand;
             zDisplay.textContent = countyZ;
@@ -329,7 +326,7 @@ function ChoroplethMap(props) {
                 {source: 'county', sourceLayer: 'countyReforestation-4ser7q', id: clickedPolygonId},
                 {click: true}
             );
-            
+
 
         });
 
