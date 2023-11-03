@@ -1,5 +1,9 @@
 import Heatmap from "../../components/Heatmap/Heatmap"
+
+import DACMap from "../../DACMap/DACMap";
+
 import "./DirectAirCapture.css"
+
 /**
  * A webpage for the Direct Air Capture optimization tool.
  * The webpage contains the heatmap for the most optimal locations
@@ -24,7 +28,8 @@ function DirectAirCapture() {
   return (
     <div className="dac-container">
       <DACBanner></DACBanner>
-      <Heatmap colors={colors}/>
+      {/* <Heatmap colors={colors}/> */}
+      <DACMap colors={colors} />
     </div>
   );
 }
