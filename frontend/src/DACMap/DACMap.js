@@ -226,7 +226,7 @@ function DACMap(props) {
                 type: 'line',
                 paint: {
                     'line-color': '#000',
-                    'line-width': 0.1
+                    'line-width': 0.05
                 }
             });
 
@@ -423,7 +423,8 @@ function DACMap(props) {
     return (
 
         <div ref={mapContainer} className="map-container">
-            <div className='info-section'>
+            {/*
+                            <div className='info-section'>
                 <div><strong>Name:</strong> <span id='name'></span></div>
                 <div><strong>Cost Efficiency:</strong> <span id='cost'></span></div>
                 <div><strong>Land prices:</strong> <span id='elec'></span></div>
@@ -432,6 +433,8 @@ function DACMap(props) {
                 <div><strong>Precipitation:</strong> <span id='pre'></span></div>
                 <div><strong>Temperature:</strong> <span id='temp'></span></div>
             </div>
+            */}
+
             {/*
             <div className="map-overlay top" style={{display: dropdownDisplay}}>
                 <div className="map-overlay-inner">
