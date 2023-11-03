@@ -134,9 +134,9 @@ function DACMap(props) {
                     'fill-color': [
                         'case',
                         ['boolean', ['feature-state', 'hover'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         ['boolean', ['feature-state', 'click'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         [
                             'interpolate',
                             ['linear'],
@@ -188,9 +188,9 @@ function DACMap(props) {
                     'fill-color': [
                         'case',
                         ['boolean', ['feature-state', 'hover'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         ['boolean', ['feature-state', 'click'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         [
                             'interpolate',
                             ['linear'],
@@ -277,7 +277,7 @@ function DACMap(props) {
             const countyTemp = properties['temperature'];
 
             //display the property values
-            nameDisplay.textContent = countyName;
+            //nameDisplay.textContent = countyName;
             //costDisplay.textContent = countyCost;
             //landDisplay.textContent = countyLand;
             //zDisplay.textContent = countyZ;
@@ -383,7 +383,7 @@ function DACMap(props) {
             const countyPre = properties['precipitation'];
             const countyTemp = properties['temperature'];
 
-            nameDisplay.textContent = countyName;
+            //nameDisplay.textContent = countyName;
             //costDisplay.textContent = countyCost;
             //landDisplay.textContent = countyLand;
             //zDisplay.textContent = countyZ;

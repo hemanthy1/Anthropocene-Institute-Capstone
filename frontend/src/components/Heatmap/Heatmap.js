@@ -66,9 +66,9 @@ function ChoroplethMap(props) {
                     'fill-color': [
                         'case',
                         ['boolean', ['feature-state', 'hover'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         ['boolean', ['feature-state', 'click'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         [
                             'interpolate',
                             ['linear'],
@@ -107,9 +107,9 @@ function ChoroplethMap(props) {
                     'fill-color': [
                         'case',
                         ['boolean', ['feature-state', 'hover'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         ['boolean', ['feature-state', 'click'], false],
-                        '#FFFF00', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // Color to use when the condition is true (clicked)
                         [
                             'interpolate',
                             ['linear'],
