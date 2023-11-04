@@ -5,7 +5,7 @@ import pandas as pd
 def updateReforestationDataState(stateJsonFile, stateReforestationCsv):
     # file path variables
     new_file = "backend/geoJsonOutputs/stateData/stateReforestation.json"
-    data_file = "backend/Reforestation/reforestation.csv"
+    data_file = "backend/Reforestation/reforestation_class.csv"
 
     # copy the boundary file into a new json file
     shutil.copyfile(stateJsonFile, new_file)
@@ -145,7 +145,7 @@ def updateDACDataState(stateJsonFile, stateDACCsv):
 def updateReforestationDataCounty(countyJsonFile, countyReforestationCsv):
     # file path variables
     new_file = "backend/geoJsonOutputs/countyData/countyReforestation.json"
-    data_file = "backend/Reforestation/reforestation.csv"
+    data_file = "backend/Reforestation/reforestation_class.csv"
 
     # copy the boundary file into a new json file
     shutil.copyfile(countyJsonFile, new_file)
@@ -227,7 +227,7 @@ def updateReforestationDataCounty(countyJsonFile, countyReforestationCsv):
             feature["properties"]["temperature"] = float(match.iloc[0]["Temperature"])
             feature["properties"]["precipitation"] = float(match.iloc[0]["Precipitation"])
             feature["properties"]["palmer"] = float(match.iloc[0]["Palmer-Z"])
-            feature["properties"]["land"] = int(match.iloc[0]["Land-Prices"])
+            feature["properties"]["land"] = float(match.iloc[0]["Land-Prices"])
             feature["properties"]["cost"] = float(match.iloc[0]["percentile_rank"])
             feature["properties"]["class"] = int(match.iloc[0]["Final_Class"])
             feature["properties"]["isState"] = "no"
@@ -429,10 +429,10 @@ def updateDACDataCounty(countyJsonFile, countyDACCsv):
 def main():
     updateReforestationDataState("backend/states.json", "dataOutputCSVs/stateData/stateReforestationCsv.csv")
     # updateAlgaeBloomDataState("backend/states.json", "dataOutputCSVs/stateData/stateAlgaeBloomCsv.csv")
-    updateDACDataState("backend/states.json", "dataOutputCSVs/stateData/stateDACCsv.csv")
+    # updateDACDataState("backend/states.json", "dataOutputCSVs/stateData/stateDACCsv.csv")
     updateReforestationDataCounty("backend/counties.json", "dataOutputCSVs/countyData/countyReforestationCsv.csv")
     # updateAlgaeBloomDataCounty("backend/counties.json", "dataOutputCSVs/countyData/countyAlgaeBloomCsv.csv")
-    updateDACDataCounty("backend/counties.json", "dataOutputCSVs/countyData/countyDAC.csv")
+    # updateDACDataCounty("backend/counties.json", "dataOutputCSVs/countyData/countyDAC.csv")
     print("Done")
 
 
