@@ -5,6 +5,7 @@ import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
+import {Link} from "react-router-dom";
 
 
 function DACMap(props) {
@@ -254,8 +255,8 @@ function DACMap(props) {
             // the span elements used in the sidebar
             const nameDisplay = document.getElementById('name');
             const costDisplay = document.getElementById('cost');
-            const landDisplay = document.getElementById('land');
-            const zDisplay = document.getElementById('z');
+            const elecDisplay = document.getElementById('elec');
+            const elevDisplay = document.getElementById('elev');
             const popDisplay = document.getElementById('pop');
             const preDisplay = document.getElementById('pre');
             const tempDisplay = document.getElementById('temp');
@@ -264,22 +265,22 @@ function DACMap(props) {
             const properties = e.features[0].properties;
 
             // the current features properties
-            const countyName = properties['NAME'];
-            const countyCost = properties['cost'];
-            const countyLand = properties['land'];
-            const countyZ = properties['palmer'];
-            const countyPop = properties['population'];
-            const countyPre = properties['precipitation'];
-            const countyTemp = properties['temperature'];
+            const stateName = properties['NAME'];
+            const stateCost = properties['cost'];
+            const stateElec = properties['electric'];
+            const stateElev = properties['elevation'];
+            const statePop = properties['population'];
+            const statePre = properties['precipitation'];
+            const stateTemp = properties['temperature'];
 
             //display the property values
-            //nameDisplay.textContent = countyName;
-            //costDisplay.textContent = countyCost;
-            //landDisplay.textContent = countyLand;
-            //zDisplay.textContent = countyZ;
-            //popDisplay.textContent = countyPop;
-            //preDisplay.textContent = countyPre;
-            //tempDisplay.textContent = countyTemp;
+            nameDisplay.textContent = stateName;
+            costDisplay.textContent = stateCost;
+            elecDisplay.textContent = stateElec;
+            elevDisplay.textContent = stateElev;
+            popDisplay.textContent = statePop;
+            preDisplay.textContent = statePre;
+            tempDisplay.textContent = stateTemp;
 
             if (stateClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature
@@ -361,8 +362,8 @@ function DACMap(props) {
             // the span elements used in the sidebar
             const nameDisplay = document.getElementById('name');
             const costDisplay = document.getElementById('cost');
-            const landDisplay = document.getElementById('land');
-            const zDisplay = document.getElementById('z');
+            const elecDisplay = document.getElementById('elec');
+            const elevDisplay = document.getElementById('elev');
             const popDisplay = document.getElementById('pop');
             const preDisplay = document.getElementById('pre');
             const tempDisplay = document.getElementById('temp');
@@ -373,19 +374,19 @@ function DACMap(props) {
             // the current features properties
             const countyName = properties['NAME'];
             const countyCost = properties['cost'];
-            const countyLand = properties['land'];
-            const countyZ = properties['palmer'];
+            const countyElec = properties['electric'];
+            const countyElev = properties['elevation'];
             const countyPop = properties['population'];
             const countyPre = properties['precipitation'];
             const countyTemp = properties['temperature'];
 
-            //nameDisplay.textContent = countyName;
-            //costDisplay.textContent = countyCost;
-            //landDisplay.textContent = countyLand;
-            //zDisplay.textContent = countyZ;
-            //popDisplay.textContent = countyPop;
-            //preDisplay.textContent = countyPre;
-            //tempDisplay.textContent = countyTemp;
+            nameDisplay.textContent = countyName;
+            costDisplay.textContent = countyCost;
+            elecDisplay.textContent = countyElec;
+            elevDisplay.textContent = countyElev;
+            popDisplay.textContent = countyPop;
+            preDisplay.textContent = countyPre;
+            tempDisplay.textContent = countyTemp;
             if (countyClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature in the 'county-data' layer
                 map.setFeatureState(
@@ -421,13 +422,15 @@ function DACMap(props) {
         <div ref={mapContainer} className="map-container">
 
             <div className='info-section'>
-                <div><strong>Name:</strong> <span id='name'></span></div>
+                <div className='state-name'><span id='name'></span></div>
+                <hr className='name-line'/>
                 <div><strong>Cost Efficiency:</strong> <span id='cost'></span></div>
-                <div><strong>Land prices:</strong> <span id='elec'></span></div>
-                <div><strong>Palmer-z index:</strong> <span id='ele'></span></div>
+                <div><strong>Electric:</strong> <span id='elec'></span></div>
+                <div><strong>Elevation:</strong> <span id='elev'></span></div>
                 <div><strong>Population:</strong> <span id='pop'></span></div>
                 <div><strong>Precipitation:</strong> <span id='pre'></span></div>
                 <div><strong>Temperature:</strong> <span id='temp'></span></div>
+                <Link to="/moreinfo">More Info</Link>
             </div>
 
 
