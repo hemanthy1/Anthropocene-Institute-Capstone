@@ -214,6 +214,10 @@ function ChoroplethMap(props) {
             function addCommas(value) {
                 return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
             }
+            function formatTemp(value){
+                value=value.toFixed(2);
+                return value+"°F";
+            }
 
             // Display the property values
             nameDisplay.textContent = stateName;
@@ -222,7 +226,7 @@ function ChoroplethMap(props) {
             zDisplay.textContent = stateZ.toFixed(2);
             popDisplay.textContent = addCommas(statePop);
             preDisplay.textContent = statePre.toFixed(2);
-            tempDisplay.textContent = stateTemp.toFixed(2);
+            tempDisplay.textContent = formatTemp(stateTemp);
 
             if (stateClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature
@@ -336,6 +340,10 @@ function ChoroplethMap(props) {
             function addCommas(value) {
                 return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
             }
+            function formatTemp(value){
+                value=value.toFixed(2);
+                return value+"°F";
+            }
 
             // Display the property values
             nameDisplay.textContent = countyName;
@@ -344,7 +352,7 @@ function ChoroplethMap(props) {
             zDisplay.textContent = countyZ.toFixed(2);
             popDisplay.textContent = addCommas(countyPop);
             preDisplay.textContent = countyPre.toFixed(2);
-            tempDisplay.textContent = countyTemp.toFixed(2);
+            tempDisplay.textContent = formatTemp(countyTemp);
 
             if (countyClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature in the 'county-data' layer

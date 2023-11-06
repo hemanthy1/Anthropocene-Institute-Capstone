@@ -273,14 +273,30 @@ function DACMap(props) {
             const statePre = properties['precipitation'];
             const stateTemp = properties['temperature'];
 
+            //Function to format percent
+            function formatPercent(value) {
+                value = value * 100;
+                return value.toFixed(0) + '%';
+            }
+
+            // Function to add commas as thousands separators
+            function addCommas(value) {
+                return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+            }
+            function formatTemp(value){
+                value=value.toFixed(2);
+                return value+"°F";
+            }
+
+
             //display the property values
             nameDisplay.textContent = stateName;
-            costDisplay.textContent = stateCost;
-            elecDisplay.textContent = stateElec;
-            elevDisplay.textContent = stateElev;
-            popDisplay.textContent = statePop;
-            preDisplay.textContent = statePre;
-            tempDisplay.textContent = stateTemp;
+            costDisplay.textContent = formatPercent(stateCost);
+            elecDisplay.textContent = addCommas(stateElec);
+            elevDisplay.textContent = addCommas(stateElev);
+            popDisplay.textContent = addCommas(statePop);
+            preDisplay.textContent = addCommas(statePre);
+            tempDisplay.textContent = formatTemp(stateTemp);
 
             if (stateClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature
@@ -373,20 +389,36 @@ function DACMap(props) {
 
             // the current features properties
             const countyName = properties['NAME'];
-            const countyCost = properties['cost'];
-            const countyElec = properties['electric'];
-            const countyElev = properties['elevation'];
-            const countyPop = properties['population'];
-            const countyPre = properties['precipitation'];
-            const countyTemp = properties['temperature'];
+            const countyCost = parseFloat(properties['cost']);
+            const countyElec = parseFloat(properties['electric']);
+            const countyElev = parseFloat(properties['elevation']);
+            const countyPop = parseFloat(properties['population']);
+            const countyPre = parseFloat(properties['precipitation']);
+            const countyTemp = parseFloat(properties['temperature']);
+
+
+            //Function to format percent
+            function formatPercent(value) {
+                value = value * 100;
+                return value.toFixed(0) + '%';
+            }
+
+            // Function to add commas as thousands separators
+            function addCommas(value) {
+                return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+            }
+            function formatTemp(value){
+                value=value.toFixed(2);
+                return value+"°F";
+            }
 
             nameDisplay.textContent = countyName;
-            costDisplay.textContent = countyCost;
-            elecDisplay.textContent = countyElec;
-            elevDisplay.textContent = countyElev;
-            popDisplay.textContent = countyPop;
-            preDisplay.textContent = countyPre;
-            tempDisplay.textContent = countyTemp;
+            costDisplay.textContent = formatPercent(countyCost);
+            elecDisplay.textContent = addCommas(countyElec);
+            elevDisplay.textContent = addCommas(countyElev);
+            popDisplay.textContent = addCommas(countyPop);
+            preDisplay.textContent = countyPre.toFixed(2);
+            tempDisplay.textContent = formatTemp(countyTemp);
             if (countyClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature in the 'county-data' layer
                 map.setFeatureState(
@@ -426,7 +458,7 @@ function DACMap(props) {
                 <hr className='name-line'/>
                 <div><strong>Cost Efficiency:</strong> <span id='cost'></span></div>
                 <div><strong>Electric:</strong> <span id='elec'></span></div>
-                <div><strong>Elevation:</strong> <span id='elev'></span></div>
+                <div><strong>Elevation in Feet:</strong> <span id='elev'></span></div>
                 <div><strong>Population:</strong> <span id='pop'></span></div>
                 <div><strong>Precipitation:</strong> <span id='pre'></span></div>
                 <div><strong>Temperature:</strong> <span id='temp'></span></div>
