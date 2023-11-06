@@ -104,6 +104,7 @@
     font-size: 16px;
     white-space: nowrap;
 }
+
 .info-section strong {
     font-weight: bold;
 }
@@ -114,20 +115,22 @@
     text-decoration: none;
     background-color: #007BFF;
     color: #fff;
-    padding: 8px 16px; /* Adjusted padding for a smaller button */
+    padding: 8px 16px;
     border-radius: 5px;
-    font-size: 14px; /* Adjusted font size for the button text */
+    font-size: 14px;
 }
 
 .info-section a:hover {
     background-color: #0056b3;
 }
-.state-name{
+
+.state-name {
     font-weight: bold;
     text-align: center;
 
 }
-.name-line{
+
+.name-line {
     width: 99%;
     margin: 10px auto;
 }

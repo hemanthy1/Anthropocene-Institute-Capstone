@@ -283,9 +283,10 @@ function DACMap(props) {
             function addCommas(value) {
                 return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
             }
-            function formatTemp(value){
-                value=value.toFixed(2);
-                return value+"°F";
+
+            function formatTemp(value) {
+                value = value.toFixed(2);
+                return value + "°F";
             }
 
 
@@ -407,9 +408,10 @@ function DACMap(props) {
             function addCommas(value) {
                 return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
             }
-            function formatTemp(value){
-                value=value.toFixed(2);
-                return value+"°F";
+
+            function formatTemp(value) {
+                value = value.toFixed(2);
+                return value + "°F";
             }
 
             nameDisplay.textContent = countyName;
