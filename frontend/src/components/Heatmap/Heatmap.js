@@ -191,22 +191,38 @@ function ChoroplethMap(props) {
             const properties = e.features[0].properties;
 
             // the current features properties
-            const countyName = properties['NAME'];
-            const countyCost = properties['cost'];
-            const countyLand = properties['land'];
-            const countyZ = properties['palmer'];
-            const countyPop = properties['population'];
-            const countyPre = properties['precipitation'];
-            const countyTemp = properties['temperature'];
+            const stateName = properties['NAME'];
+            const stateCost = parseFloat(properties['cost']);
+            const stateLand = parseFloat(properties['land']);
+            const stateZ = parseFloat(properties['palmer']);
+            const statePop = parseFloat(properties['population']);
+            const statePre = parseFloat(properties['precipitation']);
+            const stateTemp = parseFloat(properties['temperature']);
 
-            //display the property values
-            nameDisplay.textContent = countyName;
-            costDisplay.textContent = countyCost;
-            landDisplay.textContent = countyLand;
-            zDisplay.textContent = countyZ;
-            popDisplay.textContent = countyPop;
-            preDisplay.textContent = countyPre;
-            tempDisplay.textContent = countyTemp;
+            // Function to format currency with dollar sign and commas
+            function formatCurrency(value) {
+                return '$' + value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+            }
+
+            //Function to format percent
+            function formatPercent(value) {
+                value = value * 100;
+                return value.toFixed(0) + '%';
+            }
+
+            // Function to add commas as thousands separators
+            function addCommas(value) {
+                return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+            }
+
+            // Display the property values
+            nameDisplay.textContent = stateName;
+            costDisplay.textContent = formatPercent(stateCost);
+            landDisplay.textContent = formatCurrency(stateLand);
+            zDisplay.textContent = stateZ.toFixed(2);
+            popDisplay.textContent = addCommas(statePop);
+            preDisplay.textContent = statePre.toFixed(2);
+            tempDisplay.textContent = stateTemp.toFixed(2);
 
             if (stateClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature
@@ -299,20 +315,37 @@ function ChoroplethMap(props) {
 
             // the current features properties
             const countyName = properties['NAME'];
-            const countyCost = properties['cost'];
-            const countyLand = properties['land'];
-            const countyZ = properties['palmer'];
-            const countyPop = properties['population'];
-            const countyPre = properties['precipitation'];
-            const countyTemp = properties['temperature'];
+            const countyCost = parseFloat(properties['cost']);
+            const countyLand = parseFloat(properties['land']);
+            const countyZ = parseFloat(properties['palmer']);
+            const countyPop = parseFloat(properties['population']);
+            const countyPre = parseFloat(properties['precipitation']);
+            const countyTemp = parseFloat(properties['temperature']);
 
+            // Function to format currency with dollar sign and commas
+            function formatCurrency(value) {
+                return '$' + value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+            }
+
+            //Function to format percent
+            function formatPercent(value) {
+                value = value * 100;
+                return value.toFixed(0) + '%';
+            }
+            // Function to add commas as thousands separators
+            function addCommas(value) {
+                return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+            }
+
+            // Display the property values
             nameDisplay.textContent = countyName;
-            costDisplay.textContent = countyCost;
-            landDisplay.textContent = countyLand;
-            zDisplay.textContent = countyZ;
-            popDisplay.textContent = countyPop;
-            preDisplay.textContent = countyPre;
-            tempDisplay.textContent = countyTemp;
+            costDisplay.textContent = formatPercent(countyCost);
+            landDisplay.textContent = formatCurrency(countyLand);
+            zDisplay.textContent = countyZ.toFixed(2);
+            popDisplay.textContent = addCommas(countyPop);
+            preDisplay.textContent = countyPre.toFixed(2);
+            tempDisplay.textContent = countyTemp.toFixed(2);
+
             if (countyClickedPolygonId !== null) {
                 // Reset the state of the previously clicked feature in the 'county-data' layer
                 map.setFeatureState(
@@ -347,7 +380,8 @@ function ChoroplethMap(props) {
 
         <div ref={mapContainer} className="map-container">
             <div className='info-section'>
-                <div><strong>Name:</strong> <span id='name'></span></div>
+                <div className='state-name'><span id='name'></span></div>
+                <hr className='name-line'/>
                 <div><strong>Cost Efficiency:</strong> <span id='cost'></span></div>
                 <div><strong>Land prices:</strong> <span id='land'></span></div>
                 <div><strong>Palmer-z index:</strong> <span id='z'></span></div>

@@ -90,15 +90,44 @@
 
 .info-section {
     position: absolute;
-    font-family: sans-serif;
-    margin-top: 5px;
-    margin-left: 5px;
-    padding: 5px;
-    width: 30%;
-    border: 2px solid black;
-    font-size: 14px;
-    color: #222;
-    background-color: #fff;
-    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 15px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #f8f8f8;
     z-index: 1;
+    color: #333;
+    font-size: 16px;
+    white-space: nowrap;
+}
+.info-section strong {
+    font-weight: bold;
+}
+
+.info-section a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 16px; /* Adjusted padding for a smaller button */
+    border-radius: 5px;
+    font-size: 14px; /* Adjusted font size for the button text */
+}
+
+.info-section a:hover {
+    background-color: #0056b3;
+}
+.state-name{
+    font-weight: bold;
+    text-align: center;
+
+}
+.name-line{
+    width: 99%;
+    margin: 10px auto;
 }
