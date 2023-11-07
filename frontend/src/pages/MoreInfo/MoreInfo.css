@@ -9,28 +9,81 @@
     color: var(--secondary);
     font-size: clamp(12px, 3vw, 30px);
 }
-.type-title{
-    text-align: left;
-    padding-left: 2vw;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    color: var(--secondary);
-    font-size: clamp(12px, 3vw, 30px);
-}
+
 .more-info-line{
     margin-left: 2vw;
     width: 95vw;
 }
-.feature{
-    text-align: left;
-    padding-left: 2vw;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    color: var(--secondary);
-    font-size: clamp(9px, 3vw, 25px);
+
+.types {
+    margin-left: 2vw;
+    width: 95vw;
 }
 
+.types .type {
+    padding-top: 0;
+    background-color: #FFF;
+}
+
+.types .type .type-title {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.types .type .type-feature{
+
+    font-weight: 57;
+    font-family: Arial, sans-serif;
+    font-size: clamp(10px, 2vw, 24px);
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+
+}
+
+.feature-text-title {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #555;
+}
+.feature-text{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #777;
+}
+
+.types .type.open .type-title {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.types .type.open .type-feature {
+    font-weight: 57;
+    font-family: Arial, sans-serif;
+    font-size: clamp(10px, 2vw, 24px);
+    max-height: 1000px;
+    opacity: 1;
+}
+
+
+.line {
+    border-top: 1px solid #d3d3d3;
+    width: 100%;
+    margin: 10px 0;
+}
+#caret {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 5rem;
+
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}

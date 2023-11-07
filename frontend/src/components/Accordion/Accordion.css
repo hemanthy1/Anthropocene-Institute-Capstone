@@ -52,8 +52,8 @@
 }
 
 .line {
-    border-top: 1px solid #d3d3d3; /* Change to your desired line color */
-    width: 100%; /* Adjust the width of the line as needed */
+    border-top: 1px solid #d3d3d3;
+    width: 100%;
     margin: 10px 0;
 }
 
@@ -61,11 +61,11 @@
     width: 15px;
     height: 15px;
     position: absolute;
-    top: 0; /* Align to the top */
-    right: 10px; /* Align to the right */
+    top: 0;
+    right: 10px;
 
 }
 
 .rotate {
-    transform: rotate(180deg); /* Adjust the degree of rotation as needed */
+    transform: rotate(180deg); 
 }
