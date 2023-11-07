@@ -1,0 +1,36 @@
+.more-info-title{
+    text-align: left;
+    padding-left: 2vw;
+    padding-top:2vh;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    color: var(--secondary);
+    font-size: clamp(12px, 3vw, 30px);
+}
+.type-title{
+    text-align: left;
+    padding-left: 2vw;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    color: var(--secondary);
+    font-size: clamp(12px, 3vw, 30px);
+}
+.more-info-line{
+    margin-left: 2vw;
+    width: 95vw;
+}
+.feature{
+    text-align: left;
+    padding-left: 2vw;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    color: var(--secondary);
+    font-size: clamp(9px, 3vw, 25px);
+}
+
