@@ -1,14 +1,13 @@
 import React, {useState} from 'react'
 import "./MoreInfo.css"
 import caret from '../../assets/faqcaret.png'
-import faqcaret from "../../assets/faqcaret.png";
 
 
 /**
  * This function is the accordion that is on the FAQ page
- * @param faq is the question and answer being pushed through
+ * @param type is the question and answer being pushed through
  * @param index what number in the list of faws it is
- * @param toggleFAQ the current state of the faq
+ * @param toggleType the current state of the faq
  *
  * @returns {JSX.Element}
  *
@@ -37,11 +36,11 @@ function MoreInfoAccordion({type, index, toggleType}) {
  * @returns {JSX.Element}
  *
  */
-function CaretImage({ isOpen}) {
+function CaretImage({isOpen}) {
     const imageClass = isOpen ? 'caret-rotate' : '';
     return (
         <img
-            src={faqcaret}
+            src={caret}
             alt="caret Image"
             loading="lazy"
             id="caret"
@@ -78,17 +77,46 @@ function MoreInfo() {
             feature: (
                 <>
                     <div><strong className="feature-text-title">Cost Efficiency</strong></div>
-                    <div className="feature-text">The cost efficiency was found using our machine learning model...</div>
+                    <div className="feature-text">The cost efficiency was found using our machine learning model...
+                    </div>
                     <div><strong className="feature-text-title">Land prices</strong></div>
-                    <div className="feature-text">The land prices are in price per....</div>
-                    <div><strong className="feature-text-title">Palmer-Z Index</strong></div>
-                    <div className="feature-text">The plamer-z index is ___ and means ___...</div>
+                    <div className="feature-text">The land prices are based on the average cost of farm land per acre.
+                        The number displayed is the average for that county or state. This variable was taken into
+                        account
+                        for reforestation because in order to plant trees land needs to be purchased to plan the trees
+                        on
+                    </div>
+                    <div><strong className="feature-text-title">Palmer Z Index</strong></div>
+                    <div className="feature-text">The Palmer Z Index measures short-term drought conditions. This is
+                        typically
+                        a better estimate than the PDSI as the shorter time scales enables identification of rapidly
+                        developing
+                        drought conditions. It is sometimes referred to as the Moisture Anomaly Index, and the derived
+                        values provide
+                        comparable measure of the relative anomalies of a region for both dryness and wetness when
+                        compared to the
+                        entire record for that location. This was used as an indicator if the region is a good location
+                        to
+                        plant trees as trees need water to perform photosynthesis and be able to sequester carbon and
+                        stay alive.
+                    </div>
                     <div><strong className="feature-text-title">Population</strong></div>
-                    <div className="feature-text">The population per county...</div>
+                    <div className="feature-text">The population is the number of people per county or per state. This
+                        number gives a good indication if the region is highly developed or less developed. It would be
+                        difficult to implement reforestation in an area that is densely populated. It is also an
+                        indication
+                        that there would not be much available land to plant trees on. For these reason we took
+                        population into account
+                        when developing our machine learning model
+                    </div>
                     <div><strong className="feature-text-title">Precipitation</strong></div>
                     <div className="feature-text">the percipitation number is ...</div>
                     <div><strong className="feature-text-title">Temperature</strong></div>
-                    <div className="feature-text">The average temperature...</div>
+                    <div className="feature-text">The temperature is measured in degrees fahrenheit. This temperature
+                        give us an idea of the climate in that region. The best temperature for reforestation was found
+                        and used in
+                        our model to predict the best location for reforestation.
+                    </div>
                 </>
             ),
             open: true
@@ -99,17 +127,46 @@ function MoreInfo() {
             feature: (
                 <>
                     <div><strong className="feature-text-title">Cost Efficiency</strong></div>
-                    <div className="feature-text">The cost efficiency was found using our machine learning model...</div>
+                    <div className="feature-text">The cost efficiency was found using our machine learning model...
+                    </div>
                     <div><strong className="feature-text-title">Land prices</strong></div>
-                    <div className="feature-text">The land prices are in price per....</div>
-                    <div><strong className="feature-text-title">Palmer-Z Index</strong></div>
-                    <div className="feature-text">The plamer-z index is ___ and means ___...</div>
+                    <div className="feature-text">The land prices are based on the average cost of farm land per acre.
+                        The number displayed is the average for that county or state. This variable was taken into
+                        account
+                        for reforestation because in order to plant trees land needs to be purchased to plan the trees
+                        on
+                    </div>
+                    <div><strong className="feature-text-title">Palmer Z Index</strong></div>
+                    <div className="feature-text">The Palmer Z Index measures short-term drought conditions. This is
+                        typically
+                        a better estimate than the PDSI as the shorter time scales enables identification of rapidly
+                        developing
+                        drought conditions. It is sometimes referred to as the Moisture Anomaly Index, and the derived
+                        values provide
+                        comparable measure of the relative anomalies of a region for both dryness and wetness when
+                        compared to the
+                        entire record for that location. This was used as an indicator if the region is a good location
+                        to
+                        plant trees as trees need water to perform photosynthesis and be able to sequester carbon and
+                        stay alive.
+                    </div>
                     <div><strong className="feature-text-title">Population</strong></div>
-                    <div className="feature-text">The population per county...</div>
+                    <div className="feature-text">The population is the number of people per county or per state. This
+                        number gives a good indication if the region is highly developed or less developed. It would be
+                        difficult to implement reforestation in an area that is densely populated. It is also an
+                        indication
+                        that there would not be much available land to plant trees on. For these reason we took
+                        population into account
+                        when developing our machine learning model
+                    </div>
                     <div><strong className="feature-text-title">Precipitation</strong></div>
                     <div className="feature-text">the percipitation number is ...</div>
                     <div><strong className="feature-text-title">Temperature</strong></div>
-                    <div className="feature-text">The average temperature...</div>
+                    <div className="feature-text">The temperature is measured in degrees fahrenheit. This temperature
+                        give us an idea of the climate in that region. The best temperature for reforestation was found
+                        and used in
+                        our model to predict the best location for reforestation.
+                    </div>
                 </>
             ),
             open: false
@@ -119,17 +176,46 @@ function MoreInfo() {
             feature: (
                 <>
                     <div><strong className="feature-text-title">Cost Efficiency</strong></div>
-                    <div className="feature-text">The cost efficiency was found using our machine learning model...</div>
+                    <div className="feature-text">The cost efficiency was found using our machine learning model...
+                    </div>
                     <div><strong className="feature-text-title">Land prices</strong></div>
-                    <div className="feature-text">The land prices are in price per....</div>
-                    <div><strong className="feature-text-title">Palmer-Z Index</strong></div>
-                    <div className="feature-text">The plamer-z index is ___ and means ___...</div>
+                    <div className="feature-text">The land prices are based on the average cost of farm land per acre.
+                        The number displayed is the average for that county or state. This variable was taken into
+                        account
+                        for reforestation because in order to plant trees land needs to be purchased to plan the trees
+                        on
+                    </div>
+                    <div><strong className="feature-text-title">Palmer Z Index</strong></div>
+                    <div className="feature-text">The Palmer Z Index measures short-term drought conditions. This is
+                        typically
+                        a better estimate than the PDSI as the shorter time scales enables identification of rapidly
+                        developing
+                        drought conditions. It is sometimes referred to as the Moisture Anomaly Index, and the derived
+                        values provide
+                        comparable measure of the relative anomalies of a region for both dryness and wetness when
+                        compared to the
+                        entire record for that location. This was used as an indicator if the region is a good location
+                        to
+                        plant trees as trees need water to perform photosynthesis and be able to sequester carbon and
+                        stay alive.
+                    </div>
                     <div><strong className="feature-text-title">Population</strong></div>
-                    <div className="feature-text">The population per county...</div>
+                    <div className="feature-text">The population is the number of people per county or per state. This
+                        number gives a good indication if the region is highly developed or less developed. It would be
+                        difficult to implement reforestation in an area that is densely populated. It is also an
+                        indication
+                        that there would not be much available land to plant trees on. For these reason we took
+                        population into account
+                        when developing our machine learning model
+                    </div>
                     <div><strong className="feature-text-title">Precipitation</strong></div>
                     <div className="feature-text">the percipitation number is ...</div>
                     <div><strong className="feature-text-title">Temperature</strong></div>
-                    <div className="feature-text">The average temperature...</div>
+                    <div className="feature-text">The temperature is measured in degrees fahrenheit. This temperature
+                        give us an idea of the climate in that region. The best temperature for reforestation was found
+                        and used in
+                        our model to predict the best location for reforestation.
+                    </div>
                 </>
             ),
             open: false
