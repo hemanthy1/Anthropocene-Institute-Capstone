@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, Response
 from DatabaseConnector import connect_with_connector
 import sqlalchemy
 import os
@@ -12,7 +12,6 @@ INSTANCE_CONNECTION_NAME="carbon-mapp:us-east5:carbon-mapp"
 DB_USER="Uploader1"
 DB_PASS="Ubf:X$LI+{kRRiHz"
 DB_NAME="ForestationData"
-
 
 
 @app.route('/forestationstategeojson.geojson', methods=['GET'])
@@ -64,6 +63,17 @@ def get_forestationcountyjson():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route('/hardcode.geojson', methods=['GET'])
+def get_hardcodedjson():
+    try:
+        print("Current working directory:", os.getcwd())
+        with open('./hardcode.json', 'r') as json_file:
+            
+            data = json.load(json_file)
+        # Flask's jsonify function automatically sets the correct Content-Type for JSON
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 @app.route('/')
 def index():
