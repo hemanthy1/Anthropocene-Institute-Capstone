@@ -1,6 +1,6 @@
 import Heatmap from "../../components/Heatmap/Heatmap"
 
-import DACMap from "../../DACMap/DACMap";
+import DACMap from "../../components/DACMap/DACMap"
 
 import "./DirectAirCapture.css"
 
