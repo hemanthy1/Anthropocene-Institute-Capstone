@@ -28,18 +28,23 @@ function ChoroplethMap(props) {
       "pk.eyJ1IjoiamhvbHNjaDI5IiwiYSI6ImNsbjJjaWllNzAwcDQyam1wYnF6NHQ0Z24ifQ.TYll92t4SavsRHHFUhU-UA";
 
     const initializeMap = ({ setMap, mapContainer }) => {
+     
+
+      if (mapContainer && !mapContainer.current.classList.contains('mapboxgl-map')) {
       const newMap = new mapboxgl.Map({
         container: mapContainer.current,
         style: "mapbox://styles/mapbox/light-v11",
         center: [-98, 38.88],
-        minZoom: 2,
+        minZoom: 1,
         zoom: 2.2,
       });
 
       newMap.on("load", () => {
         setMap(newMap);
         newMap.resize();
+        
       });
+    }
     };
 
     if (!map) initializeMap({ setMap, mapContainer });
@@ -165,12 +170,42 @@ function ChoroplethMap(props) {
       }
 
       // });
-
+ 
       let stateHoveredPolygonId = null;
       let stateClickedPolygonId = null;
       let countyHoveredPolygonId = null;
       let countyClickedPolygonId = null;
-      //     // When the map is clicked display a popup
+      map.getCanvas().style.cursor = "pointer";
+      if (map.getLayer('state-data')) {
+
+
+
+      map.on("mousemove", "state-data",(e) => {
+        // console.log("hovering")
+        const properties = e.features[0].properties;
+
+        // the current features properties
+        const countyName = properties["NAME"];
+        if (stateHoveredPolygonId !== null) {
+          // Reset the state of the previously clicked feature
+          map.setFeatureState(
+            { source: "state", id: stateHoveredPolygonId },
+            { hover: false }
+
+          );
+        }
+
+        // Set the state of the clicked feature to 'click'
+        stateHoveredPolygonId = e.features[0].id;
+        if(stateHoveredPolygonId!==null){console.log(stateHoveredPolygonId)}
+        map.setFeatureState(
+          { source: "state", id: stateHoveredPolygonId },
+          { hover: true }
+        );
+        });
+        
+      // When the map is clicked display a popup
+
       map.on("click", "state-data", (e) => {
         // Commented out code that was used when we had the dropdown option
         //let dropdown = document.getElementById("dropdown");
@@ -233,13 +268,11 @@ function ChoroplethMap(props) {
             { click: false }
           );
         }
-        // map.on('mouseenter', 'state-data', () => {
-        //     map.getCanvas().style.cursor = 'pointer';
-        //     });
+
         // Set the state of the clicked feature to 'click'
         stateClickedPolygonId = e.features[0].id;
         if (stateClickedPolygonId !== null) {
-          console.log(e.features);
+          console.log(stateClickedPolygonId);
         }
         map.setFeatureState(
           { source: "state", id: stateClickedPolygonId },
@@ -247,38 +280,23 @@ function ChoroplethMap(props) {
         );
       });
 
-      map.on("mousemove", "state-data", (e) => {
-        const properties = e.features[0].properties;
+      
 
-        // the current features properties
-        const countyName = properties["NAME"];
-        if (stateHoveredPolygonId !== null) {
-          // Reset the state of the previously clicked feature
-          map.setFeatureState(
-            { source: "state", id: stateHoveredPolygonId },
-            { hover: false }
-          );
-        }
+        // map.on("mouseleave", "state-data", () => {
+        //   map.getCanvas().style.cursor = '';
+  
+        //   if (stateHoveredPolygonId !== null) {
+        //     map.setFeatureState(
+        //       { source: "state", id: stateHoveredPolygonId },
+        //       { hover: false }
+        //     );
+        //   }
+        //   stateHoveredPolygonId = null;
+        
+        //   map.getCanvas().style.cursor = '';
+        // });
 
-        // Set the state of the clicked feature to 'click'
-        stateHoveredPolygonId = e.features[0].id;
-        map.setFeatureState(
-          { source: "state", id: stateHoveredPolygonId },
-          { hover: true }
-        );
-      });
-
-      map.on("mouseleave", "state-data", () => {
-        // map.getCanvas().style.cursor = '';
-
-        if (stateHoveredPolygonId !== null) {
-          map.setFeatureState(
-            { source: "state", id: stateHoveredPolygonId },
-            { hover: false }
-          );
-        }
-        stateHoveredPolygonId = null;
-      });
+      
 
       // map.on('mousemove', 'county-data', (e) => {
       // if (countyHoveredPolygonId !== null) {
@@ -371,14 +389,15 @@ function ChoroplethMap(props) {
 
       // });
 
-      map.on("mouseenter", "state-data", () => {
-        map.getCanvas().style.cursor = "pointer";
-      });
+      // map.on("mouseenter", "state-data", () => {
+      //   map.getCanvas().style.cursor = "pointer";
+      // });
 
-      map.on("mouseleave", "state-data", () => {
-        map.getCanvas().style.cursor = "";
-      });
-    }
+      // map.on("mouseleave", "state-data", () => {
+      //   map.getCanvas().style.cursor = "";
+      // });
+    
+    
   }, [map, geojsonData]);
 
   return (
