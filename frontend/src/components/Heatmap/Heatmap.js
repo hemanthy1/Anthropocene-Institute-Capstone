@@ -396,9 +396,9 @@ function ChoroplethMap(props) {
       // map.on("mouseleave", "state-data", () => {
       //   map.getCanvas().style.cursor = "";
       // });
-    
-    
-  }, [map, geojsonData]);
+      
+    }
+  }}, [map, geojsonData]);
 
   return (
     <div ref={mapContainer} className="map-container">
@@ -876,3 +876,4 @@ export default ChoroplethMap;
 // }
 
 // export default ChoroplethMap;
+
