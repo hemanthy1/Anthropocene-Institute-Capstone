@@ -1,4 +1,4 @@
-import "../components/Heatmap/Heatmap.css"
+import "../../components/Heatmap/Heatmap.css"
 import React, {useState, useEffect, useRef} from 'react';
 import mapboxgl from 'mapbox-gl';
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
