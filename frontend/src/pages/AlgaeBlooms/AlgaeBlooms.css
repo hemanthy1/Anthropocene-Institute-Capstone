@@ -1,7 +1,8 @@
 .algaeblooms-banner-image {
     width: 100vw;
     height: 12.5vh;
-    background-image: url("../../assets/algae-bloom-banner-image.jpeg");
+    /* background-image: url("../../assets/algae-bloom-banner-image.jpeg"); */
+    background-image: url("../../assets/kelpfarmbanner.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,4 +17,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    /* --text-stroke: 1px black; */
 }

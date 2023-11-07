@@ -17,18 +17,18 @@ function AlgaeBlooms() {
 
   return (
     <>
-      <ReforestationBanner></ReforestationBanner>
+      <KelpFarmBanner></KelpFarmBanner>
       <Heatmap colors={colors} />
     </>
   );
 }
 
 
-function ReforestationBanner() {
+function KelpFarmBanner() {
   return (
       <div className="algaeblooms-banner-image">
           <div className="algaeblooms-banner-text">
-              <h1>Algae Blooms</h1>
+              <h1>Kelp Farms</h1>
               <p>Some text here about Algae Blooms probably, I'm not sure</p>
           </div>
       </div>
