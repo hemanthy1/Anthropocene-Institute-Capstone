@@ -404,7 +404,7 @@ function ChoroplethMap(props) {
     <div ref={mapContainer} className="map-container">
       <div className="info-section">
         <div className="state-name">
-          <span id="name"></span>
+          <span id="name"> Select a State or County </span>
         </div>
         <hr className="name-line" />
         <div>
