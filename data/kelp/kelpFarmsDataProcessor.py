@@ -12,8 +12,8 @@ import csv
 # 42 Temperature of pH measurement
 # 45 ph calculated 
 
-tmpFile = "cse498-anthropocene-institute\data\dac\kelpfarmsdata.csv"
-with open("cse498-anthropocene-institute\data\dac\CODAP_NA_v2021.csv", "r") as file, open(tmpFile, "w", newline='') as outFile:
+tmpFile = "kelpfarmsdata.csv"
+with open("CODAP_NA_v2021.csv", "r") as file, open(tmpFile, "w", newline='') as outFile:
     reader = csv.reader(file, delimiter=",")
     next(reader)
     next(reader)
@@ -22,6 +22,5 @@ with open("cse498-anthropocene-institute\data\dac\CODAP_NA_v2021.csv", "r") as f
     writer.writerow(new_header)
     
     for row in reader:
-        if row[45] != '-999':
-            vals = (row[15], row[16], row[17], row[20], row[21], row[29], row[30], row[42], row[45])
-            writer.writerow(vals)
+        vals = (row[15], row[16], row[17], row[20], row[21], row[29], row[30], row[42], row[45])
+        writer.writerow(vals)
