@@ -456,7 +456,7 @@ function DACMap(props) {
         <div ref={mapContainer} className="map-container">
 
             <div className='info-section'>
-                <div className='state-name'><span id='name'></span></div>
+                <div className='state-name'><span id='name'> Select a State or County </span></div>
                 <hr className='name-line'/>
                 <div><strong>Cost Efficiency:</strong> <span id='cost'></span></div>
                 <div><strong>Electric:</strong> <span id='elec'></span></div>
