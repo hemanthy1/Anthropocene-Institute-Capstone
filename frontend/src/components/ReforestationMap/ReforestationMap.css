@@ -134,3 +134,26 @@
     width: 99%;
     margin: 10px auto;
 }
+
+.loading-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    z-index: 10; /* Adjust if necessary to ensure it appears above the map */
+  
+}
+  
+  .map-container-wrapper {
+    position: relative;
+  }
+
+  loading-overlay img {
+    width: 50%; /* The GIF will scale based on the viewport width, 10% of the viewport width */
+    height:auto;
+}
