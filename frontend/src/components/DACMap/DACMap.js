@@ -318,8 +318,6 @@ function DACMap(props) {
         map.on('mousemove', 'state-data', (e) => {
             const properties = e.features[0].properties;
 
-            // the current features properties
-            const countyName = properties['NAME'];
             if (stateHoveredPolygonId !== null) {
                 // Reset the state of the previously clicked feature
                 map.setFeatureState(
