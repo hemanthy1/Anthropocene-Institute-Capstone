@@ -17,7 +17,7 @@ def GeoJSONStateList():
     listofJSONS=[]
 
     # file path variables
-    data_file = "backend/Reforestation/reforestation.csv"
+    data_file = "backend/Reforestation/reforestation_class.csv"
 
 
     # Open the json copyfile and store the json in a python object
@@ -55,11 +55,11 @@ def GeoJSONStateList():
 
 
 def GeoJSONCountyList():
-    stateJsonFile = "backend/counties.json"
+    stateJsonFile = "backend/geoJsonOutputs/countyData/countyReforestation.json"
     listofJSONS=[]
 
     # file path variables
-    data_file = "backend/Reforestation/reforestation.csv"
+    data_file = "backend/Reforestation/reforestation_class.csv"
 
 
     # Open the json copyfile and store the json in a python object
@@ -174,17 +174,31 @@ def UpdateStatesDB():
 
 
     with engine.connect() as connection:
-        # TO INSERT INTO TABLE
-        # for i in range(len(JSONList)):
-        #     data_to_insert = JSONList[i]
-        #     connection.execute(GeoData.insert(), data_to_insert)
-        #     connection.commit()
-        
-        # To see data in table
-        # result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
-        # for row in result:
-        #     print(len(row[1]))  
-        print()
+        delete_stmt = sqlalchemy.text("DELETE FROM states_table")
+        connection.execute(delete_stmt)
+
+        # Now, insert new data into the table
+        for data_to_insert in JSONList:
+            connection.execute(GeoData.insert(), data_to_insert)
+
+        # Commit the transaction to save the changes to the database
+        connection.commit()
+
+        # To see data in table (optional)
+        result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
+        for row in result:
+            print(len(row[1]))
+            # TO INSERT INTO TABLE
+            # for i in range(len(JSONList)):
+            #     data_to_insert = JSONList[i]
+            #     connection.execute(GeoData.insert(), data_to_insert)
+            #     connection.commit()
+            
+            # To see data in table
+            # result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
+            # for row in result:
+            #     print(len(row[1]))  
+            print()
 
 
 def UpdateCountiesDB():
@@ -201,25 +215,36 @@ def UpdateCountiesDB():
     # TO CREATE TABLE
     GeoData.create(engine, checkfirst=True)  # checkfirst ensures the table is only created if it doesn't exist
 
-    JSONList=GeoJSONStateList()
+    JSONList=GeoJSONCountyList()
 
 
     with engine.connect() as connection:
-        # TO INSERT INTO TABLE
-        # for i in range(len(JSONList)):
-        #     data_to_insert = JSONList[i]
-        #     connection.execute(GeoData.insert(), data_to_insert)
-        #     connection.commit()
-        
-        # To see data in table
-        result = connection.execute(sqlalchemy.text("SELECT * FROM counties_table"))
-        count=0
-        for row in result:
-            print(row)
-        print(count)
+        delete_stmt = sqlalchemy.text("DELETE FROM counties_table")
+        connection.execute(delete_stmt)
 
+        # Now, insert new data into the table
+        for data_to_insert in JSONList:
+            connection.execute(GeoData.insert(), data_to_insert)
+
+        # Commit the transaction to save the changes to the database
+        connection.commit()
+
+        # To see data in table (optional)
+        result = connection.execute(sqlalchemy.text("SELECT * FROM counties_table"))
+        for row in result:
+            print(len(row[1]))
+            # TO INSERT INTO TABLE
+            # for i in range(len(JSONList)):
+            #     data_to_insert = JSONList[i]
+            #     connection.execute(GeoData.insert(), data_to_insert)
+            #     connection.commit()
+            
+            # To see data in table
+            # result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
+            # for row in result:
+            #     print(len(row[1]))  
 
 
 if __name__ == "__main__":
-    UpdateStatesDB()
+    # UpdateStatesDB()
     UpdateCountiesDB()

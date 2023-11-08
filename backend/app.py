@@ -5,8 +5,10 @@ import os
 from google.oauth2.credentials import Credentials
 from collections import OrderedDict
 import json
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 INSTANCE_CONNECTION_NAME="carbon-mapp:us-east5:carbon-mapp" 
 DB_USER="Uploader1"
@@ -59,6 +61,7 @@ def get_forestationcountyjson():
                 ])
                 json_data["features"].append(feature)
         json_format=json.dumps(json_data)
+
         return json_format
     except Exception as e:
         return jsonify({"error": str(e)}), 500

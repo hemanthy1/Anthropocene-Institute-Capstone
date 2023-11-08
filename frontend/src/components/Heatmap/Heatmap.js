@@ -7,6 +7,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import { Link } from "react-router-dom";
 
+
 function ChoroplethMap(props) {
   const mapContainer = useRef(null);
   const [map, setMap] = useState(null);
@@ -16,11 +17,12 @@ function ChoroplethMap(props) {
 
   // Fetch GeoJSON data
   useEffect(() => {
-    fetch("http://34.42.91.15/hardcode.geojson")
+    fetch("http://34.41.148.85/forestationstategeojson.geojson")
       .then((response) => response.json())
       .then((data) => setGeojsonData(data))
       .catch((error) => console.error("Error fetching GeoJSON:", error));
   }, []);
+  
 
   // Initialize the map
   useEffect(() => {
@@ -207,6 +209,8 @@ function ChoroplethMap(props) {
       // When the map is clicked display a popup
 
       map.on("click", "state-data", (e) => {
+
+
         // Commented out code that was used when we had the dropdown option
         //let dropdown = document.getElementById("dropdown");
         //let title = dropdown.options[dropdown.selectedIndex].text
@@ -222,6 +226,7 @@ function ChoroplethMap(props) {
         const popDisplay = document.getElementById("pop");
         const preDisplay = document.getElementById("pre");
         const tempDisplay = document.getElementById("temp");
+        
 
         // the properties of the feature
         const properties = e.features[0].properties;
@@ -278,23 +283,24 @@ function ChoroplethMap(props) {
           { source: "state", id: stateClickedPolygonId },
           { click: true }
         );
+        
       });
 
       
 
-        // map.on("mouseleave", "state-data", () => {
-        //   map.getCanvas().style.cursor = '';
+        map.on("mouseleave", "state-data", () => {
+          map.getCanvas().style.cursor = '';
   
-        //   if (stateHoveredPolygonId !== null) {
-        //     map.setFeatureState(
-        //       { source: "state", id: stateHoveredPolygonId },
-        //       { hover: false }
-        //     );
-        //   }
-        //   stateHoveredPolygonId = null;
+          if (stateHoveredPolygonId !== null) {
+            map.setFeatureState(
+              { source: "state", id: stateHoveredPolygonId },
+              { hover: false }
+            );
+          }
+          stateHoveredPolygonId = null;
         
-        //   map.getCanvas().style.cursor = '';
-        // });
+          map.getCanvas().style.cursor = '';
+        });
 
       
 
@@ -404,7 +410,7 @@ function ChoroplethMap(props) {
     <div ref={mapContainer} className="map-container">
       <div className="info-section">
         <div className="state-name">
-          <span id="name"> Select a State or County </span>
+          <span id="name"></span>
         </div>
         <hr className="name-line" />
         <div>
@@ -480,6 +486,7 @@ function ChoroplethMap(props) {
 }
 
 export default ChoroplethMap;
+
 
 // function ChoroplethMap(props) {
 
