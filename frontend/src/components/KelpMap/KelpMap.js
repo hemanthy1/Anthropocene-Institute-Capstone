@@ -125,7 +125,7 @@ function KelpMap(props) {
 
             function formatTemp(value) {
                 value = value.toFixed(2);
-                return value + "°F";
+                return value + "°C";
             }
 
             // Function to format lat and long coords
@@ -152,34 +152,34 @@ function KelpMap(props) {
                 {click: true}
             );
 
-        map.on('mousemove', 'kelp-data', (e) => {
+            map.on('mousemove', 'kelp-data', (e) => {
 
-            if (stateHoveredPolygonId !== null) {
-                // Reset the state of the previously clicked feature
+                if (stateHoveredPolygonId !== null) {
+                    // Reset the state of the previously clicked feature
+                    map.setFeatureState(
+                        {source: 'kelp', id: stateHoveredPolygonId},
+                        {hover: false}
+                    );
+                }
+
+                // Set the state of the clicked feature to 'click'
+                stateHoveredPolygonId = e.features[0].id;
                 map.setFeatureState(
-                    {source: 'kelp',id: stateHoveredPolygonId},
-                    {hover: false}
+                    {source: 'kelp', id: stateHoveredPolygonId},
+                    {hover: true}
                 );
-            }
 
-            // Set the state of the clicked feature to 'click'
-            stateHoveredPolygonId = e.features[0].id;
-            map.setFeatureState(
-                {source: 'kelp', id: stateHoveredPolygonId},
-                {hover: true}
-            );
+            });
 
-        });
-
-        map.on('mouseleave', 'kelp-data', () => {
-            if (stateHoveredPolygonId !== null) {
-                map.setFeatureState(
-                    {source: 'kelp',  id: stateHoveredPolygonId},
-                    {hover: false}
-                );
-            }
-            stateHoveredPolygonId = null;
-        });
+            map.on('mouseleave', 'kelp-data', () => {
+                if (stateHoveredPolygonId !== null) {
+                    map.setFeatureState(
+                        {source: 'kelp', id: stateHoveredPolygonId},
+                        {hover: false}
+                    );
+                }
+                stateHoveredPolygonId = null;
+            });
         });
     }, []);
 
