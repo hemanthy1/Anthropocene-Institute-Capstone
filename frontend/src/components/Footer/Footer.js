@@ -27,7 +27,7 @@ function Footer() {
                 <div className="col">
                     <ul className="names">
                         <li className="title">Tools</li>
-                        <li className="link"><a href="/algaeblooms">Algae</a></li>
+                        <li className="link"><a href="/kelpfarms">KelpFarms</a></li>
                         <li className="link"><a href="/reforestation">Reforestation</a></li>
                         <li className="link"><a href="/dac">Direct Air Capture</a></li>
                     </ul>

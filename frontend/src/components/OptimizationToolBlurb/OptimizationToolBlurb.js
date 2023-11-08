@@ -21,7 +21,7 @@ function OptimizationToolBlurb() {
                     <AlgaeBloomMapImage/>
                 </div>
                 <div className="colRight">
-                    <Link to="algaeblooms">
+                    <Link to="kelpfarms">
                         <h2 className="toolTitle">Kelp Farms</h2>
                     </Link>
                     <AlgaeBloomText/>
@@ -66,7 +66,7 @@ function OptimizationToolBlurb() {
  */
 function AlgaeBloomMapImage() {
     return (
-        <Link to="/algaeblooms">
+        <Link to="/kelpfarms">
             <img
                 src={algaeBloomMapImage}
                 alt="Algae Bloom Map Image"

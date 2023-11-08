@@ -1,7 +1,7 @@
 import KelpMap from "../../components/KelpMap/KelpMap"
-import "./AlgaeBlooms.css"
+import "./KelpFarms.css"
 
-function AlgaeBlooms() {
+function KelpFarms() {
 
   const colors =  {
     color0: "#ffffff",
@@ -34,4 +34,4 @@ function KelpFarmBanner() {
   )
 }
 
-export default AlgaeBlooms
+export default KelpFarms

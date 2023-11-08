@@ -12,7 +12,6 @@ function DACMap(props) {
 
     const mapContainer = useRef(null);
     const [legendDisplay] = useState('block');
-    const [dropdownDisplay] = useState('block');
     const zoomThreshold = 3;
 
 
@@ -316,7 +315,6 @@ function DACMap(props) {
         });
 
         map.on('mousemove', 'state-data', (e) => {
-            const properties = e.features[0].properties;
 
             if (stateHoveredPolygonId !== null) {
                 // Reset the state of the previously clicked feature

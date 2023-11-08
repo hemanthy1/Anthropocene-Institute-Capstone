@@ -12,7 +12,6 @@ function KelpMap(props) {
 
     const mapContainer = useRef(null);
     const [legendDisplay] = useState('block');
-    const [dropdownDisplay] = useState('block');
     const zoomThreshold = 3;
 
 
@@ -133,7 +132,7 @@ function KelpMap(props) {
             function formatCoordinates(lat, long) {
                 return `Lat: ${lat.toFixed(4)}°, Long: ${long.toFixed(2)}°`;
             }
-            
+
             nameDisplay.textContent = formatCoordinates(kelpLat, kelpLong)
             locDisplay.textContent = formatPercent(kelpLoc);
             depthDisplay.textContent = addCommas(kelpDepth);
@@ -154,7 +153,6 @@ function KelpMap(props) {
             );
 
         map.on('mousemove', 'kelp-data', (e) => {
-            const properties = e.features[0].properties;
 
             if (stateHoveredPolygonId !== null) {
                 // Reset the state of the previously clicked feature
