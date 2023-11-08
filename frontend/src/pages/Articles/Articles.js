@@ -2,7 +2,7 @@ import React from 'react'
 import "./Articles.css"
 import ArticleLink from '../../components/ArticleLink/ArticleLink'
 import article1 from '../../assets/article1.jpeg'
-import article2 from '../../assets/article2.webp'
+import article2 from '../../assets/article2.jpeg'
 import article3 from '../../assets/article3.webp'
 import article4 from "../../assets/article4.png"
 import article5 from "../../assets/article5.jpeg"
@@ -15,7 +15,7 @@ function Articles() {
 
   const links = {
     link1: "https://www.wri.org/insights/direct-air-capture-resource-considerations-and-costs-carbon-removal",
-    link2: "https://aggietranscript.ucdavis.edu/not-all-heroes-wear-capes-how-algae-could-help-us-fight-climate-change/",
+    link2: "https://earth.org/kelp-forests-carbon-sequestration",
     link3: "https://www.american.edu/sis/centers/carbon-removal/fact-sheet-forestation.cfm",
     link4: "https://anthinst003.wpengine.com/about/",
     link5: "https://oceanacidification.noaa.gov/carbon-dioxide-removal/",
@@ -30,7 +30,7 @@ function Articles() {
         Direct Air Capture - Learn More!
       </ArticleLink>
       <ArticleLink link={links.link2} image={article2}>
-        Algae Blooms - Learn More!
+        Kelp Farms - Learn More!
       </ArticleLink>
       <ArticleLink link={links.link3} image={article3}>
         Reforestation - Learn More!
