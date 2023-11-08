@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Accordion from "../../components/Accordion/Accordion";
-import  "../../components/Accordion/Accordion.css";
+import "../../components/Accordion/Accordion.css";
 
 
 /**
@@ -9,64 +9,76 @@ import  "../../components/Accordion/Accordion.css";
  * @returns The contents of the FAQ page
  */
 function Faq() {
-  const[faqs,setfaqs]= useState([
-    {
+    const [faqs, setfaqs] = useState([
+        {
 
-      question: 'What is the Anthropocene Institute and what do they do? ',
-      answer: 'Anthropocene Institute is an organization founded by Carl Page' +
-          ' in 2012 and is focused on making Earth sustainable by knowing and investing' +
-          ' in the right technology. They partner with entrepreneurs, investors, ' +
-          'governments, non-profits, and universities to foster science, influence policy,' +
-          ' promote sustainability, clean energy, and more.',
-      open: true
+            question: 'What is the Anthropocene Institute and what do they do? ',
+            answer: 'Anthropocene Institute is an organization founded by Carl Page' +
+                ' in 2012 and is focused on making Earth sustainable by knowing and investing' +
+                ' in the right technology. They partner with entrepreneurs, investors, ' +
+                'governments, non-profits, and universities to foster science, influence policy,' +
+                ' promote sustainability, clean energy, and more.',
+            open: true
 
-    },
-    {
-      question: 'Why Carbon Dioxide removal? ',
-      answer: 'As climate change has become more serious of an issue over time, it has ' +
-          'become increasingly beneficial for companies and organizations to invest in ' +
-          'lowering their carbon footprint. For example, one forth of the Fortune 500 companies' +
-          ' have pledged to become carbon neutral by 2030. Investing in carbon removal' +
-          ' technology is hard enough for the worlds biggest companies, but smaller organizations' +
-          ' often don\'t have the time or resources to effectively do so',
-      open: false
-    },
-    {
-      question: 'How was Carbon Mapp developed?',
-      answer: 'Carbon Mapp is a web application which utilizes Python machine learning' +
-          ' libraries, publicly available data, and the Mapbox JavaScript API to generate ' +
-          'the heatmaps',
-      open: false
+        },
+        {
+            question: 'Why Carbon Dioxide removal? ',
+            answer: 'As climate change has become more serious of an issue over time, it has ' +
+                'become increasingly beneficial for companies and organizations to invest in ' +
+                'lowering their carbon footprint. For example, one forth of the Fortune 500 companies' +
+                ' have pledged to become carbon neutral by 2030. Investing in carbon removal' +
+                ' technology is hard enough for the worlds biggest companies, but smaller organizations' +
+                ' often don\'t have the time or resources to effectively do so',
+            open: false
+        },
+        {
+            question: 'How was Carbon Mapp developed?',
+            answer: 'Carbon Mapp is a web application which utilizes Python machine learning' +
+                ' libraries, publicly available data, and the Mapbox JavaScript API to generate ' +
+                'the heatmaps',
+            open: false
 
+        },
+        {
+            question: 'How is the relative efficiency calculated and what does it mean?',
+            answer: 'Info on relative efficiency -- pull from what we put on the more info page --',
+            open: false
+
+        },
+        {
+            question: 'Where was the data collected from ?',
+            answer: '--add link to the data page-- ',
+            open: false
+
+        }
+
+    ])
+
+    /**
+     * Toggles the faq when needed. This will display the answer when clicked on
+     *
+     * @returns The faq with a new state of open or closed
+     */
+    const toggleFAQ = index => {
+        setfaqs(faqs.map((faq, i) => {
+            if (i === index) {
+                faq.open = !faq.open
+            } else {
+                faq.open = false;
+            }
+            return faq;
+        }))
     }
-
-  ])
-
-  /**
-   * Toggles the faq when needed. This will display the answer when clicked on
-   *
-   * @returns The faq with a new state of open or closed
-  */
-  const toggleFAQ = index =>{
-    setfaqs(faqs.map((faq, i) => {
-      if (i===index){
-        faq.open = !faq.open
-      }else{
-        faq.open=false;
-      }
-      return faq;
-    }))
-  }
-  return (
-      <div className="faqs">
-        <div>
-          <h1 className="faqTitle">FAQs</h1>
+    return (
+        <div className="faqs">
+            <div>
+                <h1 className="faqTitle">FAQs</h1>
+            </div>
+            {faqs.map((faq, i) => (
+                <Accordion key={i} faq={faq} index={i} toggleFAQ={toggleFAQ}/>
+            ))}
         </div>
-        {faqs.map((faq,i) => (
-            <Accordion key={i} faq={faq} index={i} toggleFAQ={toggleFAQ} />
-        )) }
-      </div>
-  )
+    )
 }
 
 
