@@ -1,8 +1,7 @@
-import "./ReforestationMap.css";
+import "./Heatmap.css";
 import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
-import loadingSpinner from '../loading.gif'; // Adjust the path as necessary
 
 import "mapbox-gl/dist/mapbox-gl.css";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
@@ -13,15 +12,23 @@ function ChoroplethMap(props) {
   const mapContainer = useRef(null);
   const [map, setMap] = useState(null);
   const zoomThreshold = 3;
+  const [geojsonData, setGeojsonData] = useState(null);
   const [legendDisplay] = useState("block");
-  const [isLoading, setIsLoading] = useState(false); // New loading state
+
+  // Fetch GeoJSON data
+  useEffect(() => {
+    fetch("http://34.41.148.85/forestationstategeojson.geojson")
+      .then((response) => response.json())
+      .then((data) => setGeojsonData(data))
+      .catch((error) => console.error("Error fetching GeoJSON:", error));
+  }, []);
+  
 
   // Initialize the map
   useEffect(() => {
     mapboxgl.accessToken =
       "pk.eyJ1IjoiamhvbHNjaDI5IiwiYSI6ImNsbjJjaWllNzAwcDQyam1wYnF6NHQ0Z24ifQ.TYll92t4SavsRHHFUhU-UA";
 
-      
     const initializeMap = ({ setMap, mapContainer }) => {
      
 
@@ -47,21 +54,14 @@ function ChoroplethMap(props) {
 
   // Load GeoJSON into the map
   useEffect(() => {
-    if (map) {
-      
+    if (map && geojsonData) {
       if (map.getSource("state")) {
         // If it does, update its data
-        map.getSource("state").setData("http://34.41.148.85/forestationstategeojson.geojson");
-      
-      }
-      if (map.getSource("county")) {
-        // If it does, update its data
-        map.getSource("county").setData("http://34.41.148.85/forestationcountygeojson.geojson");
-      }
-      if(!map.getSource("state")) {
+        map.getSource("state").setData(geojsonData);
+      } else {
         map.addSource("state", {
           type: "geojson",
-          data: "http://34.41.148.85/forestationstategeojson.geojson",
+          data: geojsonData,
           promoteId: "NAME",
         });
 
@@ -105,6 +105,45 @@ function ChoroplethMap(props) {
           },
         });
 
+        //             map.addLayer({
+        //                 id: 'county-data',
+        //                 source: 'county',
+        //                 'source-layer': 'countyReforestation-dszxt3',  // vector tileset name
+        //                 minzoom: zoomThreshold,
+        //                 type: 'fill',
+        //                 filter: ['==', 'isState', "no"],
+        //                 paint: {
+        //                     'fill-color': [
+        //                         'case',
+        //                         ['boolean', ['feature-state', 'hover'], false],
+        //                         '#ffe37a', // Color to use when the condition is true (clicked)
+        //                         ['boolean', ['feature-state', 'click'], false],
+        //                         '#ffe37a', // Color to use when the condition is true (clicked)
+        //                         [
+        //                             'interpolate',
+        //                             ['linear'],
+        //                             ['get', 'class'],
+        //                             0,
+        //                             props.colors.color0,
+        //                             1,
+        //                             props.colors.color1,
+        //                             2,
+        //                             props.colors.color2,
+        //                             3,
+        //                             props.colors.color3,
+        //                             4,
+        //                             props.colors.color4,
+        //                             5,
+        //                             props.colors.color5,
+        //                             6,
+        //                             props.colors.color6,
+        //                             7,
+        //                             props.colors.color7
+        //                         ] // Default color based on the 'class' property
+        //                     ],
+        //                     'fill-opacity': .85,
+        //                 },
+        //             });
 
         // define boundary lines for states so that
         // divisions are always obvious regardless of zoom
@@ -131,76 +170,16 @@ function ChoroplethMap(props) {
         // }
         // });
       }
-      if(!map.getSource("county")) {
-        setIsLoading(true);
-
-        map.addSource("county", {
-          type: "geojson",
-          data: "http://34.41.148.85/forestationcountygeojson.geojson",
-          promoteId: "GEO_ID",
-        });
-                    map.addLayer({
-                        id: 'county-data',
-                        source: 'county',
-                        // 'source-layer': 'countyReforestation-dszxt3',  // vector tileset name
-                        minzoom: zoomThreshold,
-                        type: 'fill',
-                        filter: ['==', 'isState', "no"],
-                        paint: {
-                            'fill-color': [
-                                'case',
-                                ['boolean', ['feature-state', 'hover'], false],
-                                '#ffe37a', // Color to use when the condition is true (clicked)
-                                ['boolean', ['feature-state', 'click'], false],
-                                '#ffe37a', // Color to use when the condition is true (clicked)
-                                [
-                                    'interpolate',
-                                    ['linear'],
-                                    ['get', 'class'],
-                                    0,
-                                    props.colors.color0,
-                                    1,
-                                    props.colors.color1,
-                                    2,
-                                    props.colors.color2,
-                                    3,
-                                    props.colors.color3,
-                                    4,
-                                    props.colors.color4,
-                                    5,
-                                    props.colors.color5,
-                                    6,
-                                    props.colors.color6,
-                                    7,
-                                    props.colors.color7
-                                ] // Default color based on the 'class' property
-                            ],
-                            'fill-opacity': .85,
-                        },
-                    });
-                    map.addLayer({
-        id: 'county-boundaries',
-        source: 'county',
-        // 'source-layer': 'countyReforestation-dszxt3',
-        type: 'line',
-        paint: {
-            'line-color': '#000',
-            'line-width': .1
-        }
-        });
-      }
 
       // });
-     
-      
+ 
       let stateHoveredPolygonId = null;
       let stateClickedPolygonId = null;
       let countyHoveredPolygonId = null;
       let countyClickedPolygonId = null;
       map.getCanvas().style.cursor = "pointer";
-      map.once('idle', () => {setIsLoading(false)});
-
       if (map.getLayer('state-data')) {
+
 
 
       map.on("mousemove", "state-data",(e) => {
@@ -325,112 +304,114 @@ function ChoroplethMap(props) {
 
       
 
-      map.on('mousemove', 'county-data', (e) => {
-      if (countyHoveredPolygonId !== null) {
-      // Reset the state of the previously clicked feature in the 'county-data' layer
-      map.setFeatureState(
-          {source: 'county', id: countyHoveredPolygonId},
-          {hover: false}
-      );
-      }
+      // map.on('mousemove', 'county-data', (e) => {
+      // if (countyHoveredPolygonId !== null) {
+      // // Reset the state of the previously clicked feature in the 'county-data' layer
+      // map.setFeatureState(
+      //     {source: 'county', id: countyHoveredPolygonId},
+      //     {hover: false}
+      // );
+      // }
 
       // Set the state of the hovered feature in the 'county-data' layer to 'hover'
-      countyHoveredPolygonId = e.features[0].id;
-      map.setFeatureState(
-      {source: 'county', id: countyHoveredPolygonId},
-      {hover: true}
-      );
-      });
-      map.on('mouseleave', 'county-data', () => {
-      if (countyHoveredPolygonId !== null) {
-      map.setFeatureState(
-          {source: 'county',  id: countyHoveredPolygonId},
-          {hover: false}
-      );
-      }
-      countyHoveredPolygonId = null;
-      });
+      // countyHoveredPolygonId = e.features[0].id;
+      // map.setFeatureState(
+      // {source: 'county', id: countyHoveredPolygonId},
+      // {hover: true}
+      // );
+      // // });
+      // map.on('mouseleave', 'county-data', () => {
+      // if (countyHoveredPolygonId !== null) {
+      // map.setFeatureState(
+      //     {source: 'county',  id: countyHoveredPolygonId},
+      //     {hover: false}
+      // );
+      // }
+      // countyHoveredPolygonId = null;
+      // });
       // When the map is clicked display a popup
-      map.on('click', 'county-data', (e) => {
+      // map.on('click', 'county-data', (e) => {
 
       // // the span elements used in the sidebar
-      const nameDisplay = document.getElementById('name');
-      const costDisplay = document.getElementById('cost');
-      const landDisplay = document.getElementById('land');
-      const zDisplay = document.getElementById('z');
-      const popDisplay = document.getElementById('pop');
-      const preDisplay = document.getElementById('pre');
-      const tempDisplay = document.getElementById('temp');
+      // const nameDisplay = document.getElementById('name');
+      // const costDisplay = document.getElementById('cost');
+      // const landDisplay = document.getElementById('land');
+      // const zDisplay = document.getElementById('z');
+      // const popDisplay = document.getElementById('pop');
+      // const preDisplay = document.getElementById('pre');
+      // const tempDisplay = document.getElementById('temp');
 
       // // the properties of the feature
-      const properties = e.features[0].properties;
+      // const properties = e.features[0].properties;
 
       // // the current features properties
-      const countyName = properties['NAME'];
-      const countyCost = parseFloat(properties['cost']);
-      const countyLand = parseFloat(properties['land']);
-      const countyZ = parseFloat(properties['palmer']);
-      const countyPop = parseFloat(properties['population']);
-      const countyPre = parseFloat(properties['precipitation']);
-      const countyTemp = parseFloat(properties['temperature']);
+      // const countyName = properties['NAME'];
+      // const countyCost = parseFloat(properties['cost']);
+      // const countyLand = parseFloat(properties['land']);
+      // const countyZ = parseFloat(properties['palmer']);
+      // const countyPop = parseFloat(properties['population']);
+      // const countyPre = parseFloat(properties['precipitation']);
+      // const countyTemp = parseFloat(properties['temperature']);
 
       // // Function to format currency with dollar sign and commas
-      function formatCurrency(value) {
-      return '$' + value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
-      }
+      // function formatCurrency(value) {
+      // return '$' + value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+      // }
 
       // //Function to format percent
-      function formatPercent(value) {
-      value = value * 100;
-      return value.toFixed(0) + '%';
-      }
-      // Function to add commas as thousands separators
-      function addCommas(value) {
-      return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
-      }
+      // function formatPercent(value) {
+      // value = value * 100;
+      // return value.toFixed(0) + '%';
+      // }
+      // // Function to add commas as thousands separators
+      // function addCommas(value) {
+      // return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+      // }
 
       // // Display the property values
-      nameDisplay.textContent = countyName;
-      costDisplay.textContent = formatPercent(countyCost);
-      landDisplay.textContent = formatCurrency(countyLand);
-      zDisplay.textContent = countyZ.toFixed(2);
-      popDisplay.textContent = addCommas(countyPop);
-      preDisplay.textContent = countyPre.toFixed(2);
-      tempDisplay.textContent = countyTemp.toFixed(2);
+      // nameDisplay.textContent = countyName;
+      // costDisplay.textContent = formatPercent(countyCost);
+      // landDisplay.textContent = formatCurrency(countyLand);
+      // zDisplay.textContent = countyZ.toFixed(2);
+      // popDisplay.textContent = addCommas(countyPop);
+      // preDisplay.textContent = countyPre.toFixed(2);
+      // tempDisplay.textContent = countyTemp.toFixed(2);
 
-          map.setFeatureState(
-          {source: 'county',  id: countyClickedPolygonId},
-          {click: false}
-      );
-      
+      // if (countyClickedPolygonId !== null) {
+      // // Reset the state of the previously clicked feature in the 'county-data' layer
+      // map.setFeatureState(
+      //     {source: 'county',  id: countyClickedPolygonId},
+      //     {click: false}
+      // );
+      // }
 
-      countyClickedPolygonId = e.features[0].id;
+      // // Set the state of the clicked feature in the 'county-data' layer to 'click'
+      // countyClickedPolygonId = e.features[0].id;
 
-      map.setFeatureState(
-      {source: 'county',  id: countyClickedPolygonId},
-      {click: true}
-      );
+      // map.setFeatureState(
+      // {source: 'county',  id: countyClickedPolygonId},
+      // {click: true}
+      // );
 
-      });
+      // });
 
-      map.on("mouseenter", "state-data", () => {
-        map.getCanvas().style.cursor = "pointer";
-      });
+      // map.on("mouseenter", "state-data", () => {
+      //   map.getCanvas().style.cursor = "pointer";
+      // });
 
-      map.on("mouseleave", "state-data", () => {
-        map.getCanvas().style.cursor = "";
-      });
+      // map.on("mouseleave", "state-data", () => {
+      //   map.getCanvas().style.cursor = "";
+      // });
       
     }
-  }}, [map, "http://34.41.148.85/forestationstategeojson.geojson"]);
+  }}, [map, geojsonData]);
 
   return (
-    <div className="map-container-wrapper">
-    {isLoading && (
-      <div className="loading-overlay">
-        <img src={loadingSpinner} alt="Loading..." />
-      </div>
-    )}
+    <div>
+    {isLoading && <div className="loading-overlay">Loading...
+    
+    </div>} 
+    
     <div ref={mapContainer} className="map-container">
       <div className="info-section">
         <div className="state-name">
@@ -507,7 +488,6 @@ function ChoroplethMap(props) {
       </div>
     </div>
     </div>
-
   );
 }
 
