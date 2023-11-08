@@ -2,7 +2,7 @@ import "./ReforestationMap.css";
 import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
-import loadingSpinner from '../loading.gif'; // Adjust the path as necessary
+import loadingSpinner from '../../assets/loading.gif'; // Adjust the path as necessary
 
 import "mapbox-gl/dist/mapbox-gl.css";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
