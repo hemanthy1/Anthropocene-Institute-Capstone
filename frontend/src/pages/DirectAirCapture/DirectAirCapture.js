@@ -1,4 +1,4 @@
-import Heatmap from "../../components/Heatmap/Heatmap"
+import Heatmap from "../../components/ReforestationMap/ReforestationMap"
 
 import DACMap from "../../components/DACMap/DACMap"
 
@@ -28,7 +28,7 @@ function DirectAirCapture() {
   return (
     <div className="dac-container">
       <DACBanner></DACBanner>
-      {/* <Heatmap colors={colors}/> */}
+      {/* <ReforestationMap colors={colors}/> */}
       <DACMap colors={colors} />
     </div>
   );

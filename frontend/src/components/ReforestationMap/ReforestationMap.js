@@ -1,4 +1,4 @@
-import "./Heatmap.css";
+import "./ReforestationMap.css";
 import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";

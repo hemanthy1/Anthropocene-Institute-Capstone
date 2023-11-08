@@ -1,4 +1,4 @@
-import Heatmap from "../../components/Heatmap/Heatmap"
+import Heatmap from "../../components/ReforestationMap/ReforestationMap"
 import "./Reforestation.css"
 
 function Reforestation() {
