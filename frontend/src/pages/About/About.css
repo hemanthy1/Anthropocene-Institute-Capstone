@@ -1,5 +1,5 @@
 .about-title { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 5vw; font-style: normal; font-variant: normal; font-weight: 100; line-height: 50px; } 
-.our-team, .name { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 2vw; font-style: normal; font-variant: normal; font-weight: bold; line-height: 3.5vw; } 
+.name { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 1.5vw; font-style: normal; font-variant: normal; font-weight: bold; line-height: 3.5vw; } 
 .our-team{ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 3.5vw; font-style: normal; font-variant: normal; font-weight: bold; line-height: 3.5vw; letter-spacing: .075;text-align: center; color: var(--secondary)} 
 .top-text {text-align: center; margin-top: 7%;}
 .bottom-text {text-align: center; color: var(--secondary);}
