@@ -13,24 +13,6 @@ function Reforestation() {
         color6: "#1b780f",
         color7: "#083e00"
     }
-    /*
-        const criteria = {
-        value1: "population",
-        option1: "Population",
-        value2: "temperature",
-        option2: "Temperature",
-        value3: "precipitation",
-        option3: "Precipitation",
-        value4: "palmer",
-        option4: "Palmer-Z Index",
-        value5: "land",
-        option5: "Land Price (per acre)",
-        value6: "cost",
-        option6: "Cost Efficiency"
-    }
-    */
-
-
 
     return (
 
@@ -50,7 +32,7 @@ function ReforestationBanner() {
         <div className="banner-image">
             <div className="banner-text">
                 <h1>Reforestation</h1>
-                <p>Some text here about reforestation probably, I'm not sure</p>
+                <p>Planting Trees in Open Land</p>
             </div>
         </div>
     )

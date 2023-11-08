@@ -25,10 +25,10 @@ function KelpFarms() {
 
 function KelpFarmBanner() {
   return (
-      <div className="algaeblooms-banner-image">
-          <div className="algaeblooms-banner-text">
+      <div className="kelpfarms-banner-image">
+          <div className="kelpfarms-banner-text">
               <h1>Kelp Farms</h1>
-              <p>Some text here about Algae Blooms probably, I'm not sure</p>
+              <p>Planting Flora to Absorb Carbon Dioxide</p>
           </div>
       </div>
   )

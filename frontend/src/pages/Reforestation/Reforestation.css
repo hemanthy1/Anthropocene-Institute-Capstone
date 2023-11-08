@@ -5,7 +5,7 @@
 .banner-image {
     width: 100vw;
     height: 12.5vh;
-    background-image: url("../../assets/reforestation-banner-image.jpeg");
+    background-image: url("../../assets/reforestationbanner.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,4 +20,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.banner-text>p {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+@media screen and (max-height: 700px) {
+    .banner-text>p {
+        display: none;
+    }
 }

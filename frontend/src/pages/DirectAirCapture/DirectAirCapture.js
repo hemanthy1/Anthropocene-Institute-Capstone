@@ -39,8 +39,8 @@ function DACBanner() {
   return (
       <div className="dac-banner-image">
           <div className="dac-banner-text">
-              <h1>DAC</h1>
-              <p>Some text here about DAC probably, I'm not sure</p>
+              <h1>Direct Air Capture</h1>
+              <p>Facilities to Filter and Process Carbon Dioxide Out of the Air</p>
           </div>
       </div>
   )

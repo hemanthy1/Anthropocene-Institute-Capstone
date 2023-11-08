@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "./OptimizationToolBlurb.css"
-import algaeBloomMapImage from "../../assets/algaebloomsmap.png";
+import kelpFarmMapImage from "../../assets/kelpfarmsmapimage.png";
 import reforestationMapImage from "../../assets/reforestationmap.png";
 import dacMapImage from "../../assets/dacmap.png";
 
@@ -18,13 +18,13 @@ function OptimizationToolBlurb() {
             <hr/>
             <div className="blurb-row">
                 <div className="colLeft">
-                    <AlgaeBloomMapImage/>
+                    <KelpFarmMapImage/>
                 </div>
                 <div className="colRight">
                     <Link to="kelpfarms">
                         <h2 className="toolTitle">Kelp Farms</h2>
                     </Link>
-                    <AlgaeBloomText/>
+                    <KelpFarmText/>
                 </div>
             </div>
 
@@ -60,16 +60,16 @@ function OptimizationToolBlurb() {
 }
 
 /**
- * The image next to the algae bloom section on this page
+ * The image next to the kelp farm section on this page
  *
  * @returns This image as an html object
  */
-function AlgaeBloomMapImage() {
+function KelpFarmMapImage() {
     return (
         <Link to="/kelpfarms">
             <img
-                src={algaeBloomMapImage}
-                alt="Algae Bloom Map Image"
+                src={kelpFarmMapImage}
+                alt="Kelp Farm Map Image"
                 loading="lazy"
                 id="mapimg"
             />
@@ -79,11 +79,11 @@ function AlgaeBloomMapImage() {
 
 
 /**
- * The text for the algae bloom section of this page
+ * The text for the kelp farm section of this page
  *
  * @returns An HTML object of this text
  */
-function AlgaeBloomText() {
+function KelpFarmText() {
     return (
         <p className="homePageText">Kelp Farms hold significant potential for carbon removal and
             environmental restoration. Depending on the species, kelp can live up to a year or longer.
@@ -113,7 +113,7 @@ function ReforestationMapImage() {
 }
 
 /**
- * The text for the algae bloom section of this page
+ * The text for the reforestation section of this page
  *
  * @returns An HTML object of this text
  */
@@ -151,7 +151,7 @@ function DACMapImage() {
 
 
 /**
- * The text for the algae bloom section of this page
+ * The text for the DAC section of this page
  *
  * @returns An HTML object of this text
  */
