@@ -48,7 +48,7 @@ def updateReforestationDataState(stateJsonFile):
 
 def updateKelpFarmData():
     # file path variables
-    new_file = "backend/geoJsonOutputs/stateData/stateKelpFarm.json"
+    new_file = "backend/geoJsonOutputs/stateData/stateKelpFarm.geojson"
     data_file = "backend/Kelp/kelp_class.csv"
 
     # Store our data in a pandas DataFrame
@@ -60,14 +60,18 @@ def updateKelpFarmData():
         feature = {
             "type": "Feature",
             "properties": {
+                "lat": row["latitude"],
+                "long": row["longitude"],
                 "depth": row["Depth"],
                 "temperature": row["Temperature"],
                 "ph": row["pH"],
-                "loc": row["percentile_rank"] 
+                "loc": row["percentile_rank"],
+                "class": row["Final_Class"],
+                "isState": "yes"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [row["latitude"], row["longitude"]]
+                "coordinates": [row["longitude"], row["latitude"]]
             }
         }
         features.append(feature)

@@ -388,6 +388,8 @@ function DACMap(props) {
             // the properties of the feature
             const properties = e.features[0].properties;
 
+            console.log(e.features)
+
             // the current features properties
             const countyName = properties['NAME'];
             const countyCost = parseFloat(properties['cost']);

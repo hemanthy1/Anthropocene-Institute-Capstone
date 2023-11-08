@@ -1,5 +1,4 @@
-import Heatmap from "../../components/Heatmap/Heatmap"
-
+import KelpMap from "../../components/KelpMap/KelpMap"
 import "./AlgaeBlooms.css"
 
 function AlgaeBlooms() {
@@ -18,7 +17,7 @@ function AlgaeBlooms() {
   return (
     <>
       <KelpFarmBanner></KelpFarmBanner>
-      <Heatmap colors={colors} />
+      <KelpMap colors={colors} />
     </>
   );
 }
