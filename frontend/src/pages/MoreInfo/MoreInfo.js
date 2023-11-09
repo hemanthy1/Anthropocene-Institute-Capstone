@@ -159,45 +159,49 @@ function MoreInfo() {
             feature: (
                 <>
                     <div><strong className="feature-text-title">Cost Efficiency</strong></div>
-                    <div className="feature-text">The cost efficiency was found using our machine learning model...
+                    <div className="feature-text">
+                        Our heat map tool is designed to guide stakeholders in identifying the most
+                        cost-efficient locations for implementing direct air capture (DAC) technology
+                        across the United States. Cost efficiency is a composite measure that indicates
+                        the relative expenditure to capture a ton of CO2, factoring in both operational
+                        and geographical parameters. This metric is critical in scaling DAC efforts sustainably.
+                        Our machine learning model processes vast datasets to predict cost efficiency with high
+                        accuracy. By considering the intricate interplay of various factors, our tool provides
+                        a nuanced analysis that aids in strategic decision-making.
                     </div>
-                    <div><strong className="feature-text-title">Land prices</strong></div>
-                    <div className="feature-text">The land prices are based on the average cost of farm land per acre.
-                        The number displayed is the average for that county or state. This variable was taken into
-                        account
-                        for reforestation because in order to plant trees land needs to be purchased to plan the trees
-                        on
-                    </div>
-                    <div><strong className="feature-text-title">Palmer Z Index</strong></div>
-                    <div className="feature-text">The Palmer Z Index measures short-term drought conditions. This is
-                        typically
-                        a better estimate than the PDSI as the shorter time scales enables identification of rapidly
-                        developing
-                        drought conditions. It is sometimes referred to as the Moisture Anomaly Index, and the derived
-                        values provide
-                        comparable measure of the relative anomalies of a region for both dryness and wetness when
-                        compared to the
-                        entire record for that location. This was used as an indicator if the region is a good location
-                        to
-                        plant trees as trees need water to perform photosynthesis and be able to sequester carbon and
-                        stay alive.
-                    </div>
-                    <div><strong className="feature-text-title">Population</strong></div>
-                    <div className="feature-text">The population is the number of people per county or per state. This
-                        number gives a good indication if the region is highly developed or less developed. It would be
-                        difficult to implement reforestation in an area that is densely populated. It is also an
-                        indication
+                    <div><strong className="feature-text-title"> Population </strong></div>
+                    <div className="feature-text">
+                        The population is the number of people per county or per state. This number gives a good
+                        indication if the region is highly developed or less developed. It would be difficult
+                        to implement reforestation in an area that is densely populated. It is also an indication
                         that there would not be much available land to plant trees on. For these reason we took
-                        population into account
-                        when developing our machine learning model
+                        population into account when developing our machine learning model
                     </div>
-                    <div><strong className="feature-text-title">Precipitation</strong></div>
-                    <div className="feature-text">the percipitation number is ...</div>
-                    <div><strong className="feature-text-title">Temperature</strong></div>
-                    <div className="feature-text">The temperature is measured in degrees fahrenheit. This temperature
-                        give us an idea of the climate in that region. The best temperature for reforestation was found
-                        and used in
-                        our model to predict the best location for reforestation.
+                    <div><strong className="feature-text-title"> Temperature </strong></div>
+                    <div className="feature-text">
+                        The efficiency of DAC units is influenced by ambient temperature, with extreme
+                        temperatures potentially requiring additional energy for operation.
+                    </div>
+                    <div><strong className="feature-text-title"> Precipitation </strong></div>
+                    <div className="feature-text">
+                        Water availability is a crucial component for DAC. Regions with adequate
+                        rainfall can support the water demands of DAC without incurring substantial
+                        costs for water transportation.
+                    </div>
+                    <div><strong className="feature-text-title"> Elevation </strong></div>
+                    <div className="feature-text">
+                        Higher elevations can affect the performance and energy requirements of DAC 
+                        systems due to changes in air density and pressure.
+                    </div>
+                    <div><strong className="feature-text-title"> Electricity Prices </strong></div>
+                    <div className="feature-text">
+                        As DAC is an energy-intensive process, local electricity prices are a
+                        significant determinant of ongoing operational costs.
+                    </div>
+                    <div><strong className="feature-text-title"> Wages </strong></div>
+                    <div className="feature-text">
+                        Labor costs can vary dramatically across counties, impacting the overall cost
+                        of DAC operations.
                     </div>
                 </>
             ),

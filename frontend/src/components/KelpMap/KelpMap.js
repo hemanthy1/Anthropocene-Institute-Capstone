@@ -130,7 +130,7 @@ function KelpMap(props) {
 
             // Function to format lat and long coords
             function formatCoordinates(lat, long) {
-                return `Lat: ${lat.toFixed(4)}°, Long: ${long.toFixed(2)}°`;
+                return `Lat: ${lat.toFixed(4)}° Long: ${long.toFixed(2)}°`;
             }
 
             nameDisplay.textContent = formatCoordinates(kelpLat, kelpLong)
