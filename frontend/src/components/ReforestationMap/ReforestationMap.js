@@ -422,13 +422,14 @@ function ChoroplethMap(props) {
 
                 });
 
-                map.on("mouseenter", "state-data", () => {
-                    map.getCanvas().style.cursor = "pointer";
-                });
 
-                map.on("mouseleave", "state-data", () => {
-                    map.getCanvas().style.cursor = "";
-                });
+                map.on("mouseenter", "county-data", () => {
+                  map.getCanvas().style.cursor = "pointer";
+              });
+
+              map.on("mouseleave", "county-data", () => {
+                  map.getCanvas().style.cursor = "";
+              });
 
             }
         }
