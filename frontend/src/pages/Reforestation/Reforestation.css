@@ -21,6 +21,8 @@
     transform: translate(-50%, -50%);
     color: white;
     -webkit-text-stroke: 1px black;
+    font-family: Verdana, Geneva, sans-serif; font-size: 24px; font-style: normal; 
+
 }
 
 .banner-text>p {
@@ -28,7 +30,7 @@
     font-weight: 700;
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 1200px) {
     .banner-text>p {
         display: none;
     }
