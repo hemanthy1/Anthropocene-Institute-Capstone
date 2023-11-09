@@ -157,3 +157,12 @@
     width: 50%; /* The GIF will scale based on the viewport width, 10% of the viewport width */
     height:auto;
 }
+.loading-content {
+    text-align: center;
+  }
+.loading-text {
+    display: block; 
+    margin-top: 20%; /* Space between the GIF and the text */
+    font-size: 1.8rem; 
+    color: #333; 
+  }

@@ -2,7 +2,7 @@ import "./ReforestationMap.css";
 import React, {useEffect, useRef, useState} from "react";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
-import loadingSpinner from '../../assets/loading.gif'; // Adjust the path as necessary
+import loadingSpinner from '../../assets/loading.gif'; 
 
 import "mapbox-gl/dist/mapbox-gl.css";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
@@ -33,7 +33,11 @@ function ChoroplethMap(props) {
                     minZoom: 1,
                     zoom: 2.2,
                 });
-
+                const geocoder = new MapboxGeocoder({
+                  accessToken: mapboxgl.accessToken,
+                  mapboxgl: mapboxgl,
+              });
+              newMap.addControl(geocoder);
                 newMap.on("load", () => {
                     setMap(newMap);
                     newMap.resize();
@@ -45,23 +49,24 @@ function ChoroplethMap(props) {
         if (!map) initializeMap({setMap, mapContainer});
     }, [map]);
 
+
     // Load GeoJSON into the map
     useEffect(() => {
         if (map) {
 
             if (map.getSource("state")) {
                 // If it does, update its data
-                map.getSource("state").setData("http://34.41.148.85/forestationstategeojson.geojson");
+                map.getSource("state").setData("http://34.69.213.194/forestationstategeojson.geojson");
 
             }
             if (map.getSource("county")) {
                 // If it does, update its data
-                map.getSource("county").setData("http://34.41.148.85/forestationcountygeojson.geojson");
+                map.getSource("county").setData("http://34.69.213.194/forestationcountygeojson.geojson");
             }
             if (!map.getSource("state")) {
                 map.addSource("state", {
                     type: "geojson",
-                    data: "http://34.41.148.85/forestationstategeojson.geojson",
+                    data: "http://34.69.213.194/forestationstategeojson.geojson",
                     promoteId: "NAME",
                 });
 
@@ -136,7 +141,7 @@ function ChoroplethMap(props) {
 
                 map.addSource("county", {
                     type: "geojson",
-                    data: "http://34.41.148.85/forestationcountygeojson.geojson",
+                    data: "http://34.69.213.194/forestationcountygeojson.geojson",
                     promoteId: "GEO_ID",
                 });
                 map.addLayer({
@@ -427,14 +432,17 @@ function ChoroplethMap(props) {
 
             }
         }
-    }, [map, "http://34.41.148.85/forestationstategeojson.geojson"]);
+    }, [map, "http://34.69.213.194/forestationstategeojson.geojson"]);
 
     return (
         <div className="map-container-wrapper">
             {isLoading && (
-                <div className="loading-overlay">
-                    <img src={loadingSpinner} alt="Loading..."/>
-                </div>
+              <div className="loading-overlay">
+               <div className="loading-content">
+          <img src={loadingSpinner} alt="Loading..." />
+          <span className="loading-text">Loading AI Model</span>
+          </div>
+        </div>
             )}
             <div ref={mapContainer} className="map-container">
                 <div className="info-section">
