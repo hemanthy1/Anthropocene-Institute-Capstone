@@ -240,6 +240,26 @@ function ChoroplethMap(props) {
                 // When the map is clicked display a popup
 
                 map.on("click", "state-data", (e) => {
+                    function formatCurrency(value) {
+                        return (
+                            "$" + value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+                        );
+                    }
+
+                    //Function to format percent
+                    function formatPercent(value) {
+                        value = value * 100;
+                        return value.toFixed(0) + "%";
+                    }
+
+                    // Function to add commas as thousands separators
+                    function addCommas(value) {
+                        return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+                    }
+                    function formatTemp(value) {
+                            value = value.toFixed(2);
+                            return value + "°F";
+                        }
 
 
                     // Commented out code that was used when we had the dropdown option
@@ -271,32 +291,47 @@ function ChoroplethMap(props) {
                     const statePre = parseFloat(properties["precipitation"]);
                     const stateTemp = parseFloat(properties["temperature"]);
 
+                     if (isNaN(stateCost)){
+                            costDisplay.textContent = "No Data Found";
+                        }
+                        else{
+                            costDisplay.textContent = formatPercent(stateCost);
+                        }
+                        if (isNaN(stateLand)){
+                            landDisplay.textContent= "No Data Found";
+                        }
+                        else{
+                            landDisplay.textContent = formatCurrency(stateLand);
+                        }
+                        if (isNaN(stateZ)){
+                            zDisplay.textContent= "No Data Found";
+                        }
+                        else{
+                            zDisplay.textContent = stateZ.toFixed(2);
+                        }
+                        if (isNaN(statePop)){
+                            popDisplay.textContent= "No Data Found";
+                        }
+                        else{
+                            popDisplay.textContent = addCommas(statePop);
+                        }
+                        if (isNaN(statePre)){
+                            preDisplay.textContent= "No Data Found";
+                        }
+                        else{
+                            preDisplay.textContent = addCommas(statePre);
+                        }
+                        if (isNaN(stateTemp)){
+                            tempDisplay.textContent= "No Data Found";
+                        }
+                        else{
+                            tempDisplay.textContent = formatTemp(stateTemp);
+                        }
+
                     // Function to format currency with dollar sign and commas
-                    function formatCurrency(value) {
-                        return (
-                            "$" + value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
-                        );
-                    }
-
-                    //Function to format percent
-                    function formatPercent(value) {
-                        value = value * 100;
-                        return value.toFixed(0) + "%";
-                    }
-
-                    // Function to add commas as thousands separators
-                    function addCommas(value) {
-                        return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
-                    }
-
                     // Display the property values
                     nameDisplay.textContent = stateName;
-                    costDisplay.textContent = formatPercent(stateCost);
-                    landDisplay.textContent = formatCurrency(stateLand);
-                    zDisplay.textContent = stateZ.toFixed(2);
-                    popDisplay.textContent = addCommas(statePop);
-                    preDisplay.textContent = statePre.toFixed(2);
-                    tempDisplay.textContent = stateTemp.toFixed(2);
+
                     if (stateClickedPolygonId !== null) {
                         // Reset the state of the previously clicked feature
                         map.setFeatureState(
@@ -361,6 +396,26 @@ function ChoroplethMap(props) {
                 // When the map is clicked display a popup
                 map.on('click', 'county-data', (e) => {
 
+                    // // Function to format currency with dollar sign and commas
+                    function formatCurrency(value) {
+                        return '$' + value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+                    }
+
+                    // //Function to format percent
+                    function formatPercent(value) {
+                        value = value * 100;
+                        return value.toFixed(0) + '%';
+                    }
+
+                    // Function to add commas as thousands separators
+                    function addCommas(value) {
+                        return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+                    }
+                    function formatTemp(value) {
+                            value = value.toFixed(2);
+                            return value + "°F";
+                        }
+
                     // // the span elements used in the sidebar
                     const nameDisplay = document.getElementById('name');
                     const costDisplay = document.getElementById('cost');
@@ -382,30 +437,48 @@ function ChoroplethMap(props) {
                     const countyPre = parseFloat(properties['precipitation']);
                     const countyTemp = parseFloat(properties['temperature']);
 
-                    // // Function to format currency with dollar sign and commas
-                    function formatCurrency(value) {
-                        return '$' + value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
-                    }
+                    if (isNaN(countyCost)){
+                            costDisplay.textContent = "No Data Found";
+                        }
+                        else{
+                            costDisplay.textContent = formatPercent(countyCost);
+                        }
+                        if (isNaN(countyLand)){
+                            landDisplay.textContent= "No Data Found";
+                        }
+                        else{
+                            landDisplay.textContent = formatCurrency(countyLand);
+                        }
+                        if (isNaN(countyZ)){
+                            zDisplay.textContent= "No Data Found";
+                        }
+                        else{
+                            zDisplay.textContent = countyZ.toFixed(2);
+                        }
+                        if (isNaN(countyPop)){
+                            popDisplay.textContent= "No Data Found";
+                        }
+                        else{
+                            popDisplay.textContent = addCommas(countyPop);
+                        }
+                        if (isNaN(countyPre)){
+                            preDisplay.textContent= "No Data Found";
+                        }
+                        else{
+                            preDisplay.textContent = addCommas(countyPre);
+                        }
+                        if (isNaN(countyTemp)){
+                            tempDisplay.textContent= "No Data Found";
+                        }
+                        else{
+                            tempDisplay.textContent = formatTemp(countyTemp);
+                        }
 
-                    // //Function to format percent
-                    function formatPercent(value) {
-                        value = value * 100;
-                        return value.toFixed(0) + '%';
-                    }
 
-                    // Function to add commas as thousands separators
-                    function addCommas(value) {
-                        return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
-                    }
+
 
                     // // Display the property values
                     nameDisplay.textContent = countyName;
-                    costDisplay.textContent = formatPercent(countyCost);
-                    landDisplay.textContent = formatCurrency(countyLand);
-                    zDisplay.textContent = countyZ.toFixed(2);
-                    popDisplay.textContent = addCommas(countyPop);
-                    preDisplay.textContent = countyPre.toFixed(2);
-                    tempDisplay.textContent = countyTemp.toFixed(2);
 
                     map.setFeatureState(
                         {source: 'county', id: countyClickedPolygonId},
