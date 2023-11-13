@@ -198,8 +198,8 @@ function KelpMap(props) {
             </div>
 
             <div id="legend" className="legend" style={{display: legendDisplay}}>
-                <h4>Cost Efficency</h4>
-                <h3>Most</h3>
+                <h3>Relative Efficiency</h3>
+                <h4>Most Efficient</h4>
                 <div><span className="b723122" style={{backgroundColor: props.colors.color7}}></span></div>
                 <div><span className="b8b4225" style={{backgroundColor: props.colors.color6}}></span></div>
                 <div><span className="ba25626" style={{backgroundColor: props.colors.color5}}></span></div>
@@ -207,7 +207,7 @@ function KelpMap(props) {
                 <div><span className="bca8323" style={{backgroundColor: props.colors.color3}}></span></div>
                 <div><span className="bda9c20" style={{backgroundColor: props.colors.color2}}></span></div>
                 <div><span className="be6b71e" style={{backgroundColor: props.colors.color1}}></span></div>
-                <h3>Least</h3>
+                <h4>Least Efficient</h4>
             </div>
         </div>
 

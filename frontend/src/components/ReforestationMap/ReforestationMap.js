@@ -2,7 +2,7 @@ import "./ReforestationMap.css";
 import React, {useEffect, useRef, useState} from "react";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
-import loadingSpinner from '../../assets/loading.gif'; 
+import loadingSpinner from '../../assets/loading.gif';
 
 import "mapbox-gl/dist/mapbox-gl.css";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
@@ -34,10 +34,10 @@ function ChoroplethMap(props) {
                     zoom: 2.2,
                 });
                 const geocoder = new MapboxGeocoder({
-                  accessToken: mapboxgl.accessToken,
-                  mapboxgl: mapboxgl,
-              });
-              newMap.addControl(geocoder);
+                    accessToken: mapboxgl.accessToken,
+                    mapboxgl: mapboxgl,
+                });
+                newMap.addControl(geocoder);
                 newMap.on("load", () => {
                     setMap(newMap);
                     newMap.resize();
@@ -424,12 +424,12 @@ function ChoroplethMap(props) {
 
 
                 map.on("mouseenter", "county-data", () => {
-                  map.getCanvas().style.cursor = "pointer";
-              });
+                    map.getCanvas().style.cursor = "pointer";
+                });
 
-              map.on("mouseleave", "county-data", () => {
-                  map.getCanvas().style.cursor = "";
-              });
+                map.on("mouseleave", "county-data", () => {
+                    map.getCanvas().style.cursor = "";
+                });
 
             }
         }
@@ -438,12 +438,12 @@ function ChoroplethMap(props) {
     return (
         <div className="map-container-wrapper">
             {isLoading && (
-              <div className="loading-overlay">
-               <div className="loading-content">
-          <img src={loadingSpinner} alt="Loading..." />
-          <span className="loading-text">Loading AI Model</span>
-          </div>
-        </div>
+                <div className="loading-overlay">
+                    <div className="loading-content">
+                        <img src={loadingSpinner} alt="Loading..."/>
+                        <span className="loading-text">Loading AI Model</span>
+                    </div>
+                </div>
             )}
             <div ref={mapContainer} className="map-container">
                 <div className="info-section">
@@ -473,8 +473,8 @@ function ChoroplethMap(props) {
                 </div>
 
                 <div id="legend" className="legend" style={{display: legendDisplay}}>
-                    <h4>Cost Efficency</h4>
-                    <h3>Most</h3>
+                    <h3>Relative Efficiency</h3>
+                    <h4>Most Efficient</h4>
                     <div>
           <span
               className="b723122"
@@ -517,7 +517,7 @@ function ChoroplethMap(props) {
               style={{backgroundColor: props.colors.color1}}
           ></span>
                     </div>
-                    <h3>Least</h3>
+                    <h4>Least Efficient</h4>
                 </div>
             </div>
         </div>
