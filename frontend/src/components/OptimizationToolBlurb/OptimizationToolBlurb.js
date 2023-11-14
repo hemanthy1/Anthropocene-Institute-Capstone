@@ -2,8 +2,8 @@ import React from "react";
 import {Link} from "react-router-dom";
 import "./OptimizationToolBlurb.css"
 import kelpFarmMapImage from "../../assets/kelpfarmsmapimage.png";
-import reforestationMapImage from "../../assets/reforestationmap.png";
-import dacMapImage from "../../assets/dacmap.png";
+import reforestationMapImage from "../../assets/reforestationmap.jpg";
+import dacMapImage from "../../assets/dacmap.jpg";
 
 
 /**
