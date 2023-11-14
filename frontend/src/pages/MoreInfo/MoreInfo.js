@@ -77,8 +77,13 @@ function MoreInfo() {
             feature: (
                 <>
                     <div><strong className="feature-text-title">Relative Efficiency</strong></div>
-                    <div className="feature-text"> Our model takes into account the factors below to determine the
-                        best location for kelp farms.
+                    <div className="feature-text"> Our innovative heat map tool is designed to assist stakeholders in
+                        pinpointing the optimal locations for establishing kelp farms along the coastal regions of
+                        the United States. The concept of relative efficiency, a comprehensive metric employed by our tool,
+                        serves as a guiding beacon, revealing the prime spots for implementing kelp farms. Leveraging machine
+                        learning, our model processes extensive datasets, ensuring a precise prediction of relative efficiency.
+                        Our model considers the intricate interplay of various factors to offer a sophisticated analysis that
+                        greatly enhances strategic decision-making in the realm of kelp farming.
                     </div>
                     <div><strong className="feature-text-title">Depth</strong></div>
                     <div className="feature-text">This measurement is the depth in meters from the surface of the water
@@ -110,7 +115,13 @@ function MoreInfo() {
             feature: (
                 <>
                     <div><strong className="feature-text-title">Cost Efficiency</strong></div>
-                    <div className="feature-text">The cost efficiency was found using our machine learning model...
+                    <div className="feature-text">Our innovative heat map tool is designed to assist stakeholders in
+                        pinpointing the optimal locations for reforestation in the United States. The concept of relative efficiency,
+                        a comprehensive metric employed by our tool, serves as a guiding beacon, revealing the prime spots for
+                        implementing reforestation. It takes into account factors such as elevation and precipitation. Leveraging machine
+                        learning, our model processes extensive datasets, ensuring a precise prediction of relative efficiency.
+                        Our model considers the intricate interplay of various factors to offer a sophisticated analysis that
+                        greatly enhances strategic decision-making in the realm of reforestation.
                     </div>
                     <div><strong className="feature-text-title">Land prices</strong></div>
                     <div className="feature-text">The land prices are based on the average cost of farm land per acre.
@@ -143,7 +154,8 @@ function MoreInfo() {
                         when developing our machine learning model
                     </div>
                     <div><strong className="feature-text-title">Precipitation</strong></div>
-                    <div className="feature-text">the percipitation number is ...</div>
+                    <div className="feature-text">Water availability is a crucial component for reforestation. Regions with adequate
+                        rainfall can support the water demands of growing trees.</div>
                     <div><strong className="feature-text-title">Temperature</strong></div>
                     <div className="feature-text">The temperature is measured in degrees fahrenheit. This temperature
                         give us an idea of the climate in that region. The best temperature for reforestation was found
