@@ -1,5 +1,14 @@
 import "./ArticleLink.css"
 
+/**
+ * 
+ * Defines the structure and functionality of a link on the articles page
+ * The link contains a image and short description relating to the article
+ * that the user can click to visit the information page.
+ * 
+ * @param {*} props Data object containing article link and image
+ * @returns An article link component
+ */
 function ArticleLink(props) {
   return (
     <div className="article-wrap">
