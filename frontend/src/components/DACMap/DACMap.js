@@ -61,17 +61,17 @@ function DACMap(props) {
 
                 if (map.getSource("state")) {
                     // If it does, update its data
-                    map.getSource("state").setData("http://34.172.254.36/dacstategeojson.geojson");
+                    map.getSource("state").setData("http://34.133.43.211/dacstategeojson.geojson");
 
                 }
                 if (map.getSource("county")) {
                     // If it does, update its data
-                    map.getSource("county").setData("http://34.172.254.36/daccountygeojson.geojson");
+                    map.getSource("county").setData("http://34.133.43.211/daccountygeojson.geojson");
                 }
                 if (!map.getSource("state")) {
                     map.addSource("state", {
                         type: "geojson",
-                        data: "http://34.172.254.36/dacstategeojson.geojson",
+                        data: "http://34.133.43.211/dacstategeojson.geojson",
                         promoteId: "NAME",
                     });
 
@@ -146,7 +146,7 @@ function DACMap(props) {
 
                     map.addSource("county", {
                         type: "geojson",
-                        data: "http://34.172.254.36/daccountygeojson.geojson",
+                        data: "http://34.133.43.211/daccountygeojson.geojson",
                         promoteId: "GEO_ID",
                     });
                     map.addLayer({
@@ -503,7 +503,7 @@ function DACMap(props) {
             }
         }
 
-        , [map, "http://34.172.254.36/dacstategeojson.geojson"]);
+        , [map, "http://34.133.43.211/dacstategeojson.geojson"]);
 
     return (
         <div className="map-container-wrapper">

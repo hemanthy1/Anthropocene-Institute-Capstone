@@ -56,17 +56,17 @@ function ChoroplethMap(props) {
 
             if (map.getSource("state")) {
                 // If it does, update its data
-                map.getSource("state").setData("http://34.172.254.36/forestationstategeojson.geojson");
+                map.getSource("state").setData("http://34.133.43.211/forestationstategeojson.geojson");
 
             }
             if (map.getSource("county")) {
                 // If it does, update its data
-                map.getSource("county").setData("http://34.172.254.36/forestationcountygeojson.geojson");
+                map.getSource("county").setData("http://34.133.43.211/forestationcountygeojson.geojson");
             }
             if (!map.getSource("state")) {
                 map.addSource("state", {
                     type: "geojson",
-                    data: "http://34.172.254.36/forestationstategeojson.geojson",
+                    data: "http://34.133.43.211/forestationstategeojson.geojson",
                     promoteId: "NAME",
                 });
 
@@ -141,7 +141,7 @@ function ChoroplethMap(props) {
 
                 map.addSource("county", {
                     type: "geojson",
-                    data: "http://34.172.254.36/forestationcountygeojson.geojson",
+                    data: "http://34.133.43.211/forestationcountygeojson.geojson",
                     promoteId: "GEO_ID",
                 });
                 map.addLayer({
@@ -506,7 +506,7 @@ function ChoroplethMap(props) {
 
             }
         }
-    }, [map, "http://34.172.254.36/forestationstategeojson.geojson"]);
+    }, [map, "http://34.133.43.211/forestationstategeojson.geojson"]);
 
     return (
         <div className="map-container-wrapper">
