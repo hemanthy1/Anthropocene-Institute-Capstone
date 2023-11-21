@@ -12,7 +12,8 @@ import DirectAirCapture from './pages/DirectAirCapture/DirectAirCapture';
 import KelpFarms from './pages/KelpFarms/KelpFarms';
 import Reforestation from './pages/Reforestation/Reforestation';
 import MoreInfo from "./pages/MoreInfo/MoreInfo";
-
+import Feedback from './pages/Feedback/Feedback';
+import Action from './pages/Action/Action';
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
             <Route path="kelpfarms" element={<KelpFarms />} />
             <Route path="reforestation" element={<Reforestation />} />
             <Route path="moreinfo" element={<MoreInfo />} />
+            <Route path="feedback" element={<Feedback />} />
+            <Route path="action" element={<Action />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

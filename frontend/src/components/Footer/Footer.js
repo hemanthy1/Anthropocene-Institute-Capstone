@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css"
+import {Link} from "react-router-dom";
 
 
 /**
@@ -15,7 +16,7 @@ import "./Footer.css"
 function Footer() {
     return (
         <div className="container">
-            <div className="row">
+            <div className="row" id="footer-top">
                 <div className="col">
                     <ul className="names">
                         <li className="title">Contributors</li>
@@ -31,11 +32,20 @@ function Footer() {
                 <div className="col">
                     <ul className="names">
                         <li className="title">Tools</li>
-                        <li className="link"><a href="/kelpfarms">Kelp Farms</a></li>
-                        <li className="link"><a href="/reforestation">Reforestation</a></li>
-                        <li className="link"><a href="/dac">Direct Air Capture</a></li>
+                        <li className="link"><Link to="/kelpfarms"> Kelp Farms </Link></li>
+                        <li className="link"><Link to="/reforestation"> Reforestation </Link></li>
+                        <li className="link"><Link to="/dac"> Direct Air Capture </Link></li>
                     </ul>
                 </div>
+
+                <div className="col">
+                    <ul className="names">
+                        <li className="title"> Get Involved </li>
+                        <li className="link"> <Link to="/feedback"> Feedback & Suggestions </Link> </li>
+                        <li className="link"> <Link to="/action"> Take Action! </Link> </li>
+                    </ul>
+                </div>
+
                 <div className="col">
                     <ul className="names">
                         <li className="title">Anthropocene Institute</li>
@@ -45,10 +55,16 @@ function Footer() {
 
                     </ul>
                 </div>
+            </div>
+            
+            <div id="footer-break"> <hr /> </div>
+
+            <div className="row" id="footer-bottom">
                 <div className="col">
                     <p className="footerText">© Anthropocene Institute, All Rights Reserved</p>
                 </div>
             </div>
+
         </div>
 
     )

@@ -1,4 +1,5 @@
-from flask import Flask, render_template, jsonify, Response
+from flask import Flask, render_template, jsonify, Response, request
+from flask_mail import Mail, Message
 from DatabaseConnector import connect_with_connector
 import sqlalchemy
 import os
@@ -16,6 +17,35 @@ DB_PASS="Ubf:X$LI+{kRRiHz"
 ForestationDB_NAME="ForestationData"
 DacDB_NAME="DACData"
 
+# email settings for feedback form
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+app.config['MAIL_USERNAME'] = 'feedback.carbonmapp@gmail.com'
+app.config['MAIL_PASSWORD'] = 'Anthinst498'
+app.config['MAIL_DEFAULT_SENDER'] = 'feedback.carbonmapp@gmail.com'
+
+mail = Mail(app)
+
+@app.route('/send-email', methods=['GET', 'POST'])
+def send_email():
+    data = request.json
+    print("Data received:", data)
+    subject = "Feedback From The Carbon Mapp Website"
+    body = f"""
+    A user has submitted the feedback form on the carbonmapp site.
+    Feedback:
+
+    Feedback Type: {data.get('feedbackType')}
+    Name: {data.get('firstName')} {data.get('lastName')}
+    Email: {data.get('email')}
+    Feedback: {data.get('feedback')}
+    """
+
+    msg = Message(subject, recipients=['holsche2@msu.edu'], body=body)
+    mail.send(msg)
+    return jsonify({'message': 'Email sent successfully'}), 200
 
 @app.route('/forestationstategeojson.geojson', methods=['GET'])
 def get_forestationstatejson():
@@ -139,4 +169,4 @@ def index():
 
 
 if __name__ == '__main__':  
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
