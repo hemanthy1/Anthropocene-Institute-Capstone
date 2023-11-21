@@ -277,6 +277,7 @@ function DACMap(props) {
                         const statePre = properties['precipitation'];
                         const stateTemp = properties['temperature'];
 
+                        //catch if data is not found and display no data found
                         if (isNaN(stateCost)){
                             costDisplay.textContent = "No Data Found";
                         }
@@ -334,6 +335,7 @@ function DACMap(props) {
 
                     });
 
+                    //change the color when hovered over
                     map.on('mousemove', 'state-data', (e) => {
 
                         if (stateHoveredPolygonId !== null) {
@@ -353,7 +355,7 @@ function DACMap(props) {
 
                     });
 
-
+                    //reset the color of the state after it is no longer being hovered
                     map.on('mouseleave', 'state-data', () => {
                         if (stateHoveredPolygonId !== null) {
                             map.setFeatureState(
@@ -364,6 +366,7 @@ function DACMap(props) {
                         stateHoveredPolygonId = null;
                     });
 
+                    //hover state for the county data
                     map.on('mousemove', 'county-data', (e) => {
                         if (countyHoveredPolygonId !== null) {
                             // Reset the state of the previously clicked feature in the 'county-data' layer
@@ -380,6 +383,8 @@ function DACMap(props) {
                             {hover: true}
                         );
                     });
+
+                    //resetting the color on the county when no longer hovered
                     map.on('mouseleave', 'county-data', () => {
                         if (countyHoveredPolygonId !== null) {
                             map.setFeatureState(
@@ -430,6 +435,7 @@ function DACMap(props) {
                         const countyPre = parseFloat(properties['precipitation']);
                         const countyTemp = parseFloat(properties['temperature']);
 
+                        // displaying no data if there is no data found for the county
                         if (isNaN(countyCost)){
                             costDisplay.textContent = "No Data Found";
                         }
@@ -471,6 +477,7 @@ function DACMap(props) {
 
                         nameDisplay.textContent = countyName;
 
+                        // reset county
                         if (countyClickedPolygonId !== null) {
                             // Reset the state of the previously clicked feature in the 'county-data' layer
                             map.setFeatureState(
@@ -490,11 +497,11 @@ function DACMap(props) {
 
                     });
 
-
+                    // changing the mouse on hover
                     map.on('mouseenter', 'county-data', () => {
                         map.getCanvas().style.cursor = 'pointer';
                     });
-
+                    //changing the mouse when no longer hovering over a county
                     map.on('mouseleave', 'county-data', () => {
                         map.getCanvas().style.cursor = '';
                     });
