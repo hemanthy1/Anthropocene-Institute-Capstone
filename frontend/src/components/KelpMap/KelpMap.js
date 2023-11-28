@@ -16,8 +16,10 @@ function KelpMap(props) {
 
 
     useEffect(() => {
+        // the access token for the mapbox api
         mapboxgl.accessToken = 'pk.eyJ1IjoiamhvbHNjaDI5IiwiYSI6ImNsbjJjaWllNzAwcDQyam1wYnF6NHQ0Z24ifQ.TYll92t4SavsRHHFUhU-UA';
 
+        // adding the map with the right style
         const map = new mapboxgl.Map({
             container: mapContainer.current,
             style: 'mapbox://styles/mapbox/light-v11',
@@ -35,6 +37,7 @@ function KelpMap(props) {
         // Add the search bar to the heatmap
         map.addControl(geocoder);
 
+        //load the data on the map
         map.on('load', () => {
             map.addSource('kelp', {
                 type: 'geojson',
@@ -80,10 +83,11 @@ function KelpMap(props) {
             });
         });
 
+        //changing the curser when hovering
         map.on('mouseenter', 'kelp-data', () => {
             map.getCanvas().style.cursor = 'pointer';
         });
-
+        // resetting the curser
         map.on('mouseleave', 'kelp-data', () => {
             map.getCanvas().style.cursor = '';
         });
@@ -139,19 +143,21 @@ function KelpMap(props) {
             phDisplay.textContent = addCommas(kelpPH);
             tempDisplay.textContent = formatTemp(kelpTemp);
 
+            // resetting the last clicked polygon to the original color
             if (stateClickedPolygonId !== null) {
                 map.setFeatureState(
                     {source: 'kelp', id: stateClickedPolygonId},
                     {click: false}
                 );
             }
-
+            // changing the new clicked state to yellow
             stateClickedPolygonId = e.features[0].id;
             map.setFeatureState(
                 {source: 'kelp', id: stateClickedPolygonId},
                 {click: true}
             );
 
+            //hover state
             map.on('mousemove', 'kelp-data', (e) => {
 
                 if (stateHoveredPolygonId !== null) {
@@ -171,6 +177,7 @@ function KelpMap(props) {
 
             });
 
+            //resetting after the sate is no longer hovered
             map.on('mouseleave', 'kelp-data', () => {
                 if (stateHoveredPolygonId !== null) {
                     map.setFeatureState(

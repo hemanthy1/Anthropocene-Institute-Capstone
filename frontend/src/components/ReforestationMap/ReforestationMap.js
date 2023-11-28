@@ -18,6 +18,7 @@ function ChoroplethMap(props) {
 
     // Initialize the map
     useEffect(() => {
+        // mapbox api access token
         mapboxgl.accessToken =
             "pk.eyJ1IjoiamhvbHNjaDI5IiwiYSI6ImNsbjJjaWllNzAwcDQyam1wYnF6NHQ0Z24ifQ.TYll92t4SavsRHHFUhU-UA";
 
