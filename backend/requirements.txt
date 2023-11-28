@@ -5,3 +5,4 @@ pg8000==1.30.2
 SQLAlchemy==2.0.21
 pandas==2.0.3
 flask_cors==4.0.0
+flask_mail

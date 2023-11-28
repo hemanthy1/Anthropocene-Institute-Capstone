@@ -18,34 +18,40 @@ ForestationDB_NAME="ForestationData"
 DacDB_NAME="DACData"
 
 # email settings for feedback form
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_SERVER'] = 'smtp-mail.outlook.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
-app.config['MAIL_USERNAME'] = 'feedback.carbonmapp@gmail.com'
-app.config['MAIL_PASSWORD'] = 'Anthinst498'
-app.config['MAIL_DEFAULT_SENDER'] = 'feedback.carbonmapp@gmail.com'
+app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
+app.config['MAIL_DEFAULT_SENDER'] = os.environ.get('MAIL_USERNAME')
 
 mail = Mail(app)
 
-@app.route('/send-email', methods=['GET', 'POST'])
+@app.route('/send-email', methods=['POST'])
 def send_email():
-    data = request.json
-    print("Data received:", data)
-    subject = "Feedback From The Carbon Mapp Website"
-    body = f"""
-    A user has submitted the feedback form on the carbonmapp site.
-    Feedback:
+    try:
+        data = request.json
+        print("Data received:", data)
+        subject = "Feedback From The Carbon Mapp Website"
+        body = f"""
+        A user has submitted the feedback form on the Carbonmapp site.
+        
+        Feedback:
 
-    Feedback Type: {data.get('feedbackType')}
-    Name: {data.get('firstName')} {data.get('lastName')}
-    Email: {data.get('email')}
-    Feedback: {data.get('feedback')}
-    """
+        Feedback Type: {data.get('feedbackType')}
+        Name: {data.get('firstName')} {data.get('lastName')}
+        Email: {data.get('email')}
+        Feedback: {data.get('feedback')}
+        """
 
-    msg = Message(subject, recipients=['holsche2@msu.edu'], body=body)
-    mail.send(msg)
-    return jsonify({'message': 'Email sent successfully'}), 200
+        msg = Message(subject, recipients=['holsche2@msu.edu'], body=body)
+        mail.send(msg)
+        return jsonify({'message': 'Email sent successfully'}), 200
+
+    except Exception as e:
+        print(f"Error: {e}")
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/forestationstategeojson.geojson', methods=['GET'])
 def get_forestationstatejson():
