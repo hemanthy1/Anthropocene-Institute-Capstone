@@ -641,7 +641,37 @@ Thank you for your attention to this matter. I believe that with your leadership
     return (
 
         <div>
-            <h1 className="action-title">Take Action Today!</h1>
+            <h1 className="action-title">Take Action: Support Carbon Removal Initiatives </h1>
+
+            <p className="blurb">
+                Climate change is one of the most pressing challenges of our time, and we all play a role in
+                shaping a sustainable future. One impactful way to make a difference is by urging your senators
+                to support carbon removal initiatives.<br/><br/>
+
+                Carbon removal technologies and strategies are crucial for mitigating the effects of climate change
+                and creating a cleaner, healthier environment. By contacting your senator, you can advocate for policies
+                that promote research, funding, and implementation of effective carbon removal solutions.<br/><br/>
+
+                <strong>Why Contact your Senator?</strong>
+                <ul>
+                    <li><strong>Influence Policy:</strong> Your voice matters. By reaching out to your senator, you contribute to the
+                        conversation on climate change policy and advocate for meaningful action. The more climate change is talked about
+                        the more likely policy is to reflect the climate change concerns.
+                    </li>
+                    <li><strong>Raise Awareness: </strong>Senators have the power to influence public opinion and policy decisions. Your
+                        email can help raise awareness about the importance of carbon removal. It will let your senator know that this is
+                        an issue you are concerned about and want to address.
+                    </li>
+                    <li><strong>Support Innovation: </strong>Encourage your senator to support innovative technologies and strategies for
+                        carbon removal. Innovations such as kelp farming, direct air capture, and reforestation.
+                    </li>
+                </ul>
+                <br/>
+                Ready to make a difference? Simply type in your state and click the senator you wish you contact, we'll provide you with an
+                email template to send to that senator. Let your voice be heard and contribute to the collective effort
+                for a greener and more sustainable world.
+            </p>
+
 
             <div className="search-container">
                 <input
