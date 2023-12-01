@@ -20,7 +20,7 @@ function About() {
               We are a group of five Computer Science students at Michigan State University.
               This project was undertaken as a part of our capstone experience.
               This project would not have been possible without the support and guidance of our sponsors
-              at the Anthropocene Institute.
+              at the <a href="https://anthropoceneinstitute.com">Anthropocene Institute.</a>
               <br/><br/>
 
               Our capstone project focuses on the exploration of optimal locations for diverse carbon removal
