@@ -610,8 +610,12 @@ const Action = () => {
         setFilteredStates(filteredStates);
     };
 
-    const sendEmail = (email) => {
-        window.location.href = `mailto:${email}`;
+    const sendEmail = (senator) => {
+        const subject = encodeURIComponent(`Regarding carbon removal in ${senator.state}`);
+       const body = `Dear Senator ${senator.senator},%0D%0A%0D%0AI am writing to express my concerns and thoughts about issues in ${senator.state}.%0D%0A%0D%0AThank you for your attention.%0D%0A%0D%0ASincerely,%0D%0A${"Edie"}`;
+
+
+        window.location.href = `mailto:${"haaseede@msu.edu"}?subject=${subject}&body=${body}`;
     };
 
 
@@ -645,7 +649,7 @@ const Action = () => {
                     <div className="senators-info">
                         <h2>Senators for {senatorsInfo[0].state}:</h2>
                         {senatorsInfo.map((senator) => (
-                            <div key={senator.senator} className="senator-info"  onClick={() => sendEmail(senator.email)}>
+                            <div key={senator.senator} className="senator-info" onClick={() => sendEmail(senator)}>
                                 <h3>{senator.senator}</h3>
                                 <p>Email: {senator.email}</p>
                                 <p>Phone: {senator.phone}</p>
