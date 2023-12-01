@@ -635,7 +635,6 @@ const Action = () => {
             <h1 className="action-title">Take Action Today!</h1>
 
             <div className="search-container">
-                <!-- the input section for search -->
                 <input
                     type="text"
                     value={searchInput}
@@ -646,7 +645,6 @@ const Action = () => {
                     placeholder="Enter your State..."
                     className="search-input"
                 />
-                <!-- dropdown section-->
                 {filteredStates.length > 0 && (
                     <ul className="dropdown">
                         {filteredStates.map((state) => (
@@ -656,7 +654,6 @@ const Action = () => {
                         ))}
                     </ul>
                 )}
-                <!-- senator info section  -->
                 {senatorsInfo.length > 0 && (
                     <div className="senators-info">
                         <h2 className="senator-title">Senators for {senatorsInfo[0].state}:</h2>
