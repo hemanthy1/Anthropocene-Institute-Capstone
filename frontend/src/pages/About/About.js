@@ -16,7 +16,21 @@ function About() {
       <div className="top-text">
         <h1 className="about-title">About Us</h1>
         <div className="about-us-text">
-          <p className="about-us-text">We are a group of Michigan State Students and made this website for our capstone project with the guidance of our amazing sponsors at the Anthropocene Institute.  </p>
+          <p className="about-us-text">
+              We are a group of five Computer Science students at Michigan State University.
+              This project was undertaken as a part of our capstone experience.
+              This project would not have been possible without the support and guidance of our sponsors
+              at the Anthropocene Institute.
+              <br/><br/>
+
+              Our capstone project focuses on the exploration of optimal locations for diverse carbon removal
+              techniques. Our central aim is to educate investors with an interactive heat map, facilitating
+              informed decisions for their sustainability initiatives.
+              <br/><br/>
+
+              We are thrilled to share our capstone project with you. Thank you for visiting and exploring our work.
+              We hope our project leaves a lasting impression and contributes to ongoing sustainability efforts.
+  </p>
         </div>
       </div>
 
