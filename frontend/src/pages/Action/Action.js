@@ -623,7 +623,16 @@ const Action = () => {
         //subject of email
         const subject = encodeURIComponent(`Regarding carbon removal in ${senator.state}`);
         //body of the email
-        const body = `Dear Senator ${senator.senator},%0D%0A%0D%0AI am writing to express my concerns and thoughts about issues in ${senator.state}.%0D%0A%0D%0AThank you for your attention.%0D%0A%0D%0ASincerely,%0D%0A${"Concerned Citizen"}`;
+        const body = `Dear Senator ${senator.senator},%0D%0A%0D%0AI hope this message finds you well. I am writing to express my deep concern about the urgent issue of carbon removal and its impact on our environment.
+
+As you are well aware, carbon removal is a critical component in addressing climate change and reducing greenhouse gas emissions. I urge you to consider supporting and promoting initiatives that focus on effective carbon removal strategies.
+
+The scientific community has highlighted the importance of exploring various methods, such as afforestation, reforestation, direct air capture, and other innovative technologies. By investing in and advocating for these solutions, we can take meaningful steps toward a more sustainable and resilient future.
+
+I kindly request that you use your influence to raise awareness about the significance of carbon removal and support policies and funding that advance research and implementation in this crucial area.
+
+Thank you for your attention to this matter. I believe that with your leadership, we can make a positive impact on the health of our planet for current and future generations.%0D%0A%0D%0ASincerely,%0D%0A Concerned Citizen
+`;
 
         //bring the user to their email
         window.location.href = `mailto:${"haaseede@msu.edu"}?subject=${subject}&body=${body}`;
@@ -666,6 +675,7 @@ const Action = () => {
                         ))}
                     </div>
                 )}
+
             </div>
         </div>
     );
