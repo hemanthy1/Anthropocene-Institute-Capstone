@@ -571,68 +571,91 @@ const senatorsData = [
 ];
 
 const Action = () => {
-   const [searchInput, setSearchInput] = useState('');
-  const [selectedState, setSelectedState] = useState('');
-  const [senatorsInfo, setSenatorsInfo] = useState([]);
+    const [searchInput, setSearchInput] = useState('');
+    const [selectedState, setSelectedState] = useState('');
+    const [senatorsInfo, setSenatorsInfo] = useState([]);
+    const [filteredStates, setFilteredStates] = useState([]);
 
-  const handleSearch = () => {
-    const lowercaseInput = searchInput.toLowerCase();
-    const foundSenators = senatorsData.filter(
-      (senator) => senator.state.toLowerCase() === lowercaseInput
-    );
+    const states = [
+        'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware',
+        'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',
+        'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi',
+        'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico',
+        'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania',
+        'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+        'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming',
+    ];
+    const handleSelect = (state) => {
+        setSelectedState(state);
+        setSearchInput(state);
+        setFilteredStates([]);
 
-    if (foundSenators.length > 0) {
-      setSelectedState(foundSenators[0].state);
-      setSenatorsInfo(foundSenators);
-    } else {
-      setSelectedState('');
-      setSenatorsInfo([]);
-    }
-  };
+        const lowercaseInput = state.toLowerCase(); // Use the selected state directly
 
-  return (
-    <div className="search-container">
-      <input
-        type="text"
-        value={searchInput}
-        onChange={(e) => setSearchInput(e.target.value)}
-        placeholder="Enter a State..."
-        className="search-input"
-      />
+        const foundSenators = senatorsData.filter(
+            (senator) => senator.state.toLowerCase() === lowercaseInput
+        );
 
-      <select
-        value={selectedState}
-        onChange={(e) => setSelectedState(e.target.value)}
-        className="state-dropdown"
-      >
-        <option value="" disabled>
-          Select a State
-        </option>
-        {senatorsData.map((senator) => (
-          <option key={senator.state} value={senator.state}>
-            {senator.state}
-          </option>
-        ))}
-      </select>
+        if (foundSenators.length > 0) {
+            setSenatorsInfo(foundSenators);
+        } else {
+            setSenatorsInfo([]);
+        }
+    };
 
-      <button onClick={handleSearch} className="search-button">
-        Search
-      </button>
 
-      {senatorsInfo.length > 0 && (
-        <div className="senators-info">
-          <h2>Senators for {senatorsInfo[0].state}:</h2>
-          {senatorsInfo.map((senator) => (
-            <div key={senator.senator} className="senator-info">
-              <h3>{senator.senator}</h3>
-              <p>Email: {senator.email}</p>
-              <p>Phone: {senator.phone}</p>
+    const handleSearch = (input) => {
+        const lowercaseInput = input.toLowerCase();
+        const filteredStates = states.filter(state => state.toLowerCase().includes(lowercaseInput));
+        setFilteredStates(filteredStates);
+    };
+
+    const sendEmail = (email) => {
+        window.location.href = `mailto:${email}`;
+    };
+
+
+    return (
+        <div>
+            <h1 className="action-title">Take Action Today!</h1>
+
+            <div className="search-container">
+                <input
+                    type="text"
+                    value={searchInput}
+                    onChange={(e) => {
+                        setSearchInput(e.target.value);
+                        handleSearch(e.target.value);
+                    }}
+                    placeholder="Enter a State..."
+                    className="search-input"
+                />
+
+                {filteredStates.length > 0 && (
+                    <ul className="dropdown">
+                        {filteredStates.map((state) => (
+                            <li key={state} onClick={() => handleSelect(state)}>
+                                {state}
+                            </li>
+                        ))}
+                    </ul>
+                )}
+
+                {senatorsInfo.length > 0 && (
+                    <div className="senators-info">
+                        <h2>Senators for {senatorsInfo[0].state}:</h2>
+                        {senatorsInfo.map((senator) => (
+                            <div key={senator.senator} className="senator-info"  onClick={() => sendEmail(senator.email)}>
+                                <h3>{senator.senator}</h3>
+                                <p>Email: {senator.email}</p>
+                                <p>Phone: {senator.phone}</p>
+                            </div>
+                        ))}
+                    </div>
+                )}
             </div>
-          ))}
         </div>
-      )}
-    </div>
-  );
+    );
 };
 
 export default Action;

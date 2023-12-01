@@ -1,37 +1,89 @@
 .search-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
-.search-input,
-.state-dropdown {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 4px;
-  outline: none;
-  margin-bottom: 10px;
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 70vw;
+    margin-left: 15vw;
 }
 
-.search-button {
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-  background-color: #4caf50;
-  color: #fff;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
+.dropdown {
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin-left: 15vw;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust to space around or other options based on your preference */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    height: 40px;
+    width: calc(33.3333% - 2px); /* Adjust based on the number of columns and spacing */
+    display: flex;
+    align-items: center;
+}
+
+.dropdown li:hover {
+    background-color: #f8f8f8;
+}
+
+/* Adjust font size for uniformity */
+.dropdown li span {
+    font-size: 14px;
 }
 
 .senators-info {
-  margin-top: 20px;
+    margin-top: 20px;
+    margin-left: 15vw;
 }
 
 .senator-info {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70vw;
 }
 
 .senator-info h3 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.senator-info p {
+    margin: 0;
+    color: #666;
+}
+
+/* Optional: Add a subtle background color to senator-info on hover */
+.senator-info:hover {
+    background-color: #f8f8f8;
+}
+
+.action-title {
+    color: var(--secondary);
+    text-align: center;
+    padding-right: 10vw;
+    letter-spacing: .05em;
 }
