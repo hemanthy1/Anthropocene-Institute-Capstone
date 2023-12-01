@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import './Action.css'; 
+import './Action.css';
 
-
+// Data holding each states senator with their contact information
 const senatorsData = [
     {
         state: 'Alaska',
@@ -571,11 +571,12 @@ const senatorsData = [
 ];
 
 const Action = () => {
+    // Constants to be used
     const [searchInput, setSearchInput] = useState('');
-    const [selectedState, setSelectedState] = useState('');
     const [senatorsInfo, setSenatorsInfo] = useState([]);
     const [filteredStates, setFilteredStates] = useState([]);
 
+    // A list of all of the states for the dropdown menu
     const states = [
         'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware',
         'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',
@@ -585,17 +586,22 @@ const Action = () => {
         'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
         'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming',
     ];
+
+    //Handles what happens when a state is selcted
     const handleSelect = (state) => {
-        setSelectedState(state);
+        // Setting the search input to the selected state
         setSearchInput(state);
+        // getting rid of the dropdown menu because a state was selected
         setFilteredStates([]);
 
-        const lowercaseInput = state.toLowerCase(); // Use the selected state directly
+        // setting the input to all lowercase to be able to compare
+        const lowercaseInput = state.toLowerCase();
 
+        // get the senators matching the sate to display their contact information
         const foundSenators = senatorsData.filter(
             (senator) => senator.state.toLowerCase() === lowercaseInput
         );
-
+        //display the senator information if found
         if (foundSenators.length > 0) {
             setSenatorsInfo(foundSenators);
         } else {
@@ -603,27 +609,33 @@ const Action = () => {
         }
     };
 
-
+    //how to handle filtering as the user searches
     const handleSearch = (input) => {
         const lowercaseInput = input.toLowerCase();
         const filteredStates = states.filter(state => state.toLowerCase().includes(lowercaseInput));
+        //show states matching the current search
         setFilteredStates(filteredStates);
     };
 
+
+    // Bring user to mail when they click on a senator
     const sendEmail = (senator) => {
+        //subject of email
         const subject = encodeURIComponent(`Regarding carbon removal in ${senator.state}`);
-       const body = `Dear Senator ${senator.senator},%0D%0A%0D%0AI am writing to express my concerns and thoughts about issues in ${senator.state}.%0D%0A%0D%0AThank you for your attention.%0D%0A%0D%0ASincerely,%0D%0A${"Edie"}`;
+        //body of the email
+        const body = `Dear Senator ${senator.senator},%0D%0A%0D%0AI am writing to express my concerns and thoughts about issues in ${senator.state}.%0D%0A%0D%0AThank you for your attention.%0D%0A%0D%0ASincerely,%0D%0A${"Concerned Citizen"}`;
 
-
+        //bring the user to their email
         window.location.href = `mailto:${"haaseede@msu.edu"}?subject=${subject}&body=${body}`;
     };
 
-
     return (
+
         <div>
             <h1 className="action-title">Take Action Today!</h1>
 
             <div className="search-container">
+                <!-- the input section for search -->
                 <input
                     type="text"
                     value={searchInput}
@@ -631,10 +643,10 @@ const Action = () => {
                         setSearchInput(e.target.value);
                         handleSearch(e.target.value);
                     }}
-                    placeholder="Enter a State..."
+                    placeholder="Enter your State..."
                     className="search-input"
                 />
-
+                <!-- dropdown section-->
                 {filteredStates.length > 0 && (
                     <ul className="dropdown">
                         {filteredStates.map((state) => (
@@ -644,7 +656,7 @@ const Action = () => {
                         ))}
                     </ul>
                 )}
-
+                <!-- senator info section  -->
                 {senatorsInfo.length > 0 && (
                     <div className="senators-info">
                         <h2 className="senator-title">Senators for {senatorsInfo[0].state}:</h2>

@@ -9,6 +9,7 @@ import "../../components/Accordion/Accordion.css";
  * @returns The contents of the FAQ page
  */
 function Faq() {
+    //setting the faqs with the question and answer
     const [faqs, setfaqs] = useState([
         {
 
