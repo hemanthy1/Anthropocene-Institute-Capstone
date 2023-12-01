@@ -152,7 +152,7 @@ function GeneralColumn(props) {
     <div className="column">
     <div className="card">
     <GeneralPfp src={props.pfp} alt={props.alt}></GeneralPfp>
-      <div className="containerr">
+      <div className="team-container">
         <h2 className="name">{props.name}</h2>
         <p className="role">{props.role}</p>
         <p>{props.text}</p>
@@ -175,7 +175,7 @@ function GeneralSponsorColumn(props) {
     <div className="column">
       <div className="card">
         <GeneralPfp src={props.pfp} alt={props.alt}></GeneralPfp>
-        <div className="containerr">
+        <div className="sponsor-container">
           <h2 className="name">{props.name}</h2>
           <p className="role">{props.role}</p>
         </div>

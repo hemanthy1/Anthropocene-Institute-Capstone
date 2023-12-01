@@ -1,9 +1,44 @@
-.about-title { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 5vw; font-style: normal; font-variant: normal; font-weight: 100; line-height: 50px; } 
-.name { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 1.5vw; font-style: normal; font-variant: normal; font-weight: bold; line-height: 3.5vw; } 
-.our-team{ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 3.5vw; font-style: normal; font-variant: normal; font-weight: bold; line-height: 3.5vw; letter-spacing: .075;text-align: center; color: var(--secondary)} 
-.top-text {text-align: center; margin-top: 7%;}
-.bottom-text {text-align: center; color: var(--secondary);}
-.name {color: var(--secondary)}
+.about-title {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 5vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 50px;
+}
+
+.name {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 3.5vw;
+    color: var(--secondary)
+}
+
+.our-team {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 3.5vw;
+    letter-spacing: .075;
+    text-align: center;
+    color: var(--secondary)
+}
+
+.top-text {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.bottom-text {
+    text-align: center;
+    color: var(--secondary);
+}
+
 
 .about-hr {
     margin-bottom: 75px;
@@ -25,20 +60,32 @@ html {
     padding: 0px 8px;
 }
 
-.row-two>.column {
+.row-two > .column {
     float: left;
 }
 
 .card {
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.175);
     margin: 7.5px;
+
 }
 
-.containerr {
-    margin-top:auto;
+.team-container {
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     padding: 0px 15px;
+    height: 45vh;
+    font-size: 2vh;
+}
+
+.sponsor-container {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    height: 20vh;
+    font-size: 2vh;
 }
 
 .role {
@@ -79,7 +126,11 @@ html {
 }
 
 @media screen and (max-width: 650px) {
-    .containerr {
-        font-size: 10px;
+    .sponsor-container {
+        font-size: 2vh;
+    }
+
+    .team-container {
+        font-size: 2vh;
     }
 }
