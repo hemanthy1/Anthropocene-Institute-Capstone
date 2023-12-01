@@ -27,7 +27,7 @@
     width: 70vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Adjust to space around or other options based on your preference */
+    justify-content: space-between;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -38,7 +38,7 @@
     border-right: 1px solid #ddd;
     box-sizing: border-box;
     height: 40px;
-    width: calc(33.3333% - 2px); /* Adjust based on the number of columns and spacing */
+    width: calc(33.3333% - 2px);
     display: flex;
     align-items: center;
 }
@@ -47,7 +47,7 @@
     background-color: #f8f8f8;
 }
 
-/* Adjust font size for uniformity */
+
 .dropdown li span {
     font-size: 14px;
 }
@@ -76,7 +76,7 @@
     color: #666;
 }
 
-/* Optional: Add a subtle background color to senator-info on hover */
+
 .senator-info:hover {
     background-color: #f8f8f8;
 }
@@ -86,4 +86,12 @@
     text-align: center;
     padding-right: 10vw;
     letter-spacing: .05em;
+}
+
+.senator-title{
+  text-align: left;
+  font-size: 2vw;
+  letter-spacing: .05em;
+  color: var(--secondary);
+  font-weight: bold;
 }

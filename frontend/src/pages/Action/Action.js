@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './Action.css'; // Import the CSS file
+import './Action.css'; 
 
 
 const senatorsData = [
@@ -647,7 +647,7 @@ const Action = () => {
 
                 {senatorsInfo.length > 0 && (
                     <div className="senators-info">
-                        <h2>Senators for {senatorsInfo[0].state}:</h2>
+                        <h2 className="senator-title">Senators for {senatorsInfo[0].state}:</h2>
                         {senatorsInfo.map((senator) => (
                             <div key={senator.senator} className="senator-info" onClick={() => sendEmail(senator)}>
                                 <h3>{senator.senator}</h3>
