@@ -26,7 +26,7 @@ function Articles() {
 
   return (
       <>
-        <h2 className="articles-title"> Data Sources </h2>
+        <h2 className="articles-title"> Articles </h2>
         <div className='articles'>
             <ArticleLink link={links.link1} image={article1}>
             Direct Air Capture - Learn More!
