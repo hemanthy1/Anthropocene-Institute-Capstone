@@ -8,6 +8,15 @@ import {Link} from "react-router-dom";
 import kelpData from "./stateKelpFarm.geojson"
 
 
+/**
+ *
+ * Defines the interactive heatmap component containing the best locations
+ * to implement the kelp farms carbon removal technology.
+ * Also includes the more info box and the search bar features
+ *
+ * @param {*} props Data object containing the heatmap colors
+ * @returns The direct air capture map component
+ */
 function KelpMap(props) {
 
     const mapContainer = useRef(null);
@@ -28,7 +37,8 @@ function KelpMap(props) {
             zoom: 2.2,
         });
 
-        // Add Geocoder which creates the search bar
+        //Adds the search function to the map using an existing component
+        // https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/
         const geocoder = new MapboxGeocoder({
             accessToken: mapboxgl.accessToken,
             mapboxgl: mapboxgl,
@@ -54,10 +64,12 @@ function KelpMap(props) {
                     'circle-color': [
                         'case',
                         ['boolean', ['feature-state', 'hover'], false],
-                        '#ffe37a', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // When the data point is hovered make it yellow
                         ['boolean', ['feature-state', 'click'], false],
-                        '#ffe37a', // Color to use when the condition is true (clicked)
+                        '#ffe37a', // if the data point is clicked make it yellow
                         [
+                            // if the data point is not hovered or clicked
+                            // color it according to its classification determined by the ml model
                             'interpolate',
                             ['linear'],
                             ['get', 'class'],
@@ -92,6 +104,7 @@ function KelpMap(props) {
             map.getCanvas().style.cursor = '';
         });
 
+        // initial hover and click state
         let stateHoveredPolygonId = null;
         let stateClickedPolygonId = null;
 
