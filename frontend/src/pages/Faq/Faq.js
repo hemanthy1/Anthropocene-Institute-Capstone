@@ -29,14 +29,14 @@ function Faq() {
                 'lowering their carbon footprint. For example, one forth of the Fortune 500 companies' +
                 ' have pledged to become carbon neutral by 2030. Investing in carbon removal' +
                 ' technology is hard enough for the worlds biggest companies, but smaller organizations' +
-                ' often don\'t have the time or resources to effectively do so',
+                ' often don\'t have the time or resources to effectively do so.',
             open: false
         },
         {
             question: 'How was Carbon Mapp developed?',
             answer: 'Carbon Mapp is a web application which utilizes Python machine learning' +
                 ' libraries, publicly available data, and the Mapbox JavaScript API to generate ' +
-                'the heatmaps',
+                'heatmaps.',
             open: false
 
         },
