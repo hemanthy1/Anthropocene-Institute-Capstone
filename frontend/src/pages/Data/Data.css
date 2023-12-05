@@ -26,3 +26,9 @@
 .data-link-content:hover {
   transform: scale(1.01);
 }
+
+.data-title{
+  text-align: center;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 3.5vw;
+}
