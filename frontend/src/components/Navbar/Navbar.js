@@ -90,7 +90,7 @@ function Navlink(props) {
  */
 function LogoImage() {
     return (
-        <Link to="/">
+        <Link to="https://anthropoceneinstitute.com/">
             <img
                 src={logoImage}
                 alt="Anthropocene Institute Logo"
