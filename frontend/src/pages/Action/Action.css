@@ -12,7 +12,6 @@
     border-radius: 4px;
     outline: none;
     width: 80vw;
-    margin-left: 10vw;
 }
 
 .dropdown {
@@ -120,4 +119,9 @@
 
 .blurb li {
     margin-bottom: 10px;
+}
+
+.action-container{
+    max-width: 80vw;
+    margin: auto;
 }

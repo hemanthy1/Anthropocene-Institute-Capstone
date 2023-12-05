@@ -640,7 +640,7 @@ Thank you for your attention to this matter. I believe that with your leadership
 
     return (
 
-        <div>
+        <div className="action-container">
             <h1 className="action-title">Take Action: Support Carbon Removal Initiatives </h1>
 
             <p className="blurb">
@@ -653,7 +653,8 @@ Thank you for your attention to this matter. I believe that with your leadership
                 that promote research, funding, and implementation of effective carbon removal solutions.<br/><br/>
 
                 <strong>Why Contact your Senator?</strong>
-                <ul>
+            </p>
+                <ul className="bullet-points">
                     <li><strong>Influence Policy:</strong> Your voice matters. By reaching out to your senator, you contribute to the
                         conversation on climate change policy and advocate for meaningful action. The more climate change is talked about
                         the more likely policy is to reflect the climate change concerns.
@@ -666,6 +667,7 @@ Thank you for your attention to this matter. I believe that with your leadership
                         carbon removal. Innovations such as kelp farming, direct air capture, and reforestation.
                     </li>
                 </ul>
+            <p className="blurb">
                 <br/>
                 Ready to make a difference? Simply type in your state and click the senator you wish you contact, we'll provide you with an
                 email template to send to that senator. Let your voice be heard and contribute to the collective effort
