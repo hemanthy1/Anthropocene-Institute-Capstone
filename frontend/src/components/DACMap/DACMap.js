@@ -9,16 +9,16 @@ import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import {Link} from "react-router-dom";
 
 /**
- * 
+ *
  * Defines the interactive heatmap component containing the best locations
  * to implement the direct air capture carbon removal technology.
  * Also includes the more info box and the search bar features
- * 
+ *
  * @param {*} props Data object containing the heatmap colors
  * @returns The direct air capture map component
  */
 function DACMap(props) {
-
+    //Initializing the map constants
     const mapContainer = useRef(null);
     const [map, setMap] = useState(null);
     const zoomThreshold = 3;
@@ -26,10 +26,11 @@ function DACMap(props) {
     const [isLoading, setIsLoading] = useState(false); // New loading state
 
     useEffect(() => {
+        //our mapbox api access token
         mapboxgl.accessToken =
             "pk.eyJ1IjoiamhvbHNjaDI5IiwiYSI6ImNsbjJjaWllNzAwcDQyam1wYnF6NHQ0Z24ifQ.TYll92t4SavsRHHFUhU-UA";
 
-
+        //initializing the map that will apear on the screen
         const initializeMap = ({setMap, mapContainer}) => {
 
 
@@ -41,55 +42,68 @@ function DACMap(props) {
                     minZoom: 1,
                     zoom: 2.2,
                 });
+
+                //Adds the search function to the map using an existing component
+                // https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder/
                 const geocoder = new MapboxGeocoder({
                     accessToken: mapboxgl.accessToken,
                     mapboxgl: mapboxgl,
                 });
+                // add the searchbar to the map
                 newMap.addControl(geocoder);
+                //Where the map is located and how it is sized when it is rendered
                 newMap.on("load", () => {
                     setMap(newMap);
                     newMap.resize();
-
                 });
             }
         };
-
+        // if there is no map then initialize it
         if (!map) initializeMap({setMap, mapContainer});
     }, [map]);
+
+    //This adds the appropriate data
     useEffect(() => {
             if (map) {
-
+                // fetching state outlines
                 if (map.getSource("state")) {
                     // If it does, update its data
                     map.getSource("state").setData("http://34.133.43.211/dacstategeojson.geojson");
 
                 }
+                // fetching county outlines
                 if (map.getSource("county")) {
                     // If it does, update its data
                     map.getSource("county").setData("http://34.133.43.211/daccountygeojson.geojson");
                 }
+                // fetching state classification data
                 if (!map.getSource("state")) {
                     map.addSource("state", {
                         type: "geojson",
                         data: "http://34.133.43.211/dacstategeojson.geojson",
                         promoteId: "NAME",
                     });
-
+                    // Add the classification state data as a layer to the map
                     map.addLayer({
                         id: "state-data",
                         source: "state",
                         // 'source-layer': 'stateReforestation-ad4r41',  // vector tileset name
+                        // putting a threshold for when it switches to county data
                         maxzoom: zoomThreshold,
+                        // fill the color
                         type: "fill",
                         filter: ["==", "isState", "yes"],
                         paint: {
+                            // determining what color the state should be
                             "fill-color": [
                                 "case",
                                 ["boolean", ["feature-state", "hover"], false],
-                                "#ffe37a", // Color to use when the condition is true (clicked)
+                                "#ffe37a", // When state is hovered on change it to yellow
                                 ["boolean", ["feature-state", "click"], false],
-                                "#ffe37a", // Color to use when the condition is true (clicked)
+                                "#ffe37a", // when the state is clicked on change it to a yellow color
                                 [
+                                    // if the state is not hovered or clicked on then determine the color
+                                    // based on the classifications determined by the machine learning model
                                     "interpolate",
                                     ["linear"],
                                     ["get", "class"],
@@ -111,6 +125,7 @@ function DACMap(props) {
                                     props.colors.color7,
                                 ],
                             ],
+                            // making the colors less harsh
                             "fill-opacity": 0.85,
                         },
                     });
@@ -128,31 +143,25 @@ function DACMap(props) {
                         },
                     });
 
-                    //             // define boundary lines for counties so that
-                    //             // divisions are always obvious regardless of zoom
-                    // map.addLayer({
-                    // id: 'county-boundaries',
-                    // source: 'county',
-                    // 'source-layer': 'countyReforestation-dszxt3',
-                    // type: 'line',
-                    // paint: {
-                    //     'line-color': '#000',
-                    //     'line-width': .1
-                    // }
-                    // });
                 }
+
+                //Add county level data to the map
                 if (!map.getSource("county")) {
+                    // set the loading to true so that we can have the loading gif
                     setIsLoading(true);
 
+                    // add the county level source data
                     map.addSource("county", {
                         type: "geojson",
                         data: "http://34.133.43.211/daccountygeojson.geojson",
                         promoteId: "GEO_ID",
                     });
+                    // adding the count-level data from the machine learning model
                     map.addLayer({
                         id: 'county-data',
                         source: 'county',
-                        // 'source-layer': 'countyReforestation-dszxt3',  // vector tileset name
+                        // Setting the minimum zoom threshold
+                        // this allows this data to only show when the map is zoomed into the threshold
                         minzoom: zoomThreshold,
                         type: 'fill',
                         filter: ['==', 'isState', "no"],
@@ -160,10 +169,12 @@ function DACMap(props) {
                             'fill-color': [
                                 'case',
                                 ['boolean', ['feature-state', 'hover'], false],
-                                '#ffe37a', // Color to use when the condition is true (clicked)
+                                '#ffe37a', // When the county is hovered change the color to yellow
                                 ['boolean', ['feature-state', 'click'], false],
-                                '#ffe37a', // Color to use when the condition is true (clicked)
+                                '#ffe37a', // When the county is clicked change the color to yellow
                                 [
+                                    // If the county is not clicked or hover make the color correspond to
+                                    // to the classificiation done by the machine learning model
                                     'interpolate',
                                     ['linear'],
                                     ['get', 'class'],
@@ -188,11 +199,13 @@ function DACMap(props) {
                             'fill-opacity': .85,
                         },
                     });
+                    // adding the boundaries of the counties as a layer to the map
                     map.addLayer({
                         id: 'county-boundaries',
                         source: 'county',
-                        // 'source-layer': 'countyReforestation-dszxt3',
                         type: 'line',
+                        // it will only show when a user is zoomed in
+                        // making it so the state and the counties will not both show at the same time
                         minzoom: zoomThreshold,
                         paint: {
                             'line-color': '#000',
@@ -202,20 +215,23 @@ function DACMap(props) {
                     });
                 }
 
+                // initial state of the states and counties is that they are not hovered or clicked
                 let stateHoveredPolygonId = null;
                 let stateClickedPolygonId = null;
                 let countyHoveredPolygonId = null;
                 let countyClickedPolygonId = null;
+                // change the curser to a pointer
                 map.getCanvas().style.cursor = "pointer";
+                // Changing the loading sate to false when the data is done loading
                 map.once('idle', () => {
                     setIsLoading(false)
                 });
 
                 if (map.getLayer('state-data')) {
 
-
+                    // What to do when a polygon is hovered
                     map.on("mousemove", "state-data", (e) => {
-                        // console.log("hovering")
+                        // grabbing the properties of the hovered polygon
                         const properties = e.features[0].properties;
 
                         // the current features properties
@@ -238,6 +254,7 @@ function DACMap(props) {
                             {hover: true}
                         );
                     });
+                    // What to do when a state is clicked
                     map.on("click", "state-data", (e) => {
                         //Function to format percent
                         function formatPercent(value) {
@@ -278,40 +295,34 @@ function DACMap(props) {
                         const stateTemp = properties['temperature'];
 
                         //catch if data is not found and display no data found
-                        if (isNaN(stateCost)){
+                        if (isNaN(stateCost)) {
                             costDisplay.textContent = "No Data Found";
-                        }
-                        else{
+                        } else {
                             costDisplay.textContent = formatPercent(stateCost);
                         }
-                        if (isNaN(stateElec)){
-                            elecDisplay.textContent= "No Data Found";
-                        }
-                        else{
+                        if (isNaN(stateElec)) {
+                            elecDisplay.textContent = "No Data Found";
+                        } else {
                             elecDisplay.textContent = addCommas(stateElec);
                         }
-                        if (isNaN(stateElev)){
-                            elevDisplay.textContent= "No Data Found";
-                        }
-                        else{
+                        if (isNaN(stateElev)) {
+                            elevDisplay.textContent = "No Data Found";
+                        } else {
                             elevDisplay.textContent = addCommas(stateElev);
                         }
-                        if (isNaN(statePop)){
-                            popDisplay.textContent= "No Data Found";
-                        }
-                        else{
+                        if (isNaN(statePop)) {
+                            popDisplay.textContent = "No Data Found";
+                        } else {
                             popDisplay.textContent = addCommas(statePop);
                         }
-                        if (isNaN(statePre)){
-                            preDisplay.textContent= "No Data Found";
-                        }
-                        else{
+                        if (isNaN(statePre)) {
+                            preDisplay.textContent = "No Data Found";
+                        } else {
                             preDisplay.textContent = addCommas(statePre);
                         }
-                        if (isNaN(stateTemp)){
-                            tempDisplay.textContent= "No Data Found";
-                        }
-                        else{
+                        if (isNaN(stateTemp)) {
+                            tempDisplay.textContent = "No Data Found";
+                        } else {
                             tempDisplay.textContent = formatTemp(stateTemp);
                         }
 
@@ -436,43 +447,36 @@ function DACMap(props) {
                         const countyTemp = parseFloat(properties['temperature']);
 
                         // displaying no data if there is no data found for the county
-                        if (isNaN(countyCost)){
+                        if (isNaN(countyCost)) {
                             costDisplay.textContent = "No Data Found";
-                        }
-                        else{
+                        } else {
                             costDisplay.textContent = formatPercent(countyCost);
                         }
-                        if (isNaN(countyElec)){
-                            elecDisplay.textContent= "No Data Found";
-                        }
-                        else{
+                        if (isNaN(countyElec)) {
+                            elecDisplay.textContent = "No Data Found";
+                        } else {
                             elecDisplay.textContent = addCommas(countyElec);
                         }
-                        if (isNaN(countyElev)){
-                            elevDisplay.textContent= "No Data Found";
-                        }
-                        else{
+                        if (isNaN(countyElev)) {
+                            elevDisplay.textContent = "No Data Found";
+                        } else {
                             elevDisplay.textContent = addCommas(countyElev);
                         }
-                        if (isNaN(countyPop)){
-                            popDisplay.textContent= "No Data Found";
-                        }
-                        else{
+                        if (isNaN(countyPop)) {
+                            popDisplay.textContent = "No Data Found";
+                        } else {
                             popDisplay.textContent = addCommas(countyPop);
                         }
-                        if (isNaN(countyPre)){
-                            preDisplay.textContent= "No Data Found";
-                        }
-                        else{
+                        if (isNaN(countyPre)) {
+                            preDisplay.textContent = "No Data Found";
+                        } else {
                             preDisplay.textContent = addCommas(countyPre);
                         }
-                        if (isNaN(countyTemp)){
-                            tempDisplay.textContent= "No Data Found";
-                        }
-                        else{
+                        if (isNaN(countyTemp)) {
+                            tempDisplay.textContent = "No Data Found";
+                        } else {
                             tempDisplay.textContent = formatTemp(countyTemp);
                         }
-
 
 
                         nameDisplay.textContent = countyName;
@@ -513,6 +517,7 @@ function DACMap(props) {
         , [map, "http://34.133.43.211/dacstategeojson.geojson"]);
 
     return (
+
         <div className="map-container-wrapper">
             {isLoading && (
                 <div className="loading-overlay">
