@@ -635,7 +635,7 @@ Thank you for your attention to this matter. I believe that with your leadership
 `;
 
         //bring the user to their email
-        window.location.href = `mailto:${"haaseede@msu.edu"}?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:${senator.email}?subject=${subject}&body=${body}`;
     };
 
     return (
