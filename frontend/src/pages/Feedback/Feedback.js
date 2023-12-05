@@ -13,6 +13,7 @@ function Feedback() {
         email: formData.get('email')
     };
     email(data);
+    window.location.href = "/feedback-submission"
   };
 
   return (

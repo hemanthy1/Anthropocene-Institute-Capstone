@@ -14,6 +14,7 @@ import Reforestation from './pages/Reforestation/Reforestation';
 import MoreInfo from "./pages/MoreInfo/MoreInfo";
 import Feedback from './pages/Feedback/Feedback';
 import Action from './pages/Action/Action';
+import FeedbackSubmission from './pages/FeedbackSubmission/FeedbackSubmission';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path="reforestation" element={<Reforestation />} />
             <Route path="moreinfo" element={<MoreInfo />} />
             <Route path="feedback" element={<Feedback />} />
+            <Route path="feedback-submission" element={<FeedbackSubmission />} />
             <Route path="action" element={<Action />} />
             <Route path="*" element={<NoPage />} />
           </Route>
