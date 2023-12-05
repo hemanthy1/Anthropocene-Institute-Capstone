@@ -16,6 +16,7 @@ DB_USER="Uploader1"
 DB_PASS="Ubf:X$LI+{kRRiHz"
 ForestationDB_NAME="ForestationData"
 DacDB_NAME="DACData"
+KelpDB_NAME="KelpFarmsData"
 
 # email settings for feedback form
 app.config['MAIL_SERVER'] = 'smtp-mail.outlook.com'
@@ -153,6 +154,29 @@ def get_daccountyjson():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route('/kelpfarms.geojson', methods=['GET'])
+def get_kelpfarms():
+    try:
+        engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,KelpDB_NAME)
+        json_data = OrderedDict([
+            ("type", "FeatureCollection"),
+            ("features", [])
+        ])
+        with engine.connect() as connection:
+            result = connection.execute(sqlalchemy.text("SELECT * FROM data_table"))
+            
+            for row in result:
+                feature = OrderedDict([
+                    ("type", row.type),
+                    ("properties", row.properties),
+                    ("geometry", row.geometry)
+                ])
+                json_data["features"].append(feature)
+        json_format=json.dumps(json_data)
+
+        return json_format
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 # @app.route('/hardcode.geojson', methods=['GET'])
@@ -175,4 +199,4 @@ def index():
 
 
 if __name__ == '__main__':  
-    app.run(host='0.0.0.0', debug=True)
+    app.run(debug=True,port=4000)

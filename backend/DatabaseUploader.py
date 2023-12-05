@@ -10,7 +10,7 @@ import pandas as pd
 INSTANCE_CONNECTION_NAME="carbon-mapp:us-east5:carbon-mapp" 
 DB_USER="Uploader1"
 DB_PASS="Ubf:X$LI+{kRRiHz"
-DB_NAME="DACData"
+DB_NAME="KelpFarmsData"
 
 def GeoJSONStateList():
     stateJsonFile = "backend/states.json"
@@ -191,6 +191,37 @@ def GeoJsonDACState():
     return listofJSONS
 
 
+def updateKelpFarmData():
+    # file path variables
+    new_file = "backend/geoJsonOutputs/stateData/stateKelpFarm.geojson"
+    data_file = "backend/Kelp/kelp_class.csv"
+
+    # Store our data in a pandas DataFrame
+    df = pd.read_csv(data_file)
+
+    # build the features data as a python list
+    features = []
+    for index, row in df.iterrows():
+        feature = {
+            "type": "Feature",
+            "properties": {
+                "lat": row["latitude"],
+                "long": row["longitude"],
+                "depth": row["Depth"],
+                "temperature": row["Temperature"],
+                "ph": row["pH"],
+                "loc": row["percentile_rank"],
+                "class": row["Final_Class"],
+                "isState": "yes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [row["longitude"], row["latitude"]]
+            }
+        }
+        features.append(feature)        
+    return features
+
 
 def GeoJSONCountyList():
     stateJsonFile = "backend/geoJsonOutputs/countyData/countyReforestation.json"
@@ -298,44 +329,35 @@ def UpdateStatesDB():
     meta = sqlalchemy.MetaData()
 
     # Create a table for the JSON data
-    GeoData = sqlalchemy.Table('states_table', meta,
+    GeoData = sqlalchemy.Table('data_table', meta,
         sqlalchemy.Column('type', sqlalchemy.String),
         sqlalchemy.Column('properties', sqlalchemy.JSON),
         sqlalchemy.Column('geometry', sqlalchemy.JSON)
     )
 
     # TO CREATE TABLE
-    GeoData.create(engine, checkfirst=True)  # checkfirst ensures the table is only created if it doesn't exist
+    GeoData.create(engine, checkfirst=True)  
 
-    JSONList=GeoJsonDACState()
+    JSONList=updateKelpFarmData()
 
-
+    completeLength=len(JSONList)
     with engine.connect() as connection:
-        delete_stmt = sqlalchemy.text("DELETE FROM states_table")
-        connection.execute(delete_stmt)
+        # delete_stmt = sqlalchemy.text("DELETE FROM data_table")
+        # connection.execute(delete_stmt)
 
-        # Now, insert new data into the table
-        for data_to_insert in JSONList:
-            connection.execute(GeoData.insert(), data_to_insert)
+        # # TO INSERT INTO TABLE
+        # for i in range(completeLength):
+        #     connection.execute(GeoData.insert(), JSONList[i])
+        #     print(i,completeLength)
+        # connection.commit()
 
-        # Commit the transaction to save the changes to the database
-        connection.commit()
-
-        # To see data in table (optional)
-        result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
+        # # To see data in table
+        result = connection.execute(sqlalchemy.text("SELECT * FROM data_table"))
         for row in result:
-            print(len(row[1]))
-            # TO INSERT INTO TABLE
-            # for i in range(len(JSONList)):
-            #     data_to_insert = JSONList[i]
-            #     connection.execute(GeoData.insert(), data_to_insert)
-            #     connection.commit()
-            
-            # To see data in table
-            # result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
-            # for row in result:
-            #     print(len(row[1]))  
-            print()
+            print(row)
+        
+        
+        
 
 
 def UpdateCountiesDB():
@@ -369,7 +391,7 @@ def UpdateCountiesDB():
         # To see data in table (optional)
         result = connection.execute(sqlalchemy.text("SELECT * FROM counties_table"))
         for row in result:
-            print(len(row[1]))
+            print(row[1])
             # TO INSERT INTO TABLE
             # for i in range(len(JSONList)):
             #     data_to_insert = JSONList[i]
@@ -384,4 +406,4 @@ def UpdateCountiesDB():
 
 if __name__ == "__main__":
     UpdateStatesDB()
-    UpdateCountiesDB()
+    # UpdateCountiesDB()
