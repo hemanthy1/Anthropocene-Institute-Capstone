@@ -8,7 +8,7 @@ import jackpfp from "../../assets/jackpfp.jpeg"
 import carlpfp from "../../assets/carlpagepfp.jpeg"
 import frankpfp from "../../assets/frankpfp.png"
 import melindapfp from "../../assets/melindapfp.jpeg"
-import designdaypage from "../../assets/designdaypage.jpeg"
+import designdaypage from "../../assets/designdaypage.png"
 
 function About() {
   return (
