@@ -25,32 +25,35 @@ function Articles() {
   }
 
   return (
-    <div className='articles'>
-      <ArticleLink link={links.link1} image={article1}>
-        Direct Air Capture - Learn More!
-      </ArticleLink>
-      <ArticleLink link={links.link2} image={article2}>
-        Kelp Farms - Learn More!
-      </ArticleLink>
-      <ArticleLink link={links.link3} image={article3}>
-        Reforestation - Learn More!
-      </ArticleLink>
-      <ArticleLink link={links.link4} image={article4}>
-        More About the Anthropocene Institute
-      </ArticleLink>
-      <ArticleLink link={links.link5} image={article5}>
-        The Importance of Carbon Dioxide Removal (CDR)
-      </ArticleLink>
-      <ArticleLink link={links.link6} image={article6}>
-        Oppenheimer: Manhattan Project for a Decarbonized Future
-      </ArticleLink>
-      <ArticleLink link={links.link7} image={article7}>
-        The Reality of the Climate Crisis
-      </ArticleLink>
-      <ArticleLink link={links.link8} image={article8}>
-        Check Out the Capstone Experience at MSU!
-      </ArticleLink>
-    </div>
+      <>
+        <h2 className="articles-title"> Data Sources </h2>
+        <div className='articles'>
+            <ArticleLink link={links.link1} image={article1}>
+            Direct Air Capture - Learn More!
+            </ArticleLink>
+            <ArticleLink link={links.link2} image={article2}>
+            Kelp Farms - Learn More!
+            </ArticleLink>
+            <ArticleLink link={links.link3} image={article3}>
+            Reforestation - Learn More!
+            </ArticleLink>
+            <ArticleLink link={links.link4} image={article4}>
+            More About the Anthropocene Institute
+            </ArticleLink>
+            <ArticleLink link={links.link5} image={article5}>
+            The Importance of Carbon Dioxide Removal (CDR)
+            </ArticleLink>
+            <ArticleLink link={links.link6} image={article6}>
+            Oppenheimer: Manhattan Project for a Decarbonized Future
+            </ArticleLink>
+            <ArticleLink link={links.link7} image={article7}>
+            The Reality of the Climate Crisis
+            </ArticleLink>
+            <ArticleLink link={links.link8} image={article8}>
+            Check Out the Capstone Experience at MSU!
+            </ArticleLink>
+        </div>
+    </>
   )
 }
 

@@ -1,6 +1,16 @@
 .articles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.articles-title {
+    text-align: center;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    color: var(--secondary);
 }

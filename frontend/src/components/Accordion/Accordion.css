@@ -42,13 +42,13 @@
 }
 
 .faqTitle {
-    text-align: left;
+    text-align: center;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 3.5vw;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
     color: var(--secondary);
-    font-size: clamp(12px, 3vw, 30px);
 }
 
 .line {
