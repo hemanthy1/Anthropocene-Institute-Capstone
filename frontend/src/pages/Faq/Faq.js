@@ -48,7 +48,7 @@ function Faq() {
         },
         {
             question: 'Where was the data collected from ?',
-            answer: '--add link to the data page-- ',
+            answer: 'Visit the \'Data\' link in the navigation bar to view our data sources!',
             open: false
 
         }
