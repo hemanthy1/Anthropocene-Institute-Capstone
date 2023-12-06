@@ -19,6 +19,11 @@ As apart of our senior capstone project at Michigan State University, we teamed 
 
 ## How to Use 
 
+To run the website locally: From terminal/command prompt, cd into the frontend folder and run : 'npm start'
+
+Steps to have the website running on google cloud: 
+
+
 
 
 ## Authors and acknowledgment
