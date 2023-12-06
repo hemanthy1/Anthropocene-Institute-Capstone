@@ -76,6 +76,7 @@ function ChoroplethMap(props) {
                 map.getSource("county").setData("http://34.133.43.211/forestationcountygeojson.geojson"); // CHANGE to url of backend, when running
             }
             if (!map.getSource("state")) {
+                // If not, set the data source
                 map.addSource("state", {
                     type: "geojson",
                     data: "http://34.133.43.211/forestationstategeojson.geojson", // CHANGE to url of backend, when running
