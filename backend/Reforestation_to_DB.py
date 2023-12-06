@@ -13,6 +13,7 @@ if __name__ == '__main__':
     engine = connect_with_connector(INSTANCE_CONNECTION_NAME, DB_USER, DB_PASS, DB_NAME)
     meta = sqlalchemy.MetaData()
 
+    #creates table with col names
     forestation = sqlalchemy.Table('forestation', meta,
                        sqlalchemy.Column('State', sqlalchemy.String),
                        sqlalchemy.Column('Abbreviation', sqlalchemy.String),
