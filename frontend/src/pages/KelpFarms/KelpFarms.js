@@ -1,6 +1,14 @@
 import KelpMap from "../../components/KelpMap/KelpMap"
 import "./KelpFarms.css"
 
+/**
+ * A webpage for the kelp farms optimization tool.
+ * The webpage contains the heatmap for the most optimal locations
+ * to setup a kelp farm based on different factors
+ * 
+ * @returns The webpage containing the kelp farms
+ * optimization tool
+ */
 function KelpFarms() {
 
   const colors =  {
@@ -22,7 +30,13 @@ function KelpFarms() {
   );
 }
 
-
+/**
+ * The banner image component for the kelp farms tool page
+ * The webpage contains the heatmap for the most optimal locations
+ * to plant kelp in the oceans
+ * 
+ * @returns The banner image with proper formatting
+ */
 function KelpFarmBanner() {
   return (
       <div className="kelpfarms-banner-image">
