@@ -10,6 +10,13 @@ import frankpfp from "../../assets/frankpfp.png"
 import melindapfp from "../../assets/melindapfp.jpeg"
 import designdaypage from "../../assets/designdaypage.png"
 
+/**
+ * The "About" Page Body
+ * The webpage contains information regarding our team and sponsors, as well
+ * as information about the Capstone Course
+ * 
+ * @returns The webpage containing the about page
+ */
 function About() {
   return (
     <div>
