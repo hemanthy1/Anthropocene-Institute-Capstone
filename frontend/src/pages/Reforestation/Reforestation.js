@@ -1,6 +1,14 @@
 import Heatmap from "../../components/ReforestationMap/ReforestationMap"
 import "./Reforestation.css"
 
+/**
+ * A webpage for the Reforestation optimization tool.
+ * The webpage contains the heatmap for the most optimal locations
+ * to plant many trees.
+ * 
+ * @returns The webpage containing the reforestation
+ *  optimization tool.
+ */
 function Reforestation() {
 
     const colors = {
@@ -26,7 +34,13 @@ function Reforestation() {
     );
 }
 
-
+/**
+ * The banner image component for the Reforestation tool page
+ * The webpage contains the heatmap for the most optimal locations
+ * for reforestation
+ * 
+ * @returns The banner image with proper formatting
+ */
 function ReforestationBanner() {
     return (
         <div className="banner-image">
