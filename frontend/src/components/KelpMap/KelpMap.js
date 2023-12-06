@@ -6,6 +6,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import {Link} from "react-router-dom";
 import kelpData from "./stateKelpFarm.geojson"
+import loadingSpinner from '../../assets/loading.gif';
 
 
 /**
@@ -22,6 +23,7 @@ function KelpMap(props) {
     const mapContainer = useRef(null);
     const [legendDisplay] = useState('block');
     const zoomThreshold = 3;
+    const [isLoading, setIsLoading] = useState(false); // New loading state
 
 
     useEffect(() => {
@@ -49,9 +51,11 @@ function KelpMap(props) {
 
         //load the data on the map
         map.on('load', () => {
+            setIsLoading(true);
+
             map.addSource('kelp', {
                 type: 'geojson',
-                data: kelpData,
+                data: "http://127.0.0.1:4000/kelpfarms.geojson",
                 generateId: true // This ensures that all features have unique IDs
             });
 
@@ -98,6 +102,9 @@ function KelpMap(props) {
         //changing the curser when hovering
         map.on('mouseenter', 'kelp-data', () => {
             map.getCanvas().style.cursor = 'pointer';
+        });
+        map.once('idle', () => {
+            setIsLoading(false)
         });
         // resetting the curser
         map.on('mouseleave', 'kelp-data', () => {
@@ -204,7 +211,15 @@ function KelpMap(props) {
     }, []);
 
     return (
-
+        <div className="map-container-wrapper">
+        {isLoading && (
+            <div className="loading-overlay">
+                <div className="loading-content">
+                    <img src={loadingSpinner} alt="Loading..."/>
+                    <span className="loading-text">Loading AI Model</span>
+                </div>
+            </div>
+        )}
         <div ref={mapContainer} className="map-container">
 
             <div className='info-section'>
@@ -230,7 +245,7 @@ function KelpMap(props) {
                 <h4>Least Efficient</h4>
             </div>
         </div>
-
+</div>
     );
 }
 

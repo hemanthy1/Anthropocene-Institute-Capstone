@@ -117,10 +117,10 @@ function About() {
           alt="Hemanth Yalamanchili Pfp" 
           name="Hemanth Yalamanchili" 
           role="Back End Developer" 
-          text="Hemanth Yalamanchili, a passionate computer science student with a minor in game design and development at Michigan State University." 
+          text="Hemanth Yalamanchili, a passionate computer science student with a minor in game design at MSU." 
           email="yalama12@msu.edu" 
           link="https://hemanthyalamanchili.com/" 
-          buttontext="Website">
+          buttontext="Portfolio">
         </GeneralColumn>
       </div>
 
@@ -145,14 +145,14 @@ export default About
  */
 function GeneralPfp(props) {
   return (
-    <a href="/">
+    
       <img 
         src={props.src}
         alt={props.alt}
         loading="lazy"
         id="pfp"
       />
-    </a>
+    
   )
 }
 
@@ -205,13 +205,13 @@ function GeneralSponsorColumn(props) {
  */
 function DesignDayPage() {
   return (
-    <a href="/">
+    
       <img 
         src={designdaypage}
         alt="Design Day Page"
         loading="lazy"
         id="ddp"
       />
-    </a>
+    
   )
 }
