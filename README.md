@@ -20,7 +20,9 @@ As apart of our senior capstone project at Michigan State University, we teamed 
 ## How to Use 
 
 - Database Startup (necessary for any map content):
-    - In the Google Cloud Platform, navigate to the "SQL" page in the nav bar
+    - In the Google Cloud Platform, log into TeamAnthro
+    - Make sure you are in the "CarbonMapp" Project (To the right of the Google Cloud logo)
+    - Navigate to the "SQL" page in the nav bar on the left
     - Run the "Carbon Mapp" instance
 
 - Running Locally:
