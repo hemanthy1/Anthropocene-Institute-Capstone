@@ -34,7 +34,13 @@ function DirectAirCapture() {
   );
 }
 
-
+/**
+ * The banner image component for the DAC tool page
+ * The webpage contains the heatmap for the most optimal locations
+ * for direct air capture facilities
+ * 
+ * @returns The banner image with proper formatting
+ */
 function DACBanner() {
   return (
       <div className="dac-banner-image">
