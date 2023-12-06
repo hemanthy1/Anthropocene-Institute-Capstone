@@ -11,6 +11,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+# Authentication
 INSTANCE_CONNECTION_NAME="carbon-mapp:us-east5:carbon-mapp" 
 DB_USER="Uploader1"
 DB_PASS="Ubf:X$LI+{kRRiHz"
@@ -58,14 +59,16 @@ def send_email():
 def get_forestationstatejson():
     try:
         engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,ForestationDB_NAME)
+
+        # Header for geojson format
         json_data = OrderedDict([
             ("type", "FeatureCollection"),
             ("features", [])
         ])
 
+        # Reading from database and adding to json route
         with engine.connect() as connection:
             result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
-            
             for row in result:
                 feature = OrderedDict([
                     ("type", row.type),
@@ -84,13 +87,15 @@ def get_forestationstatejson():
 def get_forestationcountyjson():
     try:
         engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,ForestationDB_NAME)
+        # Header for geojson format
         json_data = OrderedDict([
             ("type", "FeatureCollection"),
             ("features", [])
         ])
+
+        # Reading from database and adding to json route
         with engine.connect() as connection:
             result = connection.execute(sqlalchemy.text("SELECT * FROM counties_table"))
-            
             for row in result:
                 feature = OrderedDict([
                     ("type", row.type),
@@ -109,10 +114,12 @@ def get_forestationcountyjson():
 def get_dacstatejson():
     try:
         engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DacDB_NAME)
+        # Header for geojson format
         json_data = OrderedDict([
             ("type", "FeatureCollection"),
             ("features", [])
         ])
+        # Reading from database and adding to json route
         with engine.connect() as connection:
             result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
             
@@ -134,10 +141,12 @@ def get_dacstatejson():
 def get_daccountyjson():
     try:
         engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DacDB_NAME)
+        # Header for geojson format
         json_data = OrderedDict([
             ("type", "FeatureCollection"),
             ("features", [])
         ])
+        # Reading from database and adding to json route
         with engine.connect() as connection:
             result = connection.execute(sqlalchemy.text("SELECT * FROM counties_table"))
             
@@ -158,10 +167,12 @@ def get_daccountyjson():
 def get_kelpfarms():
     try:
         engine=connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,KelpDB_NAME)
+        # Header for geojson format
         json_data = OrderedDict([
             ("type", "FeatureCollection"),
             ("features", [])
         ])
+        # Reading from database and adding to json route
         with engine.connect() as connection:
             result = connection.execute(sqlalchemy.text("SELECT * FROM data_table"))
             
@@ -177,20 +188,6 @@ def get_kelpfarms():
         return json_format
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-
-# @app.route('/hardcode.geojson', methods=['GET'])
-# def get_hardcodedjson():
-#     try:
-#         print("Current working directory:", os.getcwd())
-#         with open('./hardcode.json', 'r') as json_file:
-            
-#             data = json.load(json_file)
-#         # Flask's jsonify function automatically sets the correct Content-Type for JSON
-#         return jsonify(data)
-#     except Exception as e:
-#         return jsonify({"error": str(e)}), 500
-
 
 
 @app.route('/')

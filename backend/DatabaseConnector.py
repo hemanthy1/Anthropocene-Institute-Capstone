@@ -38,9 +38,6 @@ def connect_with_connector(INSTANCE_CONNECTION_NAME,DB_USER,DB_PASS,DB_NAME) -> 
         )
         return conn
 
-    # The Cloud SQL Python Connector can be used with SQLAlchemy
-    # using the 'creator' argument to 'create_engine'
-    # Using Cloud SQL Proxy, connect to 127.0.0.1 on the proxy port
     pool = sqlalchemy.create_engine("postgresql+pg8000://",creator=getconn)
 
 

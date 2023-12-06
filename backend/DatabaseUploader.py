@@ -323,8 +323,8 @@ def GeoJSONCountyList():
 
 
 
-
-def UpdateStatesDB():
+# Update the database with the new geojson data
+def UpdateKelpDB():
     engine = connect_with_connector(INSTANCE_CONNECTION_NAME, DB_USER, DB_PASS, DB_NAME)
     meta = sqlalchemy.MetaData()
 
@@ -356,7 +356,44 @@ def UpdateStatesDB():
         for row in result:
             print(row)
         
+
+
+      # Update the database with the new geojson data
+def UpdateStatesDB():
+    engine = connect_with_connector(INSTANCE_CONNECTION_NAME, DB_USER, DB_PASS, DB_NAME)
+    meta = sqlalchemy.MetaData()
+
+    # Create a table for the JSON data
+    GeoData = sqlalchemy.Table('states_table', meta,
+        sqlalchemy.Column('type', sqlalchemy.String),
+        sqlalchemy.Column('properties', sqlalchemy.JSON),
+        sqlalchemy.Column('geometry', sqlalchemy.JSON)
+    )
+
+    # TO CREATE TABLE
+    GeoData.create(engine, checkfirst=True)  
+
+    # Change for DAC and Reforestation when necessary
+    JSONList=GeoJSONStateList()
+
+    completeLength=len(JSONList)
+    with engine.connect() as connection:
+        # TO DELETE TABLE
+        # delete_stmt = sqlalchemy.text("DELETE FROM data_table")
+        # connection.execute(delete_stmt)
+
+        # # TO INSERT INTO TABLE
+        # for i in range(completeLength):
+        #     connection.execute(GeoData.insert(), JSONList[i])
+        #     print(i,completeLength)
+        # connection.commit()
+
+        # # To see data in table
+        result = connection.execute(sqlalchemy.text("SELECT * FROM states_table"))
+        for row in result:
+            print(row)
         
+          
         
 
 
@@ -372,10 +409,10 @@ def UpdateCountiesDB():
     )
 
     # TO CREATE TABLE
-    GeoData.create(engine, checkfirst=True)  # checkfirst ensures the table is only created if it doesn't exist
+    GeoData.create(engine, checkfirst=True)  
 
+    # Change for DAC and Reforestation when necessary
     JSONList=GeoJsonDACCounty()
-
 
     with engine.connect() as connection:
         delete_stmt = sqlalchemy.text("DELETE FROM counties_table")
@@ -405,5 +442,6 @@ def UpdateCountiesDB():
 
 
 if __name__ == "__main__":
-    UpdateStatesDB()
+    # UpdateStatesDB()
     # UpdateCountiesDB()
+    pass

@@ -107,7 +107,8 @@ function Feedback() {
 }
 
 function email(data) {
-  fetch('http://localhost:6001/send-email', {
+  fetch('http://localhost:6001/send-email',//CHANGE url
+   {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
