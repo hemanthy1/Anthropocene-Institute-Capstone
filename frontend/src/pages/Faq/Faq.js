@@ -41,8 +41,8 @@ function Faq() {
 
         },
         {
-            question: 'How is the relative efficiency calculated and what does it mean?',
-            answer: 'Info on relative efficiency -- pull from what we put on the more info page --',
+            question: 'How is the relative efficiency calculated?',
+            answer: "The relative efficiency is calculated by first averaging the class values for each feature within a specific technique, and then assigning a value based on the technique's position within the overall distribution of these averaged values.",
             open: false
 
         },
