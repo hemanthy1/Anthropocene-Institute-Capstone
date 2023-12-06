@@ -68,19 +68,19 @@ function DACMap(props) {
                 // fetching state outlines
                 if (map.getSource("state")) {
                     // If it does, update its data
-                    map.getSource("state").setData("http://34.133.43.211/dacstategeojson.geojson");
+                    map.getSource("state").setData("http://127.0.0.1:4000/dacstategeojson.geojson"); // CHANGE to url of backend, when running
 
                 }
                 // fetching county outlines
                 if (map.getSource("county")) {
                     // If it does, update its data
-                    map.getSource("county").setData("http://34.133.43.211/daccountygeojson.geojson");
+                    map.getSource("county").setData("http://127.0.0.1:4000/daccountygeojson.geojson"); // CHANGE to url of backend, when running
                 }
                 // fetching state classification data
                 if (!map.getSource("state")) {
                     map.addSource("state", {
                         type: "geojson",
-                        data: "http://34.133.43.211/dacstategeojson.geojson",
+                        data: "http://127.0.0.1:4000/dacstategeojson.geojson", // CHANGE to url of backend, when running
                         promoteId: "NAME",
                     });
                     // Add the classification state data as a layer to the map
@@ -153,7 +153,7 @@ function DACMap(props) {
                     // add the county level source data
                     map.addSource("county", {
                         type: "geojson",
-                        data: "http://34.133.43.211/daccountygeojson.geojson",
+                        data: "http://127.0.0.1:4000/daccountygeojson.geojson", // CHANGE to url of backend, when running
                         promoteId: "GEO_ID",
                     });
                     // adding the count-level data from the machine learning model
@@ -514,10 +514,10 @@ function DACMap(props) {
             }
         }
 
-        , [map, "http://34.133.43.211/dacstategeojson.geojson"]);
+        , [map, "http://127.0.0.1:4000/dacstategeojson.geojson"]);
 
     return (
-
+        // To display the loading gif
         <div className="map-container-wrapper">
             {isLoading && (
                 <div className="loading-overlay">

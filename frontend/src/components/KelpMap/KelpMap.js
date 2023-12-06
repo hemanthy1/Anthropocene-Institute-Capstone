@@ -55,7 +55,7 @@ function KelpMap(props) {
 
             map.addSource('kelp', {
                 type: 'geojson',
-                data: "http://127.0.0.1:4000/kelpfarms.geojson",
+                data: "http://127.0.0.1:4000/kelpfarms.geojson", // CHANGE to url of backend, when running
                 generateId: true // This ensures that all features have unique IDs
             });
 
@@ -211,6 +211,7 @@ function KelpMap(props) {
     }, []);
 
     return (
+        // To display the loading gif
         <div className="map-container-wrapper">
         {isLoading && (
             <div className="loading-overlay">
