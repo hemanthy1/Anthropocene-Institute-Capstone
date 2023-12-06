@@ -23,14 +23,10 @@ function Reforestation() {
     }
 
     return (
-
-        
         <div className="reforestation-container">
             <ReforestationBanner></ReforestationBanner>
-            {/* <img class="reforestation-image" src={reforestationBanner}> */}
             <Heatmap colors={colors}/>
         </div>
-
     );
 }
 

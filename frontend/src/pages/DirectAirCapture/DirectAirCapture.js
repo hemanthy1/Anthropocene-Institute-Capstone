@@ -28,7 +28,6 @@ function DirectAirCapture() {
   return (
     <div className="dac-container">
       <DACBanner></DACBanner>
-      {/* <ReforestationMap colors={colors}/> */}
       <DACMap colors={colors} />
     </div>
   );
